@@ -1,0 +1,5 @@
+    Módulo de introdução: 
+
+- Explicações de plano de carreira na area de dados;
+- Dicas de rtina de Estudo;
+- Apresentando estrutura do curso.
