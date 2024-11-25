@@ -1,6 +1,7 @@
 # Especializacao-em-Analise-de-Dados
 
 Especialização Análise de Dados Impressionadora! ☺
+
 “Dados são o novo petróleo.” Aposto que você já ouviu essa expressão por aí! Em um mundo cada vez mais conectado e
 digital, não poderia ser diferente. Por isso, a demanda por Analistas de Dados tem se tornado cada vez mais crescente. E se
 você quer fazer parte desse disputado grupo de profissionais, venha com a gente!
