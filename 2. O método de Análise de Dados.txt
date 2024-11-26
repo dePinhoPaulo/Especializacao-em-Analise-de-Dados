@@ -83,4 +83,46 @@ AULA_7: Correlação x Causalidade
 
     Uma explicação mais plausiveis que foi encontradas pra isso é que datas festivas - como Nata, poor exemplo - coincidem com epocas de frio no paises situados ao norte da linha do Equador
 
-    
+
+AULA_8: Outros 2 Cases de Aplicação do método
+
+    Comparativo de desempenho em duas series:
+        
+        Wandinha x Stragen Things
+        
+        Quantos por cento da base de clientes assistiu?
+            -assistido por 14% da base
+
+        O que ppode ter acontecido?
+            -14% da base 130M Stragen Things = 18,2M
+            -14% da base 220M Wandinha = 30,8M
+
+        Visão de negócio:
+            1-Reter assinantes antigos
+            2-atrair novos assinantes
+            3-diferenciação no mercado
+            4-expansao global
+            5-etc...
+
+        Analisando por essa otica:
+            Wandinha:
+                % Assitiram = 14% (30,8M)
+                novos assinantes = 1,5M (4,9% Crescimento)
+                Cancelamento médio = 2,2%
+                Cancelamento no mes lançado = 1,3%
+            Stragen Things:
+                % Assitiram = 14% (18,2M)
+                novos assinantes = 2,4M (15% Crescimento)
+                Cancelamento médio = 1,9%
+                Cancelamento no mes lançado = 1,1%
+
+
+AULA_9: Passo 6 Confirme suas teorias e Visão de Negócios
+
+    "Não confie cegamente, vá a fundo e tente entender. Como comprovar suas teorias"
+
+    "Analise critica e Visão de negócio levam tempo"
+
+    "As vezes voce nãoo vai conseguir que os dados te digam tudo. E nessa hora voce vai com a experiencia e debates"
+
+
