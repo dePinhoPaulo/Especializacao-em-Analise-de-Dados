@@ -1,0 +1,86 @@
+AULA_1: 6 Passo de uma analise:
+
+    1- Identificação do problema
+    2- Principi 80/20
+    3- Caudsa e eeit ds principais ofensores e oprtunidades
+    4- Visualização de dados: Analise e comparaçã
+    5- Questione e duvide: Um framewirk para hipoteses
+    6- Confirme sua teoria.
+
+    
+AULA_2: Passo 1 Identificação de problemas e objetivo de análise
+
+    "Focar em apenas um projeto"
+
+    Aplicação em case:
+        -Reduzir custos de um fabrica da Coca-cola
+
+        1 Problema: Custo total da fabrica no ano.
+
+
+AULA_3: Passo 2 Princípio 80/20
+
+    "20% das causas geram 80% dos efeitos"
+    "Poucos itens alteram muitop seu resultado"
+
+    Aplicação em case:
+        -Energia: 300.000
+        -Açucar: 5.000.000    <- 
+        -Plástico: 4.000.000  <- 
+        -Água: 250.000
+        -Mão de obra: 1.000.000
+        -Manutenção: 1.250.000
+
+
+AULA_4: Passo 3 Causa e Efeito dos principais ofensores e oportunidades
+
+    "Entender o impacto dos 20% sobre o problema original"
+
+    Aplicação em case:
+        -Açucar + Plastico: 9.000.000
+        -Custoo total: 12.300.000
+
+        2 ITENS = 73% dos custos
+
+        -Açucar = Commodity = Preço tabelado
+        -Plastico = Varios fornecedores
+
+
+AULA_5: Passo 4 Visualização de Dados - Análise e Comparação
+
+    2 Principais vantagens em usar gráficos:
+        1° Voce fazer suas analises e preparar sus hipoteses;
+        2° Ajuda a convencer.
+
+
+AULA_6: Passo 5 Questione e Duvide - Um framework para criar hipóteses
+
+    "Levantar hipoteses"
+    "Trazer dados para comprovar"
+    "Correlação x Causalidade"
+
+    Aplicação em case:
+        Como reduzir esses custos?
+
+            Açucar:
+                -Preço = Commodity, muito dificil
+                -Quantidade = Pode ser , mas qual o impacto?
+
+            Plastico:
+                -Preço = Negociar com fornecedores
+                -Quantidade = será que consegguimos fazer uma ggarrafa com menos plastico?
+
+        "Coca-Cola lança garrafa plástica com material 100% reutilizavel."
+
+
+AULA_7: Correlação x Causalidade
+
+    "Correlação NÃO NECESSARIAMENTE implica em Causalidade"
+
+    Ex: Foi notado que em paises do hemisferio norte que as pessoas tendem a gastar mais em compras durante a época de frio
+
+    "Mas isso não quer dizer que o frio causa um aumenta de vendas"
+
+    Uma explicação mais plausiveis que foi encontradas pra isso é que datas festivas - como Nata, poor exemplo - coincidem com epocas de frio no paises situados ao norte da linha do Equador
+
+    
