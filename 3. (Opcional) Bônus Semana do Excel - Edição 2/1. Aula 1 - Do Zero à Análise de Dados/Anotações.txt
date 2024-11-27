@@ -1,0 +1,7 @@
+Ctrl + Space = Seleciona Coluna
+Shift + Space = Seleciona Linha
+
+Ctrl + Shift + + = Inseri Coluna
+Ctrl  + - = exclui Coluna
+
+Ctrl + E = Preechimento relanpago "Usado na coluna Primeiro nome e Sobrenome"
