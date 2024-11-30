@@ -1,11 +1,41 @@
-Ctrl + Space = Seleciona Coluna
-Shift + Space = Seleciona Linha
+AULA_1: Do Zero à Análise de Dados
 
-Ctrl + Shift + + = Inseri Coluna
-Ctrl  + - = exclui Coluna
+    Ctrl + Space = Seleciona Coluna
+    Shift + Space = Seleciona Linha
 
-Ctrl + E = Preechimento relanpago "Usado na coluna Primeiro nome e Sobrenome"
+    Ctrl + Shift + + = Inseri Coluna
+    Ctrl  + - = exclui Coluna
 
-mostrar seleção de campos da Tabela dinamica
-Selecione a tabela > Análise da tabela dinamica > Mostrar > Lista de campos
+    Ctrl + E = Preechimento relanpago "Usado na coluna Primeiro nome e Sobrenome"
 
+    mostrar seleção de campos da Tabela dinamica:
+        Selecione a tabela > Análise da tabela dinamica > Mostrar > Lista de campos
+
+AULA_2: Aula de Apoio - Construindo o Background do Dashboard
+
+    1º Desabilitar Barra de formula e Titulo:
+        Exibir > Mostrar > Barra de formula e Titulo
+
+    2º Modo tela inteira:
+        Mostrar Faixa de Opções > Tela inteira
+
+    3º Inserir retangulo na tela inteira:
+        Inserir > Formas > Retângulo
+
+    4º Ajustar cor do Retângulo
+        Forma de formato > Preechimento da forma:
+
+    5º Adicionar pequenos retangulos no painel Com tom de transparencia
+        
+    6° Ajutar posições e alinha-las:
+        Forma de formato > Alinhar
+
+    7° Adicionar titulos e sub-titulos:
+        Inserir > Formas > Caixa de texto
+
+    8º Adicionar boto~es de filtro:
+        Inserir > Formas > Caixa de texto
+
+    9º Adicionando icones
+
+    10º Adicionar valores
