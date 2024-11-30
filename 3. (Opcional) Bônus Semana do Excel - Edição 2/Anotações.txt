@@ -5,3 +5,7 @@ Ctrl + Shift + + = Inseri Coluna
 Ctrl  + - = exclui Coluna
 
 Ctrl + E = Preechimento relanpago "Usado na coluna Primeiro nome e Sobrenome"
+
+mostrar seleção de campos da Tabela dinamica
+Selecione a tabela > Análise da tabela dinamica > Mostrar > Lista de campos
+
