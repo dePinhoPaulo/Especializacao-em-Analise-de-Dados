@@ -39,3 +39,31 @@ AULA_2: Aula de Apoio - Construindo o Background do Dashboard
     9º Adicionando icones
 
     10º Adicionar valores
+
+
+AULA_3: Surpreenda seu Chefe com esse Dashboard
+
+    Criando Gráfico do zero:  
+        Criar grafico:
+            Inserir > grafico coluna
+
+        Inserir dados:
+            Botão direito > Selecionar dados > Adicionar > 1º Nome 2º Sele. celulas
+
+        Mudando tipo do grafico
+            Botão direito > Alterar tipo do gráfico > Combinação
+
+        Editar Layout do grafico
+            Botão direito > Formatar Série de Dados
+
+    Criando Gráfico a partir da Tabela Dinamica:
+        Criar grafico:
+            Selecionar tabela > Inserir > grafico linha
+
+        Ocultando botões:
+            Botão direito > Ocultar todos botoes de campo no grafico
+            Análise de grafico dinamico > botoes de campo > Ocultar tudo
+
+        Editar Layout do grafico
+            Botão direito > Formatar Série de Dados
+
