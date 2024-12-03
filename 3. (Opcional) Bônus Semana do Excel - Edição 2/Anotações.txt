@@ -67,3 +67,5 @@ AULA_3: Surpreenda seu Chefe com esse Dashboard
         Editar Layout do grafico
             Botão direito > Formatar Série de Dados
 
+        Editar Segmentação
+            Selecionar > Segmentação 
