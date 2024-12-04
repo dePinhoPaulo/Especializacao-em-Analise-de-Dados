@@ -87,3 +87,9 @@ AULA_4: Ferramentas para se Destacar no Trabalho
 
         Add botao de macro:
             Inserir > Retangulo > Atribuir Macro
+
+    Formulário:
+        Habilitar:
+            Arquivo > Opções > Barra de ferrramentas > Todos comnados > Formularios
+
+        Selecionar tabela > Formulario
