@@ -69,3 +69,21 @@ AULA_3: Surpreenda seu Chefe com esse Dashboard
 
         Editar Segmentação
             Selecionar > Segmentação 
+
+
+AULA_4: Ferramentas para se Destacar no Trabalho
+
+    Apresentando Power Query:
+        Acresentar consultas;
+        Escluir colunas;
+        Extraindo Texto;
+        Power Query com PDF.
+
+    Localizar e Subistituir:
+        Ctrl + L
+    
+    Macros:
+        Exibir > Macro > Gravar Macro
+
+        Add botao de macro:
+            Inserir > Retangulo > Atribuir Macro
