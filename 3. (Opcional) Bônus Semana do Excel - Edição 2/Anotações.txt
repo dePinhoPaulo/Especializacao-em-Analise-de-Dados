@@ -93,3 +93,8 @@ AULA_4: Ferramentas para se Destacar no Trabalho
             Arquivo > Opções > Barra de ferrramentas > Todos comnados > Formularios
 
         Selecionar tabela > Formulario
+
+
+AULA_5: Turbinando o Excel com ChatGPT
+
+    Apresentando ChatGPT
