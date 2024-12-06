@@ -98,3 +98,15 @@ AULA_4: Ferramentas para se Destacar no Trabalho
 AULA_5: Turbinando o Excel com ChatGPT
 
     Apresentando ChatGPT
+
+
+AULA_6: Aulão de Fórmulas do Excel
+
+    Funções iniciais:
+        -SOMA
+        -MÉDIA
+    
+    Funções Avançadas:
+        -SE
+        -PROCV
+        
