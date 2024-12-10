@@ -110,3 +110,26 @@ AULA_6: Aulão de Fórmulas do Excel
         -SE
         -PROCV
         
+
+AULA_7: Aula Bônus de Encerramento
+
+    Validação de dados:
+        Dados > Ferramentas de dados > Validação de dados
+        -Lista
+        -Numero Intiero
+        -Comprimento do texto
+
+        Menssagem de erro:
+            Validação de dados > Alerta de erro
+
+        Formatação Condicional
+            -Regras de realce
+            -Regras de primeiros/ultimos
+
+        Excluir & editar regras
+
+        Barra de dados
+
+        Mapa de calor
+
+        Analise rapida (Ctrl + Q)
