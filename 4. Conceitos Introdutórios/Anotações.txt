@@ -1,0 +1,36 @@
+AULA_1: Nomenclaturas
+
+    Denfinições:
+        Planilha
+        Celula
+        Coluna
+        Linha
+
+
+AULA_2: Guias
+
+    Apresentaão das guias
+        -Pagina inicial
+        -Exibir
+        -Inserir
+        -Formulas
+
+
+AULA_3: Planilhas (Abas)
+
+    Adicionando e Excluindo Planilhas
+    Mudando de cor (aba)
+    Ocultar & reexibir
+
+
+AULA_4: Exibição da Planilha
+    
+    Linhas de grade
+    Barra de Formulas
+    Recolher faixa de opções
+    modo tela inteira
+
+
+AULA_5: Alterando Idioma
+
+    opções > Idioma > adicionar Idioma
