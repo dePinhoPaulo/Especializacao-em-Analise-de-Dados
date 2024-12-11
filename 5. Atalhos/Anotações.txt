@@ -1,0 +1,63 @@
+AULA_1: Use Atalhos
+
+    Crtl+N: negrito
+    ctrl+shift+L: filtro
+    alt: aciona legendas
+    
+
+AULA_2: CTRL + SETA e CTRL + SHIFT + SETA
+
+    Ctrl+seta: Pula para ultimo elemento
+    Crtl+shift+seta: Seleciona ate o ultimo elemento
+
+
+AULA_3: CTRL + T    
+
+    ctrl+t: Seleciona ate o ultimo elemento em ambos eixos
+    Ctrl+home: vai para A1
+
+    caixa de nome: navegação e nomeação das celulas
+    F5: ir para
+
+
+AULA_4: CTRL + ESPAÇO e SHIFT + ESPAÇO
+
+    ctrl+space: seleciona Coluna
+    shift+space: seleciona Linha
+
+    ctrl+shift+ +: Inserir
+    ctrl+ -: excluir
+
+
+AULA_5: CTRL + SHIFT + L
+
+    ctrl+shift+L: filtro na tabela
+    alt+seta p/baixo:  navega no filtro selecionado
+    space: seleciona a opção
+    enter: aplica filtro
+
+
+AULA_6: CTRL + PGUP, CTRL + PGDN, CTRL + ALT + T
+
+    ctrl+pgUP: Avança para direita entre as Abas
+    ctrl+pgDN: Avança para esquerda entre as Abas
+
+    ctrl+alt+t: seleciona e formata como tabela
+
+
+AULA_7: CTRL + 1
+
+    ctrl+1: formatar celulas
+
+
+AULA_8: ALT + C + V + V e ALT + C + V + T
+
+    alt+c+v+v: Colar somente texto
+    alt+c+v+t: Colar transposto
+
+
+AULA_9: O Atalho ALT
+
+    alt+f1: gera gráfico
+    alt: nevegar em todos opções
+    
