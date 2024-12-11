@@ -61,3 +61,22 @@ AULA_9: O Atalho ALT
     alt+f1: gera gráfico
     alt: nevegar em todos opções
     
+
+AULA_10: CTRL + E
+
+    Ctrl+E: Preenchimento Relampago
+    f2: entra na celula
+
+
+AULA_11: CTRL + ; e CTRL + SHIFT + ;
+
+    Ctrl+; : Data atual
+    Crtl+shift+; : Hora atual
+
+AULA_12: Aprenda mais todo dia
+
+    Revisão
+
+AULA_13: Lista completa de atalhos do excel 
+
+    Documentaçção do excel.
