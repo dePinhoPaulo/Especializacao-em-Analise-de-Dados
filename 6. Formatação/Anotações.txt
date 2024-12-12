@@ -1,0 +1,81 @@
+AULA_1: Ajustar Linhas e Colunas
+
+    Click no canto da letra (titulo) da coluna:
+        Ajuste automatico da largura
+        obs: tanto na coluna quanto na Linha
+
+    bota direito no titulo da coluna > largura da coluna:
+        caixa de seleção para escolher largura
+
+
+AULA_2: Ocultar Linhas e Colunas
+
+    bota direito no titulo da coluna > Ocultar
+    
+    bota direito no titulo da coluna > Reexibir
+
+
+AULA_3: Agrupar Linhas e Colunas   
+
+    Dados > Agrupar
+    
+    "Ocultar e reexibir uma coluna ou mais rapidamente"
+    "Tanto para colunas quanto linhas"
+
+
+AULA_4: Excluir e Limpar Células
+
+    Del: Apaga todas celulas seleciondas
+    pagina inicial > Borracha:
+        -Limpa valores
+        -limpa formatação
+    Ctrl+ -: Excluir
+
+
+AULA_5: Fonte e Preenchimento
+
+    mais cores > personalizar:
+        Qualquer cor
+
+    "Tanto para fonte quanto Preenchimento"
+
+
+AULA_6: Alinhamento e Bordas
+
+    Pagina Inicial > Bordas:
+        -Todas bordas
+        -Borda externa
+        -borda espessa, etc...
+
+    Pagina Inicial > Alinhamento:
+        -Esquerda
+        -direita
+        -centralizado
+        -Alinhamento vertical, etc...
+
+
+AULA_7: Mesclar e Centralizar
+
+    Pagina Inicial > Mesclar e Centralizar
+        "Transforma vairrias celulas em uma"
+        
+        "dificulta a seleção de colunas/linhas"
+        "pode atrapalhar formulas"
+
+
+AULA_8: Quebra de Texto
+
+    Alt+Enter: Quebra linha
+    Pagina inicial > Quebra de texto
+
+
+
+AULA_9: Comentários e Anotações
+
+    Bota direito > novo Anotação:
+        "Bloco de nota"
+
+    Bota direito > novo Comentario:
+        "Caixa de conversa"
+
+
