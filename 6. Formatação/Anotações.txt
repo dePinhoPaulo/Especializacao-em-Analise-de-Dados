@@ -79,3 +79,54 @@ AULA_9: Comentários e Anotações
         "Caixa de conversa"
 
 
+AULA_10: Formatação de Números
+
+    Formataçãoda numero para data:
+        1 = 01/01/1900 ...
+        11/01/1900 = 11 ...
+        
+    Ctrl+1: Formatação Personalizada
+
+
+AULA_11: Formatação Personalizada (exemplos CPF, CEP, telefone e mais)
+
+    Ctrl+1: Formatação Personalizada
+        
+        Personalizado:
+
+            Adicionando mascara no telefone:
+                00000"-"0000
+            
+            Adicionando mascara no CPF:
+                000"."000"."000"-"00
+
+            Adicionando 0 NO DDD:
+                000
+
+
+AULA_12: Pincel de Formatação
+
+    Pagina Inicial > Pincel de formatação:
+        "Copia formatação da celula"
+
+    Alt+c+i+i: pincel de forrmatação
+
+
+AULA_13: Colagem Especial
+
+    somente valores
+    somente formatação
+    tranposto: "inverter sentido da colagem"
+
+    Copia > colar especial:
+        "Colagem com formula embutida"
+
+
+AULA_14: Congelar Painéis
+
+    Linha superior
+    Primeira Coluna
+    Congelar Paineis:
+        "Congela linha e coluna junto (deixar selecionado Celula de interseção)"
+    
+
