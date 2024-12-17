@@ -130,3 +130,27 @@ AULA_14: Congelar Painéis
         "Congela linha e coluna junto (deixar selecionado Celula de interseção)"
     
 
+AULA_15: Tabelas - Design e Nome da Tabela
+
+    Inserir > Tabelas > Tabela
+    
+    Design de tabela > novo estilo:
+        "Criação de um novo estilo do 0"
+
+    "aumenta automaticamente."
+
+
+AULA_16: Tabelas - Segmentação de Dados
+
+    Design da tabela > inserir Segmentação de Dados
+
+
+AULA_17: Tabelas - Uso em Fórmulas
+
+    Referenciar uma coluna em Formulas:
+        NomeTabela[NomeColuna] -> "Vendas[ValorTotal]"
+
+
+AULA_18: Tabelas - Uso em Validação de Dados
+
+    Dados > Validação de Dados > Lista
