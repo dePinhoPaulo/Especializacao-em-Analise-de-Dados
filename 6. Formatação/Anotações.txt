@@ -154,3 +154,50 @@ AULA_17: Tabelas - Uso em Fórmulas
 AULA_18: Tabelas - Uso em Validação de Dados
 
     Dados > Validação de Dados > Lista
+
+
+AULA_19: Formatação Condicional - Regras de Realce
+
+    Pagina inicial > Formatação condicial
+
+
+AULA_20: Formatação Condicional - Primeiros/Últimos
+
+    Formatação condicial > Gerenciar Regras...
+
+    Formatação condicial > Regras de Primeiros/Últimos
+        -30% Primeiros/Ultimos
+        -Acima da média
+
+
+AULA_21: Formatação Condicional - Barras e Escalas
+
+    Formatação condicial > Barra de Dados
+        "Ordenar do maior para menor ajuna na analise"
+    
+    Barra de Dados > Mais Regras > Mostrar Somente Barra:
+        "Esconde os numeros da coluna"
+
+    Formatação condicial > Escalas de cor
+
+
+AULA_22: Formatação Condicional - Ícones
+
+    Formatação condicial > Conjunto de Icones
+
+    Formatação condicial > Gerenciar Regras.. > Editar Regras
+        "Edita regra para icones"
+
+    
+AULA_23: Formatação Condicional - Linha Inteira
+
+    Formatação condicial > Nova Regra... > Usar Formula para derterminar...
+        =$B2="Nacional" -> Formata as linhas da tabela'
+            "Tirar trancamento das células"
+            "Selecionar qualquer coluna para regra"
+
+
+AULA_24: Formatação Condicional com Fórmulas
+
+Formatação condicial > Nova Regra... > Usar Formula para derterminar...
+    =$C2<HOJE() -> "Destaca datas vencidas."
