@@ -67,3 +67,73 @@ AULA_9: Funções MAIOR e MENOR
     "Se tiver valores reepetidos na matriz e sera consideerado independente"
     "Como exmplo no arquivo da aula a mais de 1500 posições com valor 56,90"
 
+
+AULA_10: Trancamento Total
+
+    "O Trancamento impede o deslocamento de celulas no preenchimento relanpa"
+
+    F4 ou $: Tranca celula/matriz
+
+
+AULA_11: Funções CONT.VALORES e CONT.NÚM
+
+    CONT.NÚN(N1;N2;...)
+        "Conta apenas numeros"
+
+    CONT.VALORES(N1;N2;...)
+        "Conta todas celunas <> vazio"
+
+
+AULA_12: Função SUBTOTAL
+
+    SUBTOTAL(NUN_FUNÇÃO;N1;N2;...)
+        "Considera apenas celulas visiveis na planilha"
+        "pode se utilizar diversas operações matematicas"
+
+
+AULA_13: AutoSoma
+
+    Pagina inicial > AutoSoma
+    Alt + =: Atalho
+
+
+AULA_14: Ferramenta Subtotal
+
+    Dados > Estrutura de Topicos > Subtotal
+        "Permite soma/subt./mult./etc..."
+        "exmplo: Quebra totalizadores por região em uma tabela" 
+
+
+AULA_15: Excluir Vazias
+
+    Ctrl + shift + Home: seleciona tudo ate A1
+        "Selecionar ultimo elmento mais o Ctrl + shift + Home, para selecionar toda tabela"
+
+    F5: Ir para > Escpecial... > Em branco
+        "Seleciona apenas em branco"
+
+    Ctrl + -: Excluir
+
+
+AULA_16: Opções de Cálculo
+
+    formulas > Opções de Cálculo:
+        "Para manipulação de grandes bases é indicado deixar na opção manual para evitar travamentos e assim que concluir alteraçções volte para automatico"
+
+    Ctrl + P : Salvar
+        "Sempre fique salvando para evitar grandes problemas"
+
+
+AULA_17: Auditoria de Fórmulas
+
+    formulas > Auditoria de Fórmulas > Rastrear Precedentes:
+        "Mostra de uma forma grafica, celulas que precedem este resultado"
+
+    formulas > Auditoria de Fórmulas > Mostrar Formulas:
+        "Mostra todas formulas da planilha"
+
+    formulas > Auditoria de Fórmulas > Avaliar formula:
+        "Depurador de formulas"
+        "Avaliar... = Mostra passo a passo da formula"
+        "Depuraão = Mostra todo o caminho da formula"
+
