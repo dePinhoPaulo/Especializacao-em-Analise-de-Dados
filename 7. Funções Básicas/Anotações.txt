@@ -1,0 +1,69 @@
+AULA_1: Criando Sequências Numéricas
+
+    "Selecionar sequencia e arrastar pra baixo"
+
+    ALEATORIOENTRE(N1;N2):
+        Função para aleatorizar numeros com F9
+
+
+AULA_2: Operadores de Soma e Subtração
+
+    Opredaores basicos:
+        + Adição
+        - Subtração
+
+
+
+AULA_3: Operadores de Multiplicação e Divisão
+
+    Opredaores basicos:
+        * Multiplicação
+        / Divisão
+        ^ Potencialização
+
+
+AULA_4: Função SOMA
+
+    SOMA(N1;N2;...)
+    
+
+AULA_5: Função MULT
+
+    MULT(N1;N2;...)
+
+    Opações de preenchimento relampago:
+        -somente formulas
+        -somente fortação
+
+
+AULA_6: Função MÉDIA
+
+    MÉDIA(N1;N2;...)
+        "Média aritimética"
+
+    Funções aninhadas:
+        =MULT(MÉDIA(H2:H9862);MÉDIA(F2:F9862))
+
+
+AULA_7: Função ARRED
+
+    ARRED(N;CASAS)
+        "Arredonda numero"
+        "é diferente de diminuir casas dcimais na FORMATAÇÃO"
+
+
+AULA_8: Funções MÁXIMO e MÍNIMO
+
+    MÁXIMO(N1;N2;...)
+    MÍNIMO(N1;N2;...)
+    "Apenas 1° P/ Maximo e minimo"
+
+
+AULA_9: Funções MAIOR e MENOR
+
+    MAIOR(MATRIZ;POSIÇÃO)
+    MENOR(MATRIZ;POSIÇÃO)
+    "Retorna valor de acordo com o ranqueamento escolhido"
+    "Se tiver valores reepetidos na matriz e sera consideerado independente"
+    "Como exmplo no arquivo da aula a mais de 1500 posições com valor 56,90"
+
