@@ -137,3 +137,34 @@ AULA_17: Auditoria de Fórmulas
         "Avaliar... = Mostra passo a passo da formula"
         "Depuraão = Mostra todo o caminho da formula"
 
+
+AULA_18: Exercícios Funções Básicas (Parte 1)
+
+    Explicação dos exercicios
+
+
+AULA_19: Exercícios Funções Básicas (Parte 2)
+
+    Correnção de exercicio
+        EX_1: OK
+        EX_2: OK
+        EX_3: OK
+
+
+AULA_20: Exercícios Funções Básicas (Parte 3)
+
+    Correnção de exercicio
+            EX_4: OK
+
+
+AULA_21: Exercícios Funções Básicas (Parte 4)
+
+    Correnção de exercicio
+            EX_5: OK
+
+
+AULA_22: Exercícios Funções Básicas (Parte 5)
+
+    Correnção de exercicio
+            EX_7: OK
+            EX_8: OK
