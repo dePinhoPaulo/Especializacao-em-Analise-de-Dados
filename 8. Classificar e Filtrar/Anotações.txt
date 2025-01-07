@@ -1,0 +1,62 @@
+AULA_1: Classificar
+
+    Dados > Classificar e filtrar > A a Z || Z a A:
+        Classifica a tebela de acordo com a coluna selecionada
+        Se selecionar a coluna e "Continuar com a seleção atual":
+            Ordena apenas a cluna selecionada 
+
+
+AULA_2: Classificação Personalizada
+
+    Dados > Classificar e filtrar > Classificar:
+        Classificação personalizada por niveis
+
+
+AULA_3: Localizar e Substituir
+
+    Pagina inicial > Localizar e Subistituir:
+        Crtl + L 
+        Opações>>:
+            Da mais Opações para Localizar
+
+
+AULA_4: Filtro (Parte 1)
+
+    Dados > Classificar e filtrar > Filtro:
+
+
+AULA_5: Filtro (Parte 2)
+
+    "Mais opções de filtros como em numeros < do que X, em datas antes de Y, Etc..."
+    Atalhos:
+        Alt + Seta P/ baixo: Entra nas opções de Filtro da coluna
+        Barra de espaço: seleciona o Filtro
+
+
+AULA_6: Filtro Avançado (Parte 1)
+
+    Dados > Classificar e filtrar > Avançado:
+        "Filtra de acorde com uma célula da planilha"
+        "1° Base de dados, 2° Intervalo de criterio"
+        "Tambem funciona com regras de numeros na celulas, Ex: >=1200"
+
+
+AULA_7: Filtro Avançado (Parte 2)
+
+    Mais de um filtro da mesma coluna:
+        Ex: Data >12/12/2024   Data >31/12/2024
+
+    "Filtro de texto, ira filtrar a partir dos caracteres do começo"
+        Para filtrar palavras independente da posição:
+            Ex: *Mega*
+
+
+AULA_8: Filtro Avançado (Parte 3)
+
+    Dados > Classificar e filtrar > Avançado:
+        Marcando Opção: Copiar para outro Local:
+            "Cola o resultado do filtro em outra célula/planilha"
+            "Cola de acordo com as colunas desejadas"
+
+        Marcando Opção: Somente registros exclusivos:
+            "Remove duplicados"
