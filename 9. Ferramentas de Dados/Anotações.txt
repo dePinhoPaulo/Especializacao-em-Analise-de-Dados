@@ -1,0 +1,61 @@
+AULA_1: Texto para Colunas - Usando Delimitadores
+
+    Dados > Texto para colunas:
+        Delimitado:
+            "Separa por um caractere q separa as informações"
+
+
+AULA_2: Texto para Colunas - Arrumando Bases
+
+
+    Dados > Texto para colunas:
+        Delimitado:
+            Etapa 3:
+                "Formatar dados da coluna"
+                "Não importar coluna"
+                "Selecionar destino da colagem"
+
+
+AULA_3: Texto para Colunas - Largura Fixa 
+
+    Dados > Texto para colunas:
+        Largura Fixa:
+            "Seleciona manualmente a separação das colunas (caracter a caracter)"
+
+
+AULA_4: Texto para Colunas - Importando Arquivos Texto
+
+    "Utilizando as duas opções de texto para coluna: Delimitado e Largura Fixa"]
+
+
+AULA_5: Texto para Colunas - Separador Decimal
+
+    Dados > Texto para colunas:
+        Delimitado:
+            Etapa 3:
+                Avançado:
+                    Alterar separador decimal e milhar
+
+
+AULA_6: Preenchimento Relâmpago - Separar Textos
+
+    Dados > Preenchimento Relâmpago:
+        Crtl + E
+        "Digitar 1° linha de exemplo e depois usar comando"
+    
+    "Utilizando Localizar e subistituir para limpeza da base Ctrl+L"
+
+
+AULA_7: Preenchimento Relâmpago - Juntar Textos
+
+    "Não pode ter células nem colunas em branco, pois para o preenchimento"
+    "Quando preenchimento não funcionar dar mais de 1 exemplo"
+    "Preenchimento pode ser usado para juntar textos Tambem"
+
+
+AULA_8: Preenchimento Relâmpago - Quando Usar
+
+    "Com funções o dados são utilizados automaticamente"
+    "Usar preenchimento relanpago para planilhas sem muitas alterações, problemas pontuais"
+    "para planilhas com mais alterações usar formulas"
+    
