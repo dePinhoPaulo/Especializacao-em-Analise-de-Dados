@@ -59,3 +59,79 @@ AULA_8: Preenchimento Relâmpago - Quando Usar
     "Usar preenchimento relanpago para planilhas sem muitas alterações, problemas pontuais"
     "para planilhas com mais alterações usar formulas"
     
+
+AULA_9: Remover Duplicadas - Uma Única Coluna
+
+    Dados > Remover Duplicaods:
+
+
+AULA_10: Remover Duplicadas - Diversas Colunas
+
+    Dados > Remover Duplicaods:
+        "Selecionar colunas desejadas"
+
+
+AULA_11: Validação de Dados - Criando Listas
+
+    "Limitar os valores a sere inseridos nas celulas"
+
+    Dados > Validação de Dados:
+        Lista:
+            "Selecionar valores a ser inseridos"
+    "Alterar a celula da lista não ira alterar o valor inserido"
+
+
+AULA_12: Validação de Dados - Mensagens de Erro
+
+    Dados > Validação de Dados:
+        Lista:
+            "Tambem pose ser inseridos valores manualmente na caixa de seleção, separando valores com ';'"
+        
+        Mensagem de entrada:
+            "Mostra pop up com a instrução inserida antres da digitação"
+
+        Alerta de erro:
+            "Altera a menssagem de erro e tambem a funcionalidade após o erro"
+            
+            Para: Não deixa inserir valor diferente
+            Aviso: Avisa o erro com opções de corrigir e continuar
+            informação: apenas avisa que esta incorreto com 'OK'
+
+        "Validação de Dados Tambem para numeros Inteiros, Data, Personalizado, Etc..."
+
+
+AULA_13: Validação de Dados - CPF
+
+    "Formatar célula como texto para considerar CPF's com zero a esquerda"
+
+
+AULA_14: Validação de Dados - Replicando Validações
+
+    "Copiar celulas e cloar Especial ou Formatar como tabela, nas proximas linhas é replicado validações altomaticamente"
+
+    Colar > Colar Especial > Validação
+    Pagina incial > Formatar como Tabela
+
+
+AULA_15: Validação de Dados - Atualização Automática
+
+    "Transaforma Valores de validação em Tabela, ira aparecer a novas opçõs açtomaticamente"
+
+
+Aula_16: Validação de Dados - Intervalos Nomeados
+
+    Formulas > Gerenciador de Nomes:
+        "Nomeia intervalos de celulas para facilitar na hora de inserir a fonte da validação por exemplo"
+
+
+AULA_17: Validação de Dados - Lista Condicionada
+
+    "Cria um validação a partir de um valor selecionado de um celula enterior"
+    "Ex: selecionando o continente Africa só irar aparecer paises da africa"
+
+    -Criar intervalo nomeado para cada continente
+    -célula de continente validação simples de lista
+    -na célula de pais referenciar na fonte a celula continente usando a formula INDIRETO, =INDIRETO(A2)
+    
+    INDERETO(): 
+        "Formula pega o intevalo nomeado que esta na celula"
