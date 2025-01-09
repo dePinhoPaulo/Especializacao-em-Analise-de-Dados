@@ -135,3 +135,46 @@ AULA_17: Validação de Dados - Lista Condicionada
     
     INDERETO(): 
         "Formula pega o intevalo nomeado que esta na celula"
+
+
+AULA_18: Validação de Dados - Avisos e Informações
+
+    Dados > Circular dados invalidos:
+        "Circula dados que não estão mais na lista de validação"
+
+    
+AULA_19: Validação de Dados com Fórmulas
+
+    Dados > validação de Dados > Personalizado:
+        "Soma de todas as celulas (com travamento) menor ou igual a celula com o valor limite"
+        =SOMA($B$3:$B$14)<=$B$1
+
+    Dados > validação de Dados > Personalizado:
+        "CONTA SE a celula apara mais de um vez no intervalo, se aparecer está repetido, logo, <1 (para evitar repetidos)"
+        =CONT.SES(A:A;A1)<1
+
+
+AULA_20: Consolidar
+
+    Dados > Consolidar Dados:
+        "Faz operaçãos como somar varias tabelas ao mesmo tempo, sen ter quer fazer formula celula por celula"
+
+
+AULA_21: Exercícios - Texto para Colunas
+
+    Corrigindo Exercicios:
+        EX_1: Certo
+
+
+AULA_22: Exercícios - Remover Duplicadas
+
+    Corrigindo Exercicios:
+        EX_2: Certo
+
+
+AULA_23: Exercícios - Validação de Dados
+
+    Corrigindo Exercicios:
+        EX_3: Certo
+        EX_4: Certo
+        EX_5: Certo
