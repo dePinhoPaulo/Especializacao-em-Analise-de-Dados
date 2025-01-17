@@ -31,4 +31,51 @@ AULA_4: Função SE - Classificação em Faixas
 
 AULA_5: Função SE - Trancamento Parcial
 
+    "Usando F4 para trancar valores da formula"
+    Ctrl + D:
+        Preenchimento para baixo "Subistitui a crus do canto inferior"
+
+
+AULA_6: Função SE - Uso em Tabelas
     
+    Explicação exercicios
+
+
+AULA_7: Função SE - Exercício de Fixação 1
+
+    EX1: Correto
+
+
+AULA_8: Função SE - Exercício de Fixação 2
+
+    EX2: Correto
+
+
+AULA_9: Função E - Duas Condições
+
+    =E();
+        "Adicionar clausulas em que TODAS ELAS precisam ser verdadeiras para retornar verdadeiro"
+        =SE(E(C2="Terceiro";D2="MG");"SIM";"NÃO")
+
+
+AULA_10: Função E - Três Condições
+
+    "Comparação de data em formula deve estar em uma celula ou usar função DATA()"
+    =E();
+        "-"
+        =SE(E(B2<DATA(2010;12;31);C2="Concurso";D2="RJ");"Sim";"Não")
+
+
+AULA_11: Função OU - Duas Condições
+
+    =OU();
+        "Adicionar clausulas em que UMA DELAS precisa ser verdadeira para retornar verdadeiro"
+        =SE(OU(D2="RJ";D2="MG");"SIM";"NÃO")
+
+
+AULA_12: Função OU - Três Condições
+
+    =OU();
+        "-"
+        =SE(OU(D2="RJ";D2="MG");"SIM";"NÃO")
+        
