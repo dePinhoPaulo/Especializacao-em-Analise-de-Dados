@@ -79,3 +79,63 @@ AULA_12: Função OU - Três Condições
         "-"
         =SE(OU(D2="RJ";D2="MG");"SIM";"NÃO")
         
+
+AULA_13: Função CONT.SES - Introdução
+
+    "Contar com uma ou mais condições"
+
+    =CONT.SES:
+        "intervalo p/ contagem; celula de criterio"
+        =CONT.SES(B2:B14;F3;C2:C14;F2)
+
+
+AULA_14: Função CONT.SES - Uso com Um Critério
+
+    "Comparações com menor e menor por exemplo, deixar valores entre aspas"
+    =CONT.SES(E:E;">31/12/2018")
+    =CONT.SES(E:E;">"&K8)
+
+
+AULA_15: Função CONT.SES - Uso com Dois Critérios
+
+    "palavras entre asteriscos ira buscar toda a cela que aquela palavra esta contido"
+    =CONT.SES(B:B;"*Analista*")
+
+
+AULA_16: Função CONT.SES - Exercício Fixação
+
+    EXERCICIOS: OK
+
+
+AULA_17: Função SOMASES - Introdução
+
+    =SOMASES():
+        "ira somar de acordo com os criterios do seu intervalo"
+        "intervalo de soma; intervalo de criterio; criterio"
+        =SOMASES(E2:E14;B2:B14;"Azul";D2:D14;"Salvador")
+        "Tamanhos dos intervalos precisam ser compativeis"
+
+AULA_18: Função SOMASES - Uso com Um Critério
+
+    EX1: OK
+
+
+AULA_19: Função SOMASES - Uso com Dois Critérios
+
+    EX2: OK
+
+
+AULA_20: Função SOMASES - Exercício Fixação
+
+    EX3: OK
+
+
+AULA_21: Trancamento Parcial - Introdução
+
+    "$ na letra ira trancar a coluna, $ no numero ira trancar a celula"
+    =SOMASES($E:$E;$B:$B;$H17;$D:$D;I$16)
+
+
+AULA_22: Trancamento Parcial - Exercício Prático
+
+    EX4: OK
