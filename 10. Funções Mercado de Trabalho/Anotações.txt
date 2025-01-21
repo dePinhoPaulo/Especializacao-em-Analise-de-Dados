@@ -139,3 +139,47 @@ AULA_21: Trancamento Parcial - Introdução
 AULA_22: Trancamento Parcial - Exercício Prático
 
     EX4: OK
+
+
+AULA_23: Função MÉDIASES
+
+    =MÉDIASES():
+        "intervalo da media; intervalo de criterio; criterio"
+        "Mesmas caracteristicas do SOMASES"
+
+
+AULA_24: Função MÁXIMOSES
+
+    =MÁXIMOSES():
+        "intervalo do máximo; intervalo de criterio; criterio"
+        "Mesmas caracteristicas do SOMASES"
+
+
+AULA_25: Função MÍNIMOSES
+
+    =MÍNIMOSES():
+        "Mesmas caracteristicas do SOMASES"
+
+
+AULA_26: Exercício CONT.SES/SOMASES (Parte 1)
+
+    EX1: OK
+    EX2: OK
+
+
+AULA_27: Exercício CONT.SES/SOMASES (Parte 2)
+
+    EX3: OK
+    EX4: OK
+
+
+AULA_28: Exercício CONT.SES/SOMASES (Parte 3)
+
+    EX5: OK
+
+
+AULA_29: Exercício CONT.SES/SOMASES (Parte 4)
+
+    EX6: OK
+
+
