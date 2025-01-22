@@ -225,3 +225,52 @@ AULA_35: Função PROCV - Consultando Bases
 AULA_36: Função PROCV - Procurar Valor em Base
 
     EX2: OK 
+
+
+AULA_37: Função PROCV - Uso com SE e SEERRO
+
+    "Valores em colchetes são opcionais"
+
+
+AULA_38: Função PROCV - Valores Aproximados - 1
+
+    "verdadeiro = 1; Falso = 0"
+
+
+AULA_39: Função PROCV - Valores Aproximados - 2
+
+    "Vai buscar o maior valor dentre os menores"
+    "Subistitui o switch/Se muito grande"
+    "usado para buscar uma faixa de valores"
+    =PROCV(D12;$I$2:$K$12;3;VERDADEIRO)
+
+
+AULA_40: Função PROCV - Chave composta
+
+    "Usado para diferenciar dados duplicados em uma coluna"
+    "Concatenar valor de busca, e concatenar as mesmas colunas da tabela"
+    =PROCV(H5&I5;$A$2:$E$2001;4;0)
+
+
+AULA_41: Função PROCV - Retornando mais de um valor
+
+    "Retorna os resultados repetidos"
+    "Criar chave composta com nome e numero da repetição"
+    "Contador repetição: contar quantas vezes o nome aparace naquele intervalo"
+    =CONT.SES($D$3:D7;D7)
+
+    =SEERRO(PROCV($K$2&H5;$A$2:$F$2001;5;FALSO);"")
+
+
+AULA_42: Asterisco em CONT.SES, SOMASES e PROCV	
+
+    Asterisco* (no final):
+        =CONT.SES(A:A;"=Smart TV*") - "Conta todos produtos que começam com Smart TV"
+    
+    *Asterisco (no Começo):
+        =CONT.SES(A:A;"=*4K") - "Conta todos produtos que terminam com 4K"
+    
+    *Asterisco* (Qualquer Parte):
+        =CONT.SES(A:A;"=*Digital*") - "Conta todos produtos que Contem Digital"
+    
+        
