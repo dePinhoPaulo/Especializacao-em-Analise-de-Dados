@@ -183,3 +183,45 @@ AULA_29: Exercício CONT.SES/SOMASES (Parte 4)
     EX6: OK
 
 
+AULA_30: Função PROCV - Introdução
+
+    =PROCV():
+        "Procura na vertical"
+        "valor procurado; tabela; n° da coluna_matriz; Correspondencia"
+        =PROCV(H2;A1:F11;6;FALSO)
+
+
+AULA_31: Função PROCV - Exercício Fixação
+
+    EX2: OK
+    EX3: OK
+    EX4: Só funciona com indice e corresp ou PROCX.
+
+
+AULA_32: Função PROCV - Preenchendo Bases
+
+    PRATICA 1: OK
+        =PROCV(B5;$H$2:$I$5;2;FALSO)
+    
+
+AULA_33: Função PROCV - Uso em Tabelas
+
+    PRATICA 2: OK
+        =PROCV([@PRODUTO];Tabela2[#Tudo];2;FALSO)
+        "Só muda a sintaxe da coluna da tabela"
+
+
+AULA_34: Função PROCV - Dados de Outras Planilhas
+
+    "Sem diferenças, apnes selecionar outra planilha normalmente"
+    =PROCV(B2;Divisão!$A$1:$B$13;2;FALSO)
+
+
+AULA_35: Função PROCV - Consultando Bases
+
+    EX1: OK - "Adicionar contatores nas colunas de localização para automatizar"
+ 
+ 
+AULA_36: Função PROCV - Procurar Valor em Base
+
+    EX2: OK 
