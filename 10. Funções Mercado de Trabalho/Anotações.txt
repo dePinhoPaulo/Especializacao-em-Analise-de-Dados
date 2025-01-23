@@ -273,4 +273,32 @@ AULA_42: Asterisco em CONT.SES, SOMASES e PROCV
     *Asterisco* (Qualquer Parte):
         =CONT.SES(A:A;"=*Digital*") - "Conta todos produtos que Contem Digital"
     
+
+AULA_43: Função SEERRO - Procurar em Base
         
+    =SEERRO():
+        "formula, Retorna se erro"
+
+    
+AULA_44: Função SEERRO - Procurar em Duas Colunas
+
+    "Utlizar seerro para procurar em outra coluna quando a primeira der erro"
+    =SEERRO(PROCV(G4;A2:E16;5;FALSO);PROCV(G4;B2:E16;4;FALSO))
+
+
+AULA_45: Função SEERRO - Procurar em Três Colunas
+
+    "Adicionar mais um seerro"
+    =SEERRO(SEERRO(PROCV(G5;A3:E17;5;FALSO);PROCV(G5;B3:E17;4;FALSO));"Não Encontrado")
+
+
+AULA_46: Função SEERRO - Procurar em Mais Colunas    
+    
+    "Utilizar seerro aninhado, um dentro do outro"
+    =SEERRO(PROCV(H2;B:F;5;FALSO);SEERRO(PROCV(H2;C:F;4;FALSO);SEERRO(PROCV(H2;D:F;3;FALSO);SEERRO(PROCV(H2;E:F;2;FALSO);"Não Encontrado"))))
+
+    EX: OK
+
+
+
+
