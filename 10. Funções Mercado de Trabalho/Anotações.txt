@@ -300,5 +300,57 @@ AULA_46: Função SEERRO - Procurar em Mais Colunas
     EX: OK
 
 
+AULA_47: Função PROCH - Introdução
+
+    "Procura na horizontal"
+    "As mesmas regras do PROCV"
+    "valor procurado; tabela; n° da linha_matriz; Correspondencia"
+    =PROCH(C11;C3:J6;4;FALSO)
 
 
+AULA_48: Função PROCH - Exercício de Fixação
+
+    EX: OK
+
+
+AULA_49: Limitações PROCV e PROCH
+
+    "Só funciona para direia ou para baixo, não busca para trás"
+    "não pega os valores duplicados, para no 1°"
+    "PROCX / INDICE E CORRESP, podem resolver"
+
+AULA_50: Função PROCX - Introdução
+
+    "valor procurado, coluna de procura, coluna de resposta, Valor se não encontrar, Correspondencia, ordem da procura"
+    =PROCX(F2;B:B;A:A;"Não encontrado";0;1)
+
+
+AULA_51: Função PROCX - Valores Não Encontrados
+
+    "SEERRO ja esta embutido na função"
+    "Usar PROCX Concatenado para pesquisar em Duas ou mais colunas"
+    =PROCX(G5;B:B;E:E;PROCX(G5;C:C;E:E;"Não Encontrado"))]
+
+
+AULA_52: Função PROCX - Valores Aproximados
+
+    "Correspondencia exata vem como defult"
+    "Para Utilizar Correspondencia aproximada: -1 ou 1"
+    "-1 pega exata ou prox. item menor. 1 pega exata ou prox. item maior"
+
+
+AULA_53: Função PROCX - Ordem de Pesquisa
+
+    "Ultimo argumento, ordem da resposta"
+
+    "Pesquisa do 1° ao Ultimo: 1":
+        =PROCX(G1;C:C;B:B;"";0;1)
+    "Pesquisa do Ultimo ao 1°: -1":
+        =PROCX($G$1;C:C;B:B;"";0;-1)
+
+
+AULA_54: Função PROCX - Exercícios Fixação
+
+    "selecionar varias colunas de resposta, excel vai DESPEJAR as outras respostas"
+    =PROCX($H2;$A:$A;B:F;"")
+    
