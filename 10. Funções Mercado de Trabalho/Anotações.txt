@@ -353,4 +353,38 @@ AULA_54: Função PROCX - Exercícios Fixação
 
     "selecionar varias colunas de resposta, excel vai DESPEJAR as outras respostas"
     =PROCX($H2;$A:$A;B:F;"")
-    
+
+
+AULA_55: Função PROCX - Duplo e Triplo
+
+    =PROCX(1;(B7:B405=B4)*(C7:C405=A4)*(A7:A405=C4);D7:D405;"Não Encontrado";0;1):
+    "Inserir 1 como valor procurado, separar colunas e valores com parenteses e com asteriscos para adicionar mais condições"
+
+
+AULA_56: Função CORRESP - Introdução
+
+    "Retorna a posição do valo procurado"
+    =CORRESP(G1;A2:A16;0):
+        "Valor procurado; matriz procurada; Correspondencia"
+        "Tanto para Coluna quanto para Linha"
+
+
+AULA_57: Função CORRESP - Uso com PROCV
+
+    "Usar CORRESP para retornar o numero da coluna de retorno no PROCV"
+    =PROCV(G10;A1:D16;CORRESP(H9;A1:D1;0);FALSO)
+
+
+AULA_58: Função CORRESP - Montar Resumo
+
+    =PROCV($B16;$B$2:$H$13;CORRESP(C$15;$B$2:$H$2;0);0)
+    EX: OK
+
+
+AULA_59: Função ÍNDICE
+
+    "retorna celula desejada pelo parametro de linha e coluna"
+    "Matriz, posição linha e posição coluna"
+    =ÍNDICE(A1:D16;G5;G6)
+
+
