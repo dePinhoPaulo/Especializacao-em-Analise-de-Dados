@@ -388,3 +388,16 @@ AULA_59: Função ÍNDICE
     =ÍNDICE(A1:D16;G5;G6)
 
 
+AULA_60: ÍNDICE com CORRESP (Parte 1)
+
+    =ÍNDICE(A2:A16;CORRESP(G1;B2:B16;0)):
+    "Subistitui o PROCH"
+    "PROCV com pesquisa para esquerda"
+
+
+AULA_61: ÍNDICE com CORRESP (Parte 2)
+
+    =ÍNDICE(A2:G1673;CORRESP(J1;A2:A1673;0);CORRESP(J2;A1:G1;0))
+    "indice para retornar o conteudo da celula e os dois corresp para retornar o n° da linha e coluna"
+
+
