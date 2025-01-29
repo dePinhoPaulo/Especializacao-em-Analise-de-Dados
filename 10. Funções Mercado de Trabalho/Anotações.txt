@@ -401,3 +401,35 @@ AULA_61: ÍNDICE com CORRESP (Parte 2)
     "indice para retornar o conteudo da celula e os dois corresp para retornar o n° da linha e coluna"
 
 
+AULA_62: Função DESLOC - Retornar Um Valor
+
+    =DESLOC():
+    "Valor referencia, N° de linha, N° colunas"
+    "Retorna o valor de uma celula a partir das movimentações de linha e colunas"
+    "Numeros positivos andam para frente e negativos para trás"
+    
+    "Utilizado com CORRESP dixara o N° de coluna e linha dinamico"
+    =DESLOC(A1;CORRESP(J1;A1:G1;0);CORRESP(J2;A1:A22;0))
+
+
+AULA_63: Função DESLOC - Somatório de Colunas
+
+    "ao selecionar matriz como referencia, retorno será matriz"
+    =SOMA(DESLOC(A2:A21;;CORRESP(J2;B1:G1;0))):
+        "Para somar coluna Inseri apenas o parametro da coluna"
+        "o mesmo vale para linha"
+
+
+AULA_64: Função DESLOC - Retornar Coluna
+
+    =DESLOC():
+    "Valor referencia, N° de linha, N° colunas, valor de altura, valor de largura"
+    =DESLOC(A2;;CORRESP(J1;B1:G1;0);20;1):
+        "Com parametros de altura e largura, irá retornar a matriz de acordo com a referencia"
+
+
+AULA_65: Função DESLOC - Uso na Validação de Dados
+
+    =DESLOC($A$1;CORRESP(D$1;$A$2:$A$27;0);1;CONT.SES($A$2:$A$27;D$1)):
+        "para inserir valores retorno em uma lista de validação, basta colar a formula na validação de lista"
+        
