@@ -433,3 +433,42 @@ AULA_65: Função DESLOC - Uso na Validação de Dados
     =DESLOC($A$1;CORRESP(D$1;$A$2:$A$27;0);1;CONT.SES($A$2:$A$27;D$1)):
         "para inserir valores retorno em uma lista de validação, basta colar a formula na validação de lista"
         
+
+AULA_66: Função INDIRETO - Consultar Várias Planilhas
+
+    =INDIRETO():
+    "Retorna celulas de outras planilhas de forma dinamicda"
+    "localizaçãoda celula , [a'1]"
+    INDIRETO(B3&"!C")
+
+
+AULA_67: Função INDIRETO - Uso com CONT.SES
+
+    =CONT.SES(INDIRETO($B$3&"!B:B");"Entrada")
+
+
+AULA_68: Função INDIRETO - Exercício Fixação
+
+    EX: OK
+
+
+AULA_69: Função INDIRETO - Uso com Outros Funções
+
+    Fórmulas > Criar a partir de seleção:
+        "Cria intervalos a partir de linha ou colunas da tabela"
+
+    "criando intervalos podemos somar colunas com nomes especificos utilizan tambes o INDIRETO"
+    =SOMA(INDIRETO(K2)):
+        "Ira soma o intervalo em que o nome é o mesmo da célula K2"
+
+
+AULA_70: Função INDIRETO - Intervalos Nomeados - 1
+
+    =ÍNDICE(B3:B13;CORRESP(L5;INDIRETO(K2);0)):
+        "Retorna ano do valor maximo"
+
+
+AULA_71: Função INDIRETO - Intervalos Nomeados - 2
+
+    "intervalo não pode ter como nome Numeros"
+    =ÍNDICE(C2:I2;;CORRESP(L11;INDIRETO(K8);0))
