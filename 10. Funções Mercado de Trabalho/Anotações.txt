@@ -472,3 +472,22 @@ AULA_71: Função INDIRETO - Intervalos Nomeados - 2
 
     "intervalo não pode ter como nome Numeros"
     =ÍNDICE(C2:I2;;CORRESP(L11;INDIRETO(K8);0))
+
+
+AULA_72: Função SOMARPRODUTO
+
+    "Evolução do SOMASES"
+    =SOMARPRODUTO(C2:C8*D2:D8*(B2:B8=B10))
+
+
+AULA_73: Exercícios - Trancamento Parcial
+
+    EX: OK
+
+
+AULA_74: Exercícios - PROCV
+
+    EX: OK
+
+
+AULA_75: Exercícios - SOMASES
