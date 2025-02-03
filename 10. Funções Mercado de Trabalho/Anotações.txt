@@ -491,3 +491,25 @@ AULA_74: Exercícios - PROCV
 
 
 AULA_75: Exercícios - SOMASES
+
+    EX: OK
+
+
+AULA_76: Exercícios - DESLOC e CORRESP
+
+    EX: OK
+
+
+AULA_77: Exercícios - PROCV e SEERRO
+
+    EX: OK
+
+
+AULA_78: Exercícios - SE, PROCV, ÍNDICE e CORRESP
+
+    EX: OK
+
+
+AULA_79: Exercícios - INDIRETO e CONT.SES
+
+    EX: OK
