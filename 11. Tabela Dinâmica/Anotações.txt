@@ -1,0 +1,46 @@
+AULA_1: Tabela Dinâmica - Introdução
+
+    "Antes de se criar uma tabela dinamica, Transforme os dados em Tabela"
+        Pagina Inicial > Formatar como tabela 
+    
+    Design da tabela > Nome da tabela:
+        "Mudar nome da tabela"
+    
+    Inserir > Tabela dinamica:
+        "Escolhe Tabela/intervalo"
+        "Selecionar colunas que deseja resumir"
+
+
+AULA_2: Tabela Dinâmica - Como Montar
+
+    "Tipo Data é separado em ANO/TRIM/MES/DIA nas versões mais recentes"
+
+
+AULA_3: Tabela Dinâmica - Trabalhando com Datas
+
+    "Valores alterados na tabela base não são alterados altomaticamente na dinanica"
+    Botão Direito > Atualizar
+
+
+AULA_4: Tabela Dinâmica - Segmentação de Dados
+
+    Porcentagem do total de Vendas:
+        Configurações do campo > Mostrar valor como: % do valor total
+
+    Analise da tabela dinamica > Inserir Segmentação de dados:
+        "Caixa de filtro"
+
+
+AULA_5: Tabela Dinâmica - Recursos da Guia Design
+
+    Botão direito > Mostrar Detalhes:
+        "Mergulho nas Vendas"
+    
+
+AULA_6: Tabela Dinâmica - Conectar Segmentações
+
+    "Copiar e colar Serve para adicionar uma segunda tabela dinamica"
+
+    Botão Direito na Segmentação > Conexão de relatorios:
+        "Habila a segmentação de dados para varios relatorios"
+        
