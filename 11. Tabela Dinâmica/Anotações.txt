@@ -44,3 +44,57 @@ AULA_6: Tabela Dinâmica - Conectar Segmentações
     Botão Direito na Segmentação > Conexão de relatorios:
         "Habila a segmentação de dados para varios relatorios"
         
+
+AULA_7: Tabela Dinâmica - Células Vazias e Exercícios
+
+    Design > Totais gerais:
+        "Seleciona oções de total"
+    
+    Mostrar vazio como 0:
+        Botão direito da Dinâmica > Opções de tabela > Formato
+
+    "Duplo clique no celula de soma mostrar os dados analitico"
+
+
+AULA_8: Tabela Dinâmica - Fonte de Dados
+
+    "Quando base de dados não está formatado como tabela, a Dinâmica não ira atualizar com adiciona valores novos na Fonte de dados"
+    "Pois numero de linhas e colunas ja está definido fixo da tabela"
+
+
+AULA_9: Tabela Dinâmica - Linha do Tempo
+
+    Analise de Tabela dinamica > Inserir Linha do Tempo
+        "filtro especifico de Data"
+        "Função de visão analitica irá respeitar o filtro da Data"
+
+
+AULA_10: Tabela Dinâmica - Campo Calculado e Gráfico
+
+    Selecionar a tabela > Inserir > Gráficos
+        "Grafico dinamico, de acordo com segmentação"
+
+    Analise de Tabela dinamica > Campos, itens, conjuntos > Campo Calculado
+        "Adiciona coluna com formula direto na tabela dinamica"
+
+
+AULA_11: Tabela Dinâmica - Mostrar Valores Como
+
+    Configurações do campo de valor > Mostrar valor como:
+        % DO TOTAL DE LINHAS PAIS:
+            "ira dividindo a parcentagem em relação ao valor pai"
+        
+        % DO TOTAL DE LINHAS:
+            "Divide o total por cada coluna da Linha"
+
+        % DE:
+            "Porcentagem em relação a uma celula especifica"
+
+
+AULA_12: Tabela Dinâmica - Revisão
+
+    =TEXTO([@Data];"MMMM"):
+        "Retorna mês por extenso"
+
+    Dados > Ordernar :
+        "Ordernar coluna"
