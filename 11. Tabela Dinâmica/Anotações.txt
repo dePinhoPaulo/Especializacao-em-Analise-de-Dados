@@ -98,3 +98,20 @@ AULA_12: Tabela Dinâmica - Revisão
 
     Dados > Ordernar :
         "Ordernar coluna"
+
+
+AULA_13: Tabela Dinâmica - Ordenar, Mover e Detalhes
+
+    "Ordenação vale tanto para coluna quanto para linhas"
+
+
+AULA_14: Tabela Dinâmica - Configurar Segmentação
+
+    Segmentação > Configurações > Exibir cabeçalho
+    Segmentação > Numero de colunas
+    Segmentação > Estilos
+
+
+AULA_15: Exercícios Tabela Dinâmica (Apresentação)
+
+    
