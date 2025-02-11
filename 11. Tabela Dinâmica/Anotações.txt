@@ -114,4 +114,25 @@ AULA_14: Tabela Dinâmica - Configurar Segmentação
 
 AULA_15: Exercícios Tabela Dinâmica (Apresentação)
 
-    
+    Explicação
+
+
+AULA_16: Exercícios Tabela Dinâmica (Parte 1)
+
+    EX1: OK
+    Ordenação pela dinamica:
+        Seta do rotulo > mais opções de classificação > de Z a A > Media avaliação
+    Filtragem:
+        Seta do rotulo > FILTRO DE VALORES > É maior do que > Contagem de Avaliação
+
+
+AULA_17: Exercícios Tabela Dinâmica (Parte 2)
+
+    EX2: OK
+    TOP 10:
+        Seta do rotulo > FILTRO DE VALORES > 10 Primeiros 
+
+
+AULA_18: Exercícios Tabela Dinâmica (Parte 3)
+
+    EX3: OK
