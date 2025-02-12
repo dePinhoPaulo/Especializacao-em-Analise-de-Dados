@@ -1,0 +1,40 @@
+AULA_1: Como Criar um Gráfico no Excel
+
+    1° Forma:
+        Selecionar matriz > Inserir > Gráficos
+    
+    2° Forma:
+        Inserir > Gráficos:
+            Botão direito > Selecionar Dados:
+                Bloco da esquerda = valores do Grafico
+                Bloco da direita = Legenda do Gráfico
+
+
+AULA_2: Opções de Formatação de Gráfico (Parte 1)
+
+    "Formatando base como tabela, novos dados serão adicionados no grafico altomaticamente" 
+
+    Formatar: 
+        "Cores da coluna, Contorno, Sombra, Etc.."
+
+
+AULA_3: Opções de Formatação de Gráfico (Parte 2)
+
+    "Formatação de fontes, Titulos, Legendas, aba Elementos do grafico"
+
+
+AULA_4: Gráfico Combinado - Linha e Coluna
+
+    Botão direito > Alterar tipo de gráfico > Combinação
+
+
+AULA_5: Gráfico de Colunas Agrupadas
+
+    "Alinhamento dos rotulos, largura das colunas"
+
+
+AULA_6: Eixo Secundário
+
+    "Ao adiconar novo intervalo de dados, altere o tipo do grafico para combinado e selecione a Opção Eixo secundario"
+    "Mostra o novo eixo de forma equivalente ao eixo principal"
+    
