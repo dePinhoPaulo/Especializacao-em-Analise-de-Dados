@@ -38,3 +38,54 @@ AULA_6: Eixo Secundário
     "Ao adiconar novo intervalo de dados, altere o tipo do grafico para combinado e selecione a Opção Eixo secundario"
     "Mostra o novo eixo de forma equivalente ao eixo principal"
     
+
+AULA_7: Gráfico de Colunas Empilhadas (Parte 1)
+
+    EX: OK
+
+
+AULA_8: Gráfico de Colunas Empilhadas (Parte 2)
+
+    Rotulo de total: 
+        -Adiconar linha de total na tabela;
+        -Adicionar no grafico;
+        -Esconder a coluna do toal;
+        -Ajustar o rotulo do toal.
+
+
+
+AULA_9: Como Exibir Informações Ocultas no Gráfico
+
+    "Ocultar linha da planilha ira desaparecer do gráfico"
+    Para mostrar dados das linhas ocultas:
+        Selecionar dados > Selulas ocultas e vazias > Mostrar dados em linha e colunas ocultas
+
+
+AULA_10: Gráfico de Barras
+
+    Dados > Remover duplicados
+
+    Para classificar o grafico:
+        "Selecionar a tabela e classificar"
+        Dados > Classificar
+
+
+AULA_11: Dicas de Design (Parte 1)
+
+    *Colo Hex Color Codes - "Site para palheta de Cores"
+
+
+AULA_12: Dicas de Design (Parte 2)
+
+    Formatação resumida de rotulos:
+        Opções de rotulos > Numeros > Codigo de formatação > "R$ "0,0.. "Milhões"
+        Formatação em milhões
+
+
+AULA_13: Gráfico de Pizza e Rosca
+
+    Adicionar Porcentagem no rotulo:
+        Formatar Rotulos > Porcentagem
+
+    "Gráficos de Pizza não são recomendados para muitos dados. Máx: 5"
+
