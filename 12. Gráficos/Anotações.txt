@@ -89,3 +89,68 @@ AULA_13: Gráfico de Pizza e Rosca
 
     "Gráficos de Pizza não são recomendados para muitos dados. Máx: 5"
 
+
+AULA_14: Formatação Condicional de Gráfico (Parte 1)
+
+    "Fazer coluna extra com valores q bateram a meta."
+        =SE(C6>=$C$3;C6;0)
+    "Sobrepor a coluna da meta na frente da colna geral"
+        Formatar serie de dados > sOBREPOSIÇÃO DE SERIE DE DADOS : 100%
+        "Retirar rotulos da serie da meta"
+
+
+AULA_15: Formatação Condicional de Gráfico (Parte 2)
+
+    EX: OK
+    
+    Mostrar menor ou maior em um serie de dados:
+        =SE(OU(C3=MÍNIMO($C$3:$C$12);C3=MÁXIMO($C$3:$C$12));C3;0)
+
+
+AULA_16: Formatação Condicional de Gráfico (Parte 3)
+
+    "Copiar serie e dados e colar no gráfico ira plotar eles de uma forma mais rapida"
+
+
+AULA_17: Linha de Tendência e Previsão (Parte 1)
+
+    Elementos DO Grafico > Linha de Tendência
+
+
+AULA_18: Linha de Tendência e Previsão (Parte 2)
+
+    =PREVISAO.LINEAR():
+        "Calculo de Previsão do prox. mes"
+        (n/ mes q deseja; vendas q ja sabemos, meses q ja sabemos)
+
+
+AULA_19: Gráfico Pizza de Pizza
+
+    Editar plotagem do segunda grafico, com valores menores:
+        Formatar serie de dados > Dividir serie em > Valor > 30000
+
+
+AULA_20: Gráfico de Rosca
+
+    Barra de rolagem:
+        esenvolvedor > Inserir > Controle de Formulario > Barra de Rolagem
+            Formatar controle: (Valor minimo, Maximo, incremento mudança de pagina e vinculo da celula)
+
+    Dados:
+        Porcentagem atual: 
+            "celula com valor da barra de rolagem divido po 100"
+            =B2/100
+        Porcentagem Restante:
+            "Porcentagem atual menos 100%"
+            =100%-C5
+
+    Grafico:
+        Criação
+        Edição:
+            Retirar titulo e Legenda
+            engrossar borda porcentagem atual
+            Adicionar caixa de texto com parametro da porcentagem atual
+            Selecionar dados ocultos
+                Selecionar dados > Selulas ocultas e vazias > Mostrar dados em linha e colunas ocultas
+
+
