@@ -154,3 +154,68 @@ AULA_20: Gráfico de Rosca
                 Selecionar dados > Selulas ocultas e vazias > Mostrar dados em linha e colunas ocultas
 
 
+AULA_21: Gráfico de Velocímetro
+
+    Criação:
+        inserir Grafico > Rosca;
+        selecionar niveis e valores;    
+        Retirar Titulos, legendas;
+        deixar pedaço Total sem preenchimento;
+        Virar rosca 270°;
+        Rotulo: valor a partir da celula;
+
+    Dados:
+        inserir lista no campo de vendedor;
+        Venda (Faturamento do vendedor):
+            =PROCV(F2;A10:B14;2;FALSO)
+        Marcador (Espessura da agulha velocimetro):
+            =1%*B7
+        Complemento (Posicionamento da agulha):
+            =SOMA(B2:B7)-B17-B18
+        Porcentagem (Valor em relação ao total):
+            =B17/B7
+
+    Agulha:
+        Adicionar dados no grafico (Valor: Venda, Marcador, complemento);
+        alterar tipo de grafico para Pizza;
+        Venda e complemento sem preenchimento;
+        Virar pizza 270°;
+
+    Legenda velocimetro:
+        Adiconar elipse, centralizala;
+        adcionar quadrado em branco (tampar outra metade da elipse);
+        Caixa de texto para nome e porcentagem.
+
+
+AULA_22: Gráfico de Dispersão
+
+    OK
+
+
+AULA_23: Gráfico de Mapa
+
+    Grafico:
+        Selecionar dados;
+        Inserir grafico > mais Opções > mapa inteligente
+
+
+AULA_24: Gráfico de Bolha
+
+    Dados:
+        Nomes dos paises formatado para geografico;
+        adicionar população;
+        Imagem do mapa mundi;
+
+    Grafico:
+        Adicionar mapa de Bolhas;
+        inserir dados aleatorios;
+        Posicionar grafico na frente do mapa;
+        deixar grafico sem preenchimento;
+        formatar eixo de linha e coluna (min: o, max:100, principal:10)
+
+    Dados2:
+        verificar posionamento aprox. dos paises
+        adicionar coluna com valor de X e Y para encaixar no grafico;
+        Ajustar dados do grafico, para os campos corretos;
+
+
