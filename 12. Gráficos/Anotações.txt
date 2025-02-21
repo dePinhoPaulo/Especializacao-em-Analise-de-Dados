@@ -219,3 +219,52 @@ AULA_24: Gráfico de Bolha
         Ajustar dados do grafico, para os campos corretos;
 
 
+AULA_25: Gráficos Cascata, Funil e Radar
+
+    Cascata:
+        "Mostra a evolução de forma separada a cada perioda"
+
+    Funil:
+        "mostrar valores que irão se afunilando"
+
+    Radar:
+        "Quanto mais para fora maior o valor"
+
+
+AULA_26: Gráficos Mapa de Árvore e Explosão Solar
+
+    "Gráfico para passar a visão de Ranking com sub categorias"
+
+
+AULA_27: Gráfico de Mapa 3D
+
+    OK
+
+
+AULA_28: Gráfico de Bolsa de Valores
+
+    Dados:
+        Validação de dados (Lista) nas datas incio e fim;
+        PROCV para retornar fechamento de cada data;
+        Adicionar campo de Variação em porcentagem e valor:
+            =I3/G3-1;
+            =I3-G3;
+        Coluna AUX1, AUX2 (Pontos para colorir):
+            =SE($H$2=A2;B2;#n/d);
+            =SE($J$2=A2;B2;#n/d);
+        Coluna AUX3, AUX4 (Area colorida):
+            =SE(E(A2>=$H$2;A2<=$J$2);B2;#N/D);
+        Adicionar condição na formula aux3 e aux4:
+            =SE(E(A2>=$H$2;A2<=$J$2;$L$2>=0);B2;#N/D) - aux3 pega valores positivos
+            =SE(E(A2>=$H$2;A2<=$J$2;$L$2>=0);B2;#N/D) - aux4 pega valores negativos
+        
+    Gráfico:
+        adicionar gráfico de linha;
+        adicionar caixa de texto com valor variação %;
+        adiconar aux1 e aux2 no gráfico;
+        Adiconar marcadores e apagar linhas;
+        adicionar AUX3 no grafico;
+        mudar aux3 para grafico de Area;
+        adicionar AUX4 no grafico;
+        mudar AUX4 para grafico de Area;
+        Forma cores da area.
