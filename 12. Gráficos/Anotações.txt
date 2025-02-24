@@ -268,3 +268,46 @@ AULA_28: Gráfico de Bolsa de Valores
         adicionar AUX4 no grafico;
         mudar AUX4 para grafico de Area;
         Forma cores da area.
+
+
+AULA_29: Gráfico de Acompanhamento de Meta
+
+    Inserir > Coluna Empilhada
+    EX: OK
+
+
+AULA_30: Gráfico de Barra com Variação de Cor
+
+    Dados:
+        Adicionar coluna de SIM E não
+            =SE(B2>=$B$18;B2;0)
+            =SE(B2<=$B$18;B2;0)
+    
+    Gráfico:
+        Gráfico empilhado;
+        Adicionar coluna de população;
+            deixar sem preenchimento;
+            adicionar rotulos - base interna;
+
+
+AULA_31: Gráfico de Área com Tabela Dinâmica
+
+    Dados:
+        Inserir uma tabela dinamica;
+        Coluna de Porcentagem:
+            =E2/$E$14
+        
+    Grafico:
+        Inserir > grafico de area
+        Inserir Segmentação de dados
+            Configurações - Retirar cabeçlho, Ocultar itens sem dados;
+            Seleção mUltipla;
+        Adicionar rotulos a partir da celula;
+            Coluna porcentagem
+        
+
+AULA_32: Gráfico de Controle Mínimos e Máximos
+
+    ok
+
+
