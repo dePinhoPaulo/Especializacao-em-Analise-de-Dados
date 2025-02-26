@@ -311,3 +311,73 @@ AULA_32: Gráfico de Controle Mínimos e Máximos
     ok
 
 
+AULA_33: Gráfico de Gantt
+
+    Grafico:
+        Inserir > Barras 2d > barras Empilhadas
+        Adicionar coluna de incio;
+        Adicionar coluna de duração;
+        Formatar eixo > categorias inversa
+        barras de inicio sem preenchimento;
+        encurtar eixo de inicio;
+        Adicionar coluna tarefa como eixo (categoria);
+        adicionar rotulo de dados nas barras de inicio;
+
+
+AULA_34: Gráfico de Pareto
+
+    Dados:
+        Ordenar Faturamento do maior para menor;
+        adicionar coluna do valor acumulado:
+            =B3+C2;
+        adicionar coluna do valor %acumulado:
+            =C3/SOMA($B$2:$B$10);
+
+    Grafico:
+        Inserir > Graficos Recomendados > Pareto
+
+
+AULA_35: Gráfico de Curva ABC
+
+    Dados:
+        Adicionar coluna %:
+            =B3/$B$11
+        Adicionar coluna %acumulado:
+            =C3+D2
+        Adicionar coluna conceito:
+            =SE(D2<=$B$14;$A$14;SE(D2<=$B$15;$A$15;$A$16));
+
+    Grafico:
+        Inserir > Grafico de coluna;
+        Formatar eixo - máximo 100%;
+        Formatar barras de %acumulado para linhas;
+        Adicionar rotulo de dados nas barras;
+        Opções de rotulos > rotulos a parit de celulas > coluna Conceito
+        Adicionar coluna Produto como eixo (categoria);
+
+
+AULA_36: Gráfico de Preenchimento de Imagem
+
+    OK
+
+
+AULA_37: Gráfico de Logos de Empresas    
+
+    Dados:
+        Adicionar coluna de Máximo:
+            =MÁXIMO($C$3:$C$7);
+        
+
+    Grafico:
+        Inserir > Grafico de Coluna
+        Adicionar Coluna de Maximo;
+        Sobrepor coluna de faturamento sobre maximo:
+            formatar serie de dados > sobreposição da coluna 100%
+        transformar coluna de fat. em linha;
+        Editar eixo:
+            Máx: 50000;
+        Copiar e colar logo em cada ponto da linha;
+        Linha sem preenchimento;
+        Adicionar rotulo - Posição acima.
+
+        
