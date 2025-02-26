@@ -381,3 +381,78 @@ AULA_37: Gráfico de Logos de Empresas
         Adicionar rotulo - Posição acima.
 
         
+AULA_38: Gráficos Curva S e Círculo de Progresso
+
+    Gráfico:
+        Inserir > Gráfico de linhas;
+            Suavisar linhas:
+                Formatar serie de dados > suavizar linha;
+        Selecionar linha de realizado para coluna movel;
+
+    Dados
+        Inserir campo de dia com validação de lista:
+            Coluna data;
+        adcionar de realiza movel:
+            =DESLOC(C2;;;E2-A2+1)
+        
+
+AULA_39: Gráfico de Excel no PowerPoint
+
+    OK
+    "Alteração no excel muda altomaticamente no powerpoint"
+    "Para não ter esta conexão, basta colar como imagem"
+
+
+AULA_40: Grafico de Linhas Profissional
+
+    Mesmo conteudo da aula 38.
+
+
+AULA_41: Grafico de Colunas Arredondadas
+
+    Dados:
+        Adicionar coluna de comparação de valor máximo:
+            =MÁXIMO(D4:D11);
+            =SE(D4=$E$3;D4;"");
+        Adicionar coluna de comparação de valor < máximo:
+            =SE(E4="";D4;"");
+    
+    Grafico:
+        Inserir > gráfico coluna;
+        Sobrepor colunas;
+        Adicionar formas diferentar nas colunas do grafico:
+            Copiar forma e colar nas colunas.
+    
+
+AULA_42: Todos os gráficos do Excel - Quando usar cada um
+
+    Linha e Area:
+        "Mostrar a volução ao longo do tempo"
+
+    Colunas e Barras:
+        "comparação e Ranking"
+
+    Mapa de Arvore e Explosão solar:
+        "Dado hierarquicos"
+
+    Radar e Pareto:
+        "comparação"
+
+    Histograma:
+        "Estatistica"
+
+    Pizza e Rosca:
+        "Partes de um Total"
+    
+    Cascata e Funil:
+        "Evolução de valores"
+        "Afunilamento de valores"
+
+    Dispersão, Superfície e Bolhas:
+        "Valores cartesianos"
+
+    Mapa:
+        ""
+
+    Ações:
+        "Bolsa de valores"
