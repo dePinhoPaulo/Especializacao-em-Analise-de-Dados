@@ -456,3 +456,24 @@ AULA_42: Todos os gráficos do Excel - Quando usar cada um
 
     Ações:
         "Bolsa de valores"
+
+
+AULA_43: Exercícios Gráficos (Parte 1)
+
+    "Explicação dos Exrs"
+
+
+AULA_44: Exercícios Gráficos (Parte 2)
+
+    Melhorar a visualização dos dados muitos distantes:
+        alterar TIPO DE GRAFICO > COMBINAÇÃO > Eixo secundario
+
+
+AULA_45: Exercícios Gráficos (Parte 3)
+
+    EX: OK
+
+
+AULA_46: Exercícios Gráficos (Parte 4)
+
+    
