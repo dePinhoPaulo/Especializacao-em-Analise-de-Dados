@@ -476,4 +476,24 @@ AULA_45: Exercícios Gráficos (Parte 3)
 
 AULA_46: Exercícios Gráficos (Parte 4)
 
-    
+    EX: OK
+
+
+AULA_47: Exercícios Gráficos (Parte 5)
+
+     EX: OK
+
+
+AULA_48: Exercícios Gráficos (Parte 6)
+
+    EX: OK
+
+
+AULA_49: Exercícios Gráficos (Parte 7)
+
+    EX: OK
+
+
+AULA_50: Exercícios Gráficos (Parte 8)
+
+    EX: OK
