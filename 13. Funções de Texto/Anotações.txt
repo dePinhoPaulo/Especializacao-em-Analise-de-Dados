@@ -1,0 +1,52 @@
+AULA_1: Introdução (Parte 1)
+
+    =ESQUERDA():
+        Retorna os primeiros caracteres;
+    =DIREITA():
+        Retorna os últimos caracteres;
+    =NÚM.CARACT:
+        Retorna o Número de caracteres da célula;
+    =CONCATENAR():
+        Concatena as celulas selecionadas;
+    
+
+AULA_2: Introdução (Parte 2)
+
+    =LOCALIZAR():
+        Retorna a posição da string desejada (Não distingue Maiusculo e Minusculo);
+    =PROCURAR():
+        Retorna a posição da string desejada (Distingue Maiusculo e Minusculo);
+    =EXT.TEZTO():
+        Retorna os caracteres desejados a partir da posição escolhida;
+    
+
+AULA_3: Introdução (Parte 3)
+
+    =MINÚSCULA():
+        Retorna todos caracteres da célula minúsculo
+    =MAIÚSCULO():
+        Retorna todos caracteres da célula MAIÚSCULO
+    =PRI.MAIÚSCULO():
+        Retorna O primeiro caracter da célula MAIÚSCULO  
+    =SUBSTITUIR():
+        Troca o valor desejado dependendo da quantidade de ocorrencias.
+    =ARRUMAR():
+        Remove todos os espaços do texto exceto os espaços únicos entre palavras. 
+
+
+AULA_4: Função TEXTO (Parte 1)
+
+    =TEXTO():
+        Pega os caracteres e inseri uma fortação diferente.
+        =TEXTO(B3;"DDDD") -> Dia
+        =TEXTO(B3;"MMMM") -> Mês
+
+
+
+AULA_5: Função TEXTO (Parte 2)
+
+    =TEXTO():
+        =D6&" "&TEXTO(B6;"dd/mm/aaaa")
+        =D7&" "&TEXTO(B7;"HH:MM")
+
+
