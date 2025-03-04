@@ -42,7 +42,6 @@ AULA_4: Função TEXTO (Parte 1)
         =TEXTO(B3;"MMMM") -> Mês
 
 
-
 AULA_5: Função TEXTO (Parte 2)
 
     =TEXTO():
@@ -50,3 +49,40 @@ AULA_5: Função TEXTO (Parte 2)
         =D7&" "&TEXTO(B7;"HH:MM")
 
 
+AULA_6: Aplicação Prática (Parte 1)
+
+    =PROCV(ESQUERDA(B2;5);$J:$K;2;FALSO)
+        "Extraindo codigo do vendedor da string de venda; e procurando esse codigo no cadastro do vendedor"
+    
+
+AULA_7: Aplicação Prática (Parte 2)
+
+    =PROCV(EXT.TEXTO(B2;6;4);$M:$Q;2;FALSO)
+        "Extraindo codigo do Produto da string de venda; e procurando esse codigo no cadastro do Produto"
+    =PROCV(EXT.TEXTO(B2;10;3);$S$1:$T$8;2;FALSO)
+        "Para Classe"
+    =PROCV(DIREITA(B2;4);$V$1:$W$15;2;FALSO)
+        "Para Filial"
+
+
+AULA_8: Desafio 1 (Parte 1)
+
+    =LOCALIZAR("_";A5;1)
+        "Identificando posição do _ para extrair codigo"
+    =EXT.TEXTO(A5;1;B5-1)
+        "Código"
+    
+
+AULA_9: Desafio 1 (Parte 2)
+
+    =PROCURAR("_";A5;B5+1)
+        "Procura apartir do 1°_ mais 1 celula, para tornar o 2° _"
+    =EXT.TEXTO(A5;B5+1;D5-B5-1)
+        "Nome da marca"
+    
+
+AULA_10: Desafio 1 (Parte 3)
+
+    =EXT.TEXTO(A5;D5+1;99)
+        "Fábrica"
+    
