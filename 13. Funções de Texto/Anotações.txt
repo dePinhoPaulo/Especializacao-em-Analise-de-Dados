@@ -86,3 +86,27 @@ AULA_10: Desafio 1 (Parte 3)
     =EXT.TEXTO(A5;D5+1;99)
         "Fábrica"
     
+
+AULA_11: Desafio 2
+
+    =LOCALIZAR("@";A2)
+        "Localizar @"
+    =LOCALIZAR(".";A2;B2)
+        "Localizar ."
+    =EXT.TEXTO(A2;B2+1;C2-B2-1)
+        "Localiza servidor, Entre @ e ."
+
+
+AULA_12: Exercícios - Apresentação
+
+    Explicação
+
+
+AULA_13: Exercícios (Parte 1)
+
+    EX: OK
+
+
+AULA_14: Exercícios (Parte 2)
+
+    EX: OK
