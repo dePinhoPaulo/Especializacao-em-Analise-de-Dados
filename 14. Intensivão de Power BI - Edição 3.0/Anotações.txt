@@ -1,0 +1,38 @@
+AULA_1: Dashboard de Vendas
+
+    3 Principais telas:
+        Relatorio 
+        Tablea 
+        Relacionamentos
+    
+    1° Passo: Importar e tratar dados para o Power Bi;
+    2° Passo: Relacionamento entre tabelas;
+    3° Passo: Criar as análises/fórmulas;
+    4° Passo: Compartilhar Relatório.
+
+    Importar Dados excel:
+        Pagina inicial > Importar dados do excel
+        Marcar planilha desejada
+            Carregar > Carrega dados direto;
+            Transformar dados > Power Query.
+        
+    Excel - Praia
+    Power Query - Banho/arrumação
+    Poer Bi - Festa
+
+    Tratamento dos dados:
+        Renomear Tabela > Botao direito no nome > renomear;
+        Excluir coluna vazia > selecionar coluna + Del;
+        Excluir linhas em branco > Pagina Inicial > Remover Linhas > Linhas em branco;
+        Dividir coluna > Botao direito > Dividir coluna por delimitador;
+        Adicionar coluna com caulculo > Selecionar as duas colunas > Adicionar coluna > Padrão > Multiplicar;
+        Para desfazer alterações > Excluir Etapas na lista de Etapas Aplicadas;
+        Alterar ordem dos nomes na coluna de nomes > Transformar > Coluna de Exemplos > Inserir 2 Exemplos;
+        
+
+    Coluna de Exemplos:
+        "Funciona parecido com on preenchimento altomatico do Excel, Inserindo 2 exemplos a coluna é calculada automatico."
+
+    Etapas Aplicadas:
+        "Serve como um hitórico da planilha, logo, posso excluir uma caluna em usei para uma tranformação sem impactar esse coluna gerada"
+ 
