@@ -28,11 +28,54 @@ AULA_1: Dashboard de Vendas
         Adicionar coluna com caulculo > Selecionar as duas colunas > Adicionar coluna > Padrão > Multiplicar;
         Para desfazer alterações > Excluir Etapas na lista de Etapas Aplicadas;
         Alterar ordem dos nomes na coluna de nomes > Transformar > Coluna de Exemplos > Inserir 2 Exemplos;
+        Fechar e Aplicar > Cerraga todos os dados com as alterações.
+
+        Coluna de Exemplos:
+            "Funciona parecido com on preenchimento altomatico do Excel, Inserindo 2 exemplos a coluna é calculada automatico."
+
+        Etapas Aplicadas:
+            "Serve como um hitórico da planilha, logo, posso excluir uma caluna em usei para uma tranformação sem impactar esse coluna gerada"
+    
+    -Faturamento Total
+    -Produto mais vendido
+    -Faturamento/Vendas por Marcar
+    -Faturamento ao longo do tempo
+    -Faturamento por Continente
+
+    Montando Dashboard:
+        "Começar por informações mais gerais e depois ir especificando"
+
+        -Faturamento Total
+            "Quando arrastamos um coluna de numeros para um visual ele soma automaticamente"
+            "Podendo alterar para media, mediana, etc..."
+
+        Editar Visuais:
+            Formatar seu Visual > Efeitos
+
+        Mudar para moeda: Selecionar colunar > Formatação
+
+        -Produto mais vendido
+            Filtrar produto que mais vendeu:
+                Arrastar coluna de produtos para aba Filtros
+                Tipo de filtro > N Superior > Superior: 1 > Por Valor: ADD COLUNA Qtd. Vendida
+
+        -Faturamento/Vendas por Marcar
+            Add Gráfico de Barras: "Deitado pois é uma analise de Ranking"
+                Adicionar coluna de marcas
+                Coluna de Qtd. vendido
+            Add Rótulos:
+                Formatar seu Visual > Rótulos de dados
+            Add Borda:
+                Formatar seu Visual > Efeitos > Fronteira visual
+            "Clicar nas colunas os catões do dash pegam como filtro altomatico"
         
+        -Faturamento ao longo do tempo
+            Add Gráfico de Barras: "em pé pois é uma analise de linha do tempo"
+                Add coluna de Data da venda e Qtd. vendido
+                Deixar no campo data, Só ano e mês
 
-    Coluna de Exemplos:
-        "Funciona parecido com on preenchimento altomatico do Excel, Inserindo 2 exemplos a coluna é calculada automatico."
-
-    Etapas Aplicadas:
-        "Serve como um hitórico da planilha, logo, posso excluir uma caluna em usei para uma tranformação sem impactar esse coluna gerada"
- 
+        -Faturamento por Continente
+            Add mapa coropletico
+                Add coluna continemte e Faturamento
+                Este visual ilustra os dados em um mapa mundi
+        
