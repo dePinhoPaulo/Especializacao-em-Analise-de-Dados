@@ -79,3 +79,37 @@ AULA_1: Dashboard de Vendas
                 Add coluna continemte e Faturamento
                 Este visual ilustra os dados em um mapa mundi
         
+
+AULA_2: Aula 2 - Dashboard de Produção
+
+    Mapear indicadores para relatório:
+        Horas trabalhadas;
+        Horas produtivas (Ocorrencias = Vazio);
+        Horas paradas (Ocorrencias <> Vazio);
+        % Produtividade;
+        % Qualidade (% Peças boas);
+
+    Fórmulas no Power Bi - Fórmulas DAX:
+        Nova Medida: "caulculo para mostrar 1 numero"
+        Nova Coluna: "caulculo de varias linhas para adicionar na Base"
+        "Novas coluinas pesão mais o relatório do que medidas"
+
+        Medidas: 
+            Horas Trabalhadas = SUM('BaseProdução'[Total Horas])
+                "Medidas só irão ser visualizadas em Visuais do Relatorio"
+            Aprovada = SUM('BaseProdução'[Qtd Aprovada]);
+            Rejeitada = SUM('BaseProdução'[Qtd Rejeitada]);
+            Qtd Produzida = SUM('BaseProdução'[Qtd Aprovada])+SUM('BaseProdução'[Qtd Rejeitada])
+                "Peças Aprovadas + Peças REJEITADAS"
+        
+        CALCULATE(): "A formula mais importante"
+
+            Horas Produtivas = CALCULATE(SUM('BaseProdução'[Total Horas]),'BaseProdução'[Ocorrência]=BLANK());
+            Horas Paradas = CALCULATE(SUM('BaseProdução'[Total Horas]),'BaseProdução'[Ocorrência]<>BLANK());
+            
+        Dashboard:
+            Tela de Fundo:
+                Salvar Power Point como Imagem;
+                No power bi, Click no vazio > Formatar > Plano de Fundo;
+            Formatar numeros
+                Selecionar colunas > Separador de Milhar
