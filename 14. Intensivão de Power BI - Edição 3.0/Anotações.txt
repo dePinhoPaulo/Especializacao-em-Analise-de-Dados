@@ -101,6 +101,8 @@ AULA_2: Aula 2 - Dashboard de Produção
             Rejeitada = SUM('BaseProdução'[Qtd Rejeitada]);
             Qtd Produzida = SUM('BaseProdução'[Qtd Aprovada])+SUM('BaseProdução'[Qtd Rejeitada])
                 "Peças Aprovadas + Peças REJEITADAS"
+            % Produtividade = [Horas Produtivas]/[Horas Trabalhadas]
+            % Qualidade = [Aprovada]/[Qtd Produzida]
         
         CALCULATE(): "A formula mais importante"
 
@@ -113,3 +115,26 @@ AULA_2: Aula 2 - Dashboard de Produção
                 No power bi, Click no vazio > Formatar > Plano de Fundo;
             Formatar numeros
                 Selecionar colunas > Separador de Milhar
+            Cards  com medidas;
+            Grafico de area;
+                Qtd produzida por Mes: Data inicio
+                Tela fundo: Transparente
+                Add Rotulo de dados;
+                Remover titulos por eixo;
+                Remover pontuilhado;
+                Tipo linha: Suave;
+                Ajustar cores;
+            Card de indicador (%):
+                Fazer fortação Padrão
+            Segmentação de dados:
+                Operador e Mês - Data inicio;
+                Estilo: Suspenso;
+                Aplicar Formatação padrão;
+                Aplicar tela de fundo escura noo Valores;
+            Icones dos Cards;
+                Inserir > Imagens.
+
+        Ferramentas para Design:                
+            Color-Hex - SITE PARA PALHETA DE CORES
+            My Color Space - Sugeri outras cores que combinam 
+            Flaticon - Banco de Ícones
