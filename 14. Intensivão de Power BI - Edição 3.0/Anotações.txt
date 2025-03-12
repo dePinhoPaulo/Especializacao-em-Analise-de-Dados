@@ -138,3 +138,41 @@ AULA_2: Aula 2 - Dashboard de Produção
             Color-Hex - SITE PARA PALHETA DE CORES
             My Color Space - Sugeri outras cores que combinam 
             Flaticon - Banco de Ícones
+
+
+
+AULA_3: Aula 3 - Dashboard de RH
+
+    Mapear indicadores para relatório:
+        Quantideda de Funcionarios:
+            Funcionarios Ativos;
+            Funcionarios Desligados;
+        Análise de fiuncionaros por genero;
+        Horas Extras;
+        Análise de salário (folha de pagamento);
+        Turnover (Rotatividade).
+
+    Medidas: 
+        Contratações = COUNTROWS(BaseFuncionarios);
+        Func. Ativos = CALCULATE(COUNTROWS(BaseFuncionarios),BaseFuncionarios[Data de Demissao]=BLANK());
+        Func. Desligados = CALCULATE(COUNTROWS(BaseFuncionarios),BaseFuncionarios[Data de Demissao]<>BLANK());
+        
+
+    Dashboard:
+        Tela de fundo
+            Formatar Pagina > Tela de fundo > Imagem: Ajuste
+        Card Contratações:
+            Tela de fundo transparente;
+            caracteres: Branco;
+        Gráfico Sparkline:
+            Contratações por Ano - Data contratação;
+            Retirar Roltulos;
+            Linha: #C0F740;
+            area: #C0F740, Transparencia: 25%;
+
+
+    Loja de Visuais:
+        Baixar Sparkline.
+
+    Inspiração para dashboards:    
+        dribbble.com
