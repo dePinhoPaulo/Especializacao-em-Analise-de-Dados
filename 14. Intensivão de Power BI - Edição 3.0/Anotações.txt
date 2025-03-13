@@ -156,7 +156,8 @@ AULA_3: Aula 3 - Dashboard de RH
         Contratações = COUNTROWS(BaseFuncionarios);
         Func. Ativos = CALCULATE(COUNTROWS(BaseFuncionarios),BaseFuncionarios[Data de Demissao]=BLANK());
         Func. Desligados = CALCULATE(COUNTROWS(BaseFuncionarios),BaseFuncionarios[Data de Demissao]<>BLANK());
-        
+        Turnover = BaseFuncionarios[Func. Desligados]/[Contratações];
+
 
     Dashboard:
         Tela de fundo
@@ -169,10 +170,36 @@ AULA_3: Aula 3 - Dashboard de RH
             Retirar Roltulos;
             Linha: #C0F740;
             area: #C0F740, Transparencia: 25%;
+        Grafico Funil;
+            Func. Ativos por Cidade;
+            Roltulos em Branco;
+            Colunas: #ACDE39;
+        Gráfico Rosca:
+            Generos dos Ativos;
+            Editar Roltulos;
+            Rotulos: Categoria e Percentual;
+            Fatias; #ACDE39, e outra mais escura;
+        Gráfico de Arvore hereditaria:
+            Ativos por area
+            Editar rotulos;
+            cora da barra;
 
+    Dica de Ferramenta:
+        Pagina Nova;
+        Habilitara: Informações da pagina > Permitir usar como dica de Ferramenta
+        Add PLano de fundo;
+        Add card de Contratações e outro com salario;
+        Grafico de bareras:
+            Horas Extras Por Cargo;
+            Editar cores;
+            Retirar valores Eixo X.
+        Habilitar no Grafico principal: Formata grafico > Geral > Dica de Ferramenta > pagina 2
 
     Loja de Visuais:
         Baixar Sparkline.
 
     Inspiração para dashboards:    
         dribbble.com
+    
+    Selecionar cor mais escura:
+        Colo Hex
