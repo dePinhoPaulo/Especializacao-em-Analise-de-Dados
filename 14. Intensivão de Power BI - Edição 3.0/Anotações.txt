@@ -203,3 +203,35 @@ AULA_3: Aula 3 - Dashboard de RH
     
     Selecionar cor mais escura:
         Colo Hex
+
+
+AULA_4: Aula 4 - Dashboard Financeiro
+
+    Mapear indicadores para relatório:
+        Receita Total
+        Custos
+        Impostos
+        Lucro
+        Margem de Lucro
+        Fluxo de caixa
+        Análise por Banco
+        Total de transações
+        Análise por tipo de pagamento
+
+    Medidas:
+        Receita = CALCULATE(SUM('Movimentações'[Valor da Movimentação]),'Movimentações'[Tipo]="Recebimento");
+        Custo = -CALCULATE(SUM('Movimentações'[Valor da Movimentação]),'Movimentações'[Tipo]="Pagamento"):
+            "o Menos na frente da formula transformara o valor de negativo para positivo"
+        Imposto = [Receita]*0.15;
+        Lucro = [Receita]-[Custo]-[Imposto];
+        Margem = [Lucro]/[Receita]:
+            "Formatar para porcentagem"
+        
+
+    Dashboard:
+        Tela de fundo
+            Formatar Pagina > Tela de fundo > Imagem: Ajuste
+        Card Receita:
+            Plano de fundo: transparente
+            Letras: branco
+        
