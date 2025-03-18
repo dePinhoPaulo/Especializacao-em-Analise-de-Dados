@@ -226,7 +226,10 @@ AULA_4: Aula 4 - Dashboard Financeiro
         Lucro = [Receita]-[Custo]-[Imposto];
         Margem = [Lucro]/[Receita]:
             "Formatar para porcentagem"
-        
+        Complemento Margem = 1-[Margem]
+        QTD Transações = COUNTROWS('Movimentações');
+        QTD Pix = CALCULATE(COUNT('Movimentações'[Forma Pagamento]),'Movimentações'[Forma Pagamento]="Pix");
+        % Pix = [QTD Pix]/[QTD Transações].
 
     Dashboard:
         Tela de fundo
@@ -234,4 +237,24 @@ AULA_4: Aula 4 - Dashboard Financeiro
         Card Receita:
             Plano de fundo: transparente
             Letras: branco
-        
+        Grafico de rosca:
+            "Para representar o percentual de margem";
+            Margem e Complemento Margem;
+        Card com porcentagem
+            Editar Estilo;
+            Posicionar atras da rosca;
+        Grafico de cascata;
+            Lucro por mês;
+            Edtitar cores:
+                Azul positivo; Vermelho negativo;
+        Filtragem por Imagem
+            Visula: Image grid
+            Editar tamanho: Editar visual: SETINGS
+        Visual de texto com variavel:
+            Visual: Enlighten Data Story
+            Cada # no texto representa uma variavel adicionada;
+            Formatr letras para branco;
+        Visual Scroller Bolsa Valores:
+            Visual Scroller;
+            Margem por Cidade;
+            Editar estilo.
