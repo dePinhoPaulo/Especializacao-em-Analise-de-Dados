@@ -258,3 +258,36 @@ AULA_4: Aula 4 - Dashboard Financeiro
             Visual Scroller;
             Margem por Cidade;
             Editar estilo.
+
+
+
+AULA_5: Aula Bônus - Intensivão de Power BI 3.0
+
+    Power Bi Desktop - Ambiente de Criação
+    Power Bi online - Ambiente de Apresentação/Compartilhamento
+
+    No relatório > Publicar Relatorio
+    Selecionar Worspace;
+    Power bi online :
+        "no upload é criado 2 arquivos, Dashboarde e modelo semantico"
+        Compartilhamento:
+            liçenças:
+                Gratutio:
+                    Compartilhar de forma publica
+                Pro (9.90$/usuario):
+                    compartilhar de forma privada.
+        
+        Compartilhar na web (free):
+            Configuarações > partal de administrador > Publicar na web > Habilitar
+            fabric > arquivo > Publicar na web > Copiar link
+            "dados aberto a todo publico"
+
+        Compartilhar (pro):
+            fabric > Compartilhar > copiar link
+            "apenas emaisl com mesmo dominio"
+        
+    Criando Portifoliio:
+        Google Sites:
+            "Para criar pagina"
+        Power Bi service:
+            "Para inserir dashboards na web e adicionar no site"
