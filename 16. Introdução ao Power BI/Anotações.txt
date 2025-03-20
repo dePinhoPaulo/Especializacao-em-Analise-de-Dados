@@ -1,0 +1,46 @@
+AULA_1: O que é Business Intelligence (BI)
+
+    "Analisar dados para tomada de decisão"
+    EX:
+        "RH: Rotatividade dos colaboradores"
+        "Vendas: Faturamente, devoluçãoes, etc..."
+    "Bi pode ser utilizado para tomada de decisão em qualquer area"
+    
+    Processos de Bi:
+        ETL > Modelagem de Dados > Calculos/Analises > Criação dos relatórios > Compartilhamento do relatório.
+
+    
+AULA_2: Qual o notebook ideal para usar o Power BI
+
+        Recomendado/Ideal
+    Ram: 8 GB / 16 GB
+    Processador: i5-Rayzen 5 / i7 - Rayzen 7
+    Armazenamento: HD / SSD
+    Windows: Windows 8 / Windows 10
+
+
+AULA_3: Instalando o Power BI
+
+    Site oficial Microsoft
+    Baixar versão x64
+    
+    Microsoft Store
+
+
+AULA_4: Atualizações do Power BI
+
+    Blog Microsoft
+    Power Bi Channel
+
+
+AULA_5: Ambiente e Lógica do Power BI
+
+    Podemos trazer diversas bases de dados de diversos lugares;
+    Organizar os dados;
+
+    3 Principais guias:
+        Relatorio: visualização do dashboard;
+        Dados: visualiza os dados das tabelas;
+        Modelo: juntar informações de diferentes tabelas.
+
+
