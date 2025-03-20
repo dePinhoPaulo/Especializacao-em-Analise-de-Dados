@@ -1,0 +1,44 @@
+AULA_1: Boas vindas e como assistir as aulas
+    
+    1-Assista na ordem, Não pule estapas;
+    2-Estude toda semana;
+    3-Favoritar as aulas;
+    4-Velocidade das aulas;
+    5-Download do material;
+    6-Estudo direcionado;
+    7-Ritmo pessoal;
+    8-50/50 Metade estudo, metade prátia;
+    9-Comprometimento;
+    10-Aulas novas;
+
+
+AULA_2: Como tirar suas dúvidas
+
+    1-As duvidas são tirardas em até 24hrs;
+    2-Quanto melhor a perguntar melhor a resposta;
+    3-Dúvidas tanto do curso quanto do seu trabalho;
+
+
+AULA_3: Como acessar a apostila e os arquivos das aulas
+
+    1-Apostila Power Bi Impressionador
+    2-Biaxe o matiral da uala para praticar
+
+
+AULA_4: Como obter o certificado e como funciona a garantia
+
+
+
+AULA_5: Suporte Hashtag
+
+    Prazos de resposta ate 24hrs
+
+
+AULA_6: Crie o seu portfólio
+
+    "Apresentar projetos ja feitos"
+
+
+AULA_7: Grupo de Alunos Power BI Impressionador
+
+    Grupo de alunos no facebook
