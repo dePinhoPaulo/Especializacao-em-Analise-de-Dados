@@ -1,0 +1,65 @@
+AULA_1: Importando Base de Dados
+
+    Obter dados:
+        Pasta de trabalho do excel
+        Selecionar Arquivo
+        Selecionar planilha 
+        Transforma Dados.
+    
+    Power Query:
+        Renomear tabela: F2 nome tabela.
+            "Nomes sem caracteres especiais"
+
+
+AULA_2: Tratando a Primeira Base de Dados
+
+    Power Query:
+        Remover colunas vazias: clique direito Remover;
+        Desfazer: Excluir etapa no Etapas Aplicadas;
+        Rmover linhas em Branco: Pag inicial > Remover Linhas > Linhas em branco;
+        Usar 1° Como cabeçalho: Pag inicial > Usar primeira linha como cabeçalho;
+        Alterar Tipo coluna > cliq Icone coluna > Selecionar Tipo;
+        Salvar > Fechar e Aplicar.
+    
+
+AULA_3: Tratando a Base Cadastro Clientes (Parte 1)
+
+    Power Query:    
+        Substituir valores: Transformar > Substituir Valores:
+            (Valor na tabela; Valor substituido);
+        Data de ingle para Portugues: Alterar tipo de dados > Usando Localidade:
+            "Selecionar a origem do formato, que ira converter para o formato do idioma do Power Bi"
+        Verificar erro em colunas > Exibição > Qualidade da coluna;
+        Mudar ordens da coluna: "Arrastar pra onde quiser":
+            "Só altera a ordem a nivel de Power Query, na aba de dados da tabela NÃO"
+
+
+AULA_4: Tratando a Base Cadastro Clientes (Parte 2)
+
+    Power Query:
+        Juntar Colunas: Selecionar colunas > Adicionar Colunas > Mesclar colunas;
+            (Separador da canctenação; Nome da coluna)
+        Formatar dados da coluna de Texto: Transformar > Formato > Selecionar:
+            (Maiusculo, Minusculo, 1° caracter maiusculo);
+
+        "Quadro de Etapa aplicada se torna um historio do ETL"
+        "Sempre adiconar o minimo de etapas possivel"
+
+
+AULA_5: Atualizando a Base de Dados com Novos Clientes
+
+    "Power Query automatiza o processo de tratamento dos dados"
+
+    Atualizar fonte de dados:
+        Pagina inicial > atualizar;
+        Power Query > Atualizar Vizualização.
+
+    Visuais:
+        Gráficos, Cards, Tabelas, etc...
+        Campos:
+            "Valores que serão ilustrados"
+            "Opção de agrupamento desses valores: Contagem, Soma, Primeiro, ultimo"
+        Valores:
+            "Numeros calculados"
+        Legenda:
+            "Separador do gráfico"   
