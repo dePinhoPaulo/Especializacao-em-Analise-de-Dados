@@ -63,3 +63,68 @@ AULA_5: Atualizando a Base de Dados com Novos Clientes
             "Numeros calculados"
         Legenda:
             "Separador do gráfico"   
+
+
+AULA_6: Tratando a Base Cadastro Produtos
+
+    Obter dados:
+        Pasta de trabalho > Cadastro produtos;
+        Renomear tabela;
+        Alterar formatato de Dolar para Real:
+            Transforma > Padrão > Dividir > 100
+            "Valores em dolar que é separado por ponto quando importador para power query ira desconciderar o ponto como separador decimal"
+        Separar colunas Produto:
+            Tranformar > Dividir Coluna > Delimitador:
+                Personalizado: " - " , Delimitador da extremidade direita;
+        Renomear Coluna;
+        Fechar e Aplicar.
+
+AULA_7: Possíveis Problemas no Power Query e Como Resolver (Parte 1)
+
+    Pagina inicial > Transformar dados:
+        "Abrir Power Query"
+        Atualizar
+        "Alterar nome do Arquivo, nome da planilha, etc.. do excel ira acarretar em erro no power bi";
+        Idientificação do Problema:
+            "Checar etapa por etapa do power query"
+        Fechar e Aplicar.
+
+
+
+AULA_8: Possíveis Problemas no Power Query e Como Resolver (Parte 2)
+
+    Power query:
+        "Mudança de nome da coluna tabem impacta no power query"
+        "fazer o mesmo processo para Idientificação e resolução do erro"
+        Excluir coluna na barrade formula:
+            "Apagar coluna que está entre {}"
+
+
+AULA_9: Possíveis Problemas no Power Query e Como Resolver (Parte 3)
+
+    Power Query:
+        "Ao trocar arquivo fonte de pasta, extensão, etc..."
+        Identificar etapa de erro;
+        Ajustar caminho do aqrquivo;
+
+
+
+AULA_10: O que fazer quando dá erro na atualização da Base de Dados
+
+    Power Query:
+        Importar tabela Cadastro Loja
+        Renomear tabela;
+        Fechar e aplicar;
+
+    Excel:
+        Cadastro Lojas:
+            adiconar mais um registro (na coluna documento adionar registro com letra)
+
+    Erro no Power Query:
+        Vizualizar erro;
+        CadastroLojas
+            Apagar formatação altomatica de tipo;
+            Mudar tipo sa coluna Documento gerente para texto;
+        Excluir Grupo de erro;
+        Fechar e aplicar.
+
