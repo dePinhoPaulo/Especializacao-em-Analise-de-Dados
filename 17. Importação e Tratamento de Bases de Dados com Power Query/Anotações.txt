@@ -180,3 +180,38 @@ AULA_15: Mesclar Consultas (Parte 2)
             Base vendas > Mesclar consultas > Selecionar coluna SKU > Carregar colunas: Nonme Produto, Marca, Preço;
             Desabilitar Prefixo da tabela de origem;
             
+
+AULA_16: Acrescentar Consultas
+
+    Power Query:
+        Importar Base Vendas 2021
+        Importar Base Vendas 2022
+        Juntar as 3 tabelas de vendas em uma nova:
+            Base vendas > Acrescentar consultas como uma nova> Selecionar Tablas;
+        Desabilitar Carga das tabelas anual;
+
+
+AULA_17: Importar da Pasta
+
+    Importar arquivos de pasta:
+    
+    Power Query:
+        Pasta > Selecionar caminho > Filtrar por nome > Filtro de texto > Contém: Base de dados;
+        Proximas bases anuais serão carregas automaticas;
+    
+
+AULA_18: Como atualizar o Power BI com as novas vendas (2023, 2024, ...)
+
+    "Se processo de importar Pasta estiver correto sera carregado automatico"
+
+    Clicar Atualizar: Base 2023 carrega automatico
+
+
+AULA_19: Tabela Calendário_ O que é e por que precisamos dela
+
+    "Ajuda nas analises de tempo"
+    Separações por: Ano, Quarters, Meses, Dias, etc...
+
+    "Ter uma tabela geral de calendario, evita ter que ficar criando colunas de tempo em todas outra tabela Fato"
+    "Relacionar Tabela Calendario com as tabela Fato"
+
