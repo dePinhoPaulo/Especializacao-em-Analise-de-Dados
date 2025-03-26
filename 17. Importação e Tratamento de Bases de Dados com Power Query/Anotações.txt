@@ -128,3 +128,55 @@ AULA_10: O que fazer quando dá erro na atualização da Base de Dados
         Excluir Grupo de erro;
         Fechar e aplicar.
 
+
+AULA_11: Ferramentas de Texto e Otimização das Etapas Aplicadas
+
+    Power Query:
+        Extrair nome da Loja:
+            Transformar > Extrair > Texto APOS O DELIMITADOR: "Loja "
+        Extrair nome do gerente:
+            Adicionar Coluna > Extrair > Texto APOS O DELIMITADOR: ", "
+        Renomear Coluna;
+        Extrair sobrenome do gerente:
+            Adicionar Coluna > Extrair > Texto ANTES DO DELIMITADOR: ", "
+        Concatenar colunas:
+            Tranformar > Mesclar colunas
+
+
+AULA_12: Coluna de Exemplos & Como Reordenar Colunas no Power BI
+
+    Power Query:
+        Concatenar colunas de nomes como um preenchimento rapido:
+            Adicionar > Colunas de Exemplos > Digitar dados exemplo.
+        Para reodenar no power bi:
+            desabilitar e habilitar carga > Irar cerregar as colunas com a mesma ordem do Power Query.
+        
+
+AULA_13: Mesclar Consultas (Parte 1)
+
+    Power Query:
+        Importar tabela Localidade;
+        Join de tabelas:
+            CadastraLojas > Combinar > Mesclar Consultas > CadastroLocalidades;
+            Selecionar colunas em comum;
+            Selecionar Colunas para mesclagem;
+
+
+AULA_14: Desabilitando Carga
+
+    "Como mesclamos a tabela de localidade na tabela de lojas, nõa faz mais sentido carregar ela para o Dashboard"
+    
+    Power Query:   
+        Para desabilitar uma tabela:
+            Desmarcar Habilitar Carga;
+            "Desabilita somente para o dashboard, não impacta na mesclagem"
+
+
+AULA_15: Mesclar Consultas (Parte 2)
+
+    Power Query
+        Importar BaseVendas_2020;
+        Mesclar Tabelas produtos Base vendas:
+            Base vendas > Mesclar consultas > Selecionar coluna SKU > Carregar colunas: Nonme Produto, Marca, Preço;
+            Desabilitar Prefixo da tabela de origem;
+            
