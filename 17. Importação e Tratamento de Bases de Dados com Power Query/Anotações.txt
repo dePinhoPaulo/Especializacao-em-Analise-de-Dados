@@ -215,3 +215,45 @@ AULA_19: Tabela Calendário_ O que é e por que precisamos dela
     "Ter uma tabela geral de calendario, evita ter que ficar criando colunas de tempo em todas outra tabela Fato"
     "Relacionar Tabela Calendario com as tabela Fato"
 
+
+AULA_20: Criando a Tabela Calendário
+
+    Criando Tabela Calendario em Linguagem M:
+        Nova fonte: Consulta nula;
+        Editor avançado:
+            let
+            DataMin = List.Min(BaseVendas[Data da Venda]),    
+            DataMax = List.Max(BaseVendas[Data da Venda])
+            in  
+            DataMax
+        Inserir Proxima Estapa:
+            = Duration.Days(DataMax-DataMin)+1
+        Inserir Proxima Estapa:
+            = List.Dates(DataMin, QtdDias, #duration(1, 0, 0, 0))
+        Para a tabela.
+
+
+AULA_21: Ferramentas de Data no Power Query (Parte 1)
+
+    Adicionar colunas:
+        Datas:
+            "Colunas auxiliares paras analises"
+            Ano
+            Mes
+            nome do mes
+            inicio do mes
+            trimestre
+            semana
+
+
+AULA_22: Ferramentas de Data no Power Query (Parte 2)
+
+    Calculo de idade:
+        Datas:
+            Idade > 
+                Duração > Total de Anos > 
+                Arrodondamento > Para baixo;
+
+
+
+
