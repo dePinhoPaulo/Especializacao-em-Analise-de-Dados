@@ -255,5 +255,74 @@ AULA_22: Ferramentas de Data no Power Query (Parte 2)
                 Arrodondamento > Para baixo;
 
 
+AULA_23: Colunas Condicionais
+
+    Power Query:
+        Calendario:
+            adiconar coluna > Coluna Condicional:
+                Se (MÊS <= 6 "1° Semestre")
+                Se não ("2° Semestre") 
+            Cria coluna Dia da semana:
+                Data > Dia > Dia da semana
+            Coluna Condicional:
+                Se (Dia da Semana = 0 "Fim de Semana")
+                Se (Dia da Semana = 6 "Fim de Semana")
+                Se não ("Dia de Semana") 
+        
+        CadastroPrudutos:
+            Coluna Condicional:
+                Se (Preço Untario <= 500 "Ticket Baixo")
+                Se (Preço Untario <= 2000 "Ticket Médio")
+                Se não ("Ticket Alto") 
 
 
+AULA_24: Configurando atualizações de consultas
+
+    Power Query:
+        Não incluir na atualização:
+            Botaão direto > Incluir na atualização do relatorio > Desmarcar;
+            "Retirar tabelas que nã tenha movimentção sempre na atualização para acelerar a atualização"
+
+
+AULA_25: Parâmetros no Power Query
+
+    Pagina inicial > Gerenciar Paramentros
+        Nome;
+        Link : C:\Users\Kiko\Documents\Projetos Programação\Especializacao-em-Analise-de-Dados\17. Importação e Tratamento de Bases de Dados com Power Query
+    Adicionar Paramentro na fonte de dados:
+        = Excel.Workbook(File.Contents(Caminho&"\Cadastro Clientes.xlsx"), null, true)
+    "Altera todos os caminhos das palinhas de uma vez"
+
+
+AULA_26: Desabilitando Relacionamentos Automáticos
+
+    Configuração:
+        Arquivo Atual > Carregamento de dados > Detectar altomaticamente novos relacionamentos.
+
+
+AULA_27: Criando um Relatório Simples no Power BI (Parte 1)
+
+    Power Query:
+        BaseVendas:
+            Mesclar Consultas:
+                BaseVendas - SKU : SKU - CadastroProdutos
+                Nome Produto, Marca, Preço Unitario
+                Sem Prefixo;
+            Multiplicação:
+                Selecionar: Quantidade, Preço Unitario;
+                Adiconar Coluna > Multiplicação;
+            Mesclar Consultas:
+                BaseVendas - ID Loja : ID Loja - CadastroProdutos
+                País, Continente;
+                Sem Prefixo;
+            Fechar e Aplicar.
+    
+    Dashboard:
+        Adicionar Card:
+            Coluna Faturamento;
+            Editiar;
+                Retirar Rotulos;
+                Plano de Fundo: Amarelo;
+                Titulo: Fundo Preto, Letras Branca;
+
+    
