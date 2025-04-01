@@ -326,3 +326,62 @@ AULA_27: Criando um Relatório Simples no Power BI (Parte 1)
                 Titulo: Fundo Preto, Letras Branca;
 
     
+
+AULA_28: Criando um Relatório Simples no Power BI (Parte 2)
+
+    Dashboard:
+        Adicionar Card:
+            Qtd Vendido;
+            Editiar;
+                Retirar Rotulos;
+                Plano de Fundo: Amarelo;
+                Titulo: Fundo Preto, Letras Branca;
+                Sombra;
+            
+            Nome Produto;
+            Filtro do Card:
+                Nome produto: N Superior = 1 - Qtd Vendida
+
+
+AULA_29: Criando um Relatório Simples no Power BI (Parte 3)
+
+    Dashboard:
+        Titulo do Dash:
+            Inserir > Caixa de texto:
+                "Relatório de Vendas"
+                Fonte: Negrito, 40;
+        
+        Gráfico de Barras:
+            Faturamento X Marca
+            Editiar:
+                Titulo;
+                Remover Eixos;
+            Filtro:
+                Marca: N Superior = 1 - Faturamento
+            Add Rotulo de dados;
+        
+        Mapa:
+            Continente X Faturamento
+            Editar: copiar colar;
+
+
+AULA_30: Importando e Tratando Bases de Dados - Boas Práticas
+
+    "Deixe tudo organizado antes de importar os dados para o Power Bi"
+    "Evite deixar as tabelas desnecessariamente grandes"
+    "Desabilite as atualizações para tabelas que não mudam"
+    "Otimize as Etapas Aplicadas"
+    "Crie parâmetros para caso o caminho dos arquivos seja alterado"
+
+
+AULA_31: FAQ (Perguntas Frequentes)
+
+    Tabela totalmente Vazia:
+        Remover linhas em Branco;
+
+    Bases Desorganizadas:
+        "Tabela sempre cresce para baixo"
+    
+    Erro: A chave não corresponde a nenhuma linha da tabela:
+        "Nomes das abas das planilhas tem que ser iguais"
+    
