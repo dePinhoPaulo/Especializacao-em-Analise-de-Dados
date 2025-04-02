@@ -385,3 +385,31 @@ AULA_31: FAQ (Perguntas Frequentes)
     Erro: A chave não corresponde a nenhuma linha da tabela:
         "Nomes das abas das planilhas tem que ser iguais"
     
+AULA_32: Exercícios Power Query (Parte 1)
+
+    Parte 1: OK
+
+
+AULA_33: Exercícios Power Query (Parte 2)
+
+    Parte 2: OK
+
+
+AULA_34: Exercícios Power Query (Parte 3)
+
+    Parte 3: OK
+
+
+AULA_35: Exercícios Power Query (Parte 4)
+
+    Parte 4: OK
+
+
+AULA_36: Exercícios Power Query (Parte 5)
+
+    Parte 5: OK
+
+
+AULA_36: Exercícios Power Query (Parte 6)
+
+    Parte 6: OK
