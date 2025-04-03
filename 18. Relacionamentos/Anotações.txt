@@ -1,0 +1,58 @@
+AULA_1: Relacionamentos no Power BI - Introdução
+
+    Power Query:
+        Importar tabelas.
+
+
+AULA_2: Relacionamentos x Mesclar Consultas
+
+    "Conectar dados das tabelas sem mescla-las"
+
+
+AULA_3: Tabela Fato x Tabela Características
+
+    Tabela Fato:
+        "Reprasentas fatos que aconteceram (Venda, Produção, etc...)"
+        "Cada linha representa as informações sobre um fato"
+
+    Tabela Caracteristicas:
+        "Representam atributos sobre uma informação contida na tabela fato"
+
+    Exemplo:
+        Tabela Fato: Base_Vendas;
+        Tablea Caracteristicas: Cadastro_Produtos, Cadastro_Clientes;
+
+    Por que fazemos esta separação?
+        "Porque é a forma mais eficiente de trabalhar no Power Bi"
+
+
+AULA_4: Identificando as Tabelas Fato e Características
+
+    Diferença enter a Tabela Fato X Tabela Características.
+
+
+AULA_5: Chave Primária x Chave Estrangeira
+
+    Chave Estrangeira:
+        "Coluna com valores que podem se repetir";
+        "é usada para se relacionar com a CHAVE PRIMARIA na tabelas caracteristicas";
+
+    Chave Primaria:
+        "Coluna com valores que não se repetem"
+        "Cada valor representa uma unica linha da tabela"
+        "Serve como referencia para dar informações complementares usando a CHAVE ESTRANGEIRA de outra tabela"
+
+
+AULA_6: Identificando as Chaves Primárias e Estrangeiras
+
+    Diferença enter a Chaves Primárias X Chaves Estrangeiras
+
+
+AULA_7: Por que precisamos criar Relacionamentos entre Tabelas
+
+    "Sem o Realcionamento não pedemos vincular dados de uma tabela fato com tabela caracteristicas"
+
+
+AULA_8: Criando Relacionamentos
+
+    
