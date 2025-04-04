@@ -55,4 +55,46 @@ AULA_7: Por que precisamos criar Relacionamentos entre Tabelas
 
 AULA_8: Criando Relacionamentos
 
+    Aba Relacionamentos > Juntar chave primari e chave Estrangeira de cada tabela
+    "Conforme regras das aulas anteriores"
+
+
+AULA_9: O que um relacionamento muda na prática
+
+    "Um ralcionamento nada mais é que um filtro de uma tabela passando para outra"
+
+
+AULA_10: Trabalhando com Várias Tabelas Fato
+
+    Importar tabela de devoluções;
+    Relacionar normalmente como na outa tabela fato;
+    "Relacionamentos muitos para muitos é muito raro de acontecer, casos muito especificos"
+
+
+AULA_11: Entendendo a direção do filtro
+
+    Crinado nova pagina na aba de Relacionamentos
+        BaseVendas;
+        BaseDevoluções;
+        CadastroProdutos;
+
+    "filtro sempre ira da tabela caracteristica para tabela fato"
+    "Por isso que se colocar a coluna SKU + QTD VENDIDA (da Base Vendas) + QTD DEVOLUÇÃO (BaseDevoluções) não ira bater"
+    "Correto é SKU da tabela CadastroPrroduto"
+
+
+AULA_12: Cardinalidade dos Relacionamentos
+
+    1 para Muios (1 -> *) - o Padrão
+    1 para 1 (1 -> 1)
+    Muitos para Muitos (* -> *)
+
+
+AULA_13: Relacionamentos Ativos x Relacionamentos Inativos
+
+    "Não é possivel relacionar 2 relacionamento entre as mesmas tabelas"
+    "Data entrega e Data Venda com a Date(dCalendario)"
+    "Um relacionamento ficara ativo e o outro inativo"
+    "Para resolver isso Utilizamos Formulas DAX (userelationship)"
+
     
