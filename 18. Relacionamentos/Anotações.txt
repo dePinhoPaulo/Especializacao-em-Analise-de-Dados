@@ -98,3 +98,18 @@ AULA_13: Relacionamentos Ativos x Relacionamentos Inativos
     "Para resolver isso Utilizamos Formulas DAX (userelationship)"
 
     
+AULA_14: Por que tenho valores 'em branco' no relatório? (Parte 1)
+
+    "Qunado existe um produto na tabela fato e não da tabela dimensão ira ficar em branco"
+
+
+AULA_15: Por que tenho valores 'em branco' no relatório? (Parte 2)
+
+    "Sempre verificar se valor da tabela fato esta na tabela dimensão"
+
+
+AULA_16: E se eu não tiver tabelas fato e dimensão separadas
+
+    "Arquivos fiquam muitos pesados tudo em uma unica tabela"
+    "Quando temos duas tabelas fato, não podemos relacionar VENDAS E DEVOLUÇÕES de uma loja por exemplo, pois dus tabelas fato não se ralacionam"
+    
