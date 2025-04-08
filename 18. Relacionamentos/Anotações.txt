@@ -113,3 +113,81 @@ AULA_16: E se eu não tiver tabelas fato e dimensão separadas
     "Arquivos fiquam muitos pesados tudo em uma unica tabela"
     "Quando temos duas tabelas fato, não podemos relacionar VENDAS E DEVOLUÇÕES de uma loja por exemplo, pois dus tabelas fato não se ralacionam"
     
+
+AULA_17: Separando o Tabelão em Tabelas Fato e Dimensão (Parte 1)
+
+    Importar Base:
+        Tabela fato e Dimensão;
+    
+    d_Produto:
+        Duplicar coluna f_vendas;
+        renomear: d_Produto;
+        selecionar colunas de produtos: Remover outras...;
+        Coluna Produto: Remover duplicadas;
+
+    d_Cliente:
+        Mesmo processo
+        pagina inicial > Escolher colunas (seleção de colunas mais facil);
+
+    d_Loja:
+        Mesmo processo.
+
+
+AULA_18: Separando o Tabelão em Tabelas Fato e Dimensão (Parte 2)
+
+    "Preciso ter pelo menos uma coluna da tabela fato em comum com a dimensão para ter o relacionamento"
+    "Não pode ser qualquer uma, lembre-se do conceito de chave primaria e estrangeira"
+    
+    Produto (Chave primaria)
+
+    Fazer ID para não relacionar por nome:
+        Power Query:
+            Adicionar coluna> Coluna de indice: De 1;
+            "Chave Substituta"
+            Trazer indice da dimensão para tabela fato:
+                Mesclar consultas: Produto-Produto;
+                Colunas: Indice;
+    
+    "Podemos romover os demais dados de Produto da tabela fato"
+
+
+
+AULA_19: Separando o Tabelão em Tabelas Fato e Dimensão (Parte 3)
+
+    "Fazer mesmo processo de ID nas demais tabelas d_Loja, d_Cliente"
+    
+    d_Cliente:
+        Mesmo processo    
+    d_Loja:
+        Mesmo processo.
+
+    Mesclar consultas e processo de ID na tabela Fato Devolução;
+
+
+AULA_20: Separando o Tabelão em Tabelas Fato e Dimensão (Parte 4)
+
+    Criar Relacionamentos:
+        tabelas fato com as dimensões;
+    
+    Relatorio simples:
+        Quantidade de Vendas e Devoluções por Loja;
+
+    "Lembrando que todo este processo é paleativo, pois as separações de fato e dimensão ja deve ester feito pelo banco de dados"
+
+
+AULA_21: Ocultando Campos do Relatório
+
+    "Ocultar colunas de dimensão que estão na tabela fato, pois pode atrapalhar a analise dependendo do uso"
+    "Chaves Estrangeiras"
+
+    Aba relacionamento ou tabelas:
+        Selecionar coluna > Ocultar visualização.
+
+
+AULA_22: Relacionamentos: Revisão e Boas Práticas
+
+    Crie um modelo de dados organizados e normalizado;
+    Organize Tabelas Caracteristicas acima das Tabelas Fato no Power Bi;
+    Evite usar filtro bidimensional e criar Relacionamentos muitos para muitos;
+    Oculte no relatório campos que não precisam ser usados;
+    Separar o tabelão em Tabelas Fato e Dimensão (Em casos de não ter opção).
