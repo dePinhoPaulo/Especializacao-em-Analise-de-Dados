@@ -1,0 +1,85 @@
+AULA_1: Introdução às Fórmulas DAX
+
+    "pERMITE CRIAR FORMULAS INTELIGENTES PARA FAZER QUALAQUER TIPO DE ANALISE"
+
+
+AULA_2: Introdução a Colunas Calculadas
+
+    Colunas Calculadas:
+        Selecionar Tabela > Botão dirito > Crir coluna
+        f_Vendas: 
+            Tipo do Pedido = IF(fVendas[Qtd Vendida]=1,"Pedido Unico","Pedido Múltiplo")
+        
+
+AULA_3: Introdução a Medidas (Parte 1)
+
+    "Calculos unicos, que não irão aparecer na tabela"
+
+    Medidas:
+        Selecionar Tabela > Botão dirito > Crir Medidas
+        f_Vendas:
+            Total de Vendas = SUM(fVendas[Qtd Vendida])
+        f_Devolucao:
+            Total Devoluções = SUM('fDevoluções'[Qtd Devolvida])
+            % Devolução = [Total Devoluções]/[Total de Vendas]
+
+
+AULA_4: Introdução a Medidas (Parte 2)
+
+    "A medida Sempre muda dependendo do contexto do filtro"
+
+
+AULA_5: Recapitulando - Colunas Calculadas x Medidas
+
+    Colunas Calculadas:
+        Os valores são Calculados baseados na informação de cada linha da tabela
+        Acrescente uma nova coluna na tabela
+        Recalcula de acordo com a alteração nas celulas
+        Geralmente usados no campos de linhas, colunas, ou filtros nas matrizes/graficos
+
+    Medidas:
+        Os valores são Calculadas baseados nos filtros aplicados nas Matrizes
+        Não Acrescenta novas colunas na tabela
+        Recalcula de acordo com a alteração nos filtros do Relatorio
+        quase sempre usado no campo valores de uma Matriz/graficos
+
+
+AULA_6: DAX - Sintaxe e Principais Operadores
+
+    Total de Vendas = SUM(fVendas[Qtd Vendida])
+    Nome da medida / Formula utilizada / Nome da tabela / nome da coluna
+
+    Operador Matematico:
+        + - * ^: Padrão
+    
+    Operador de Comparação:
+        = > < <= >= <>: Padrão
+
+    Operador Logico:
+        &  Concatenar
+        && Condição E
+        || Condição OU
+        IN Condição OU com base em valores de uma lista
+
+
+AULA_7: DAX - Principais Fórmulas
+
+    Matematicoas e Estatisticas:
+        Comuns:
+            SUM, AVERAGE, MAX/MIN, DIVIDE, COUNT, COUNTROWS, DISTINCTCOUNT
+        
+        Iteradoras:
+            SUMX, AVERAGEX, MAXX/MINX, COUNTX, RANKX
+    
+    Logicas:
+        Comuns:
+            IF, AND, OR, IFERROR, NOT, SWITCH
+    
+    filtro e de Tabela:
+        Comuns
+            CALCULATE, FILTER, ALL, RELATED, DISTINCT, VALUES, ETC...
+    
+    Data e Hora:
+        Comuns:
+            DATEDIFF, YEAR/MONTH/DAY, TODY/NOWM, WEEKDAY/WEEKNUM, ETC...
+
