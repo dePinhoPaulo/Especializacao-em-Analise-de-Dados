@@ -83,3 +83,80 @@ AULA_7: DAX - Principais Fórmulas
         Comuns:
             DATEDIFF, YEAR/MONTH/DAY, TODY/NOWM, WEEKDAY/WEEKNUM, ETC...
 
+
+AULA_8: Função IF
+
+    Formula IF:
+        "Separa vendas por Quinzena"
+        d_Calendarrio:
+            Coluna Calculada
+            Quinzena = IF(DAY(dCalendario[Datas])>=15,"Quinzena 1","Quinzena 2")
+        
+
+AULA_9: Função IF Aninhada
+
+    "Coluna de Bimestre"
+    d_Calendarrio:
+        Coluna Calculada
+        Bimestre = IF(dCalendario[Mês]<=2,"Bimestre 1",
+                    IF(dCalendario[Mês]<=4,"Bimestre 2",
+                        IF(dCalendario[Mês]<=6,"Bimestre 3",
+                            IF(dCalendario[Mês]<=8,"Bimestre 4",
+                                IF(dCalendario[Mês]<=10,"Bimestre 5","Bimestre 6")))))
+
+
+AULA_10: Função SWITCH (Parte 1)
+
+    "Coluna de Bimestre com SWITCH()"
+    d_Calendarrio:
+        Coluna Calculada
+        Bimestre SWITCH = SWITCH(TRUE(),
+            dCalendario[Mês]<=2,"Bimestre 1",
+                dCalendario[Mês]<=4,"Bimestre 2",
+                    dCalendario[Mês]<=6,"Bimestre 3",
+                        dCalendario[Mês]<=8,"Bimestre 4",
+                            dCalendario[Mês]<=10,"Bimestre 5",
+                            "Bimestre 6")
+    
+    "Faixa etaria de idade dos Clientes"
+    d_Cliente
+        Faixa Etaria = SWITCH(TRUE(),
+            dClientes[Idade]<=19,"Jovem",
+                dClientes[Idade]<=59,"Adulto",
+                    "Senior")
+
+
+AULA_11: Função SWITCH (Parte 2)
+
+    "Faixa etaria no Relatorio esta em uma ordem errada"
+    "Criando uma coluna de numeração em relação a faixa etaria para organizar a ordem"
+    
+    Coluna de Numeração:
+        Numeração Faixa Etaria = SWITCH(TRUE(),
+            dClientes[Idade]<=19,1,
+                dClientes[Idade]<=59,2,
+                    3)
+    Para organizar:
+        Selecionar Faixa Etaria > 
+            Ferramentas de Coluna > Classificar Por Colunas: 
+                Numeração Faixa Etaria.
+        "A ordem será organizada na ordem da numeração"
+
+    "Simplificando SWITCH  se valores forem da mesma coluna e todos com = (Valores exatos)"
+        Comum:
+            Desconto = SWITCH(TRUE(),dClientes[Nivel Escolar]="Pós Graduação",0.2,dClientes[Nivel Escolar]="Superior Completo",0.1,dClientes[Nivel Escolar]="Superior Incompleto",0.05,0)
+        Simplificado:
+            Desconto = SWITCH(dClientes[Nivel Escolar],"Pós Graduação",0.2,"Superior Completo",0.1,"Superior Incompleto",0.05,0)
+
+
+AULA_12: Função RELATED
+
+    "Permite buscar informações em outras tabelas"
+    "Só funciona se as duas tabelas estiverem RELACIONADAS"
+    "Buscar preços de venda dos produtos"
+
+    d_Produto
+        Nova coluna
+        Preço Unitario = RELATED(dProdutos[Preço Unitario])
+        Nova coluna
+        Faturamento = fVendas[Qtd Vendida]*fVendas[Preço Unitario]
