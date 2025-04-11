@@ -160,3 +160,53 @@ AULA_12: Função RELATED
         Preço Unitario = RELATED(dProdutos[Preço Unitario])
         Nova coluna
         Faturamento = fVendas[Qtd Vendida]*fVendas[Preço Unitario]
+
+
+AULA_13: IF com várias condições (AND) - Desafio
+
+    "Promoções de dia das mães"
+    Regras:
+        "Sexo feminino"
+        "Mais de 0 filhos"
+        "Comprar no mes de Maio"
+
+
+AULA_14: IF com várias condições (AND) - Resolução
+
+    f_Vendas
+        Nova coluna
+        Preço Dia das Mães = 
+            IF(RELATED(dClientes[Genero])="Feminino" &&
+                RELATED(dClientes[Num Filhos])>=1 &&
+                RELATED(dCalendario[Mês])=5,
+                    fVendas[Preço Unitario]*0.85,
+                    fVendas[Preço Unitario])
+
+
+AULA_15: IF com várias condições (OR) / Colunas no Power Query x DAX
+
+    "Separar Fim de Semana e Dia de Semana"
+    d_Calendario
+        Nova coluna
+        Dia Útil/Fim de Semana = 
+            IF(dCalendario[Dia da Semana]=0 ||
+                dCalendario[Dia da Semana]=6,
+                "Fim de Semana",
+                "Dia de Semana")
+
+
+AULA_16: Calculando o Custo e Lucro da Venda
+
+    d_Vendas
+        Custo da Venda = fVendas[Qtd Vendida]*RELATED(dProdutos[Custo Unitario])
+        Imposto = 0.1*fVendas[Faturamento]
+        Lucro = fVendas[Faturamento]-fVendas[Custo da Venda]-fVendas[Imposto]
+
+    // = Comentarios
+
+
+AULA_17: Funções Matemáticas (Explicação)
+
+    "Explicação das Funções (Matemáticas) mais utilizadas"
+
+
