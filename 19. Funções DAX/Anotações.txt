@@ -210,3 +210,19 @@ AULA_17: Funções Matemáticas (Explicação)
     "Explicação das Funções (Matemáticas) mais utilizadas"
 
 
+AULA_18: Funções SUM e AVERAGE
+
+    "Lucro Total"
+        Nova medida
+        Lucro Total = SUM(fVendas[Lucro])
+        Media de Faturamento = AVERAGE(fVendas[Faturamento])
+
+
+AULA_19: Por que devo usar Medidas e não só colunas
+
+    "Margem de Lucro"
+        Nova medida
+        % Margem de Lucro = [Lucro Total]/SUM(fVendas[Faturamento])
+    
+    "Percentual não pode se somar"
+    "Por isso, não Calcular por coluna, e sim por medida"
