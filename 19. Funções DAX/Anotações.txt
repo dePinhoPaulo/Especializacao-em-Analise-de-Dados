@@ -226,3 +226,78 @@ AULA_19: Por que devo usar Medidas e não só colunas
     
     "Percentual não pode se somar"
     "Por isso, não Calcular por coluna, e sim por medida"
+
+
+AULA_20: Funções MAX e MIN
+
+    Maior faturamento:
+        Nova Medida
+        Maior Faturamento = MAX(fVendas[Faturamento])
+        Menor Faturamento = MIN(fVendas[Faturamento])
+
+
+AULA_21: Funções COUNT, COUNTROWS
+
+    "Quantidade de clientes"
+        Nova Media
+        Qtd Clinetes = COUNT(dClientes[ID Cliente])
+        COUNT: "Conta vlores preenchidos"
+
+        Qtd Clinetes = COUNTROWS(dClientes)
+        COUNTROWS: "Conta todas as linhas da tabela (independente de estar vazio)"
+
+
+AULA_22: Função DISTINCTCOUNT
+
+    "Quantos clientes diferentes ja compraram"
+        Nova Media
+        Qtd Clientes que Compraram = DISTINCTCOUNT(fVendas[ID Cliente])
+        Numero de Vendas = DISTINCTCOUNT(fVendas[Ordem de Compra])
+        Marcas Distintas = DISTINCTCOUNT(dProdutos[Marca])
+        Paises Atendidos = DISTINCTCOUNT(dLojas[País])
+
+
+AULA_23: Criando Tabela para guardar as Medidas
+
+    "Organizer as Medidas"
+    "Criar tabela vazia para armazenar as medidas"
+
+    Pagina inicial > Inserir Dados > Carregar - "Excluir todos linhas e colunas"
+    Renomear: Medidas 
+
+    Exportar todas medidas para tabela:
+    Aba Relacionamento > Dados > Tabelas > Arrastar todas medidas para Tabela
+
+
+AULA_24: Criando Pastas pra guardar as Medidas
+
+    "Criar Subpastas para separar medidas"
+    Aba Relacionamento > Selecionar Medida > Propriedades > Pasta de exibição > Nomear Pasta;
+    Arrastar todas medidas para pasta
+
+    Excluir Media ou coluna rapidamente:
+        Selecionar > Delete
+    
+
+AULA_25: Análise Drill Down (Parte 1)
+
+    Visual de Matriz:
+        "Neste visual podemos ir detalhando os dados em topicos e subtopicos"
+        Marca > Produto > Loja X Qtd de Vendas
+
+
+AULA_26: Análise Drill Down (Parte 2)
+
+    Visual de Matriz:
+        "Podemos adiconar varios valores na analise"
+        Qtd Vendas, Faturamento, etc..
+
+        Seta para baixo (⬇):
+            "Mostra somente o valor selecionado em foco"
+        Seta para cima (⬆):
+            "Mostra somente valores do nivel a cima"
+        Duas cetas para baixo (⬇⬇):
+            "Mostra somente valores do nivel a baixo"
+        "Tridente" para baixo (🔀): 
+            "Expande todo os niveis"
+
