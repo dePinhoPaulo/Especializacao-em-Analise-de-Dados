@@ -301,3 +301,60 @@ AULA_26: Análise Drill Down (Parte 2)
         "Tridente" para baixo (🔀): 
             "Expande todo os niveis"
 
+
+AULA_27: Função CALCULATE (Parte 1)
+
+    "Calcula uma expressão ou uma formula a partir dos filtros indicados"
+    =CALCULATE(expressão;[filtro 1];[filtro 2];...)
+
+
+AULA_28: Função CALCULATE (Parte 2)
+
+    "Total de vendas de Celular"
+        Nova medida
+        Vendas Celular = CALCULATE([Total de Vendas],dProdutos[Tipo do Produto] = "Celular")
+
+
+AULA_29: Função CALCULATE (Parte 3)
+
+    "Filtro que é feito na formula CALCULATE, sobreescreve qualquer outro filtro que tenha"
+    "Filtro de Celular na medida anterior, se jogado em uma Matriz que tenha tipo de produtos como filtro, valores irá se perder"
+
+
+AULA_30: Função CALCULATE (Parte 4)
+
+    "Vendas online"
+        Vendas Online = CALCULATE([Total de Vendas],dLojas[Tipo] = "Online")
+        % Vendas Online = [Vendas Online]/[Total de Vendas]
+
+    "Podemos usar mais de um filtro na formula CALCULATE"
+
+    Vendas Celular 2020 = CALCULATE([Total de Vendas],dProdutos[Tipo do Produto] = "Celular",dCalendario[Ano] = 2020)
+    Vendas Apple ou Samsung = CALCULATE([Faturamento total],dProdutos[Marca] = "Samsung" || dProdutos[Marca] = "Apple")
+
+
+AULA_31: Função ALL (Parte 1)
+
+    "Retorna todas as linhas de uma tabela ou todas as celulas de uma coluna, desconsiderando e ignorando qualquer filtro"
+    =ALL(Tabela ou Coluna, [Coluna 1],[Coluna 2],...)
+
+
+AULA_32: Função ALL (Parte 2)
+
+    "Numero absolute de vendas para calcular a porcentagen de vendas"
+        Nova medida
+        Total Vendas Absoluto = CALCULATE([Total de Vendas],ALL(fVendas))
+        % Vendas ALL = [Total de Vendas]/[Total Vendas Absoluto]
+
+    "Com a função ALL o calculo ira remover o filtro da Coluna/tabela escolhida"
+
+
+AULA_33: Função ALL (Parte 3)
+
+    Total Vendas Absoluto = CALCULATE([Total de Vendas],ALL(dProdutos))
+    "Quando colocamos uma segmentação de dados de Continete, o valor Absoluto ira respeitar o filtro, pois ALL so esta removendo o filtro da dProdutos"
+
+    "Para mostratar o Valor Absoluto geral precisamos mustar a da tabela do ALL para fVendas"
+    Total Vendas Absoluto = CALCULATE([Total de Vendas],ALL(fVendas))
+    "Agora a formula não ira aceitar filtro de nenhuma tabela dimensão, pois a tabela fVendas conta todos os dados de vendas"
+
