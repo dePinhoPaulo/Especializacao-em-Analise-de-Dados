@@ -358,3 +358,36 @@ AULA_33: Função ALL (Parte 3)
     Total Vendas Absoluto = CALCULATE([Total de Vendas],ALL(fVendas))
     "Agora a formula não ira aceitar filtro de nenhuma tabela dimensão, pois a tabela fVendas conta todos os dados de vendas"
 
+
+AULA_34: Exercício Função ALL
+
+    "% Faturamento por pais, filtrando por marcas"
+        Total Faturamento Absoluto = CALCULATE([Faturamento total],ALL(dLojas))
+        % Faturamento ALL = DIVIDE([Faturamento total],[Total Faturamento Absoluto],"Sem Vendas")
+
+
+AULA_35: Calculando % do Subtotal
+
+    "Calculando subtotais da matriz, % dos paises para aquele continente"
+        Total Faturamento Absoluto = CALCULATE([Faturamento total],ALL(dLojas[País]))
+    "Com isso cada continete ira ficar com 100%"
+
+    "Podemos adicionar uma coluna com % Global, Para divir os paise e continemtes de uma forma geral"
+        Total Faturamento Absoluto (Global) = CALCULATE([Faturamento total],ALL(dLojas))
+        % Faturamento ALL (Global) = DIVIDE([Faturamento total],[Total Faturamento Absoluto (Global)],"Sem Vendas")
+
+
+AULA_36: Exercício - % do Subtotal
+
+    "% e Total de vendas por tipo produtos e nome, com subtotal de % por nome produto"
+        Total Vendas Absoluto = CALCULATE([Total de Vendas],ALL(fVendas))
+        % Vendas ALL = [Total de Vendas]/[Total Vendas Absoluto]
+
+        Total Vendas Absoluto subtotal = CALCULATE([Total de Vendas],ALL(dProdutos[Nome Produto]))
+        % Vendas ALL subtotal = [Total de Vendas]/[Total Vendas Absoluto subtotal]
+
+
+AULA_37: Novo Layout da Guia Relatório no Power BI
+
+    "Apresentação de atualização do Power Bi"
+
