@@ -391,3 +391,84 @@ AULA_37: Novo Layout da Guia Relatório no Power BI
 
     "Apresentação de atualização do Power Bi"
 
+
+AULA_38: Funções Iteradoras (X) - Explicação
+
+    "Fazem algum calculo linha por linha da tabela e dopis aplicam alguma agregação (soma, media, minimo, maximo, etc)"
+    =SUMX(Tabela, Expressão)
+    =COUNTX()
+    =AVERAGEX()
+    =MAXX()/MINX()
+    =RANKX()
+    
+
+AULA_39: Função SUMX (Parte 1)
+
+    "SUM()= Somar os valores de uma coluna que voce ja tem";
+    "SUMX()= Somar os valores de uma coluna que voce não tem"
+
+    Faturamento Total = SUMX(fVendas,fVendas[Qtd Vendida]*fVendas[Preço Unitario])
+
+
+AULA_40: Função SUMX (Parte 2)
+
+    "Faturamento total com melhor desempenho"
+        Faturamento Total = SUMX(
+            fVendas,
+            fVendas[Qtd Vendida]*RELATED(dProdutos[Preço Unitario])
+        )
+
+    "Com essa nova formula podemas Excluir as colunas calculadas de Faturamento e Preço Unitario da f_Vendas"
+
+
+AULA_41: SUMX, AVERAGEX, MAXX & MINX
+
+    "Faturamento medio"
+        Faturamento Médio = SUMX(
+            fVendas,
+            fVendas[Qtd Vendida]*RELATED(dProdutos[Preço Unitario])
+        )
+
+
+AULA_42: Exercício - Funções Iteradoras
+
+    "Calcule o lucro total da empresa, considerando 10% de impost sobre a receita"
+        Lucro Total = SUMX(
+            fVendas,
+            (fVendas[Qtd Vendida]*RELATED(dProdutos[Preço Unitario]))*0.9 - //Receita descontando o imposto
+            (fVendas[Qtd Vendida]*RELATED(dProdutos[Custo Unitario])) //Custo das vendas
+        )
+    
+    "Lucro medio por transação"
+        Lucro Medio = AVERAGEX(
+            fVendas,
+            (fVendas[Qtd Vendida]*RELATED(dProdutos[Preço Unitario]))*0.9 - //Receita descontando o imposto
+            (fVendas[Qtd Vendida]*RELATED(dProdutos[Custo Unitario])) //Custo das vendas
+        )
+
+    "Prejuizo total causado pelas devoluções"
+        Prejuizo Devoluções = SUMX(
+            'fDevoluções',
+            'fDevoluções'[Qtd Devolvida]*RELATED(dProdutos[Preço Unitario])
+        )
+
+
+AULA_43: Criando Tabela Calendário com DAX
+
+    "Nova formula para dCalendario"
+        Nova Tabela
+        dCalendario = CALENDAR(
+            DATE(2020,01,01),
+            DATE(2022,12,31)
+        )
+        "Sempre começar no 01/01 do ano desejado e terminar no 31/12 do ano desejado"
+
+
+AULA_44: Deixando a Tabela Calendário Automática
+
+    "dCalendario automatica"
+        Nova Tabela
+        dCalendario = CALENDAR(
+            DATE(YEAR(MIN(fVendas[Data da Venda])),01,01),
+            DATE(YEAR(MAX(fVendas[Data da Venda])),12,31)
+        )
