@@ -472,3 +472,81 @@ AULA_44: Deixando a Tabela Calendário Automática
             DATE(YEAR(MIN(fVendas[Data da Venda])),01,01),
             DATE(YEAR(MAX(fVendas[Data da Venda])),12,31)
         )
+
+
+AULA_45: Funções de DATA _ Criação dos Relacionamentos
+
+    "Tablas criadas com formula DAX, Não podem ser alteradas pelo Power Query"
+
+    Ano = YEAR(dCalendario[Date]);
+    Num Mês = MONTH(dCalendario[Date]);
+    Nome Mês = dCalendario[Date].[Mês];
+    Inicio do Mês = STARTOFMONTH(dCalendario[Date]);
+    Num Trimestre = QUARTER(dCalendario[Date]);
+    Nome Trimestre = dCalendario[Date].[Trimestre];
+
+    Relacionar Date com Datas das Tabelas Fato.
+
+
+AULA_46: Funções de Inteligência de Tempo - Explicação
+
+    "Permitem criar omparações e analises inteligentes como acumulado do ano, acumulado dos ultimos x dias, comparação com o mesmo periodo do ano anterior, etc"
+
+    CALCULATE(Medida; DATESYTD(d_Calendario[Date]))
+    TOTALYTD(Medida; d_Calendario[Date])
+
+    CALCULATE(Medida; DATESMTD(d_Calendario[Date]))
+    TOTALMTD(Medida; d_Calendario[Date])
+
+
+AULA_47: Acumulado no Ano - Função DATESYTD
+
+    "Faturamento acumulado do ano"
+        Faturamento YTD = CALCULATE(
+            [Faturamento Total],
+            DATESYTD(dCalendario[Date])
+        )
+
+
+AULA_48: Acumulado no Ano - Função TOTALYTD & Mudança de Período Fiscal
+    
+    "Faturamento acumulado do ano - 2"
+        Faturamento YTD 2 = TOTALYTD(
+            [Faturamento Total],
+            dCalendario[Date]
+        )
+
+
+AULA_49: Acumulado no Mês e Trimestre (MTD e QTD)
+
+    "Faturamento acumulado do Mês"
+        Faturamento MTD = CALCULATE(
+            [Faturamento Total],
+            DATESMTD(dCalendario[Date])
+        )
+        Faturamento MTD 2 = TOTALMTD(
+            [Faturamento Total], 
+            dCalendario[Date]
+        )
+    
+    "Faturamento acumulado do QUARTER"
+        Faturamento QTD = CALCULATE(
+            [Faturamento Total],
+            DATESQTD(dCalendario[Date])
+        )
+
+
+AULA_50: DATEADD - Comparação Entre Períodos (Parte 1)
+
+    "faturamento do mês anterior"
+        Faturamento Mês Anterior = CALCULATE(
+            [Faturamento Total],
+            DATEADD(dCalendario[Date],-1,MONTH)
+        )
+        DATEADD(): "Desloca mês para tras ou para frente"
+
+    "% Crescimento mês por mês"
+        % Crescimento MoM = ([Faturamento Total]-[Faturamento Mês Anterior])/[Faturamento Mês Anterior]
+        % Crescimento MoM 2 = DIVIDE([Faturamento Total]-[Faturamento Mês Anterior],[Faturamento Mês Anterior])
+        DIVIDE(): "ja identifica os valores com erro e FORMATA de infinito pra 0"
+    
