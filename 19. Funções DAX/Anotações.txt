@@ -550,3 +550,39 @@ AULA_50: DATEADD - Comparação Entre Períodos (Parte 1)
         % Crescimento MoM 2 = DIVIDE([Faturamento Total]-[Faturamento Mês Anterior],[Faturamento Mês Anterior])
         DIVIDE(): "ja identifica os valores com erro e FORMATA de infinito pra 0"
     
+
+AULA_51: DATEADD - Comparação Entre Períodos (Parte 2)
+
+    "Compara um ano com outro"
+        Faturamento Ano Anterior = CALCULATE(
+            [Faturamento Total],
+            DATEADD(dCalendario[Date],-1,YEAR)
+        )
+    
+    "% Crescimento anual"
+        % Crescimento YoY = ([Faturamento Total]-[Faturamento Ano Anterior])/[Faturamento Ano Anterior]
+        % Crescimento YoY 2 = DIVIDE([Faturamento Total]-[Faturamento Ano Anterior],[Faturamento Ano Anterior])
+
+
+AULA_52: DATEADD - Comparação Entre Períodos (Parte 3)
+
+    "Coluna de filtro para data que tenha venda"
+        Nova coluna - dCalendario
+        Data vigente? = IF(
+            dCalendario[Date]<=MAX(fVendas[Data da Venda]),
+            "SIM",
+            "NÃO"
+        )
+    "Filtrar matriz com Data vigente = SIM, PARA RETIRAR MESES VAZIOS"
+
+
+AULA_53: DATEADD - Comparação Entre Períodos (Parte 4)
+
+    "Formula para retornar CALCULO somente de um valor, ano por ano (não vai retonar o TOTAL por exemplo, pois são 3 anos, 3 valores)"
+        % Crescimento YoY 2 = IF(
+            HASONEVALUE(dCalendario[Ano]),
+            DIVIDE([Faturamento Total]-[Faturamento Ano Anterior],[Faturamento Ano Anterior])
+        )
+        "precisar ser usado com IF pois Funcção HASONEVALUE tem retorno booleano"
+
+
