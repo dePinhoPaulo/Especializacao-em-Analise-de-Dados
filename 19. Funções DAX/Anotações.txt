@@ -586,3 +586,55 @@ AULA_53: DATEADD - Comparação Entre Períodos (Parte 4)
         "precisar ser usado com IF pois Funcção HASONEVALUE tem retorno booleano"
 
 
+AULA_54: DATEADD - Comparação Entre Períodos (Parte 5)
+
+    "faturamento acumulado do ano antarior "
+        Faturamento YTD LY = CALCULATE(
+            [Faturamento YTD],
+            DATEADD(dCalendario[Date],-12,MONTH)
+        )
+
+    "% Crescimento ano apos ano faturamento acumulado"
+        % Crescimento YoY YTD = DIVIDE(
+            ([Faturamento YTD]-[Faturamento YTD LY]),
+            [Faturamento YTD LY]
+        )
+
+
+AULA_55: DATESINPERIOD pra calcular o acumulado dos últimos X dias
+
+    "Acumulado de 15 dias"
+        Acumulado 15 dias = CALCULATE(
+            [Total Inscrições],
+            DATESINPERIOD(
+                Calendario[Datas],
+                MAX(Calendario[Datas]),
+                -15,
+                DAY
+            )
+        )
+
+
+AULA_56: DATESINPERIOD - Calculando Média Móvel
+
+    "Média Movel das Inscrições"
+        Média Movel Inscrições = CALCULATE(
+            AVERAGE(Inscricoes[Inscrições]),
+            DATESINPERIOD(
+                Calendario[Datas],
+                MAX(Calendario[Datas]),
+                -30,
+                DAY
+            )
+        )
+
+
+AULA_57: Funções DAX - Boas Práticas
+
+    Colunas Calculadas X Medidas
+        "Evite criar muitas colunas desnecessaruamente nas tabelas"
+        "Medidas não ocupam espaço no arquivo"
+        "Colunas calculadas geralmente são usadas para colocar no eixo do gráfico, ounas linhas de uma matriz, ou nos filtros (pensa em ‘categorização’, tipo a faixa etária dos clientes, jovem, adulto, etc, ou uma coluna de ‘ano’ para você criar um gráfico com os anos no eixo)"
+    
+    Identação
+        "Sempre identar as Formulas"
