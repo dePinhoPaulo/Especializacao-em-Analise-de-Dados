@@ -1,0 +1,46 @@
+AULA_1: Introdução ao Storytelling e Escolha de Gráficos (Parte 1)
+
+    -Gráficos
+
+    "Leitura do Dashboard em Z"
+
+AULA_2: Escolha de Gráficos (Parte 2)
+
+    Análise Temporal: Colunas, Linhas, Area
+    Análise Temporal(Comparativo): Colunas agrupadas
+
+
+AULA_3: Escolha de Gráficos (Parte 3)
+
+    % total: Pizza (Poucos dados, não mais de 4)
+    analise %: Rosca, velocimetro
+    dados de localização: Mapas
+
+
+AULA_4: Storytelling: Simplicidade e Organização
+
+    -Simplicidade
+        "Visualizações simple e claras são mais faceis de entender"
+    
+    -Organização
+        "Leitura em Z para otimizar a visualização das informações no seu Dashboard"
+    
+
+5. Storytelling: Consistência e Contexto
+
+    -Consistencia
+        "Usar as mesmas cores ou cores que combinem entre si, manter padrão de estilos e tamanhos de fonte no Dashboard"
+
+    -Contexto
+        "Certifique-se de que o gráfico inclua informações suficientes para que o leitor possa entender o que está sendo mostrado e por que é importante"
+    
+
+
+6. Storytelling: Escala e Saturação
+
+    -Escala
+        "Certifique-se de que a escala utilizada em seu gráfico seja apropriada para os dados que você está exibindo"
+    
+    -Saturação
+        "Evite a todo custo usar planos de fundo que vão roubar a cena e não vão permitir enxergar as informações do Dashboard"
+
