@@ -1,0 +1,89 @@
+AULA_1: Entendendo os indicadores que queremos apresentar
+
+    Passo 1:
+        Definir as perguntas que você quer responder/os indicadores;
+        Entenda os indicadores da sua área, converse com os gestores;
+    
+
+AULA_2: Esboço, Esqueleto e Layout do Dashboard
+
+    Passo 2:
+        Esboço do Dashboard;
+        "Com papel e caneta por exempplo, esboce o dashboard"
+
+    Passo 3:
+        Esqueleto do Dashboard
+        "Colocar graficos de uma forma crua, sem muito design"
+
+    Passo 4:
+        Criação do Plano de Fundo
+
+AULA_3: Alterando o Tema do Relatório
+
+    Mudar Tema:
+        Exibição > Temas
+
+    Personalizar Tema:
+        Exibição > Temas > Personalizar Tema
+    
+
+AULA_4: Importando o Plano de Fundo e Criando o Primeiro Visual
+
+    Power Point:
+        Salvar Power Point como Imagem:
+            Ctrl + T > Salvar como Imagem
+    
+    Power Bi:
+        Selecionar tela > Formatar Tela > Tela de fundo > Selecionar Imagem > Ajuste da Imagem: Ajuste
+    
+    Visual:
+        Cartão de linha multipla:
+            Tela de fundao: Desligado;
+            fonte: Din, Branco;
+            titulo: Din, Branco;
+            Rotulos: Desligado;
+            Barra vertical desligado;
+            Formato: Reais;
+
+
+AULA_5: Criando os Cartões e Segmentação de Dados
+    
+    Copiar Cards para outros valores;
+        Lucro total;
+        Total vendas;
+        % Margem Lucro;
+    
+    Visual:
+        Segmentação de dados:
+            dCalendario: Ano;
+            Configuração Segmentação: Suspenso;
+            Rotulos: Desligado;
+
+        Caixa de Texto:
+            "Ano Selecionado";
+            fonte Din, 14;
+            -Posicionar ao lado da seleção do ano;
+
+
+AULA_6: Analisando o Crescimento do Faturamento
+
+    Visual:
+        Caixa de Texto:
+            "Vs Ano Aterior";
+            fonte Din, 12;
+            -Posicionar em baixo do card de faturamento, lucro...;
+
+        Cartão:
+            Crescimento YoY;
+            Tela de fundao: Desligado;
+            fonte: Din, Branco, 16;
+            filtro: Ano Vigente = SIM;
+            -Posicionar ao lado da seleção do Vs Ano;
+
+    Ajustar Formula de Faturamento ano sobre ano:
+        % Crescimento YoY = IF(
+            HASONEVALUE(dCalendario[Ano]),
+            DIVIDE([Faturamento Total]-[Faturamento Ano Anterior],[Faturamento Ano Anterior]),
+            "N/A"
+        )
+
