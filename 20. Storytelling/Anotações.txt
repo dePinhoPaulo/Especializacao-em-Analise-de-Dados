@@ -26,7 +26,7 @@ AULA_4: Storytelling: Simplicidade e Organização
         "Leitura em Z para otimizar a visualização das informações no seu Dashboard"
     
 
-5. Storytelling: Consistência e Contexto
+AULA_5: Storytelling: Consistência e Contexto
 
     -Consistencia
         "Usar as mesmas cores ou cores que combinem entre si, manter padrão de estilos e tamanhos de fonte no Dashboard"
@@ -36,7 +36,7 @@ AULA_4: Storytelling: Simplicidade e Organização
     
 
 
-6. Storytelling: Escala e Saturação
+AULA_6: Storytelling: Escala e Saturação
 
     -Escala
         "Certifique-se de que a escala utilizada em seu gráfico seja apropriada para os dados que você está exibindo"
@@ -44,3 +44,46 @@ AULA_4: Storytelling: Simplicidade e Organização
     -Saturação
         "Evite a todo custo usar planos de fundo que vão roubar a cena e não vão permitir enxergar as informações do Dashboard"
 
+
+AULA_7: Storytelling: Onde buscar inspiração (Parte 1)
+
+    -inspiração
+        "Saiba onde ter fontes de inspiração para poder criar os seus próprios Dashboards e ter no que se basear – uma fonte infinita de ideias"
+            Ex: dribbble.com, Pinterest.com e behance
+    
+    
+AULA_8: Storytelling: Onde buscar inspiração (Parte 2)
+
+    -inspiração
+        Ex: community.fabric.microsoft.com, Hashtag
+
+
+AULA_9: Storytelling: Inspiração (Parte 3) e Gráficos que você deve evitar
+
+    -inspiração
+        Ex: behance.net
+
+
+AULA_10: Storytelling: Ícones
+
+    -Ícones
+        "Utilize ícones nos seus Dashboards. Eles ajudam a facilitar a compreensão sobre a informação que está sendo passada"
+            Sites: flaticon.com https://www.iconfinder.com/ https://materialdesignicons.com/ https://icons8.com/ https://thenounproject.com/ https://feathericons.com/ http://endlessicons.com/
+
+
+AULA_11: Storytelling: Plano de Fundo e Capa
+
+    -Plano de Fundo
+        "Sempre crie um plano de fundo personalizado para o seu Dashboard. Deixa muito mais visualmente atraente e organizado"
+
+    -Capa
+        "Crie uma capa para valorizar o seu Dashboard"
+            Site para ilustrações: storyset.com
+
+
+AULA_12: Storytelling: Escolha de Cores
+
+    -Cores
+        "Tenha onde buscar opções de cores, tanto escolher cores principais quanto opções para variar a mesma cor, ou escolher cores que combinem, para que o Dashboard fique harmônico"
+            Ex: color-hex ; coolors.co ; mycolor.space
+    
