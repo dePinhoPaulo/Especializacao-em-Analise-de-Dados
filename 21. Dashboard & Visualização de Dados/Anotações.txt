@@ -87,3 +87,53 @@ AULA_6: Analisando o Crescimento do Faturamento
             "N/A"
         )
 
+
+AULA_7: Variáveis em DAX & Corrigindo o 'Em Branco'
+
+    Conceito de variaveis:
+        Ex: VAR numero1 = 10+12
+    
+    Ajustar Formula de Faturamento ano sobre ano:
+        % Crescimento YoY = 
+            VAR Crescimento = DIVIDE([Faturamento Total]-[Faturamento Ano Anterior],[Faturamento Ano Anterior])
+            RETURN
+                IF(
+                    HASONEVALUE(dCalendario[Ano]) && Crescimento <> BLANK(),
+                    Crescimento,
+                    "N/A"
+                )
+
+
+AULA_8: Crescimento do Lucro & Vendas
+
+    "Boa pratica para variaveis: vNome (Adicionar v antes dos nome de variaveis)"
+
+    Ajustar Formula de Faturamento ano sobre ano:
+        % Crescimento YoY = 
+            VAR vAno_Anterior = 
+                CALCULATE(
+                    [Faturamento Total],
+                    DATEADD(dCalendario[Datas],
+                    -12,
+                    MONTH)
+                )
+            VAR vCrescimento = 
+                DIVIDE(
+                    [Faturamento Total]-vAno_Anterior,
+                    vAno_Anterior
+                )
+
+            RETURN
+            
+                IF(
+                    HASONEVALUE(dCalendario[Ano]) && vCrescimento <> BLANK(),
+                    vCrescimento,
+                    "N/A"
+                )
+    
+    Atalho: Ctrl + Shift + L
+        "Seleciona todo itens iguais ao Selecionado"
+    
+    "Utilizar Formula de faturamento YoY como base para outros cards: Vendas e Lucro"
+
+    
