@@ -136,4 +136,69 @@ AULA_8: Crescimento do Lucro & Vendas
     
     "Utilizar Formula de faturamento YoY como base para outros cards: Vendas e Lucro"
 
+
+AULA_9: Aplicando Formatação Condicional nas Análises de Crescimento
+
+    Selecionar Card > Visual > Valor do balao > Cor > Regras
+        SE >= 0 & <= MAX : VERDE
+        SE >= MIN & <= 0 : VERMELHO
+
+        "Problema de cor de cartão padrão"
+            Exibição > Personalizar Tema > Texto > Cartões e KPIs
+                Cor: Branco.
+
+        "Se atentar a ao campo de calculo que a regra esta se baseando"
+        "SE copiar e cola de um para outro tem que Mudar"
     
+AULA_10: Novo Cartão no Power BI
+
+    Cartão (Novo):
+        "Varios dados em um só"
+        "Alinhamento a esqueda"
+        "Edição multipla"
+        "Opção mostrar valores em Branco Como: "
+
+
+AULA_11: Análise de Faturamento ao longo do tempo (Parte 1)
+
+    Gráfico de Colunas clusterizado:
+        faturamento total e faturamento LY Por Mes
+
+
+AULA_12: Análise de Faturamento ao longo do tempo (Parte 2)
+
+    Edição grafico:
+        TITULO: "Faturamento Atual Vs Ano Anterior";
+        Titulo de eixo Y e X: Desligar;
+        Eixo Y > Faixa: Minimo = 0;
+        Cores das colunas:  #E89B26, #032030;
+        Filtros: Data vigente = SIM;
+    
+
+AULA_13: Análise de Faturamento ao longo do tempo (Parte 3) & Ordenando os Meses no Gráfico
+
+    "Remover colunas em laranja se nenhum ano estiver Selecionado"
+    Ajustar Formula:
+        Faturamento LY = 
+            var vFatLY = 
+                CALCULATE(
+                    [Faturamento Total],
+                    DATEADD(
+                        dCalendario[Datas],
+                        -12, 
+                        MONTH
+                    )
+                )
+            return
+                IF(
+                    HASONEVALUE(dCalendario[Ano]),
+                    vFatLY
+                )
+
+    "Classificar Eixo por ordem dos Meses"
+    Modo Exibição de tabelas:
+        Selecionar coluna de meses > Classificar por coluna > Num MÊs
+            "Com isso vc vai mudar a classificação de acordo com o numero do mes e não pelo nome (ordem alfabetica)"
+    No Gráfico:
+        Opções > Classificar > Mes: Ordem Crescente
+
