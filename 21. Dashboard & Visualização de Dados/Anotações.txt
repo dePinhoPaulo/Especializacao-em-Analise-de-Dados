@@ -202,3 +202,84 @@ AULA_13: Análise de Faturamento ao longo do tempo (Parte 3) & Ordenando os Mese
     No Gráfico:
         Opções > Classificar > Mes: Ordem Crescente
 
+
+AULA_14: Gráfico de Pizza/Rosca
+
+    "Proporção de vendas entre Lojas Fisicas e Online"
+        grafico Rosca:
+            Total Vendas por Tipo de Venda
+            Titulo: "Tipo de Loja";
+            Tela de Fundo:  Desligado;
+            Fatias: #032030, #E89B26;
+            Rótulos: Descrição, Porcentagem;
+            Legenda: Desligado.
+    
+
+AULA_15: Gráfico de Barras e Análise Top N
+
+    "Faturamento por tipo de Produto"
+        Gráfico de Barras:
+            Faturameno por Tipo de Produto
+            Titulo de eixo: Desligado;
+            Tela de Fundo:  Desligado;
+            Rotulos: Ligado.
+    
+    "Faturamento por Produtos em Ranking"
+        Gráfico de Barras:
+            Faturameno por Produtos
+            FILTROS: Nome do Produto - N Superior: 5 - Faturamento Total
+
+
+AULA_16: Análise em Matriz com Drill Down
+
+    "Receita, Lucro e Quant. Vendas Por Continente e País"
+        Matriz:
+            Faturamento total, Lucro total e Total vendas por Continente, País
+            Drill Down: Expandir Tudo;
+            Tela de Fundo:  Desligado;
+            Grade:  #032030.
+
+
+AULA_17: Análise com Árvore de Hierarquia
+
+    "Aba Indicadores"
+
+    Power Point:
+        "Salvar Tela de fundo com Imagem"
+    Power Bi:
+        Tela em branco > Efeitos > Tela DE fundo > Selecionar: Ajuste
+
+    "Analise de Vendas por Marca, Categoria e Produto"
+        Arvore Hierarquia:
+            Total Vendas por Marca, Categoria e Produto
+            Ordenar - Valor alto;
+            Tela de Fundo:  Desligado;
+            Barras: Tamanho - 150%
+
+
+AULA_18: Botão para Trocar Análise Automaticamente
+
+    "Segmentação para Arvore Hierarquia"
+        Novo Parametro > Campo:
+            Faturamento Total, Total Vendas;
+            Tela de Fundo:  Desligado;
+            Cabeçalho: "Escolha a Análise: "
+            Segmentação:
+                Opção: Lista vertical;
+                seleção Única: Ligado.
+            
+    "Vincular o Paramentro com a arvore"
+        Arvore Hierarquia:
+            "Excluir Total venda do Campo Analisar. Add Parametro"
+            Analisar: Parametro;
+
+
+AULA_19: Função TOPN
+
+    "Função que retorne os Melhores Produtos"
+        Top 5 Produtos = TOPN(
+            5,
+            ALL(dProdutos[Nome Produto]),
+            [Total Vendas]
+        )
+
