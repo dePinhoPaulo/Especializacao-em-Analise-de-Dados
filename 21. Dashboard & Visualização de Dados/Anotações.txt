@@ -283,3 +283,90 @@ AULA_19: Função TOPN
             [Total Vendas]
         )
 
+
+AULA_20: Análise de Produto Mais Vendido
+
+    "Top 1 Produto"
+        Produto Mais Vendido = 
+            CALCULATE(
+                MAX(dProdutos[Nome Produto]),
+                TOPN(
+                    1, 
+                    ALL(dProdutos[Nome Produto]),
+                    [Total Vendas]
+                )
+            )
+
+
+AULA_21: Usando o Enlighten Data Story
+
+    "Quantidade de vendas do Produto mais Vendido"
+        Qtd Vendida (Top 1) = 
+            CALCULATE(
+                Total Vendas,
+                TOPN(
+                    1, 
+                    ALL(dProdutos[Nome Produto]),
+                    [Total Vendas]
+                )
+            )
+    
+    "Percentual de vendas que o produto top 1 representa"
+        % Vendas (Top 1) = [Qtd Vendida (Top 1)]/[Total Vendas]
+    
+    "Visual de texto com Medidas"
+        Enlighten Data Story:
+            Produto Mais Vendido, Qtd Vendida (Top 1), % Vendas (Top 1)
+            "O produto mais vendido foi o #, com # unidades vendidas, o que representa # das vendas."
+            Fonte: cor: Branco.
+
+
+AULA_22: Exercício: Enlighten Data Story para analisar a Melhor Loja
+
+    "Criar mesmo cartão do Produto mais vendido para Loja com mais vendas"
+        Loja Mais Vendas = 
+            CALCULATE(
+                MAX(dLojas[Nome da Loja]),
+                TOPN(
+                    1, 
+                    ALL(dLojas[Nome da Loja]),
+                    [Total Vendas]
+                )
+            )
+
+        Qtd Vendida (Loja Top 1) = 
+            CALCULATE(
+                [Total Vendas],
+                TOPN(
+                    1, 
+                    ALL(dLojas[Nome da Loja]),
+                    [Total Vendas]
+                )
+            )
+
+        % Vendas (Loja Top 1) = [Qtd Vendida (Loja Top 1)]/[Total Vendas]
+
+        Enlighten Data Story:
+            Loja Mais Vendas, Qtd Vendida (Loja Top 1), % Vendas (Loja Top 1)
+            "A loja com mais vendas foi a #, com # unidades vendidas, o que representa # das vendas."
+
+
+AULA_23: Análise do Mês Mais Recente
+
+    "Gráfico de telão bolsa de valores (Scroller) com Saldo mensal"
+        Scroller:
+            Tipo do Produto, Faturamento Total
+            "DADOS COM MêS MAIS RECENTE DE FORMA AUTOMATICA"
+                FILTRO: 
+                    Inicio de mês - N Superior - Inicio de mês (Mais Recente);
+                    Data Vigente = "Sim".
+
+
+AULA_24: Gráfico de Scroller (Barra Animada)
+
+    Scroller:
+        Tipo do Produto, Faturamento Total, % Crescimento MoM
+        Titulo: Desligado;
+        BackGround: #032030;
+        Scroll Speed: 0.7;
+
