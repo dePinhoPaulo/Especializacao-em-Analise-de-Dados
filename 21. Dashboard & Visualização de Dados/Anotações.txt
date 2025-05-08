@@ -370,3 +370,75 @@ AULA_24: Gráfico de Scroller (Barra Animada)
         BackGround: #032030;
         Scroll Speed: 0.7;
 
+
+AULA_25: Análises de Devoluções
+
+    Power Point:
+        "Salvar Tela de fundo com Imagem"
+    Power Bi:
+        Tela em branco > Efeitos > Tela DE fundo > Selecionar: Ajuste
+
+    "Total de faturamento perdido"
+        Faturamento Perdido = 
+            SUMX(
+                'fDevoluções',
+                'fDevoluções'[Qtd Devolvida]*RELATED(dProdutos[Preço Unitario])
+            )
+        
+        Total Devoluções = SUM('fDevoluções'[Qtd Devolvida])
+
+        % Devoluções = [Total Devoluções]/[Total Vendas]
+
+        % Faturamento Perdido = [Faturamento Perdido]/[Faturamento Total]
+    
+    "Jogar ambos calculos em Cards replicados da Página 1"
+
+
+AULA_26: Análise de Devolução Mensal
+
+    "Evolução da % de devolução mensal"
+        Gráfico de Area:
+            % Devolução, Inico de mês;
+            Titulo: "% Devoluções Mensal";
+            Linhas: Cor - #032030;
+            Titulo de eixo: Desligado;
+            Eixo Y: Minimo = 0;
+            Dica de Ferramentas: Total de Vendas, Total de Devoluções.
+    
+
+AULA_27: Devoluções por Região (Gráfico de Mapa)
+
+    "Analise de devolução por Região"
+        Gráfico de Mapa:
+            Continente, % Devolução;
+            Titulo: "% Devoluções por Continente";
+            Bolha:
+                Escala: Intervalo de Dados
+                Tamanho: 50;
+            Dica de Ferramentas: Total de Vendas, Total de Devoluções.
+
+        Power Query:
+            Substituir:
+                dLojas: Oceania - Austrália
+
+
+AULA_28: Análise com Drill Down
+
+    "% de Devolução por Marcas"
+        Gráfico de coluna:
+            % Devolução, Marca, Tipo produto, Nome produto;
+            Rotulos de Dados: Ligado;
+            Valor Eixo Y: Desligado;
+        "Navegar pelo Gráfico pelo Drill Down (Clicar no botão para ativar)"
+
+
+AULA_29: Sincronizando Filtros do Dashboard
+
+    "Selecionar Segmentação"
+        Copiar e colar Filtro da Página 1:
+            Opção: Sincronizar
+    
+    Configuração Das Segmentçãoes (Para sincronizar em uma ou em outra):
+        Exibição > Segmentçãoes de dados de sincronização
+            "Central das Segmentçãoes"
+
