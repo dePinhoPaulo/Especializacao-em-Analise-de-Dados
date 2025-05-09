@@ -409,7 +409,7 @@ AULA_26: Análise de Devolução Mensal
 AULA_27: Devoluções por Região (Gráfico de Mapa)
 
     "Analise de devolução por Região"
-        Gráfico de Mapa:
+    Gráfico de Mapa:
             Continente, % Devolução;
             Titulo: "% Devoluções por Continente";
             Bolha:
@@ -441,4 +441,85 @@ AULA_29: Sincronizando Filtros do Dashboard
     Configuração Das Segmentçãoes (Para sincronizar em uma ou em outra):
         Exibição > Segmentçãoes de dados de sincronização
             "Central das Segmentçãoes"
+
+
+AULA_30: Editando Interações no Relatório (Parte 1)
+
+    "Filtrar graficos atraves de outros graficos"
+        Opções > Configurações de relatorio > Alterar a interaçã visual
+        "Esta opção em vez de realçar outros granfiocs ira filtrar"
+
+
+AULA_31: Editando Interações no Relatório (Parte 2)
+
+    "Personalizando em quais graficos a segmentação impacta"
+        Selecionar Segmentação > Formato > Editar Interações: 🚫 nenhum;
+        "Funcionar tanto para segmentação para gráfico ou o inverso"
+        "Tambem podemos escolher entre filtragem ou reaçe como na aula anterior"
+    
+
+AULA_32: Play Axis: Filtro Dinâmico no Dashboard
+
+    "Apresentação do dashboard em forma de video (Passando pelos itens da segmentação)"
+        Play Axis:
+            Tipo Produto,
+            Titulo: Desligado;
+            Filtro: Total Vendas: Maior que 0;
+            Animation Setings: Time - 5000;
+
+
+AULA_33: Tooltip/Dicas de Ferramentas (Opção Básica)
+
+    "Adicionando informações nas dicas de ferramentas"
+        Selecionar qualquer gráfico:
+            Add calculos que deseja no toltip.
+
+
+AULA_34: Tooltip Dicas de Ferramentas (Opção Avançada) - Parte 1
+
+    "Toltip avançada"
+        Nova pagina > Visual > Informação pagina > Permitir com dica de ferramenta;
+        Exibir > Exibição de pagina > Ajustar a pagina;
+        
+        "Vincular está pagina criada com o gráfico"
+            Selecionar gráfico:
+                Visual > Geral > Dica de ferramenta > Pagina do relatorio - "TolTip" (selecionar a pagina).
+
+
+AULA_35: Tooltip Dicas de Ferramentas (Opção Avançada) - Parte 2   
+
+    "Fazer Background Toltip"
+    Power Point:
+        "Salvar Tela de fundo com Imagem"
+    Power Bi:
+        Tela em branco > Efeitos > Tela DE fundo > Selecionar: Ajuste
+    "Mesmo processo que nos demais"
+
+    "Ajustar cards"
+        Card:
+            % Devolução, Total vendas, Total devoluções...
+            fonte: Branco;
+            tela de fundo:  desligado;
+        
+    "% devoluções por produto"
+        Grafico de barras:
+            % Devolução, Produto;
+            titulos eixo: desligado;
+            Fonte: Branco;
+            Barras: #677982;
+            FILTRO: Nome Produtos - N Superior - 5 - % devoluções
+            Titulo: Desligado;
+            "Caixa de texto para titulo"
+
+
+AULA_36: Tooltip Dicas de Ferramentas (Opção Avançada) - Parte 3
+
+    "Card de mÊs selecionado no toltip"
+        Mês selecionado = 
+            SELECTEDVALUE(dCalendario[Inicio do Mês])
+            Formato: "MMMM" de "YYYY"
+
+        Card:
+            Mês selecionado;
+            Fonte: branco.
 
