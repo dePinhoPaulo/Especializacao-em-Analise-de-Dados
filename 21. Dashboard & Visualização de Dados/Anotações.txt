@@ -523,3 +523,111 @@ AULA_36: Tooltip Dicas de Ferramentas (Opção Avançada) - Parte 3
             Mês selecionado;
             Fonte: branco.
 
+
+AULA_37: Tooltip Vendas (Parte 1)
+
+    "Fazer Background Toltip"
+    Power Point:
+        "Salvar Tela de fundo com Imagem"
+    Power Bi:
+        Tela em branco > Efeitos > Tela DE fundo > Selecionar: Ajuste
+    "Mesmo processo que nos demais"
+
+    "Toltip avançada"
+        Nova pagina > Visual > Informação pagina > Permitir com dica de ferramenta;
+        Exibir > Exibição de pagina > Ajustar a pagina;
+    
+    Card Total Vendas:
+        "Copiar e colar"
+    Card Faturamento Total:
+        "Copiar e colar"
+    
+    "Categoria selecionado no toltip"
+        Categoria selecionada = 
+            SELECTEDVALUE(dProdutos[Tipo do Produto], "Selecione uma categoria")
+    
+    "Top 5 Produtos"
+        Grafico de barras:
+            Faturamento total, Produtos;
+            titulos eixo: desligado;
+            Fonte: Branco;
+            Barras: #677982;
+            FILTRO: Nome Produtos - N Superior - 5 - Faturamento
+            Titulo: Desligado;
+            "Caixa de texto para titulo"
+
+
+AULA_38: Criando Links pras suas Imagens (Google Drive)
+
+    "Mostrando Imagens de foram dinamica"
+        Simple Image:
+            "Copiar link da Imagem"
+            Subir no google drive;
+            Tratar o link:
+                https://drive.google.com/ uc?id= ""
+    
+
+AULA_39: Criando Links pras suas Imagens (Img BB)
+
+    "Hospedar Imagem pelo imageBB"
+        Trocar por link direto;
+
+    "Fazer Plnilha com links das Imagens"
+        Coluna Tipo Produto;
+        Link imagem;
+
+
+AULA_40: Trazendo a Tabela de Imagens pro Power BI
+
+    Importar Planilha:
+        Transformar dados > Nova fonte > Planilha excel;
+        "Cabeçalho na Primeira linha";
+        Mesclar consulta:
+            dProdutos: Tipo Produto - Tipo Produto :Imagens;
+            Coluna: Link;
+        Desabilitar Carga: Imagens;
+    
+    "Formato de Imgem"
+        Selecionar coluna link > Ferramentas de coluna > Categoria de dados: URL de Imagem.
+
+
+AULA_41: Visual Simple Image & Finalizando o Tooltip
+
+    "card de imagem"
+        Simple Image:
+            Coluna Image.
+    
+    "Alterar tamanho Toltip"
+        Visual > Configuração de tela > Tipo: Personalizar;
+        Ajustar tamanho.
+
+
+AULA_42: Painel Explicativo (Parte 1)
+
+    "Painel de Seleção"
+        Exibição > Seleção
+        "Ocultar ou reexibir qualquer um dos objetos da tela"
+    
+    "Painel de Indicadores"
+        Exibição > Indicadores
+        "Salva forma que painel está (checkpoint)"
+    
+    "Tela de explicação"
+        Salvar balao de explicação do Power Point;
+        Importar para power bi.
+
+
+AULA_43: Painel Explicativo (Parte 2)
+
+    "Tela de explicação"
+        Indicadores:
+            Salvar tela com explicação e Sem explicação
+            (Desabilitando e habilitando explicação na Selção)
+            
+            Adicionar retangulo em tela cheia:
+                Cor: #032030;
+                Transparencia: 25;
+            
+            "Atualizar Indicadores (COM E SEM Explicação)"
+            "Desmarcar a opção DADOS para não pegar filtro nas transições de tela"
+
