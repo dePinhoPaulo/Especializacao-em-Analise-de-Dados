@@ -1,0 +1,76 @@
+AULA_1: Criando o Plano de Fundo no PowerPoint (Parte 1)
+
+    "Primeiro fazer esboço do dashboard"
+    "Tirar print do painel no Power Bi e jogar no Power Point, Para ir modelando o Background"
+
+    "Usar conta gotas para pegar cor do print"
+        Desenho:
+            Preenchimento > Conta-gotas
+
+    "Pegar inspirações do Dribble/Pinterest"
+
+    Gradiente:
+        Formatar Forma
+        Preenchimento;
+        Preenchimento de gradiente.
+    
+    "copiar e arrastar na mesma linha"
+        CTRL+SHIFT+Arrastar com o mouse.
+
+
+AULA_2: Criando o Plano de Fundo no PowerPoint (Parte 2)
+
+    "Fundo Cinza no Painel"
+        Inserir > formas > Retangulo canto arredondado;
+        Preenchimento: #f7f7f7;
+        Arredondamento: "Ajustar bolinha amarela no canto";
+
+    "Ir completando os retangulos dos outros graficos na cor Branca"
+
+AULA_3: Criando o Plano de Fundo no PowerPoint (Parte 3)
+
+    "Ajustes finos de posicionamento"
+
+    Sombra:
+        Selecionar elemento > Forma de Formato > Efeitos da foram > Sombra;
+        Opções de sombra:
+            Cor: Azul escuro;
+            Transparencia: 50%;
+            desfoque: 10pt.
+        
+        "Replicar estilo para outros elementos"
+            Pincel de Formatação.
+
+        "Título"
+            Caixa de texto:
+
+
+AULA_4: Criando o Plano de Fundo no PowerPoint (Parte 4)
+
+    Icones:
+        Flaticons;
+    
+    "Brilho imagem"
+        Formato imagem;
+            Efeito da imagem: Brilho;
+            ou
+            Sombra: com Cor clara;
+    
+    "Alterar cor do icone no flatcoin"
+
+
+AULA_5: Criando o Plano de Fundo no PowerPoint (Parte 5)
+
+    "Aplicar no Power Bi"
+        Power Point:
+            "Salvar Tela de fundo com Imagem"
+        Power Bi:
+            Tela em branco > Efeitos > Tela DE fundo > Selecionar: Ajuste
+    
+    "Ajuste fino no Power Bi"
+
+
+AULA_6: Criando o Plano de Fundo no PowerPoint (Parte 6)
+
+    "Aplicar mesmo processo para outras paginas"
+
