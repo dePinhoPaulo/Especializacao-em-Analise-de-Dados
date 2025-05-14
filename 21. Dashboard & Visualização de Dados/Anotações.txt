@@ -631,3 +631,113 @@ AULA_43: Painel Explicativo (Parte 2)
             "Atualizar Indicadores (COM E SEM Explicação)"
             "Desmarcar a opção DADOS para não pegar filtro nas transições de tela"
 
+
+AULA_44: Painel Explicativo (Parte 3)
+
+    "Adicionar botão de ação (para tela de expliação)"
+        Inserir > Botões > Informação;
+        Ação: Indicardor - Com expliação;
+    
+    "Adicionar botão de ação (para sair da tela)"
+        Inserir > Botões > Voltar;
+        Ação: Indicardor - Sem expliação;
+    
+    "Ocultar ou exibir o elemento na seleção para incador ficar correto"
+    "Sempre atualizar os indicadores ao adicionar um elemento na tela"
+
+    "Agrupar Seleção"
+        Selecionar iten desejados > Agrupar
+        "Facilitando p/ ocultar ou exibir os elementos no indicador"
+    
+
+AULA_45: Painel Explicativo (Parte 4)
+
+    "Editando borda do balão informativo no Power Point"
+
+
+AULA_46: Painel de Filtro Retrátil (Parte 1)
+
+    "Filtro Retratil"
+        Copiar Retangulo da Tela Geral (Para tela de fundo)
+        Add Retangulo
+            Cor: #4E626E;
+            Borda: Escura - menos arredondada;
+        Add segmentação:
+            Datas;
+            Titulo: branco;
+            Valores: branco;
+            Controle deslizante: Branco;
+        Add segmentação:
+            Copiar colar da Data;
+            Continente;
+            Configuração: Suspenso;
+            Valores:
+                Cor: Branco;
+                Tela de fundo: #4E626E;
+        Add segmentação:
+            Copiar colar da Continente;
+            País.
+
+
+AULA_47: Painel de Filtro Retrátil (Parte 2)
+
+    "Adicionar botão de ação (para tela de filtro)"
+        Inserir > Botões > Voltar;
+        Ação: Indicardor - Com Filtro;
+    
+    "Agrupar elementos do filtro na seleção"
+        Criar elemento:
+            Com filtro
+            Sem filtro
+    
+    "Atualizar Elementos"
+
+    "Adicionar botão de ação (para sair da tela)"
+        Inserir > Botões > Voltar;
+        Ação: Indicardor - Sem Filtro;
+
+    "PARA CARRAGAR OS FILTRO DE UMA TELA PARA OUTRA"
+        Indicadores > Sem Filtros > Desmarcar Dados;
+        Indicadores > Com Filtros > Desmarcar Dados.
+
+
+AULA_48: Inserindo a Capa do Dashboard
+
+    "Capa"
+        Power Point:
+            "Salvar Tela de fundo com Imagem"
+        Power Bi:
+            Tela em branco > Efeitos > Tela DE fundo > Selecionar: Ajuste
+        "Mesmo processo que nos demais"
+
+    "Botão Transparente para acessar Dashboard"
+        Inserir > Botão > Em branco;
+        Incone: Desligado;
+        Borda: Desligado;
+        Ação: Navegação entre paginas - Geral;
+
+
+AULA_49:  Criando Hiperlinks para Navegação entre páginas
+
+    "Ocultar todas abas para navegar pelos icones de tela"
+
+    "Adicionar Botões"
+        Copiar botão da capa;
+        Adicionar botão em cada icone;
+        Direcionar para devida pagina;
+        botão de voltar;
+        Replicar para outras paginas.
+
+
+AULA_50:  Ajustando os Hiperlinks
+
+    "Ajuste para sempre que abrir Dashboard esteja tela de informativo desativada"
+        Botão de acesso ao Dash:
+            Ação: Indicardor - Sem expliação;
+
+        Botão para Análises:
+            Ação: Indicardor - Sem Filtro;
+            Replicar para todas telas.
+    
+    "Ajhuste final das posições dos elementos no Indicador"
+
