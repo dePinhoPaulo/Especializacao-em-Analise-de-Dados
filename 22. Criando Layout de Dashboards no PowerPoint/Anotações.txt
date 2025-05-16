@@ -74,3 +74,80 @@ AULA_6: Criando o Plano de Fundo no PowerPoint (Parte 6)
 
     "Aplicar mesmo processo para outras paginas"
 
+
+AULA_7: Criando o Plano de Fundo no PowerPoint (Parte 7)
+
+    "Criando Background pagina Devoluções"
+    "Bem parecido com pagina de Vendas (Copiar e Colar)"
+
+
+AULA_8: Criando o Plano de Fundo no PowerPoint (Parte 8)
+
+    "Criando Background pagina TolTip"
+    "Utilizar cores mais escuras"
+
+    Gradiente Radial (Redondo):
+        Formatar Forma
+        Tipo Radial
+        Preenchimento;
+        Preenchimento de gradiente.
+
+    Mycolor.Space
+        Paleta de cores
+
+    Win+V:
+        Atalho de historico de Copiar  
+
+
+AULA_9: Criando o Plano de Fundo no PowerPoint (Parte 9)
+
+    "Criando Background pagina TolTip-2"
+    "Adicionar espaço extra para imagem"
+
+    "Adicionar icone de sombra para agregar a imagem do toltip"
+
+
+AULA_10: Criando o Plano de Fundo no PowerPoint (Parte 10)
+
+    "Criando Capa do Dashboard"
+
+    Gradiente da capa:
+        Tipo Radial;
+        5 marcas;
+        3 escuras, 1 clara, 1 mais clara;
+    
+    Retangulo extra
+        Com a mesma cor e gradiente;
+        Um pouco Transparente;
+        Efeito:
+            Biesel
+            "Refeito de relevo"
+    
+    Fonte:
+        Big noodle Titling
+        Orbitron
+
+
+AULA_11: Criando o Plano de Fundo no PowerPoint (Parte 11)
+
+    "Adicionando Titulo"
+        Big noodle Titling;
+        Taman: 120;
+        Cores Diferentes;
+    
+    Ilustração para capa:
+        Storyset.com
+        "Escolher cor para combinar com grafico"
+    
+    "Botão de acesso ao painel"
+        Retangulo arredondado;
+        Sombra;
+        Fonte:Orbitron;
+    
+    "Ajuste Fino"
+
+
+AULA_12: Criando uma capa alternativa
+
+    "Crinado outro estilo de capa"
+
