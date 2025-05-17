@@ -1,0 +1,82 @@
+AULA_1: Power BI Online: Introdução
+
+    Power Bi Online/Serviço
+        Visualizar Relatorios Online, de qualquer lugar;
+        Compartilhar com outra pessoas;
+        Atualização automatica do relatórios;
+        Conceder acesso restrito aos dados;
+
+
+AULA_2: Criando Conta Gratuita no Power BI Online
+
+    "Necessário Email corporativo"
+
+    Conta corporativa gratis:
+        Criar conta Micrsoft 365.
+        Obter Pacote office;
+        Experimentar por 1 mes;
+        Configurar conta;
+    
+
+AULA_3: Ambiente do Power BI online
+
+    https://app.powerbi.com/
+    
+    Logar com conta criada.
+
+    10 GB de armazenamento para conta.
+
+
+AULA_4: Publicando Relatório no Power BI online
+
+    Power Bi:
+        Pagina incial > Publicar:
+        Logar na conta;
+    
+    Power Bi Online:
+        Workspace:
+            "painel de gerenciamento dos relatórios"
+            "Relatório e dividido em Relatorio e Modello semantico"
+
+        "Paineis ficam interativos (Não precisando do CTRL para acessar links)"
+        "Administração da conta (Liberar graficos de Mapa, Compartilhamento na Web)"
+
+
+AULA_5: Publicando o Relatório na Web
+
+    Compartilhamento Publico (Gratis)
+        Workspace:
+            Acessar Relatorio > Arquivo > Publicar na Web;
+            "Liberar com web no portal de administração"
+                CONFIGURAÇÕES DO LOCATARIO > Permitir usuario criar novos codigos
+            "Alguns graficos não são suportados no compartilhamento Web"
+    
+    Data stories gallery:
+        "Comunidade com diversos dashboards"
+
+
+AULA_6: Tipos de Licença do Power BI (Free x Pro)
+
+    Power Bi Free: 
+        • Visualizar os próprios Relatórios Online (Meu Workspace)
+        • Publicar Relatórios na Web 
+        • Atualizar Relatório Automaticamente (Agendar Atualizações) até 8x por dia
+    
+    Power Bi Free: 
+        • Compartilhar Relatórios de forma privada com outras pessoas
+        • Visualizar Dashboards compartilhados por outras pessoas
+        • Criar e participar de Workspaces e poder visualizar/compartilhar conteúdo nos Workspaces da empresa
+        • Atualização Incremental
+        + Power Bi Free.
+
+
+AULA_7: Tipos de Licença do Power BI (Premium, Premium por Usuário e Embedded)
+
+    Power BI Premium:
+        Capacidade dedicada
+        Relatórios Paginados: Poder usar o Power BI Report Builder pra formatar relatórios pra impressão/exportação detalhada
+        Modelos de dados maiores: Conjuntos de dados/modelos semânticos de até 400GB (ao invés de 1GB)
+        Maior capacidade total de armazenamento – Até 100TB (ao invés de 10GB)
+        Maior quantidade diária de atualizações: Até 48x (ao invés de 8x)
+    
+    
