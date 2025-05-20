@@ -79,4 +79,95 @@ AULA_7: Tipos de Licença do Power BI (Premium, Premium por Usuário e Embedded)
         Maior capacidade total de armazenamento – Até 100TB (ao invés de 10GB)
         Maior quantidade diária de atualizações: Até 48x (ao invés de 8x)
     
+
+AULA_8: Compartilhando o Relatório com Colegas da Empresa
+
+    "Compartilhar de forma privada (Pro)"
+        Relatorio:
+            Compartilhar
+            Enviar link;
+            "Somente tera acesso ao relatorio pessoas da mesma empresa (dominio)"
+
+
+AULA_9: Compartilhando o Relatório com pessoas de fora da Empresa
+
+    Painel de admin office 365:
+        Convidar usuarios;
+        Cadastrar o usuario.
+        "Convite é enviado ao email do usuario"
     
+
+AULA_10: Exportar para Excel
+
+    exportação dados de graficos:
+        Selecionar grafico;
+        ... > esportar dados.
+        "Arquivo CSV"
+    
+    "Melhor forma de exportar como Excel"
+        Power Bi Online:
+            Relatorio > Exportar > analisar Excel;
+            "Excel com tabela dinamica"
+            "Este arquivo ficara conectado por api com Power bi online (logo assim que o online for atualizado o excel tabem podera)"
+
+
+AULA_11: Exportar para PDF e PowerPoint
+
+    "Exportar para PDF":
+        Power Bi Online:
+            Relatorio > Exportar > PDF;
+            Selecionar paginas do relatorio;
+            "Ficara como prints (estatico)"
+        
+    "Exportar para PowerPoint":
+        Power Bi Online:
+            Relatorio > Exportar > PowerPoint;
+            incorporar dados dinamicos: copiar link;
+        
+        PowerPoint:
+            Adicionar Suplemeto:
+            Power bi: colar link do reçatorio;
+            "ficara um relatorio dinamico assim como no power bi"
+            "Só que o compartilhamento é como no pro"
+
+
+AULA_12: Criando um Workspace
+
+    Workspace:
+        Criar novo > Preencher;
+        "espaço comunitario para compartilhar relatorio com pessoas do dominio"
+        "acessos de visualizador, contribuidor, membro, administrador"
+
+
+AULA_13: Criando um Aplicativo no Power BI Online - Parte 1
+    
+    "para liberar todos do dominio visualizando o relatorio"
+        Aplicativo:
+            Workspace > Criar aplicativo;
+            Adcionar conteudo: 
+                Relatorio;
+                Selecionar os acessos;
+                compartilhar link.
+            "não so relatorios mas tambem videos, documentos (funciona como um portal)"
+
+
+AULA_14: Criando um Aplicativo no Power BI Online - Parte 2
+
+    "Adicionando mais coisas no aplicativo"
+        Workspace > Atualizar aplicativo;
+        Adcionar conteudo > Adicionar link;
+            outrar coisas alem de relatorios;
+            Docs do google;
+            videos;
+
+            Adicionar video na area de conteudo:
+                Video: Link de incorporação;
+                Abrir em: area de conteudo;
+        
+        "Nova seção":
+            Adcionar conteudo > NOVA seção;
+            arrastar conteudo na seção.
+        
+        "Novos conteudos do aplicativo vem como oculto"
+            Atualizar aplicativo > Aba publico: reexibir.
+
