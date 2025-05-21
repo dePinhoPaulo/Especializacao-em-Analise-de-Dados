@@ -171,3 +171,72 @@ AULA_14: Criando um Aplicativo no Power BI Online - Parte 2
         "Novos conteudos do aplicativo vem como oculto"
             Atualizar aplicativo > Aba publico: reexibir.
 
+
+AULA_15: Download dos Arquivos e Ajustando a Fonte de Dados
+   
+    "Ajustando caminho da fonte de dados no relatorio que está online"
+
+
+AULA_16: Atualizando o Power BI Online com Novos Dados
+
+    "Atualizar dados Power bi Online"
+        Atualizar na versão desktop;
+        Publicar no online e substituir;
+        "Tambem irá atualizar o no aplicativo"
+        "Posteriormente iremos utilizar gatway que ira atualizar de forma automatica"
+
+
+AULA_17: Relatórios x Painéis (Reports x Dashboards)
+
+    Dashboard:
+        "Conjunto de grafiocs de varios relatiorios (Power bi online)"
+        Ir no relatorio;
+            Selecionar grafico > Fixar visual;
+            Selecionar painel.
+        
+        "Não são interativos como no relatorio";
+
+        Dashboard:
+            Editar:
+                Alterar cores
+
+
+AULA_18: Enviando o Relatório e Dashboard por e-mail ("Assinatura")
+
+    "Enviando por email"
+        Assinar painel:
+            Colocar email;
+            Selecionar rotina;
+            horario;
+            Assunto email;
+            Menssagem;
+            "Vale tanto para dashboard quanto relatorio"
+
+
+AULA_19: Segurança em Nível de Linha (RLS) - Parte 1
+
+    "Restringir acessos no relatorio"
+        Power bi desktop:
+            Modelagem > Gerenciar funções;
+            Selecionar coluna do filtro;
+            Condição;
+            Publicar no online
+        
+    "Visualizar como função definida"
+        Modelagem > Exibir como;
+        selecionar filtro.
+    
+    No Power Bi online:
+        Modelo semantico > ... > Segurança;
+        Selecionar cada pessoa na sua função.
+
+
+AULA_20: Segurança em Nível de Linha (RLS) - Parte 2
+
+    "função que tenha acesso a todos dados"
+        Power bi desktop:
+            Modelagem > Gerenciar funções;
+            Alterar para editor DAX:
+                TRUE();
+            Publicar no online
+
