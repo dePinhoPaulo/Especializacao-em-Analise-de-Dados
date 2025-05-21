@@ -240,3 +240,75 @@ AULA_20: Segurança em Nível de Linha (RLS) - Parte 2
                 TRUE();
             Publicar no online
 
+
+AULA_21: RLS Dinâmico
+
+    "Função de cada usuario de forma dinamica por um tabela"
+        Importar planilha com nome, função e emails:
+            Criar relacionamento:
+                Marca - Marca
+        
+        Power bi desktop:
+            Modelagem > Gerenciar funções;
+            "Regra vai ser baseada no email que esta acessando"
+            Novo filtro > Email == USERNAME() (alterar para DAX)
+            "Filtragem de acesso irá acontecer altomaticamente"
+
+
+AULA_22: Entendendo o Gateway
+
+    Gateway de Dados:
+        "ferramenta que você instala no seu computador que permite atualizar os dados direto pelo Power BI Online"
+        "funciona como uma ponte entre a sua base de dados que tá no seu computador e o Power BI online"
+        Vantagens:
+            "Permitir atualizar os dados direto pelo Power BI Online"
+            "Permitir agendar atualizações automáticas"
+
+        Gateway (Modo Pessoal)
+            Funciona pra ser usado por uma única pessoa
+            Só funciona na sua conta (quem criou o Gateway) e só funciona no computador que instalou o Gateway (você precisa estar logado no Gateway no computador)
+            Fica limitado ao Power BI
+
+        Gateway (Modo Padrão) – Gateway Enterprise
+            Funciona pra cenários onde várias pessoas precisam acessar e atualizar os dados
+            Pode ser usado por várias contas e você consegue atualizar os dados sem precisar estar com o Gateway logado no computador
+            Além do Power BI, pode ser usado pra outras ferramentas como Power Automate, Power Apps e por aí vai
+
+
+AULA_23: Instalando e Configurando o Gateway Pessoal
+
+    "Atualização autpmatica"
+        Download Gateway;
+        Logar na conta;
+        Power Bi online:
+            Modelo Semantico > Agendar atualização;
+            Conexões de gateway e nuvem:
+                Conectar com seu PC;
+                Editar credenciais das fontes.
+        Atualizar Agora.
+
+
+AULA_24: Instalando e Configurando o Gateway Enterprise
+
+    "Gateway Padrão"
+        Download Gateway;
+        Logar na conta;
+        Criar no gateway ou conectar-se a um existente;
+        Power Bi online:
+            Modelo Semantico > Agendar atualização;
+            Conexões de gateway e nuvem:
+                Configurar;
+                Adicionar fontes ao gateway;
+        Atualizar Agora.
+
+
+AULA_25: Agendando Atualizações Automáticas
+
+    "Agendar atualizações"
+        Power Bi online:
+            Modelo Semantico > Agendar atualização;
+            Atualizar:
+                Dariamente;
+                Selecionar horarios;
+                "Até 8x no dia"
+
