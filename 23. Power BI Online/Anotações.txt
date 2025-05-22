@@ -312,3 +312,35 @@ AULA_25: Agendando Atualizações Automáticas
                 Selecionar horarios;
                 "Até 8x no dia"
 
+
+AULA_26: Como Atualizar Automaticamente Sem Gateway (Parte 1)
+
+    "Atualizar com PC desligado"
+        One Drive:
+            Subir planilha no One Drive;
+            Excel:
+                Copiar caminho da planilha (online);
+            conectar planilha no Power bi.
+
+
+AULA_27: Como Atualizar Automaticamente Sem Gateway (Parte 2)
+
+    "Atualizar com PC desligado"
+        PuBlicar no Power bi Online;
+        Agendar atualização;
+
+
+AULA_28: Criando o Layout do Relatório para Celular
+
+    "Responsividade para celular"
+        Power Bi Desktop:
+            Exibição > Layout Movel;
+            Ir Adicionando os graficos;
+            "Edição do layout movel só serão visualizadas lá"
+            Publicar na Web;
+
+
+AULA_29: Usando o Power BI no Celular
+
+    "Visualizando no celular"
+
