@@ -2,3 +2,80 @@ AULA_1: Desafio Base Funcionários - Explicação
 
     "Explicação do Projeto"
 
+
+AULA_2: Desafio Base Funcionários - Resolução (Parte 1)
+
+    "Explicações das tabelas"
+
+
+AULA_3: Desafio Base Funcionários - Resolução (Parte 2)
+
+    Desativar relacionamentos automaticos:
+        Opções > Carregamentos de Dados:
+            Detectar automaticamento novos relacionamentos.
+
+    Importar tabelas:
+        Obterdados dados > Pasta de trabalho Excel
+        Transforma dados:
+            Renomear Tabela;
+            Verificar dados:
+                Promover cabeçalhos;
+                Remover colunas vazias.
+        Fechar e Aplicar.
+
+
+AULA_4: Desafio Base Funcionários - Resolução (Parte 3)            
+
+    Fazer relacionamentos:
+        Aba Exibição Modelo;
+        Identificar Tabelas Fato e Dimensão;
+        Relacionar tabelas:
+            Id Funcionario;
+            Id Cliente;
+            Cargo;
+        
+
+AULA_5: Desafio Base Funcionários - Resolução (Parte 4)    
+
+    "Coluna de tempo de contrato"
+        Power Query:
+            BaseServico
+            Adicionar Coluna > Data > Idade;
+            Botão direito > Transformar > Total em anos;
+            Botão direito > Transformar > Arredondar > Arredondar para baixo;
+            Renomear Coluna : "Tempo Contrato"
+        Fechar e Aplicar.
+
+
+AULA_6: Desafio Base Funcionários - Resolução (Parte 5)
+
+    "Faturamento por contrato"
+        BaseServico
+            Adicionar Coluna:
+                Faturamento por Contrato = 
+                    BaseServicosPrestados[Tempo Contrato] * RELATED(CadastroClientes[Valor Contrato Anual])
+    
+    "Total faturado"
+        Nova medida:
+            Total Faturado = 
+                SUM(BaseServicosPrestados[Faturamento por Contrato])
+
+
+AULA_7: Desafio Base Funcionários - Resolução (Parte 6)
+
+    "Total faturado SUMX (com 2 formulas em uma)"
+        Nova medida:
+            Total Faturado = 
+                SUMX(
+                    BaseServicosPrestados,
+                    BaseServicosPrestados[Tempo Contrato] * RELATED(CadastroClientes[Valor Contrato Anual])
+                )
+            Formato: Moeda Geral;
+    
+    "Tabela de medidas"
+        Inserir Dados:
+            Vazia;
+            nome: Medidas.
+        Selecionar medida > alterar para tabela;
+        Excluir Coluna1.
+
