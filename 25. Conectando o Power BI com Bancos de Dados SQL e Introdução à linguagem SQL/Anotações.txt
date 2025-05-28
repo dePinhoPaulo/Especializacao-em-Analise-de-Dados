@@ -1,0 +1,53 @@
+AULA_1: Introdução
+
+    "Explicação sobre Banco de dados"
+
+
+AULA_2: Instalando o SQL Server e o SQL Server Management Studio
+
+    "Instalação SQL Server 2022 Dev e "
+
+
+AULA_3: Download do Banco de Dados e Restaurando no SSMS
+
+    "Baixar banco de dados Contoso BI Demo Dataset"
+        https://www.microsoft.com/en-us/download/details.aspx?id=18279
+    
+    Restaurar BD:
+        SQL SMS:
+            Conctar Servidor (Local);
+            Banco de dados > Bt direito > Restaurar banco de dados;
+            Dispositivo > Localizar caminho do arquivo bak;
+            OK > OK > OK
+            bANCO IMPORTADO.
+    
+
+AULA_4: Observações Importantes sobre o uso do SQL na sua empresa
+
+    "Explicações sebre servidores e bancos de dados corporartivos"
+
+
+AULA_5: Importando as Tabelas do SQL para o Power BI
+
+    Importando Tableas do banco para Power bi:
+        Power Bi:  
+            Obter dados > SQL Server:
+                Servidor: (Local) nome PC;
+                Banco de dados: ContosoRetailDW;
+            Selecionar Tabelas;
+            Transformar Dados.
+
+
+AULA_6: Carregando Tabelas para o Power BI e entendendo a Consulta Nativa
+
+    "Visualizando e entendendo as tabelas"
+
+    Sales Key:
+        Filtrando 200 primeiras linhas;
+        Fechar e aplicar.
+    
+
+AULA_7: Analisando as Tabelas do Banco de Dados
+
+    "Filtrando quais tabelas usar"
+
