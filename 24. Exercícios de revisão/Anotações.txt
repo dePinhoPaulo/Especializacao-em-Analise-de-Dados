@@ -79,3 +79,112 @@ AULA_7: Desafio Base Funcionários - Resolução (Parte 6)
         Selecionar medida > alterar para tabela;
         Excluir Coluna1.
 
+
+AULA_8: Desafio Base Funcionários - Resolução (Parte 7)
+
+    "Qtd Funcionario"
+        Nova medida;
+        Qtd Funcionaros = 
+            COUNT(CadastroFuncionario[ID Funcionário])
+    
+    "Qtd funcionarios que prestaram serviço"
+        Nova Medida;
+        Qtd funcionarios Prestaram Servico = 
+            DISTINCTCOUNT(BaseServicosPrestados[ID Funcionário])
+        
+    "% funcionarios que prestaram serviço"
+        Nova Medida;
+        % Funcionarios Prestaram Servico = [Qtd funcionarios Prestaram Servico]/[Qtd Funcionaros]
+
+
+AULA_9: Desafio Base Funcionários - Resolução (Parte 8)
+
+    "& funcionarios q fecharam contratso por area"
+        Visual Tabela:
+            % funcionarios, Area;
+
+
+AULA_10: Desafio Base Funcionários - Resolução (Parte 9)
+
+    "Coluna de Gastos com funcionarios"
+        Nova coluna;
+        Total Gastos Funcionarios = 
+            CadastroFuncionario[Salario Base]+CadastroFuncionario[Impostos]+CadastroFuncionario[Beneficios]+CadastroFuncionario[VT]+CadastroFuncionario[VR]
+
+    "Gastos com funcionarios na area administrativo"
+        Nova Medida;
+        Total Gasto ADM = 
+            CALCULATE(
+                SUM(CadastroFuncionario[Total Gastos Funcionarios]),
+                CadastroCargos[Área]="Administrativo"
+            )
+        Formato Moeda;
+
+
+AULA_11: Desafio Base Funcionários - Resolução (Parte 10)
+
+    Power Point:
+        Salvar slide como imagem;
+    
+    Power bi:
+        SELECIONAR pagina > Plano de fundo;
+        Importar imagem;
+    
+    "Medida gasto Salarial"
+        Nova medida;
+            Total Gasto Salarial = 
+                SUM(CadastroFuncionario[Total Gastos Funcionarios])
+    
+    Grafico de Funil:
+        Total gasto Salarial, Area;
+        Fontes: Cores escuras - tam. 10;
+        Titulo: Plano de fundo: cor escura - Letra: Cor clara;
+        Fronteira visual: Cantos arredondados;
+
+    Tema relatorio
+        Exibição > Tema Classico
+
+
+AULA_12: Desafio Base Funcionários - Resolução (Parte 11)
+
+    Grafico de Area:
+        Qtd Funcionarios, Area;
+        Copiar estilo do Grafico de Funil;
+
+
+AULA_13: Desafio Base Funcionários - Resolução (Parte 12)
+
+    Card:
+        Total faturado e Media Valor Contrato;
+        Fonte: Negrito;
+        Copiar Estilo dos outros.
+
+    "Meida de valor de contrato"
+        Nova medida;
+        Media Valor Contrato = 
+            AVERAGE(CadastroClientes[Valor Contrato Anual])
+        Formato: R$ Reias
+
+
+AULA_14: Desafio Base Funcionários - Resolução (Parte 13)
+
+    "Nome do cliente que tem Maior valor de contrato"
+        Card:
+            Nome Cliente;
+            Filtro: Clinete - N superior: 1 - Valor Contrato (SOMA VALOR);
+            Copiar Estilo: card Total faturado;
+            Renomear Campo de rotulo: "Cliente com maior contrato"
+
+
+AULA_15: Desafio Base Funcionários - Resolução (Parte 14)
+
+    "Qtd Contratos fechados"
+        Nova medida;
+        Qtd Contratos Fechados = 
+            COUNTROWS(BaseServicosPrestados)
+    
+    Grafico de colunas e linhas:
+        Total faturamento, Qtd contratos fechados, Area;
+        Copiar estilo;
+        adicionar rotulo de dados;
+
