@@ -1,0 +1,10 @@
+select 
+	ProductKey,
+	ProductName,
+	BrandName,
+	ClassName
+
+from DimProduct
+
+where 
+	BrandName = 'Litware'

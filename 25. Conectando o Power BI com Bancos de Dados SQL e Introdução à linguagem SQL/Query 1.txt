@@ -1,0 +1,3 @@
+select productkey, productname, brandname, unitprice
+
+from dbo.dimproduct

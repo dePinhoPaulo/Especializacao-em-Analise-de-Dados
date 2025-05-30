@@ -101,3 +101,81 @@ AULA_10: Simplificando informações de Vendas e Promoções
         Desabilitar Carga:
                 DimPromotion
     
+
+AULA_11: Tratando Tabela de Cotações
+
+    Power Query:
+        Mesclar Consulta
+            FactExchangeRate ProductCategoryKey - ProductCategoryKey DimCurrency
+            Importar: CurrencyName
+        
+        Desabilitar tabela
+            DimCurrency
+
+
+AULA_12: Criando Chave em Comum Entre Tabela de Vendas e Cotações
+
+    "Relacionando tabela de vendas e cotação"
+        "Relacionamento e necessario pois são feitas vendas em vairias moedas"
+
+        Power Query:
+            FactExchangeRate:
+                Concatenar: DateKey, CurrencyKey -> DateCurrencyKey
+
+            FactExchangeRate:
+                Concatenar: DateKey, CurrencyKey -> DateCurrencyKey
+        
+        Fechar e Salvar.
+
+    Relacionamento carrega automatico.
+
+
+AULA_13: Comandos Básicos em SQL - Select - From
+
+    "Consultas no SQL Server"
+        Nova Consulta > Selecionar banco de dados.
+    
+    "Comandos Basicos"
+        Select;
+        From;
+
+    Atalho para executar:
+        F5.
+
+
+AULA_14: Select de colunas específicas, Comentários e Renomear Colunas
+
+    Comentarios SQL:
+        --
+    
+    Renomear Coluna SQL:
+        AddressLine1 AS 'endereço'
+    
+
+AULA_15: Comando Where - Criando Filtros no SQL
+
+    Filtro na consulta SQL:
+        WHERE BrandName = 'Litware'
+
+
+AULA_16: Comando Where com And
+
+    Adicionar mais de um filtro SQL:
+        AND;
+            BrandName = 'Litware' AND ClassName = 'Deluxe'
+    
+    Adicionar mais de um filtro SQL:
+        "UM OU OUTRO"
+        OR;
+            ClassName = 'Deluxe' OR ClassName = 'Regular'
+
+
+AULA_17: Comando Where com Or e And
+
+    Filtros com AND e OR:
+        "OR seria para adicionar mais de um da mesma coluana (Utilizar parenteses no nessa clausula para não se perder)"
+        "AND para outras colunas"
+            WHERE
+                (ClassName = 'Deluxe' OR ClassName = 'Regular') AND
+                BrandName = 'Contoso'
+

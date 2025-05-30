@@ -1,0 +1,11 @@
+select 
+	ProductKey,
+	ProductName,
+	BrandName,
+	ClassName
+
+from DimProduct
+
+where 
+	(ClassName = 'Deluxe' OR ClassName = 'Regular') AND
+	BrandName = 'Contoso'

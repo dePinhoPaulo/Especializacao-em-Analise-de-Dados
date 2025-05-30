@@ -1,0 +1,9 @@
+select 
+	StoreName,
+	StoreDescription,
+	Status,
+	AddressLine1 AS 'endereço'
+
+from DimStore
+
+--COMENTARIO
