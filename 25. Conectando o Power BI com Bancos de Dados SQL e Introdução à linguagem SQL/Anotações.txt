@@ -51,3 +51,53 @@ AULA_7: Analisando as Tabelas do Banco de Dados
 
     "Filtrando quais tabelas usar"
 
+
+AULA_8: Tratando Tabela de Produtos
+
+    "Unificando algumas tabelas"
+        Power Query:
+            Mesclar Consulta
+                DimProductSubcategory ProductCategoryKey - ProductCategoryKey DimProductCategory
+                Importar: ProductCategoryName
+
+                DimProduct ProductSubcategoryKey - ProductSubcategoryKey DimProductSubcategory
+                Importar: ProductSubcategoryName
+
+            Remover colunas desnecessarias;
+
+            Desabilitar Carga:
+                DimProductSubcategory
+                DimProductCategory
+            
+
+AULA_9: Tratando Tabela de Lojas            
+
+    Power Query:
+        Limpar colunas;
+
+        Mesclar Consulta:
+            DimStore GeographyKey - GeographyKey DimGeography
+            Importar: Continent, City, State
+
+        Desabilitar Carga:
+                DimGeography
+        
+
+AULA_10: Simplificando informações de Vendas e Promoções
+
+    Power Query:
+        Limpar colunas;
+
+        Mesclar Consulta:
+            FactSales PromotionKey - PromotionKey DimPromotion
+            Importar: DiscountPercent
+        
+        Coluna Personalizada:
+            FactSales:
+                FinalPrice = [UnitPrice]*(1-[DiscountPercent])
+                Transformar > Arredondamento: 2 casas
+                Excluir: DiscountPercent
+
+        Desabilitar Carga:
+                DimPromotion
+    
