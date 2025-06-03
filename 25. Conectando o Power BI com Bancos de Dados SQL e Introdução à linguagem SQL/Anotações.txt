@@ -179,3 +179,65 @@ AULA_17: Comando Where com Or e And
                 (ClassName = 'Deluxe' OR ClassName = 'Regular') AND
                 BrandName = 'Contoso'
 
+
+AULA_18: Exercícios (Parte 1)
+
+    Concatenar Colunas SQL:
+        CONCAT(, , '' ,);
+
+
+AULA_19: Exercícios (Parte 2)
+
+    Substituir dados da colua SQL:
+        replace (coluna, valor a localizar, valor desejado);
+
+
+AULA_20: Exercícios (Parte 3)
+
+    EX: OK;
+
+
+AULA_21: Exercícios (Parte 4)
+
+    "as Clausulas do OR precisam ser entre parenteses"
+
+
+AULA_22: Funções MAX, COUNT, AVG e DISTINCT
+
+    "Sempre identar os codigos SQL"
+
+    Contagem:
+        "Quantos produtos vendemos na empresa"
+        COUNT()
+    
+    Valor Maximo:
+        "Qual produto mais caro"
+        MAX()
+    
+    Media:
+        "Qual a media do preço dos produtos"
+        AVG()
+        ROUND(AVG(), 2) -> Função para Arredondamento
+    
+    Valores Distinto:
+        "Qauntas marcas temos na empresa?"
+        DISTINCT()
+        COUNT(DISTINCT(BrandName)) -> Conta valores distintos
+
+
+AULA_23: Função Group By (Parte 1)
+
+    GROUP BY:
+        "Retorna os valores resumidos"
+        SELECT
+            BrandName,
+            COUNT(ProductName) AS 'Qtd Produtos'
+        FROM DimProduct
+
+        GROUP BY BrandName
+    
+
+AULA_24: Função Group By (Parte 2)
+
+    OK
+
