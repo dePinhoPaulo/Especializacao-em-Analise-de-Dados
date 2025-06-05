@@ -241,3 +241,39 @@ AULA_24: Função Group By (Parte 2)
 
     OK
 
+
+AULA_25: Group By e Where
+
+    WHERE: OK
+
+
+AULA_26: Comandos Order By e Top
+
+    Order By:
+        "Ordena o resultado em ASC ou DESC (ascendente ou decrescente)"
+
+    Listar 10 Primeiro:
+        SELECT TOP 10;
+
+
+AULA_27: Exercício Order By e Top
+
+    EX: OK
+
+
+AULA_28: Formas de Mesclar Consultas (Join)
+
+    Joins mais Utilizados:
+        LEFT OUTER JOIN: "Vai manter todas as informações da primeira tabela (esquerda) e trazer as informações correspondentes da segunda"
+        INNER JOIN: "Vai manter apenas as informações que corresponderem em ambas as tabelas"
+    
+
+AULA_29: Como usar o JOIN no SQL
+
+    Select com mais de uma tabela:
+        Nome_Da_Tabela.Coluna;
+    
+    Exemplo de Join:
+        FFROM BaseVendas 
+            LEFT JOIN CadastroCliente ON BaseVendas.CodigoCliente = CadastroCliente.CodigoCliente
+
