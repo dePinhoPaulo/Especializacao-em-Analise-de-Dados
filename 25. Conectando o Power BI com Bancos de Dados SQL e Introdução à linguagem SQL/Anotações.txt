@@ -277,3 +277,65 @@ AULA_29: Como usar o JOIN no SQL
         FFROM BaseVendas 
             LEFT JOIN CadastroCliente ON BaseVendas.CodigoCliente = CadastroCliente.CodigoCliente
 
+
+AULA_30: Criando a Dimensão Loja (Parte 1)
+
+    "Usando Joins"
+
+
+AULA_31: Criando a Dimensão Loja (Parte 2)
+
+    Renomendo Tabelas:
+        DimStore Loja
+        LEFT JOIN DimGeography Geo ON (Loja.GeographyKey = Geo.GeographyKey)
+
+    Renomendo colunas:
+        SELECT
+            Geo.RegionCountryName AS 'Country',
+            Geo.ContinentName AS 'Continen',
+
+
+AULA_32: Juntando Tabelas de Cotações e Moedas
+
+    "Criando Query Com Tabela de Cotações e Moedas"
+
+
+AULA_33: Criando a Dimensão Produto
+
+    Mesclando 2 Tabelas ou mais:
+        FROM DimProduct Prod
+            LEFT JOIN DimProductSubcategory Sub ON (Prod.ProductSubcategoryKey = Sub.ProductSubcategoryKey)
+            LEFT JOIN DimProductCategory Cate ON (Sub.ProductCategoryKey = Cate.ProductCategoryKey)
+
+
+AULA_34: Criando Chave para Relacionar Cotações e Vendas (Parte 1)
+
+    Convetendo o formato de data "dd/mm/yyyy":
+        CONVERT(
+            varchar(10),
+            Cota.DateKey, 
+            103 -> Ver documentação para escolher tipo da data
+        ) 
+
+
+AULA_35: Criando Chave para Relacionar Cotações e Vendas (Parte 2)
+
+    Jogando conversão de data no coluna concatenada:
+        CONCAT(
+            CONVERT(varchar(10),Cota.DateKey, 103), -> Ver documentação para escolher tipo da data
+            Cota.CurrencyKey
+        )
+
+
+AULA_36: Transformando as Queries em Views e importando para o Power BI
+
+    Criando Views SQL:
+        CREATE VIEW VW_VENDAS AS
+            "Query"
+
+    Importar para Power Bi:
+        Obter dados > SQL Server:
+            Servidor: (Local) nome PC;
+            Banco de dados: ContosoRetailDW;
+        Importar as Views;
+  
