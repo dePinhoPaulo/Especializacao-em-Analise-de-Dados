@@ -1,0 +1,53 @@
+AULA_1: Introdução (Parte 1)
+
+    =DIA():
+        "Retorna dia do mes da data selecionada"
+    
+    =MÊS():
+        "Retorna mes da data selecionada"
+
+    =ANO():
+
+    =DIA.DA.SEMANA():
+        "Retorna Numero do dia da semana da data selecionada"
+
+
+AULA_2: Introdução (Parte 2)
+
+    =HOJE():
+        "retorna dia de HOJE"
+        CRTL+; -> atalho para escrever dia de hoje;
+    
+    =AGORA():
+        "Retorna Hora de agora"
+        CTRL+SHIFT+; -> atalho para escrever HORA de agora;
+    
+    =DATAM(B13;C13):
+        "Retorna data data somada a um quantidade de meses"
+
+    =DATA():
+        "Criar data com colunas separadas em dia, mes, ano"
+
+
+AULA_3: Crescimento Anual (YoY)
+
+    =SOMASES():
+        "Soma de faturamento do ano de 2019"
+        (Intervalo de soma, intervalo do criterio, criterio);
+        =SOMASES('Base Vendas - Exemplo 1'!F:F;'Base Vendas - Exemplo 1'!K:K;'Análises - Parte 1'!B3)
+    
+
+AULA_4: Crescimento Anual e Mensal (YoY e MoM)
+
+    % Crescimento Ano por ano:
+        =E15/E3-1
+        "Ano atual / ano anterior - 1"
+        "o mesmo valo para mês por mÊs (=E4/E3-1)"
+    
+
+AULA_5: Análise do Valor Acumulado
+
+    Valor acumulado por ano:
+        =SE(B4=B3;F3+E4;E4)
+        "Se o valo do ano do mes atual for igual ao mes anterio soma acumulado, se não retorna o valor do mes atual"
+
