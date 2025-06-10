@@ -51,3 +51,72 @@ AULA_5: Análise do Valor Acumulado
         =SE(B4=B3;F3+E4;E4)
         "Se o valo do ano do mes atual for igual ao mes anterio soma acumulado, se não retorna o valor do mes atual"
 
+
+AULA_6: Função DATADIF - Diferença entre Datas
+
+    DATADIF():
+        "Calcula diferença entre datas"
+        =DATADIF(D2;HOJE();"Y") -> diferença em anos
+        "Verificar documentação"
+
+
+AULA_7: Calculando Dias Úteis
+
+    Dias Uteis:
+        Planilha de Feriados;
+        =DIATRABALHO(C2;C3;Feriados!A:A):
+            (Data inicial; quant dias; fiariados)
+            "Retorna data de entrega"
+        =DIATRABALHO.INTL()
+            "Calcula datas com final de semana personalizado"
+        =DIATRABALHOTOTAL(C7;C8;Feriados!A:A)
+            (Data inicial; Data final; fiariados)
+            "Retorna quantidade de dias"
+
+
+AULA_8: Aplicação Cálculo Dias Úteis
+
+    Aplicação:
+        Atraso (Dias Úteis)
+            =SE(G2<>"";DIATRABALHOTOTAL(F2;G2;Feriados!A:A);0)
+        Data Final Prazo
+            =DIATRABALHO(C2;D2+H2;Feriados!A:A)
+        Status
+            =SE(I2<>"";SE(I2<=E2;"No Prazo";"Fora do Prazo");"")
+
+
+AULA_9: Trabalhando com Horas no Excel (Parte 1)
+
+    "Se atendar na ordem das subtrações"
+
+    Horas negativas:
+        Opções > Avançado > Usar sistema de data 1904;
+
+
+AULA_10: Trabalhando com Horas no Excel (Parte 2)
+
+    Atalho para somar celulas a cima:
+        ALT + =;
+    
+    Formato Especial para mostrar horas acima de 24Hrs:
+        [h]:mm;@
+    
+    Multiplicação com Horas:
+        Cada hora precisa ser multiplicado por 24:
+            "Pois excel considera 1Hra como 0,20 do dia"
+
+
+AULA_11: Exercícios - Apresentação
+
+    Explicações Exercicios;
+
+
+AULA_12: Exercícios (Parte 1)
+
+    EX 1: ok
+
+
+13. Exercícios (Parte 2)
+
+    EX 2: ok
+
