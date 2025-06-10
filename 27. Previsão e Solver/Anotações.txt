@@ -1,0 +1,29 @@
+AULA_1: O que é Solver
+
+    Habilitar Solver:
+        Opções > Suplementos > Gerenciar > Ir > Habilitar Solver;
+        "Calcula de forma automatica Quantidade de produtos para comprar sem utrapassar o Orçamento por exemplo"
+        "não é necessario ficar testando a quantidade de produtos ate atingir o orçamente"
+    
+
+AULA_2: Solver (Parte 1)
+
+    "Solver irá ficar tentando até encontrar forma que de mais lucro"
+
+
+AULA_3: Solver (Parte 2)
+
+    Solver:
+        Definir objetivo;
+        Células de alteração;
+        Adionar regras;
+        Resolver.
+
+    "Serve para maximixar ou minimizar"
+
+
+AULA_4: Solver (Parte 3)
+
+    Solver:
+        Regras: "Podemos selecionar uma matriz para o valor de comparação tendo o msm tamanho da matriz"
+
