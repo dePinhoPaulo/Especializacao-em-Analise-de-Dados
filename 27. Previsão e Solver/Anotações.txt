@@ -27,3 +27,39 @@ AULA_4: Solver (Parte 3)
     Solver:
         Regras: "Podemos selecionar uma matriz para o valor de comparação tendo o msm tamanho da matriz"
 
+
+AULA_5: Planilha de Previsão
+
+    Planilha Previsão:
+        Dados > Planilha Revisão;
+        "Termino de previsão deve ser igual ou menor que o tempos dos dados existentes"
+        Outra Opções:
+            Inicio da previsão;
+            Intervalo de confiança;
+            Sazionalidade;
+        
+        Gera um gráfico e uma lista com dados da prevção;
+
+
+AULA_6: Gerenciador de Cenários
+
+    Gerenciador de Cenarios:
+        Dados > Teste de hipotese > Gerenciador de Cenarios
+        "Manipulas as possibilidados dos calculos da planilha"
+        Nomoe do cenario;
+        Celulas que serão alteradas;
+        Valor daquele cenario;
+        Mostra.
+
+
+AULA_7: Atingir Meta
+
+    Atingir Meta:
+        Dados > Teste de hipotese > Atingir Meta
+        "Verica valor necessario para atingir X valor"
+        Celula de valor do alvo;
+        Valor alvo;
+        Celula do valor (do produto) que será alterado.
+
+    "Sempre faça vinculo entre as celulas com as formulas"
+
