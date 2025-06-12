@@ -63,3 +63,12 @@ AULA_7: Atingir Meta
 
     "Sempre faça vinculo entre as celulas com as formulas"
 
+
+AULA_8: Tabela de Dados
+
+    Tabela de dados:
+        Dados > Teste de hipotese > Tabela de dados
+        "Preenche os dados de uma matriz a partir de valor"
+        Selecionar matriz para preenchimento;
+        Celula do valor;
+
