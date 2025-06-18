@@ -72,3 +72,17 @@ AULA_8: Tabela de Dados
         Selecionar matriz para preenchimento;
         Celula do valor;
 
+
+AULA_9: Exercícios - Apresentação
+
+    Explicação.
+
+
+AULA_10: Exercícios (Parte 1)
+
+    EX1: OK
+
+
+AULA_11: Exercícios (Parte 2)
+
+    EX2: OK
