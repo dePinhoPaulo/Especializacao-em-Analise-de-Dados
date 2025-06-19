@@ -1,0 +1,12 @@
+AULA_1: O que é um Dashboard?
+
+    Explicações iniciais.
+
+
+AULA_2: Formas e Modo Tela Inteira
+
+    Modo tela Cheia:
+        Delimitar espaço da tela do Dash com Retangulo
+        Ctrl + F1: Recolher faixa de opções;
+        Faiza de opções: Modo tela inteira.
+
