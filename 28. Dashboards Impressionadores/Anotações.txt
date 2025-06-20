@@ -10,3 +10,50 @@ AULA_2: Formas e Modo Tela Inteira
         Ctrl + F1: Recolher faixa de opções;
         Faiza de opções: Modo tela inteira.
 
+
+AULA_3: Formatar e Agrupar Formas
+
+    Zoom:
+        Acontece de acordo com a celula selecionada.
+
+    Arredondar Forma:
+        Circulo amarelo na Forma para ajuste.
+    
+    Agrupar:
+        Selecionar Todos elementos;
+        Organizar > Agrupar.
+
+    Duplicar:
+        CTRL + Arrastar para local desejado
+
+
+AULA_4: Planos de Fundo com Imagens
+
+    Alinhar:
+        Selecionar Formas;
+        Forma do formato > Alinhar.
+    
+    Site para imagens gratis:
+        pixbay.com
+
+    Editar imagem:
+        formato da imagem > Cortar.
+
+        formato da imagem > Cor.
+            "Adiciona um filtro para imagem"
+    
+
+AULA_5: Ícones do Excel
+
+    Icones Excel:
+        Inserir > Icones;
+            "Icones, imagens, etc..."
+  
+        Alterar Cor:
+            Forma formato > Preenchimento.
+
+
+AULA_6: Ícones da Web
+
+    "Pegar icones do google com fundo quadriculado (fundo transparente)"
+
