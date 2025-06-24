@@ -57,3 +57,45 @@ AULA_6: Ícones da Web
 
     "Pegar icones do google com fundo quadriculado (fundo transparente)"
 
+
+AULA_7: Caixas de Texto
+
+    Titulo:
+        Inserir > texto > Caixa de texto;
+        Vincular caixa de texto com celula:
+            Selecionar Caixa > Barra Formula: 
+                =PAINEL!B4
+                "Inserir localização da celula"
+
+
+AULA_8: Como Incrementar o Design do Dashboard
+
+    Inspiração:
+        FlatIcons: "Icone, vetores"
+        ShuttersStock: "Referencia Dashboard"
+
+    Power Point:
+        Colar dash de inspiração;
+        Utilizar conta gotas para pegar as cores;
+    
+
+AULA_9: Remover Fundo
+
+    Remover Fundo:
+        Formato da imagem > Romover plano de fundo;
+        Selecionar areas para desconsiderar.
+
+
+AULA_10: Corte Circular
+
+    Corte circular e edição:
+        Selecionar imagem;
+        Cortar e ajustar ao rosto:
+            "Segurando Shift para Manter quadrado o corte"
+            Cortar e selecionar opção Elipse;
+        Remover Fundo da imagem;
+        Adicionar Forma Elipse:
+            Selecionar cor;
+        Posicionar Elipse atras da imagem Sem fundo;
+        Agrupar as duas Imgens.
+
