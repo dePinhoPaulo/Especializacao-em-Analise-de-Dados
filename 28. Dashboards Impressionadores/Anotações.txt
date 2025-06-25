@@ -99,3 +99,43 @@ AULA_10: Corte Circular
         Posicionar Elipse atras da imagem Sem fundo;
         Agrupar as duas Imgens.
 
+
+AULA_11: Imagens Dinâmicas (Excel 365)
+
+    Imagens dinamicas:
+        Ilustrações > Imgaens > Colocar na celula;
+        Selecionar imagem
+        "Imagem precisa estar na celula (Não solta)"
+        "Com isso poderar ser retornada com um procv por exemplo (Pois é o valor de uma celula)"
+
+
+AULA_12: Imagens Dinâmicas - Uma Imagem (Versões Anteriores do Excel)
+
+    "Imagens dinamicas com Excel em versões antigas"
+    "Utilizando INDICE e CORRESP"
+
+
+AULA_13: Imagens Dinâmicas - Várias Imagens (Versões Anteriores do Excel)
+
+    "Imagens dinamicas com Excel em versões antigas"
+
+
+AULA_14: Formato com Preenchimento
+
+    Plano de fundo:
+        Inserir imagem de fundo e ajustar corte;
+        Adicionar forma na frente na cor preta;
+        Ajustar transpareceia dessa forma (Para não deixar plano de fundo tão forte);
+        Tambem podemos inserir um filtro na imagem de plano de fundo (Forma do formato).
+
+
+AULA_15: Hiperlink
+
+    Link:
+        Adicionar Forma;
+        Botão direito > Link;
+        Inserir destino;
+        "Podemos nevgar entre as planilhas, links externos, etc.."
+
+    "Sempre esconda as basa da planilha, para forçar o usuario a utilizar os botões no painel"
+
