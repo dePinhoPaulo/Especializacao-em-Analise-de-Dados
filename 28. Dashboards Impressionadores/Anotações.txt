@@ -139,3 +139,38 @@ AULA_15: Hiperlink
 
     "Sempre esconda as basa da planilha, para forçar o usuario a utilizar os botões no painel"
 
+
+AULA_16: Caixa de Combinação
+
+    Caixa de Combinação:
+        Opções > Barra de ferramentas > Guia de desenvolvedor;
+        Desenvolvedor > Inserir > Caixa de Combinação;
+        Botao direito > Formatar controle;
+            Intervalo de entrada: Valores do Filtros;
+            Vinculo de celula: Retorno do selecionado;
+            Linhas suspensas: Quant. opções.
+        Utilizar Função INDICE para retornar valores da matriz;
+            =ÍNDICE(B2:B7;$H$2);
+        Adicionar grafico de colunas;
+        Habilitar valores ocultos no grafico.
+
+        "Deixar formatos no tamanho da celula exato (Segurar ALT e ajustar o tamanho)"
+
+
+AULA_17: Caixa de Listagem
+
+    Caixa de Listagem
+        Desenvolvedor > Inserir > Caixa de Listagem;
+        Botao direito > Formatar controle;
+            Intervalo de entrada: Valores do Filtros;
+            Vinculo de celula: Retorno do selecionado;
+            Tipo seleção: Simples, Multipla, Estendido.
+        Caixa para: Marca e Mes;
+        Utilizar Função INDICE para retornar valores da matriz;
+            =ÍNDICE(A2:A25;G2)
+            =ÍNDICE(B2:E25;G2;G3) "Linha e coluna"
+        Formatação Condicional para destacar valores filtrados
+            =B$2:$B$25
+            "Formatar linhas e colunas"
+        
+        "Valores da listagem jamais pode estar na horizontal"
