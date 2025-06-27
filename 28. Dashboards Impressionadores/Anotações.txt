@@ -174,3 +174,62 @@ AULA_17: Caixa de Listagem
             "Formatar linhas e colunas"
         
         "Valores da listagem jamais pode estar na horizontal"
+
+
+AULA_18: Botão de Rotação
+
+    Botão de Rotação
+        Desenvolvedor > Inserir > Botão de Rotação;
+        Botao direito > Formatar controle;
+            Valor atual: 1
+            Valor minimo: 1
+            Valor maximo: 10
+            Incremental: 1
+            Vinculo de celula: Retorno do selecionado;
+            "Fazer uma celula multiplicando a celula de vinculo para ter valores maiores"
+                =H5*10000
+
+
+AULA_19: Botão de Rotação - Exercício
+
+    Grafico dinamico:
+        calculo de valores maiores e menores que a meta:
+            >= =SE(I3>=$H$7;I3;0)
+            <= =SE(I3<=$H$7;I3;0)
+        Grafico empilhado;
+        Adicionar serire de dados:
+            maiores
+            menores
+        Alterar tipo para coluna;
+        Mudar cores.
+
+
+AULA_20: Barra de Rolagem
+
+    Barra de Rolagem:
+        Desenvolvedor > Inserir > Barra de Rolagem;
+        Botao direito > Formatar controle;
+            Valor atual: 1
+            Valor minimo: 1
+            Valor maximo: 10
+            Incremental: 1
+            Mudança de pagina: "Quando clica no meio da barra para pular mais rapido"
+            Vinculo de celula: 'Retorno do selecionado';
+            "Fazer uma celula multiplicando a celula de vinculo para ter valores maiores"
+                =H5*1000
+
+
+AULA_21: Caixa de Seleção e Botão de Opção
+
+    Caixa de Seleção:
+        Desenvolvedor > Inserir > Caixa de Seleção;
+        Botao direito > Formatar controle;
+        Vinculo de celula: 'Retorno do selecionado';
+        "Podemos selecionar varios"
+    
+    Botão de Opção:
+        Desenvolvedor > Inserir > Botão de Opção;
+        Botao direito > Formatar controle;
+        Vinculo de celula: 'Retorno do selecionado';
+        "Podemos selecionar apenas um"
+
