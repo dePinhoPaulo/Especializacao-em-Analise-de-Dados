@@ -233,3 +233,22 @@ AULA_21: Caixa de Seleção e Botão de Opção
         Vinculo de celula: 'Retorno do selecionado';
         "Podemos selecionar apenas um"
 
+
+AULA_22: Dashboard 1 - Live Completa
+
+    Explicação das bases;
+
+    Formulas:
+        PROCV;
+        TEXTO;
+        MAIÚSCULA;
+        ANO;
+    
+    Background Painel:
+        Retirar linhas de grade, Tituos, barra de formulas;
+        Adicionar Retangulo em toda tela;
+        Adicionar cards (Pequenos retangulos);
+        Alinhar cards;
+        Inserir linha de divisao;
+        Retangulos grandes dos gráficos;
+        
