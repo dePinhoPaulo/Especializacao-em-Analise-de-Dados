@@ -251,4 +251,48 @@ AULA_22: Dashboard 1 - Live Completa
         Alinhar cards;
         Inserir linha de divisao;
         Retangulos grandes dos gráficos;
-        
+        Adicionar titulos;
+    
+    Icones:
+        Inserir > Ilustrações > Icones;
+        Circulo de fundo para icones;
+        titulos nos cards.
+    
+    gráficos:
+        Tabela dinamica da base;
+        Adicionar segmentação de dados no painel (Ano e Produto);
+            Editar formato segmentação;
+            Add titulo;
+        Caixa de texto do card:
+            Vincular caixa de texto com a celula do valor da tabela dinamica;
+            Editar Caixa de texto;
+            Replicar para outros cards.
+        Gráfico de colunas (Receita por mes)
+            Nova tabela dinamica (Total faturamento por meses);
+            CONECTAR TABELA DINAMICA COM OUTRA SEGMENTAÇÃO DE DADOS:
+                analise da tabela dinamica > Filtrar conexões > Selecionar.
+            Selecionar dados;
+            Inserir graficos de coluna;
+            Editar grafico;
+        Gráfico de Barra (Recita por Produto)
+            Nova tabela dinamica (Total faturamento por Receita);
+            CONECTAR TABELA DINAMICA COM OUTRA SEGMENTAÇÃO DE DADOS:
+                analise da tabela dinamica > Filtrar conexões > Selecionar.
+            Selecionar dados;
+            Inserir graficos de Barra;
+            Editar grafico;
+        Grafico de Area (Quantidade vendida por mes)
+            Nova tabela dinamica (Total vendas por mes);
+            CONECTAR TABELA DINAMICA COM OUTRA SEGMENTAÇÃO DE DADOS:
+                analise da tabela dinamica > Filtrar conexões > Selecionar.
+            Selecionar dados;
+            Inserir graficos de area;
+            Editar grafico;
+        Grafico de Rosca (faturamento Por tipo de pagamento)
+            Nova tabela dinamica;
+            CONECTAR TABELA DINAMICA COM OUTRA SEGMENTAÇÃO DE DADOS:
+                analise da tabela dinamica > Filtrar conexões > Selecionar.
+            Selecionar dados;
+            Inserir graficos de Rosca;
+            Editar grafico;
+
