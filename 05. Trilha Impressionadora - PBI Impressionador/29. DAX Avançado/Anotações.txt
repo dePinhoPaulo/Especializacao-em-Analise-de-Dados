@@ -1,0 +1,32 @@
+AULA_1: Introdução
+
+
+AULA_2: Contextos de Avaliação
+
+    Contexto de linha:
+        Calcula o valor baseado naquela linha;
+    
+    Contexto de filtro:
+        Calcula o valor baseado nos filtros que estão sendo aplicados;
+
+
+AULA_3: Testando os conhecimentos de Contexto de filtro
+
+    "Explicação do contaxto de Filtro"
+
+
+AULA_4: Testando os conhecimentos de Contexto de filtro (Parte 2)
+
+    "Fazendo medidas e jogando na atriz para explicar contexto de filtro"
+
+
+AULA_5: Entendendo as bases e criando as colunas calculadas
+
+    Coluna calculada:
+        Faturamento na Venda = 
+            BaseVendas[Tamanho Pedido]*RELATED(CadastroProdutos[Preço Unitário])
+        Custo na Venda = 
+            BaseVendas[Tamanho Pedido]*RELATED(CadastroProdutos[Custo Unitário])
+        Margem na Venda = 
+            (BaseVendas[Faturamento na Venda] - BaseVendas[Custo na Venda]) / BaseVendas[Faturamento na Venda]
+
