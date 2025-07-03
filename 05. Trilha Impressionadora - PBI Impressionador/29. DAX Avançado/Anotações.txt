@@ -30,3 +30,28 @@ AULA_5: Entendendo as bases e criando as colunas calculadas
         Margem na Venda = 
             (BaseVendas[Faturamento na Venda] - BaseVendas[Custo na Venda]) / BaseVendas[Faturamento na Venda]
 
+
+AULA_6: Devo usar colunas calculadas ou medidas?
+
+    Coluna calculada:
+        Lucro na Venda = 
+            BaseVendas[Faturamento na Venda] - BaseVendas[Custo na Venda]
+
+
+AULA_7: Criando Medidas para corrigir os cálculos
+
+    Margem Venda = 
+        SUM(BaseVendas[Lucro na Venda]) / SUM(BaseVendas[Faturamento na Venda])
+    
+    "Para Calculo de porcentagem deve-se utilizar medida pois tem o contexto de Filtro"
+
+
+AULA_8: Variáveis em DAX para organizar os cálculos
+
+    medida usando Variaveis:
+        Margem Venda = 
+            VAR Lucro = SUM(BaseVendas[Lucro na Venda]) 
+            VAR FAturamento = SUM(BaseVendas[Faturamento na Venda])
+
+            RETURN
+                Lucro/FAturamento
