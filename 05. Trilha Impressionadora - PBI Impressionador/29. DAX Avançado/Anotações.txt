@@ -55,3 +55,67 @@ AULA_8: Variáveis em DAX para organizar os cálculos
 
             RETURN
                 Lucro/FAturamento
+
+
+AULA_9: Trocando as colunas calculadas por medidas - Parte 1
+
+    Excluindo colunas calculadas:
+        Faturamento total;
+        Lucro total;
+    
+    Medidas:
+        Faturamento total = 
+            SUMX(
+                BaseVendas,
+                BaseVendas[Tamanho Pedido] * RELATED(CadastroProdutos[Preço Unitário])
+            )
+
+
+10. Trocando as colunas calculadas por medidas - Parte 2
+
+    Medidas:
+        Custo total = 
+            SUMX(
+                BaseVendas,
+                BaseVendas[Tamanho Pedido] * RELATED(CadastroProdutos[Custo Unitário])
+            )
+        Lucro total = 
+            [Faturamento total] - [Custo total]
+        Marge
+
+
+AULA_11: Entendendo as funções iterativas do Power BI
+
+    Funções Iteradoras:
+        Contexto de linha - Colunas;
+        Contexto de filtro - Medidas;
+        
+        SUMX, MAXX, AVERAGEX, ...
+
+
+AULA_12: Aplicando as Funções Iterativas (Parte 1)
+
+    Medidas:
+        Media de Lucro = 
+            AVERAGEX(
+                'BaseDevoluções',
+                [Faturamento total] - [Custo total]
+            )
+        Maximo de Lucro = 
+            MAXX(
+                'BaseDevoluções',
+                [Faturamento total] - [Custo total]
+            )
+
+
+AULA_13: Aplicando as Funções Iterativas (Parte 2)
+
+    Medidas:
+        Lucro Total com Desconto = 
+            SUMX(
+                'Base Vendas',
+                [Faturamento Total] *
+                (1-RELATED('Cadastro Promocoes'[Percentual Desconto])) -
+                [Custo Total]
+            )
+
