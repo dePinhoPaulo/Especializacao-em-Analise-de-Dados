@@ -119,3 +119,89 @@ AULA_13: Aplicando as Funções Iterativas (Parte 2)
                 [Custo Total]
             )
 
+
+AULA_14: Criando Tabela Calendário com DAX - Função CALENDARAUTO
+
+    Tabela Calendário automatica:
+        Calendario = 
+            CALENDARAUTO()
+        "Verifica menor e menor data entre as tabelas do modelo"
+        "pega o inico do ano da menor data e o fim do ano da maior"
+
+
+AULA_15: Criando Tabela Calendário com DAX - Função CALENDAR
+
+    Tabela Calendário:
+        Calendario = 
+            VAR Inicio = 
+                DATE(YEAR(MIN('Base Vendas'[Data da Venda])),01,01)
+            VAR Fim = 
+                DATE(YEAR(MAX('Base Vendas'[Data da Venda])),12,31)
+            RETURN
+                CALENDAR(Inicio, Fim)
+
+        "O ideal é pegar to o ano tanto de menor quanto maior data"
+
+
+AULA_16: Diferença entre criar Tabelas com DAX ou no Power Query
+
+    "Tabelas criadas em DAX, Não estão no Power Query"
+    "Em DAX a tabela deixa o projeto mais leve"
+
+
+AULA_17: Criando Colunas na Tabela Calendário
+
+    Colunas:
+        Ano = YEAR(Calendario[Date]);
+        Mes = MONTH(Calendario[Date]);
+        Mes_nome = Calendario[Date].[Mês];
+        Trimestre = Calendario[Date].[QuarterNo];
+        Inicio_mes = STARTOFMONTH(Calendario[Date]);
+        Inicio_ano = STARTOFYEAR(Calendario[Date]);
+        Inicio_trimestre = STARTOFQUARTER(Calendario[Date]);
+    
+    "Relacionar calendario e base de vendas"
+
+
+AULA_18: Criando Tabelas Filtradas com a Função Filter (Parte 1)
+
+    Medidas com filtro:
+        Total vendas Ticket > 100 = 
+            SUMX(
+                FILTER(
+                    'Base Vendas',
+                    'Base Vendas'[Preco Unitario] > 100
+                ),
+                'Base Vendas'[Quantidade Vendida]
+            )
+
+
+AULA_19: Criando Tabelas Filtradas com a Função Filter (Parte 2)
+
+    Medidas com filtro:
+        Vendas com Fat. > 1000 = 
+            COUNTX(
+                FILTER(
+                    'Base Vendas',
+                    [Faturamento Total] > 1000
+                ),
+                'Base Vendas'[ID Produto]
+            )
+    "Filtrando tabelas virtuamente"
+
+
+AULA_20: Transição de Contexto (Parte 1)
+
+    Coluna - Cadastro Produtos:
+        Total de Vendas = SUM('Base Vendas'[Quantidade Vendida]) :
+            "Retorna valor total, repetindo em todas linhas, pois formula SUM esta no contexto de filtro"
+        Total de Vendas = CALCULATE(SUM('Base Vendas'[Quantidade Vendida])) :
+            "Adiconando o CALCULATE o resultado será correto, pois trara a formula para o contexto de linha"
+
+
+AULA_21: Transição de Contexto (Parte 2)
+
+    Coluna - Cadastro Produtos: 
+        Total de Vendas = [Total Vendas] :
+            "Outra forma, é trazer uma medida para o Calculo de coluna, ficara no contexto de linha"
+
