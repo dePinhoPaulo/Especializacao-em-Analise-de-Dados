@@ -205,3 +205,101 @@ AULA_21: Transição de Contexto (Parte 2)
         Total de Vendas = [Total Vendas] :
             "Outra forma, é trazer uma medida para o Calculo de coluna, ficara no contexto de linha"
 
+
+AULA_22: Exercício - Transição de Contexto - Explicação
+
+    Explicação
+
+
+AULA_23: Exercício - Transição de Contexto - Resolução
+
+    Coluna calculada:
+        Base Vendas:
+            Total Devolucoe por Produtos = 
+                CALCULATE(SUM('Base Vendas'[Quantidade devolvida]))
+            OU
+            Total Devolucoe por Produtos = [Total Devolucoe]
+
+        Canais de Vendas:
+            Total de vendas por Canal = [Total Vendas]
+    
+
+AULA_24: Função VALUES (Parte 1)
+
+    VALUES(): "Função filtra valores distintos"
+
+
+AULA_25: Função VALUES (Parte 2)
+
+    Medida:
+        Media de Faturamento Anual = 
+            AVERAGEX(
+                VALUES(Calendario[Ano]),
+                [Faturamento Total]
+            )
+
+
+AULA_26: Exercício - Função VALUES - Explicação
+
+    EX1: Qual a media de faturamento mensal?
+    EX2: Qual foi o Maximo que a empresa faturou em um unico mes?
+
+    Media de faturamento mensal = 
+        AVERAGEX(
+            VALUES(Calendario[Inicio_mes]),
+            [Faturamento Total]
+        )
+    Maximo de faturamento num mes = 
+        MAXX(
+            VALUES(Calendario[Inicio_mes]),
+            [Faturamento Total]
+        )
+    
+
+27. Exercício - Função VALUES - Resolução (Parte 1)
+
+    EX: OK
+
+
+AULA_28: Exercício - Função VALUES - Resolução (Parte 2)
+
+    EX: OK
+
+
+AULA_29: Funções VALUES e FILTER (Parte 1)
+
+    Meses que faturou mais que 200 Milhões:
+        Nova Tabela:
+            Meses Fat. < 200 Mi = 
+                FILTER(
+                    VALUES(Calendario[Inicio_mes]),
+                    [Faturamento Total] > 200000000
+                )
+        Coluna:
+            Faturamento = [Faturamento Total]
+        
+        "Relacinar com Calendario"
+
+        Medida:
+            % Meses acima da meta = 
+                COUNT('Meses Fat. < 200 Mi'[Inicio_mes]) / 
+                DISTINCTCOUNT(Calendario[Inicio_mes])
+
+
+AULA_30: Funções VALUES e FILTER (Parte 2)
+
+    Crindao calculo anterior em medida:
+        Qtd Meses acima da meta = 
+            COUNTROWS(
+                FILTER(
+                    VALUES(Calendario[Inicio_mes]),
+                    [Faturamento Total] > 200000000
+                )
+            )
+        
+        Qtd Total Meses = 
+            DISTINCTCOUNT(Calendario[Inicio_mes])
+        
+        % Meses acima da meta 2 = 
+            [Qtd Meses acima da meta] / [Qtd Total Meses]
+
