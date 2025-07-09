@@ -303,3 +303,106 @@ AULA_30: Funções VALUES e FILTER (Parte 2)
         % Meses acima da meta 2 = 
             [Qtd Meses acima da meta] / [Qtd Total Meses]
 
+
+AULA_31: Dica - Criando Medidas mais Eficientes
+
+    Resumindo medida em uma só:
+        % Meses acima da meta = 
+            VAR Meses_acima_meta = 
+                COUNTROWS(
+                    FILTER(
+                        VALUES(Calendario[Inicio_mes]),
+                        [Faturamento Total] > 200000000
+                    )
+                )
+            
+            VAR Total_Meses = 
+                    DISTINCTCOUNT(Calendario[Inicio_mes])
+            
+            RETURN
+                Meses_acima_meta / Total_Meses
+
+
+AULA_32: Funções VALUES e FILTER (Parte 3)
+
+    Meta que cada marca tenha no maximo 1,15% de devoluções:
+        Nova tabela:
+            Marcas = 
+                Values('Cadastro Produtos'[Nome da Marca])
+        
+        "Relacionar tabelas"
+        
+        Medida:
+            % Devolucoes = 
+                [Total Devolucoes]/[Total Vendas]  
+
+        Coluna:
+            % Devolucao por marca = 
+                % Devolucao
+
+
+AULA_33: Funções VALUES e FILTER (Parte 4)
+
+    Marcas = 
+        FILTER(
+            VALUES('Cadastro Produtos'[Nome da Marca]),
+            [% Devolucoes] <= 0.0115
+        )
+        
+    medida:
+        COUNTROWS(Marcas)/DISTINCTCOUNT('Cadastro Produtos'[Nome da Marca])
+    
+
+AULA_34: Funções VALUES e FILTER (Parte 5)
+
+    % Marcar dentro da meta de Dev. = 
+        VAR Marcas_Detro_Meta = 
+            COUNTROWS(
+                FILTER(
+                    VALUES('Cadastro Produtos'[Nome da Marca]),
+                    [% Devolucoes] <= 0.0115
+                )
+            )
+        
+        VAR Total_Marcas = 
+            DISTINCTCOUNT('Cadastro Produtos'[Nome da Marca])
+        
+        RETURN
+            Marcas_Detro_Meta / Total_Marcas
+
+
+AULA_35: Função CROSSJOIN
+
+    Qual a media de Faturamento de uma Loja em um mês:
+        Nova tabela:
+            Meses e Lojas = 
+                CROSSJOIN(
+                    VALUES('Cadastro Lojas'[Nome da Loja]),
+                    VALUES(Calendario[Inicio_mes])
+                )
+                "Adicionou uma loja para mes"
+            
+        Nova medida:
+            Media de Faturamento de Loja por Mes = 
+                AVERAGEX(
+                    CROSSJOIN(
+                        VALUES('Cadastro Lojas'[Nome da Loja]),
+                        VALUES(Calendario[Inicio_mes])
+                    ),
+                    [Faturamento Total]
+                )
+
+
+AULA_36: Exercício - Função CROSSJOIN
+
+    Qual o maximo que um cliente ja gastou com a gente em um ano:
+        Medida:
+            Maior faturamento de cliente em um ano = 
+                MAXX(
+                    CROSSJOIN(
+                        VALUES('Cadastro Clientes'[ID Cliente]),
+                        VALUES(Calendario[Ano])
+                    ),
+                    [Faturamento Total]
+                )
+
