@@ -406,3 +406,109 @@ AULA_36: Exercício - Função CROSSJOIN
                     [Faturamento Total]
                 )
 
+
+AULA_37: Funções CALCULATE E ALL
+
+    Remove filtros de marcas e traz valor absoluto:
+        Total vendas fixo = 
+            CALCULATE(
+                [Total Vendas],
+                ALL('Cadastro Produtos')
+            )
+        
+        % de vendas = 
+            [Total Vendas]/[Total vendas fixo]
+
+
+AULA_38: Funções CALCULATE E ALL - Dicas e cuidados
+
+    Remove filtros independente da tabela e traz valor absoluto:
+        Total vendas fixo = 
+            CALCULATE(
+                [Total Vendas],
+                ALL('Base Vendas')
+            )
+
+
+AULA_39: Funções CALCULATE E ALLSELECTED
+
+    Adicionando Filtro de ano:
+        Segmantação de dados;
+        Calendario - Ano.
+    
+    Total vendas com segmentação = 
+        CALCULATE(
+            [Total Vendas],
+            ALLSELECTED('Base Vendas')
+        )
+
+
+AULA_40: Organizando as Medidas com Variáveis
+
+    Organizando medidas:
+        % de Vendas = 
+            VAR Total_vendas_segmentacao =
+                CALCULATE(
+                    [Total Vendas],
+                    ALLSELECTED('Base Vendas')
+                )
+
+            RETURN
+                [Total Vendas]/Total_vendas_segmentacao
+
+
+AULA_41: CALCULATE com várias condições (E)
+
+    Qual foi o Fat. da marca contoso em 2018:
+        Total Fat. Contoso 2018 = 
+            CALCULATE(
+                [Faturamento Total],
+                'Cadastro Produtos'[Nome da Marca] = "Contoso",
+                Calendario[Ano] = 2018
+            )
+        
+        "Utilizar CALCULATE para calculos com filtros especificos"
+        
+        Total Vendas Audio Onlie = 
+            CALCULATE(
+                [Total Vendas],
+                'Cadastro Subcategorias'[Categoria do Produto] = "Áudio",
+                'Cadastro Canais de Venda'[Nome do Canal] = "Online"
+            )
+
+
+AULA_42: CALCULATE com várias condições (OU) - Parte 1
+
+    Qual foi o Fat. da marca contoso ou Litware:
+        Qual foi o Fat. da marca contoso + Litware = 
+            CALCULATE(
+                [Faturamento Total],
+                'Cadastro Produtos'[Nome da Marca] = "Contoso" ||
+                'Cadastro Produtos'[Nome da Marca] = "Litware"
+            )
+        Outra Forma:
+        Qual foi o Fat. da marca contoso + Litware = 
+            CALCULATE(
+                [Faturamento Total],
+                'Cadastro Produtos'[Nome da Marca] IN {"Contoso", "Litware"}
+            )
+
+    Qual Total de devoluções de audio + computador no ano de 2018:
+        Total de Devolução audio+computador 2018 = 
+            CALCULATE(
+                [Total Devolucoes],
+                'Cadastro Subcategorias'[Categoria do Produto] IN {"Áudio", "Computador"},
+                Calendario[Ano] = 2018
+            )
+
+
+AULA_43: CALCULATE com várias condições (OU) - Parte 2
+
+    Qual foi total de de produtos de Luxo + vendas da marca contoso:
+        Total de vendas Luxo + marca contoso = 
+            CALCULATE(
+                [Total Vendas],
+                'Cadastro Produtos'[Tipo] = "Luxo" ||
+                'Cadastro Produtos'[Nome da Marca] = "Contoso"
+            )
+
