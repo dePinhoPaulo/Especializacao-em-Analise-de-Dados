@@ -512,3 +512,27 @@ AULA_43: CALCULATE com várias condições (OU) - Parte 2
                 'Cadastro Produtos'[Nome da Marca] = "Contoso"
             )
 
+
+AULA_44: CALCULATE e CONTAINSSTRING - Filtrando se contém um texto específico
+
+    Total de vendas que a promoção de vendas geraram:
+        Medida:
+            Total vendas promoção ferias = 
+                CALCULATE(
+                    [Total Vendas],
+                    FILTER(
+                        'Cadastro Promocoes',
+                        CONTAINSSTRING('Cadastro Promocoes'[Nome Promocao],"Férias")
+                    )
+                )
+
+    Total de vendas de Produtos Bluetooth:
+        Total vendas bluetooth = 
+            CALCULATE(
+                [Total Vendas],
+                FILTER(
+                    'Cadastro Produtos',
+                    CONTAINSSTRING('Cadastro Produtos'[Nome do Produto],"Bluetooth")
+                )
+            )
+
