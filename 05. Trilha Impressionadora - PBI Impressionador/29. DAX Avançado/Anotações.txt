@@ -536,3 +536,83 @@ AULA_44: CALCULATE e CONTAINSSTRING - Filtrando se contém um texto específico
                 )
             )
 
+
+AULA_45: Cálculo do Acumulado ao longo do tempo
+
+    faturamento Acumulado:
+        Faturamento Acumulado = 
+            CALCULATE(
+                [Faturamento Total],
+                FILTER(
+                    ALL(Calendario),
+                    Calendario[Date]<=MAX(Calendario[Date])
+                )    
+            )
+
+
+AULA_46: Dica - Formatação Personalizada de Data com a Função FORMAT
+
+    Dta personalizada:
+        Trimestre - Ano = 
+            FORMAT(
+                Calendario[Date],
+                "Q-YYYY"
+            )
+        "Ordenar por Iniciotrimestre"
+
+
+AULA_47: Exercício - Cálculo do Acumulado ao longo do tempo
+    
+    Acumulado Vendas = 
+        CALCULATE(
+            [Total Vendas],
+            FILTER(
+                ALL(Calendario),
+                Calendario[Date]<=MAX(Calendario[Date])
+            )       
+        )
+
+
+AULA_48: Inteligência de Tempo - Funções TOTALYTD, TOTALQTD, TOTALMTD
+
+    FATURAMENTO ACUMULADO ANO A ANO, (Trimestre E MES):
+        Faturamento YTD = 
+            TOTALYTD(
+                [Faturamento Total],
+                Calendario[Date]
+            )
+    
+        Faturamento QTD = 
+            TOTALQTD(
+                [Faturamento Total],
+                Calendario[Date]
+            )
+        
+        Faturamento MTD = 
+            TOTALMTD(
+                [Faturamento Total],
+                Calendario[Date]
+            )
+
+
+AULA_49: Crescimento YoY
+
+    Faturamento do periodo no ano anterior:
+        Faturamento YTD Ano anterior = 
+            Faturamento YTD Ano anterior = 
+                CALCULATE(
+                    [Faturamento YTD],
+                    PARALLELPERIOD(
+                        Calendario[Date],
+                        -12,
+                        MONTH
+                    )
+                )
+        
+    Crescimento ano sobre ano:
+        Faturamento YTD YOY = 
+            DIVIDE(
+                [Faturamento YTD]-[Faturamento YTD Ano anterior],
+                [Faturamento YTD Ano anterior],
+                "Sem historico"
+            )
