@@ -616,3 +616,44 @@ AULA_49: Crescimento YoY
                 [Faturamento YTD Ano anterior],
                 "Sem historico"
             )
+
+
+AULA_50: Função SAMEPERIODLASTYEAR - Variação de Clientes entre os anos
+
+    % Crescimento Num Clientes = 
+        VAR total_cliente =  
+            DISTINCTCOUNT('Base Vendas'[ID Cliente])
+        VAR total_clientes_anterior = 
+            CALCULATE(
+                total_cliente,
+                SAMEPERIODLASTYEAR(
+                    Calendario[Date]
+                )
+            )
+        RETURN
+            DIVIDE(
+                total_cliente-total_clientes_anterior,
+                total_clientes_anterior
+            )
+
+
+AULA_51: Função USERELATIONSHIP (Parte 1)
+
+    Relacionamento principal: linha;
+    Relacionamento secundario: Tracejado;
+    "Não se faz dois relacionamento na mesma coluna"
+
+
+AULA_52: Função USERELATIONSHIP (Parte 2)
+
+    Total Envios = 
+        CALCULATE(
+            [Total Vendas],
+            USERELATIONSHIP(
+                'Base Vendas'[Data do Envio],
+                Calendario[Date]
+            )
+        )
+
+    "Ajustar tabela calendario, pois data de envio vai aleém da venda"
+
