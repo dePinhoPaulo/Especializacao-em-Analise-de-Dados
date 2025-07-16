@@ -657,3 +657,93 @@ AULA_52: Função USERELATIONSHIP (Parte 2)
 
     "Ajustar tabela calendario, pois data de envio vai aleém da venda"
 
+
+AULA_53: Calculando Dias Úteis entre duas datas (Parte 1)
+
+    Dia da semana = WEEKDAY(Calendario[Datas])
+    
+    Tipo do dia = 
+        IF(
+            Calendario[Dia da semana] = 1 || Calendario[Dia da semana] = 7,
+            "Fim de semana",
+            "Dia de semana"
+        )
+
+
+AULA_54: Calculando Dias Úteis entre duas datas (Parte 2)
+
+    "Relacionar tabela de feriado"
+
+    Coluna de feriado na calendario:
+        Feriado = RELATED(Feriados[Feriado])
+    
+    Coluna dia util:
+        Dia Util? = 
+            IF(
+                Calendario[Tipo do dia] = "Dia de semana" && Calendario[Feriado] = BLANK(),
+                1,
+                0
+            )
+
+
+AULA_55: Calculando Dias Úteis entre duas datas (Parte 3)
+
+    Dias Uteis = 
+        CALCULATE(
+            SUM(Calendario[Dia Util?]),
+            DATESBETWEEN(
+                Calendario[Datas],
+                'Base Vendas'[Data da Venda],
+                'Base Vendas'[Data do Envio]
+            )
+        )
+
+
+AULA_56: Função NETWORKDAYS para calcular dias úteis
+
+    Função que serve para a mesma tarefa anterior:
+        Dias Uteis = 
+            NETWORKDAYS(
+                'Base Vendas'[Data da Venda],
+                'Base Vendas'[Data do Envio],
+                1, --parametro dos finais de sama (veificar documentação) 
+                Feriados
+            )
+
+
+AULA_57: Função SUMMARIZE - Agrupar Tabelas (Parte 1)
+
+    "Agrupar os dados repetidos, fazendo uma conta com esses dodas"
+
+    Nova tabela:
+        Vendas Resumidas = 
+            SUMMARIZE(
+                'Base Vendas Parceladas',
+                'Base Vendas Parceladas'[Num Venda],
+                'Base Vendas Parceladas'[Nome Cliente],
+                'Base Vendas Parceladas'[Marca],
+                "Total Pago",
+                SUM('Base Vendas Parceladas'[Faturamento])
+            )
+
+
+AULA_58: Função SUMMARIZE - Agrupar Tabelas (Parte 2)
+
+    Filtrando tabela, só comquem já pagou tudo:
+        Vendas Resumidas = 
+    SUMMARIZE(
+        FILTER(
+            'Base Vendas Parceladas',
+            DATEDIFF(
+                'Base Vendas Parceladas'[Data da Venda],
+                TODAY(),
+                MONTH
+            ) > 'Base Vendas Parceladas'[Total Parcelas]
+        ),
+        'Base Vendas Parceladas'[Num Venda],
+        'Base Vendas Parceladas'[Nome Cliente],
+        'Base Vendas Parceladas'[Marca],
+        "Total Pago",
+        SUM('Base Vendas Parceladas'[Faturamento])
+    )
+
