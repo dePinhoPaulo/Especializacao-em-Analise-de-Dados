@@ -731,19 +731,128 @@ AULA_58: Função SUMMARIZE - Agrupar Tabelas (Parte 2)
 
     Filtrando tabela, só comquem já pagou tudo:
         Vendas Resumidas = 
-    SUMMARIZE(
-        FILTER(
-            'Base Vendas Parceladas',
-            DATEDIFF(
-                'Base Vendas Parceladas'[Data da Venda],
-                TODAY(),
-                MONTH
-            ) > 'Base Vendas Parceladas'[Total Parcelas]
-        ),
-        'Base Vendas Parceladas'[Num Venda],
-        'Base Vendas Parceladas'[Nome Cliente],
-        'Base Vendas Parceladas'[Marca],
-        "Total Pago",
-        SUM('Base Vendas Parceladas'[Faturamento])
-    )
+            SUMMARIZE(
+                FILTER(
+                    'Base Vendas Parceladas',
+                    DATEDIFF(
+                        'Base Vendas Parceladas'[Data da Venda],
+                        TODAY(),
+                        MONTH
+                    ) > 'Base Vendas Parceladas'[Total Parcelas]
+                ),
+                'Base Vendas Parceladas'[Num Venda],
+                'Base Vendas Parceladas'[Nome Cliente],
+                'Base Vendas Parceladas'[Marca],
+                "Total Pago",
+                SUM('Base Vendas Parceladas'[Faturamento])
+            )
+
+
+AULA_59: Função SUMMARIZE - Agrupar Tabelas (Parte 3)
+
+    Faturamento Medio POR Venda = 
+        AVERAGEX(
+            SUMMARIZE(
+                    FILTER(
+                        'Base Vendas Parceladas',
+                        DATEDIFF(
+                            'Base Vendas Parceladas'[Data da Venda],
+                            TODAY(),
+                            MONTH
+                        ) > 'Base Vendas Parceladas'[Total Parcelas]
+                    ),
+                    'Base Vendas Parceladas'[Num Venda],
+                    'Base Vendas Parceladas'[Nome Cliente],
+                    'Base Vendas Parceladas'[Marca],
+                    "Total Pago",
+                    SUM('Base Vendas Parceladas'[Faturamento])
+                ),
+            [Total Pago]
+        )
+
+
+AULA_60: Análise de Inadimplência de Clientes (Parte 1)
+
+    Calculo de inadinplencia (clientes que deixam de pagar)
+        Coluna:
+            Total a ser pago = 
+                'Base Vendas Parceladas'[Faturamento]*'Base Vendas Parceladas'[Total Parcelas]
+        
+        Tabela:
+            Vendas Resumidas = 
+                SUMMARIZE(
+                    FILTER(
+                        'Base Vendas Parceladas',
+                        DATEDIFF(
+                            'Base Vendas Parceladas'[Data da Venda],
+                            TODAY(),
+                            MONTH
+                        ) > 'Base Vendas Parceladas'[Total Parcelas]
+                    ),
+                    'Base Vendas Parceladas'[Num Venda],
+                    'Base Vendas Parceladas'[Nome Cliente],
+                    'Base Vendas Parceladas'[Marca],
+                    'Base Vendas Parceladas'[Total a ser pago],
+                    "Total Pago",
+                    SUM('Base Vendas Parceladas'[Faturamento])
+                )
+
+        medida:
+            Total ja pago = 
+                SUM('Vendas Resumidas'[Total Pago])
+            
+            total devido = 
+                SUM('Vendas Resumidas'[Total a ser pago])
+            
+            % Inadimplencia = 
+                ([total devido]- [Total ja pago])/[total devido]
+
+
+AULA_61: Análise de Inadimplência de Clientes (Parte 2)
+
+    Refazendo caulculo de forma mais eficiente:
+        Total faturamento esperado = 
+            SUMX(
+                SUMMARIZE(
+                    FILTER(
+                        'Base Vendas Parceladas',
+                        DATEDIFF(
+                            'Base Vendas Parceladas'[Data da Venda],
+                            TODAY(),
+                            MONTH
+                        ) > 'Base Vendas Parceladas'[Total Parcelas]
+                    ),
+                    'Base Vendas Parceladas'[Num Venda],
+                    'Base Vendas Parceladas'[Nome Cliente],
+                    'Base Vendas Parceladas'[Marca],
+                    'Base Vendas Parceladas'[Total a ser pago],
+                    "Total Pago",
+                    SUM('Base Vendas Parceladas'[Faturamento])
+                ), 
+            'Base Vendas Parceladas'[Total a ser pago]
+        )
+
+        total ja pago = 
+            SUMX(
+                        SUMMARIZE(
+                            FILTER(
+                                'Base Vendas Parceladas',
+                                DATEDIFF(
+                                    'Base Vendas Parceladas'[Data da Venda],
+                                    TODAY(),
+                                    MONTH
+                                ) > 'Base Vendas Parceladas'[Total Parcelas]
+                            ),
+                            'Base Vendas Parceladas'[Num Venda],
+                            'Base Vendas Parceladas'[Nome Cliente],
+                            'Base Vendas Parceladas'[Marca],
+                            'Base Vendas Parceladas'[Total a ser pago],
+                            "Total Pago",
+                            SUM('Base Vendas Parceladas'[Faturamento])
+                        ), 
+                    [Total Pago]
+                )
+
+        % Inadimplencia = 
+            ([Total faturamento esperado]-[total ja pago])/[Total faturamento esperado]
 
