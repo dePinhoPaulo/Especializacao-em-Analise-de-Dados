@@ -856,3 +856,84 @@ AULA_61: Análise de Inadimplência de Clientes (Parte 2)
         % Inadimplencia = 
             ([Total faturamento esperado]-[total ja pago])/[Total faturamento esperado]
 
+
+AULA_62: Função RANKX
+
+    Ranking de Produto = 
+        RANKX(
+            ALL('Cadastro Produtos'),
+            [Total Vendas]
+        )
+
+
+AULA_63: Como criar vários tipos de Ranking (Parte 1)
+
+    Ranking de Marca = 
+        RANKX(
+            ALL('Cadastro Produtos'[Nome da Marca]),
+            [Total Vendas]
+        )
+
+
+AULA_64: Como criar vários tipos de Ranking (Parte 2)
+
+    Ranking de Loja = 
+        RANKX(
+            ALL('Cadastro Lojas'[Nome da Loja]),
+            [Total Vendas]
+        )
+    
+    Ranking de País = 
+        RANKX(
+            ALL('Cadastro Lojas'[Nome do País/Região]),
+            [Total Vendas]
+        )
+
+
+AULA_65: Função HASONEVALUE
+
+    Ajustando valor totalizador do Ranking:
+        Ranking de Loja = 
+            IF(
+                HASONEVALUE('Cadastro Lojas'[Nome da Loja]),
+                RANKX(
+                    ALL('Cadastro Lojas'[Nome da Loja]),
+                    [Total Vendas]
+                ),
+                ""
+            )
+    
+        Ranking de País = 
+            IF(
+                HASONEVALUE('Cadastro Lojas'[Nome do País/Região]),
+                RANKX(
+                    ALL('Cadastro Lojas'[Nome do País/Região]),
+                    [Total Vendas]
+                ),
+                ""
+            )
+
+
+AULA_66: Tornando os Rankings Dinâmicos
+
+    Tornando numero do ranking dinamico pelos filtros aplicado (ALLSELECTED):
+        Ranking de Loja = 
+            IF(
+                HASONEVALUE('Cadastro Lojas'[Nome da Loja]),
+                RANKX(
+                    ALLSELECTED('Cadastro Lojas'[Nome da Loja]),
+                    [Total Vendas]
+                ),
+                ""
+            )
+        
+        Ranking de País = 
+            IF(
+                HASONEVALUE('Cadastro Lojas'[Nome do País/Região]),
+                RANKX(
+                    ALLSELECTED('Cadastro Lojas'[Nome do País/Região]),
+                    [Total Vendas]
+                ),
+                ""
+            )
+
