@@ -937,3 +937,81 @@ AULA_66: Tornando os Rankings Dinâmicos
                 ""
             )
 
+
+AULA_67: Como criar Critérios de Desempate no Ranking
+
+    Criterio de ranking = 
+        [Total Vendas] * 100000000 + [Faturamento Total]
+    
+    Ranking de Produto = 
+        IF(
+            HASONEVALUE('Cadastro Produtos'[Nome do Produto]),
+            RANKX(
+                ALLSELECTED('Cadastro Produtos'[Nome do Produto]),
+                [Criterio de ranking]
+            ),
+            ""
+        )
+
+
+AULA_68: Função ISINSCOPE para criar Rankings com Hierarquias
+
+    "Se estiver olhando pro escopo de ano faça o ranking, se for mes faça o rankng por mes"
+
+    Ranking de Datas = 
+        IF(
+            ISINSCOPE(Calendario[Mes]),
+            RANKX(
+                ALLSELECTED(Calendario[Mes]),
+                [Total Vendas]
+            ),
+            RANKX(
+                ALLSELECTED(Calendario[Ano]),
+                [Total Vendas]
+            )
+        )
+    
+
+AULA_69: Exercício: Função ISINSCOPE para criar Rankings com Hierarquias
+
+    Ranking de Continente/Pais = 
+        IF(
+            ISINSCOPE('Cadastro Lojas'[Nome do País/Região]),
+            RANKX(
+                ALLSELECTED('Cadastro Lojas'[Nome do País/Região]),
+                [Total Vendas]
+            ),
+            RANKX(
+                ALLSELECTED('Cadastro Lojas'[Continente]),
+                [Total Vendas]
+            )
+        )
+
+
+AULA_70: Função TOPN
+
+    Nova tabela:
+        Top 5 Marcas = 
+            TOPN(
+                5,
+                ALL('Cadastro Produtos'[Nome da Marca]),
+                [Total Vendas]
+            )
+
+
+AULA_71: Função ADDCOLUMNS
+
+    Top 5 Marcas = 
+        ADDCOLUMNS(
+            TOPN(
+                5,
+                ALL('Cadastro Produtos'[Nome da Marca]),
+                [Total Vendas]
+            ),
+            "Vendas por Marca",
+            [Total Vendas],
+            "Faturamento por marca",
+            [Faturamento Total]
+        )
+    "Tabela criada com as colunas, sem relacionamento"
+
