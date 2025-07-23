@@ -1015,3 +1015,146 @@ AULA_71: Função ADDCOLUMNS
         )
     "Tabela criada com as colunas, sem relacionamento"
 
+
+AULA_72: Exercício - TOPN e ADDCOLUMNS
+
+    Top 15 Clientes = 
+        ADDCOLUMNS(
+            TOPN(
+                15,
+                ALL('Cadastro Clientes'[Nome do cliente]),
+                [Total Vendas]
+            ),
+            "Total Compras",
+            [Total Vendas],
+            "Total Lucro",
+            [Lucro Total com desconto]
+        )
+
+
+AULA_73: SUMX e TOPN
+
+    Total vendas Top 5 Marcas = 
+        SUMX(
+            TOPN(
+                5,
+                ALLSELECTED(
+                    'Cadastro Produtos'[Nome da Marca]
+                ),
+                [Total Vendas]
+            ),
+            [Total Vendas]
+        )
+
+
+AULA_74: CALCULATE e TOPN
+
+    Total vendas Top 5 Marcas = 
+        CALCULATE(
+            [Total Vendas],
+            TOPN(
+                5,
+                ALLSELECTED(
+                    'Cadastro Produtos'[Nome da Marca]
+                ),
+                [Total Vendas]
+            )
+        )
+
+
+AULA_75: Entendendo a diferença entre ALL, ALLSELECTED e VALUES (Parte 1)
+
+    Total vendas Top 5 Marcas = 
+        CALCULATE(
+            [Total Vendas],
+            TOPN(
+                5,
+                VALUES(
+                    'Cadastro Produtos'[Nome da Marca]
+                ),
+                [Total Vendas]
+            )
+        )
+    "Com Values a o calculo ira aceitar os filtros da matriz, all não"
+
+
+AULA_76: Entendendo a diferença entre ALL, ALLSELECTED e VALUES (Parte 2)
+
+    Ranking das Marcas = 
+        RANKX(
+            ALLSELECTED('Cadastro Produtos'[Nome da Marca]),
+            [Total Vendas]
+        )
+    "Nessa caso como pracisamos comparar com todas marca temos que uitilizar ALL, pois não ira filtrar diferente do VALUES"
+    "Com o ALLSELECTED ira comparar as marcas de acordo com a segmentação"
+
+AULA_77: Ajustando as informações TOPN na Matriz
+
+    calculando somente top 5:
+        Total vendas Top 5 Marcas = 
+            IF(
+                [Ranking das Marcas]<=5,
+                CALCULATE(
+                    [Total Vendas],
+                    TOPN(
+                        5,
+                        VALUES(
+                            'Cadastro Produtos'[Nome da Marca]
+                        ),
+                        [Total Vendas]
+                    )
+                ),
+                ""
+            )
+        
+    Retirando valor do total no ranking:
+        Ranking das Marcas = 
+            IF(
+                HASONEVALUE('Cadastro Produtos'[Nome da Marca]),
+                RANKX(
+                    ALLSELECTED('Cadastro Produtos'[Nome da Marca]),
+                    [Total Vendas]
+                ),
+                ""
+            )
+
+
+AULA_78: Exercício - Analisando os Top 15 Produtos (Parte 1)
+
+    Total Vendas Top 15 Produtos = 
+        CALCULATE(
+            [Total Vendas],
+            TOPN(
+                15,
+                VALUES('Cadastro Produtos'[Nome do Produto]),
+                [Total Vendas]
+            )
+        )
+
+
+AULA_79: Exercício - Analisando os Top 15 Produtos (Parte 2)
+
+    Ranking de Produto = 
+        IF(
+            HASONEVALUE('Cadastro Produtos'[Nome do Produto]),
+            RANKX(
+                ALLSELECTED('Cadastro Produtos'[Nome do Produto]),
+                [Total Vendas]
+            ),
+            ""
+        )
+    
+    Total Vendas Top 15 Produtos = 
+        IF(
+            [Ranking de Produto]<=15,
+            CALCULATE(
+                [Total Vendas],
+                TOPN(
+                    15,
+                    VALUES('Cadastro Produtos'[Nome do Produto]),
+                    [Total Vendas]
+                )
+            ),
+            ""
+        )
+
