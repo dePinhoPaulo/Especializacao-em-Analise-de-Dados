@@ -1158,3 +1158,32 @@ AULA_79: Exercício - Analisando os Top 15 Produtos (Parte 2)
             ""
         )
 
+
+AULA_80: Tornando o TOPN Dinâmico
+
+    Parametro
+        Minimo: 1
+        Maximo: 20
+        Incrementar: 1
+        Padrao: 
+        "Lista de valores pulando de x em x"
+    
+    Total Vendas Top 15 Produtos = 
+        IF(
+            [Ranking de Produto]<='Top N'[Valor Top N],
+            CALCULATE(
+                [Total Vendas],
+                TOPN(
+                    [Valor Top N],
+                    VALUES('Cadastro Produtos'[Nome do Produto]),
+                    [Total Vendas]
+                )
+            ),
+            ""
+        )
+    "Com o parametro a quantidade do rankig esta dinamico"
+
+
+AULA_81: Calculando o percentual de vendas dos Top N Produtos
+
+    
