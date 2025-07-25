@@ -1186,4 +1186,67 @@ AULA_80: Tornando o TOPN Dinâmico
 
 AULA_81: Calculando o percentual de vendas dos Top N Produtos
 
+    Total de vendas Top N Fixo = 
+        CALCULATE(
+            [Total Vendas Top N Produtos],
+            ALL('Cadastro Produtos'[Nome do Produto])
+        )
+
+    Total de vendas Top N Produtos Fixo = 
+        IF(
+            [Ranking de Produto]<='Top N'[Valor Top N],
+            CALCULATE(
+                [Total Vendas Top N Produtos],
+                ALL('Cadastro Produtos'[Nome do Produto])
+            )
+        )
     
+    % Vendas Top N Produtos = 
+        DIVIDE(
+            [Total Vendas Top N Produtos],
+            [Total de vendas Top N Produtos Fixo]
+        )
+
+
+AULA_82: Calculando o percentual de vendas dos Top N Produtos (Parte 2)
+
+    "Otimizando o calculo utilizando variaveis"
+
+
+AULA_83: Análise de Pareto (Parte 1)
+
+    Acumulado de vendas por Marca = 
+        CALCULATE(
+            [Total Vendas],
+            TOPN(
+                [Ranking das Marcas],
+                ALL('Cadastro Produtos'[Nome da Marca]),
+                [Total Vendas]
+            )
+        )
+
+
+AULA_84: Análise de Pareto (Parte 2)
+
+    % Acumuladoo Por Marca = 
+        VAR total_vendas_fixo = 
+            CALCULATE(
+                [Total Vendas],
+                ALL('Cadastro Produtos'[Nome da Marca]) 
+            )
+        RETURN 
+            [Acumulado de Vendas por Marca]/total_vendas_fixo
+
+
+AULA_85: Análise de Pareto (Parte 3)
+
+    Grafico:
+        Colunas e linhas;
+        nome da Marca por total vendas com % Total acumulado;
+        Linha começar no 0%;
+        Habilitar rotulos;
+    
+    Segmentação:
+        Tipo produto;
+        3 colunas;
+        
