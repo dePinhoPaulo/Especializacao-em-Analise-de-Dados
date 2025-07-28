@@ -1,0 +1,41 @@
+AULA_1: Qual Python usar? Qual Python instalar?
+
+    "Vamos usar pychar e Jupyter"
+    "no inico é identico"
+    "Apartir das bibliotecas pode ter diferenças"
+
+    
+AULA_2: Orientações de Instalação
+
+    "Utilizar Jupter no Visual studio ou Anaconda"
+    "Utilizar no Visual Studio"
+
+
+AULA_3: Instalação do Python no VSCode
+
+    Vs Code:
+        Download e Instalação simples;
+        Instalar Extensão: Python
+    
+    Python:
+        Download e Instalação;
+
+
+AULA_4: Configurar o Jupyter no VSCode
+
+    Jupyter:
+        Extensão instalar;
+        Arquivos .ipynb
+
+
+AULA_5: Instalando o Jupyter pelo Anaconda
+
+    "Download e instalação do Anaconda"
+
+
+AULA_6: Problemas na Instalação do Jupyter - Resolvido
+
+
+AULA_7: Mac, Linux e Google Colab
+
+
