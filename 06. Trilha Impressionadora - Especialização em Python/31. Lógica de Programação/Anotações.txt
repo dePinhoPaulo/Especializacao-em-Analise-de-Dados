@@ -1,0 +1,33 @@
+AULA_1 Curso de Lógica de Programação e Para que serve Programação e Python?
+
+    "Curso extra de logica"
+
+
+AULA_2: O que é Lógica de Programação
+
+    Qual sequencia de passos para resolver o problema
+        -Receita de bolo
+    
+    Agora cuidado:
+        "A maquina sempre irá executar EXATAMENTE o que o passo a passo escrito"
+
+
+AULA_3: Tudo o que você precisa saber de Lógica de Programação
+
+    "Melhor forma de aprender é na prática"
+
+    "As intruções são dadas em linhas e cada linha é uma instrução"
+    "As linhas são lidas de cima pra baixo"
+    "Erros vão para seu codigo e te avisar o que está errado"
+    "Os codigos foram feitos para ser: Intuitivos e simples(Regra do Python)"
+
+
+AULA_4: Qual a melhor forma de aprender a programar
+
+    Regras de Ouro:
+        Errar é normal, faz parte do processo;
+        Não fique frustado com erros, ache o erro e rsolva;
+        Você não precisa sair decorando codigo;
+        Tente se divertir programendo, você aprende mais;
+        Procure as coisas por conta propria e testar vai te ajudar muito.
+
