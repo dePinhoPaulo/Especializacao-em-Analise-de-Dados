@@ -1,0 +1,73 @@
+AULA_1: Criando seu Primeiro Programa
+
+    Crianco codigos basicos
+
+    PRINT()
+        "Imprime valores na tela"
+
+
+AULA_2: Operações Básicas
+
+    Operadores basico:
+        +, -, / , *
+        **: Exponenciação
+        %: Mod (Resto da divisão)
+        2.2: Numeros Float
+
+
+AULA_3: Ordem das Operações no Python
+
+    Segue a mesma ordem da matemática
+
+
+AULA_4: Operações com Texto (String)
+
+    Concatenar:
+        'Meu nome é' + ' Paulo'
+    
+    Contido:
+        'Meu nome é' in ' Paulo'
+        "Retorna Boolean"
+
+
+AULA_5: Variáveis
+
+    Armazna os valoes sem ter que distinguir se é inteiro, string, etc...
+
+
+AULA_6: Um Erro Comum com Variáveis no Jupyter
+
+
+AULA_7: Input - Pegando informações do Usuário
+
+    INPUT()
+        "Receba dados do usuario"
+
+        nome = input('Qual seu nome?')
+        print('Seu nome: '+nome)
+        "nome do usuario em uma variavel e depois a imprima na tela"
+
+
+AULA_8: Um Erro Comum com Input no Jupyter
+
+
+AULA_9: Os arquivos do jupyter e como abrir nossos arquivos
+
+    Aquivo externo:
+        Baixe a abre pelo vs code/Jupyter
+    
+
+AULA_10: Exercícios e Novidades do Jupyter
+
+    Explicação do EX.
+
+
+AULA_10: Exercícios e Novidades do Jupyter
+
+    OK
+
+
+AULA_12: Erro Comum do print, cuidado
+
+    Print = 'oi'
+    "Nunca usar o print como variavel"
