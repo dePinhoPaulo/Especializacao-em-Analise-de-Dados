@@ -1,0 +1,46 @@
+AULA_1: Ordem de Execução dos Programas
+
+    "de cima para baixo."
+
+
+AULA_2: Tipos de Variáveis
+
+    Inteiros;
+    Float: Numeros decimais;
+    String: Texto;
+    Boolean: True ou False;
+
+    "Jamais usar nomes de variavei como funções do pytonh (int, typ, float, string, etc..;)"
+
+AULA_3: Misturando Tipos de Variáveis
+
+    "Não posso concatenar um INT com String, converta em String antes STG()"
+        print('o faturmaento foi: ' + str(faturamento))
+
+    #: Comenta o codgio
+
+
+AULA_4: Comando Format
+
+    Format:
+        "Nao precisa transformar variaveis em string"
+            print('o faturmaento foi: {} O custo foi: {}'.format(faturamento, custo))
+
+
+AULA_5: Fstring e Mudança de Tipos de Variáveis
+
+    F-string:
+        "ainda mais rapido que format, adicionar f antes da tring e adiciona a variavel nas chaves"
+            print(f'o faturmaento foi: {faturamento} O custo foi: {custo}')
+    
+    Mudança de tipo de variaveis:
+        "Todo valor inserido pelo usuario é inputado com string, por isso é necesario tratar o tipo dessa variavel antes de manipula-la"
+            faturamento = float(input("Valor faturado: "))
+            custo = float(input("Valor de custo: "))
+            lucro  = faturamento - custo
+
+
+AULA_6: Lista de Exercícios - Estruturas Sequenciais
+
+    Exercicios.
+
