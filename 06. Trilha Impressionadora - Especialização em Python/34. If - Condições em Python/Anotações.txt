@@ -1,0 +1,54 @@
+AULA_1: Estrutura do if - Condições no Python
+
+    Identação:
+        organização do codigo;
+        "Todas condições do if deve estar identado"
+    
+    if qtd_vendas > meta:
+        print('Batemos a meta!!')
+    else:
+        print('Não batemos a meta, precisamos melhorar!!')
+
+
+AULA_2: Blocos e Indentação - If dentro de If
+
+    If aninhado:
+        "Prestar muita atenção nos blocos"
+
+
+AULA_3: Elif
+
+    "Acrescimo do IF"
+    "Varias condições"
+    
+    if vendas < metas:
+        print('não ganhou bonus')
+    elif vendas > (metas*2):
+        bonus = 0.07 * vendas
+        print(f'vendedor ganhou bonus de: {bonus}')
+    else:
+        bonus = 0.03 * vendas
+        print(f'vendedor ganhou bonus de: {bonus}')
+
+
+AULA_4: Comparadores
+
+    ==    igual
+    !=    diferente
+    >     maior que (>= maior ou igual)
+    <     menor que (<= menor ou igual)
+    in    texto existe dentro de outro texto 
+    not   verifica o contrário da comparação
+
+    Obs: Se em alguma condição você não quiser fazer nada, você pode simplesmente escrever:
+    pass
+
+
+AULA_5: And e Or
+
+    if condicao_1 and condicao_2:
+        vai ser executado se as 2 condições forem verdadeiras ao mesmo tempo
+
+    if condicao_1 or condicao_2:
+        vai ser executado se pelo menos uma das condições forem verdadeiras
+    
