@@ -52,3 +52,28 @@ AULA_5: And e Or
     if condicao_1 or condicao_2:
         vai ser executado se pelo menos uma das condições forem verdadeiras
     
+
+AULA_6: Exercícios If - Parte 1
+
+    Exercicios
+
+
+AULA_7: Comparações Contraintuitivas
+
+    Comparação de strings vazias
+    if faturamento == '' or custo == '':
+        print('Preencha o faturamento e o lucro')
+
+    if faturamento or custo :
+        print('Preencha o faturamento e o lucro')
+
+
+AULA_8: Exercícios If - Parte 2
+
+    Exercicio
+
+
+AULA_9: Lista de Exercícios - Estruturas de Decisão
+
+    Explicação dos Exercicios
+
