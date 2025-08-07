@@ -1,0 +1,43 @@
+AULA_1: Por que aprender Strings e a importância pro Python
+
+    "no Python String é uma lista de caracteres"
+
+
+AULA_2: Índice e Tamanho de String
+
+    Tamanho do texto: len(texto)
+    caractere especifio: texto[3]
+        "Caractere de acordo com a posição da lista"
+
+
+AULA_3: Índice Negativo e Pedaço de String
+
+    Indice negativo:
+        T    E   X   T   O
+        -5  -4  -3  -2  -1  
+        "Mais facil para pegar os ultimos caracteres"
+
+    Pedaço da string:
+        "Retornar texto todo até um determinada posição"
+        nome[:-1]
+        "Retornar toda a lista menos o ultimo caractere"
+        OU
+        "Um de uma posição até o final"
+        email[5:]
+
+
+AULA_4: Operações com String
+
+    Format():
+        "Facilita trabalhar com strings"
+        print('Faturamento foi de {}'.format(faturamento))
+
+    In:
+        "verifica se tem algum caractere na string"
+        printf(@ in email)
+        "Return true ou false"
+
+AULA_5: Métodos de String - Apresentação
+
+    "Apresentação das pricipais Funções de String"
+
