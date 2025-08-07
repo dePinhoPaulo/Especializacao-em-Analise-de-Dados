@@ -41,3 +41,8 @@ AULA_5: Métodos de String - Apresentação
 
     "Apresentação das pricipais Funções de String"
 
+
+AULA_6: Formatação de números
+
+    "Apresentação das formatações dentro da função Format"
+
