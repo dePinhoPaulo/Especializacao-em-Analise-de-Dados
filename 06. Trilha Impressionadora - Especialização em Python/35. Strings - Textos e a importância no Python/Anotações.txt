@@ -46,3 +46,31 @@ AULA_6: Formatação de números
 
     "Apresentação das formatações dentro da função Format"
 
+
+AULA_7: Exercícios String - Parte 1
+
+    Exercícios 1 e 2
+
+
+AULA_8: Exercícios String - Parte 2
+
+    Exercício 3
+
+
+AULA_9: Cortes de String - Completo
+
+    Pedaço da string:
+        precos = "jan: 25, fev: 27"
+        preco_jan = precos[5:7]
+    
+    final
+        precos = "jan: 25, fev: 27, Mar: 29"
+        preco_mar = precos[-2:]
+    
+    Step
+        codigo = '1.2.3.4,5,1,2,3.4,7.9'
+        pedaco = codigo[8:2:-2]
+        "Caracteres do indice 8 até 2 pulando de 2 em 2 para tras"
+
+
+10. Exercícios Extras (Opcional) - Strings
