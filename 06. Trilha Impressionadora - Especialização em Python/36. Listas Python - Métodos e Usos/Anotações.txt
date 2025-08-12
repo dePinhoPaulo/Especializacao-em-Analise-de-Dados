@@ -1,0 +1,69 @@
+AULA_1: Listas em Python
+
+    Listas:
+        "Recomendado serem Homogeneas (Todas do mesmo tipo)"
+
+
+AULA_2: Índices em Lista, Consultando e Modificando Valores
+
+    Para retornar um valor da lista:
+        lista[i] = É o valoe de indice da lista
+
+    Para substituir uma valor da lista:
+        lista[i] = novo_valor
+        
+    "String é imutavel (Para isso usar Replace)"
+
+
+AULA_3: Descobrindo o Índice de um item na lista
+
+    Desocrin indice de um valor na lista:
+        print(produtos.index('celular'))
+
+
+AULA_4: Adicionar e Remover itens da Lista
+    
+    Adicionar:
+        produtos.append('Iphone')
+    
+    Remover:
+        produtos.remove('Iphone')
+        produtos.pop(2)
+        "Utilizar try para tratar remove caso não exista valor"
+        "Com pop vc pode armazenar valor em uma variavel"
+
+
+AULA_5: Tamanho de Lista, Maior e Menor Valor
+
+    Tamanho = len(lista)
+    Maior = max(lista)
+    Menor = min(lista)
+
+
+AULA_6: Juntar Listas e Ordenar
+
+    Juntar:
+        lista1.extend(lista2)
+        nova_lista = produtos1 + produtos2
+        "Se utilizar append ele ira inserir a lista2 em um valor da lista1"
+    
+    Ordenar:
+        lista.sort() = Maior para Menor
+        lista.sort(reverse=True) = Menor para Maior
+    
+
+AULA_7: Print e Join em Listas
+
+    Printar como lista:
+        texto.join(lista)
+        print('\n'.join(todos_produtos))
+    
+    Separando string em lista:
+        lista = texto.split(separador)
+        produtos3 = produtos_string.split(', ')
+
+
+AULA_8: Outros Métodos de Lista
+
+    Principais métodos de Lista
+
