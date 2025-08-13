@@ -67,3 +67,24 @@ AULA_8: Outros Métodos de Lista
 
     Principais métodos de Lista
 
+
+AULA_9: Alterações Incrementais de Variáveis (Importante)
+
+    variavel = variavel + valor
+    variavel += valor
+
+
+AULA_10: Exercícios Listas - Parte 1
+
+    Exercicios OK
+
+
+AULA_11: Copiar e Igualdade de Listas
+
+    lista2 = lista1
+    "As duas listas vão ser iguais sempre"
+
+    lista2 = lista1.copy()
+    "As duas listas vão ser iguais no momento da copia, depois outras Alterações não impactara na outra lista"
+
+
