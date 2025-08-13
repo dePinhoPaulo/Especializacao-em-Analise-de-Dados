@@ -88,3 +88,16 @@ AULA_11: Copiar e Igualdade de Listas
     "As duas listas vão ser iguais no momento da copia, depois outras Alterações não impactara na outra lista"
 
 
+AULA_12: Lista de Listas
+
+    "Cada item de uma lista pode ser qualquer tipo de variável. Inclusive, uma lista."
+    "Quando dentro de uma lista temos cada item como sendo uma outra lista, temos uma "nested list", ou seja, uma lista de listas."
+    "Todas as regras de lista e tudo que vimos até agora funciona exatamente igual, mas vamos ver como isso funciona na prática"
+
+
+AULA_13: Exercícios Listas - Parte 2
+
+    Exercicios OK
+
+
+AULA_14: Exercícios Extras de Listas (Opcional)
