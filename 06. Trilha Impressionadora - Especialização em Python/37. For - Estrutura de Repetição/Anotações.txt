@@ -49,3 +49,38 @@ AULA_7: Exercícios de For - Exercicios 2
 
     Exercicios OK
 
+
+AULA_8: For dentro de For
+
+    for item in lista: 
+        for item2 in lista2:
+            codigo aqui
+
+
+AULA_9: Criando Lista Auxiliar - Solução Desafio
+
+    for i, lista in enumerate(estoque):
+        for item in lista:
+            if item < 50:
+                if fabricas[i] in fabrica_abaixo_nivel:
+                    pass
+                else:
+                    fabrica_abaixo_nivel.append(fabricas[i])
+
+    print(fabrica_abaixo_nivel)
+
+
+AULA_10: Exercícios de For - Exercicios 3
+
+    Exercicios OK
+
+
+AULA_11: Break e Continue - Interrompendo um Loop
+
+    break -> interrompe e finaliza o for
+    continue -> interrompe e vai para o próximo item do for
+
+
+AULA_12: Exercícios Extras (Opcional) - Listas
+
+    
