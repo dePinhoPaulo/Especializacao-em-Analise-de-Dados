@@ -19,4 +19,4 @@ AULA_3: Exercício de While
 
 AULA_4: Lista de Exercícios - Estrutura de Repetição
 
-    
+    Exercício OK
