@@ -1,0 +1,22 @@
+AULA_1: Estrutura While
+
+    Executa uma quantidade indefinida de vezes.
+    Enquanto a conmdição for verdadeira o while continua executando.
+
+    while condicao:
+        repete esse código
+
+
+AULA_2: Loop Infinito no While
+
+    Sempre que usar o While tenha certeza que o programa vá finalizar em algum momento.
+
+
+AULA_3: Exercício de While
+
+    Exercício OK
+
+
+AULA_4: Lista de Exercícios - Estrutura de Repetição
+
+    
