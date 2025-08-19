@@ -1,0 +1,37 @@
+AULA_1: Tuplas
+
+    Objeto;
+    Acessamos valores da mesma forma da lista;
+    Lista imutavel;
+    "Não se faz append, remove, etc."
+
+
+AULA_2: Unpacking em Tuplas
+
+    nome, data_contratacao, data_nascimento, salario, cargo = vendas
+    "Atribuindo valores de uma tuplca, tbm pode ser usada em listas"
+
+
+AULA_3: Lista de Tuplas
+
+    lista = [
+    (valor1, valor2, valor3),
+    (valor4, valor5, valor6),
+    (valor7, valor8, valor9),
+    ]
+
+
+AULA_4: Finalizando Exercício de Lista de Tuplas
+
+    Exercico OK
+
+
+AULA_5: Exercícios de Tupla
+
+    for vendedor, qtd in vendas:
+    if qtd > meta:
+        print('{} bate a meta, com {} vendas'.format(vendedor, qtd))
+    "UNPAKING DIRETO NO FOR"
+
+    Exercícios OK
+
