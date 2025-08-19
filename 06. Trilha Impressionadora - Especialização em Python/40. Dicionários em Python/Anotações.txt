@@ -1,0 +1,18 @@
+AULA_1: Dicionários em Python
+
+    dicionario = {
+        chave: valor, 
+        chave: valor, 
+        chave: valor, 
+        chave: valor
+    }
+
+    "navegar traves das chaves, não indice."
+
+
+AULA_2: Pegar item Dicionário e Verificar Item Dicionário
+
+    2 formas de pegar um valor:
+        dicionario[chave] -> 'qunado não encontrado da erro'
+        .get(chave) -> 'qunado não encontrado retorna vazio'
+
