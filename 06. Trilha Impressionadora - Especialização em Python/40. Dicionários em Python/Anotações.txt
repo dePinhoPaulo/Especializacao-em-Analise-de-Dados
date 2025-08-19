@@ -16,3 +16,20 @@ AULA_2: Pegar item Dicionário e Verificar Item Dicionário
         dicionario[chave] -> 'qunado não encontrado da erro'
         .get(chave) -> 'qunado não encontrado retorna vazio'
 
+
+AULA_3: Adicionar, Modificar e Remover Itens do Dicionário
+
+    Adicionar OU Modificar:
+        dicionario[chave] = valor
+        dicionario.update({chave: valor, chave: valor})
+
+    Remover:
+        del dicionario[chave]
+        valor = dicionario.pop(chave)
+
+
+AULA_4: For em Dicionário
+
+    for chave in dicionario:
+        faça alguma coisa
+
