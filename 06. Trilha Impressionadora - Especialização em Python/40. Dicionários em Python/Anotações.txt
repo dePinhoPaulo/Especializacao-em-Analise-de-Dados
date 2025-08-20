@@ -33,3 +33,43 @@ AULA_4: For em Dicionário
     for chave in dicionario:
         faça alguma coisa
 
+
+AULA_5: Exercícios de Dicionário - Exercicios 1
+
+    Exercicios OK
+
+
+AULA_6: Métodos Úteis Dicionários (Parte 1) - items
+
+    items() -> Retorna uma lista em que cada item é uma tupla com (chave, valor)
+
+
+AULA_7: Métodos Úteis Dicionários (Parte 2) - keys e values
+
+    keys() -> Retorna uma lista com todas as chaves do dicionário
+    values() -> Retorna uma lista com todos os valores do dicionários
+
+
+AULA_8: Zip e Transformando Listas em Dicionários
+
+    Dicionário com valores padrões:
+        dicionario = dict.fromkeys(lista_chaves, valor_padrao)
+
+    Dicionário a partir de listas de tuplas:
+        dicionario = dict(lista_tuplas)
+
+    Dicionário a partir de 2 listas:
+        Passo 1: Transformar listas em lista de tuplas com o método zip
+        Passo 2: Transformar em dicionario
+
+        lista_tuplas = zip(lista1, lista2)
+        dicionario = dict(lista_tuplas)
+
+
+AULA_9: Exercícios de Dicionário - Exercicios 2
+
+    Exercicios OK
+
+
+AULA_10: Exercícios Extras de Dicionários (Opcional)
+
