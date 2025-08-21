@@ -1,0 +1,23 @@
+AULA_1: Functions no Python
+
+    def nome_funcao():
+        faça alguma coisa
+        faça outra coisa
+        return valor_final
+    
+    "As functions são blocos de código que servem 1 único propósito, fazem uma ação específica."
+
+
+AULA_2: Retornar um valor na Function
+
+    def nome_funcao():
+        return valor_final
+
+    "Uma variavel em uma função, só ficara no escopo da função."
+
+
+AULA_3: Argumentos e Parâmetros numa Function
+
+    def minha_funcao(parametro1, parametro2, parametro3):
+        return parametro1 + parametro2 + parametro3
+
