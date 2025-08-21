@@ -1,0 +1,20 @@
+AULA_1: O que é um iterable
+
+    "Estrutura com dados em que possivel percorrela e executar uma ação"
+        Linsta, String, Tuplas, Dicionarios.
+
+
+AULA_2: Range
+
+    "Tambem é um iterable"
+
+    range(tamanho) ou range(inicio, fim) ou range(inicio, fim, passo)
+
+
+AULA_3: Set
+
+    meu_set = {valor, valor, valor, valor,...}
+
+    "Não pode ter valores duplicados"
+    "Não tem ordem fixa"
+
