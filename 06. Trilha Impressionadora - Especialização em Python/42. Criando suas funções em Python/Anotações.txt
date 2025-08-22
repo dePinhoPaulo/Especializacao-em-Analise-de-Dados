@@ -21,3 +21,49 @@ AULA_3: Argumentos e Parâmetros numa Function
     def minha_funcao(parametro1, parametro2, parametro3):
         return parametro1 + parametro2 + parametro3
 
+
+AULA_4: Aplicação em um Exemplo de argumento
+
+    Exemplo PRATICO
+
+
+AULA_5: Vários Parâmetros e Tipos de Parâmetros
+
+    Passando 2 parametros
+    2 Formas de passar argumento:
+        1. Em ordem; #if ehdacategoria(produto, 'BSA'):
+        2. com nome do argumento. #if ehdacategoria(categoria='BSA', bebida=produto):
+    
+    Exemplo PRATICO
+
+
+AULA_6: Exercícios de Function - Exercicios 1
+
+    Exercicios OK
+
+
+AULA_7: Dicas e Exemplos com Argumentos em Function
+
+    upper() -> Não tem paramentros
+    sort() -> apenas paramentros Keyword (palavra chave)
+    extend(lista) -> 1 parametro obrigatorio
+    ehdacategoria (bebida, categoria) -> 2 paramentros de posição 
+
+    "SHIFT + TAB: pop up de instrução da função."
+
+
+AULA_8: Valores Padrões para Argumentos
+
+    "Nesse caso o valor não será obrigatorio, porque, ja tem um pré carregado."
+    def minha_funcao(argumento = valor_padrao):
+        ...
+        return ...
+    
+    "AO PERCORRER UMA LISTA, SE ATENTAR Q MUDAR A variavel Item é diferente da lista_itens[i] (Assim como no exemplo padronizar_codigos())"
+
+
+AULA_9: Falando mais sobre o return nas Functions
+
+    "Podemos usar no return praticamente qualquer tipo de objeto: (número, string, lista, tupla, dicionário, outros objetos, etc.)"
+    "O return, se for executado, encerra a função, mesmo que dentro dela haja um loop."
+
