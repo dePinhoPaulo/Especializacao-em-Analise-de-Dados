@@ -67,3 +67,23 @@ AULA_9: Falando mais sobre o return nas Functions
     "Podemos usar no return praticamente qualquer tipo de objeto: (número, string, lista, tupla, dicionário, outros objetos, etc.)"
     "O return, se for executado, encerra a função, mesmo que dentro dela haja um loop."
 
+
+AULA_10: Exercícios de Function - Exercicios 2
+
+    Exercicios OK
+
+
+AULA_11: Return com mais de uma informação
+
+    "É possível retornar mais de um valor"
+    "basta retornar como uma tupla com 2 itens"
+
+
+AULA_12: Exercícios de Function - Exercicios 3
+
+    Exercicios OK
+
+
+AULA_13: Desafio de Return com Vários Objetos
+
+    
