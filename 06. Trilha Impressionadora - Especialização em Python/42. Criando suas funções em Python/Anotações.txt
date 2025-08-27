@@ -86,4 +86,58 @@ AULA_12: Exercícios de Function - Exercicios 3
 
 AULA_13: Desafio de Return com Vários Objetos
 
+    Desafio OK
+
+
+AULA_14: Docstring e Annotations
+
+    Docstring:
+        diz o que a função faz, quais valores ela tem como argumento e o que significa cada valor
     
+    Annotation: 
+        diz o que devem ser os argumentos e o que a função retorna
+
+    def minha_soma(num1, num2, num3):
+        '''Faz a soma de 3 números inteiros e devolve como resposta um inteiro
+        Parameters:
+            num1 (int): primeiro número a ser somado
+            num2 (int): segundo número a ser somado
+            num3 (int): terceiro número a ser somado
+        Returns:
+            soma (int): o valor da soma dos 3 números dados como argumento
+        '''
+        return num1 + num2 + num3
+
+
+AULA_15: Exceções e Erros em Funções
+
+    try:
+        o que eu quero tentar fazer
+    except:
+        o que vou fazer caso dê erro
+
+    "Não colocar bloco extenso no try"
+
+    raise Exception('O erro foi esse')
+        "Menssagem se erro personalizada"
+    
+
+AULA_16: Múltiplos Argumentos para uma Function
+
+    Quando você quer permitir uma quantidade indefinida de argumentos, usa o * para isso.
+
+    def minha_funcao(*args):
+    ...
+        "Permite passar argumentos ilimitados para função"
+
+    **kwargs para keyword arguments -> argumentos vêm em formato de dicionário
+    def minha_funcao(**kwargs):
+        "Permite passar argumentos ilimitados para função, como dicionário (chave=valor)"
+
+
+AULA_17: Ordem dos Tipos de Argumento
+
+    Sempre os positional arguments vêm antes e depois os keywords arguments.
+    Sempre os argumentos individuais vêm antes e depois os "múltiplos"
+
+    def minha_funcao(arg1, arg2, arg3, arg4, *args, k = kwarg1, k2 = kwarg2, k3 = kwarg3, **kwargs):
