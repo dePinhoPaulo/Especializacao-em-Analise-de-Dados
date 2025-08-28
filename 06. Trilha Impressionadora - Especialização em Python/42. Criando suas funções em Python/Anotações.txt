@@ -141,3 +141,23 @@ AULA_17: Ordem dos Tipos de Argumento
     Sempre os argumentos individuais vêm antes e depois os "múltiplos"
 
     def minha_funcao(arg1, arg2, arg3, arg4, *args, k = kwarg1, k2 = kwarg2, k3 = kwarg3, **kwargs):
+
+
+AULA_18: Exercícios de Function - Exercicios 4
+
+    Exercicios OK
+
+
+AULA_19: Exercício + Dicas de Construção de Algoritmos e Uso de Funções
+
+    Exercicios OK
+
+
+AULA_20: Exercício + Adaptando Código para uso de Funções
+
+    Exercicios OK
+
+
+AULA_21: Finalização Exercício Funções + Lógica de Programação
+
+    Exercicios OK
