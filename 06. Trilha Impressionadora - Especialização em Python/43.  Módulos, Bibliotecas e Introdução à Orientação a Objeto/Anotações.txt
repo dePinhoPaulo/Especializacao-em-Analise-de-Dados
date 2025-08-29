@@ -1,0 +1,47 @@
+AULA_1: O que é Orientação a Objeto e Por que isso importa
+
+    Pense no Controle Remoto de uma Televisão.
+    - O Controle é um objeto
+    - Cada botão dele é um comando, um método.
+    - Cada método faz 1 ação específica
+
+    A vantagem é que agora vamos aprender a importar módulos novos
+    Então tem MUITAS, mas MUITAS coisas que já estão prontas no Python que a gente não precisa programar do zero.
+    estaremos IMPORTANDO 1 ou mais objetos que tem vários métodos já prontos para usarmos.
+
+
+AULA_2: O que são Módulos e qual a importância
+
+    Se você souber usar Módulos e como usar um módulo novo, você vai conseguir fazer praticamente tudo no Python
+
+    import módulo
+    ou
+    import módulo as nome
+
+
+AULA_3: Como ler um Módulo
+
+    Buscar documentação:
+        python "webbrowser" Module
+        -Explicações do modulo;
+        -Funções;
+
+
+AULA_4: Biblioteca time - Trabalhando com Datas no Python
+
+    Um dos módulos mais usados no Python para trabalhar com datas, fazer o programa esperar algum tempo
+
+
+AULA_5: Métodos Avançados da biblioteca time
+
+    O módulo time em Python fornece uma variedade de funções para trabalhar com tempo.
+        strftime():
+            "converte um objeto de tempo struct para uma string de acordo com um formato específico."
+        strptime():
+            "analisa uma string representando um horário de acordo com um formato. O retorno é um objeto `struct_time`."
+        gmtime():
+            "converte um tempo expresso em segundos desde a epoch em um objeto struct_time em UTC."
+        mktime():
+            "converte um objeto `struct_time` em segundos desde a epoch. Este é o inverso da função `localtime()`."
+    
+    "Para obter o tempo formatado em português, podemos usar o módulo locale do Python."
