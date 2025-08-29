@@ -45,3 +45,13 @@ AULA_5: Métodos Avançados da biblioteca time
             "converte um objeto `struct_time` em segundos desde a epoch. Este é o inverso da função `localtime()`."
     
     "Para obter o tempo formatado em português, podemos usar o módulo locale do Python."
+
+
+AULA_6: Exercícios time - Parte 1
+
+    Exercícios OK
+
+
+AULA_7: Exercícios time - Parte 2
+
+    Exercícios OK
