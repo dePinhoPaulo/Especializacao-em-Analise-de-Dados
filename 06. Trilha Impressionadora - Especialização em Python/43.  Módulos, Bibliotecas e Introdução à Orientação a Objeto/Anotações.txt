@@ -55,3 +55,18 @@ AULA_6: Exercícios time - Parte 1
 AULA_7: Exercícios time - Parte 2
 
     Exercícios OK
+
+
+AULA_8: Biblioteca datetime - Funcionamento
+
+    O módulo datetime em Python fornece classes para manipulação de datas e horas.
+    Com uma pouco mais de recuroso que a biblioteca time
+
+
+AULA_9: Biblioteca datetime - Métodos Avançados
+
+    strftime(): 
+        "converte um objeto datetime para uma string de acordo com um formato específico."
+    strptime(): 
+        "analisa uma string representando uma data e hora de acordo com um formato. O retorno é um objeto datetime."
+    
