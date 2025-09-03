@@ -70,3 +70,13 @@ AULA_9: Biblioteca datetime - Métodos Avançados
     strptime(): 
         "analisa uma string representando uma data e hora de acordo com um formato. O retorno é um objeto datetime."
     
+
+AULA_10: Exercícios datetime
+
+    Exercícios OK
+
+
+AULA_11: Desafio datetime
+
+    Desafio OK
+
