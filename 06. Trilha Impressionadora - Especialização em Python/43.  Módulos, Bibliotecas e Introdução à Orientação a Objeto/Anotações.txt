@@ -80,3 +80,27 @@ AULA_11: Desafio datetime
 
     Desafio OK
 
+
+AULA_12: Usando Módulos para Resolver Desafios
+
+    Muitas vezes algum módulo vai ajudar a gente a resolver um desafio que talvez até conseguíssemos resolver de outra forma.
+    "Pesquisar a funcionalidade que está buscando"
+
+
+AULA_13: Como instalar módulos novos
+
+    Usaremos o "pip" para isso. É um gerenciador de módulos/pacotes/bibliotecas que ajuda a gente a instalar, atualizar, desinstalar novos módulos
+    Terminal > "pip install keyboard"
+
+
+AULA_14: Módulo de Gráficos - Exibindo Gráficos no Python
+
+    Para exploração e visualização de dados Usaremos o módulo Matplotlib.pyplot, que é o módulo mais usado no Python. 
+    Existem outros, como o Seaborn e o Plotly, caso queira usar
+
+
+AULA_15: Mais edições de Gráficos e Módulo Numpy
+
+    "Criando diferentes tipos de graficos e cenhecendo melho a bliblioteca"
+    "Verificar a documentação do matplotlib"
+
