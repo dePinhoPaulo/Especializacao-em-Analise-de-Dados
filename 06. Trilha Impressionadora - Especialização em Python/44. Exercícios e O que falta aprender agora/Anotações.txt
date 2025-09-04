@@ -1,0 +1,16 @@
+AULA_1: O que falta aprender
+
+    Orientação a Objeto -> Classes, Métodos, etc.
+    "Jeitos mais avançados de fazer coisas que já sabemos": List Comprehensions, Lambda Expressions e Estrutura With
+    Aprender e se Acostumar com mais Módulos
+
+
+AULA_2: Exercícios Fundamentos do Python - Parte 1 - Cálculo de Imposto
+
+    Exercício OK
+
+
+AULA_3: Exercícios - Analisador de texto
+
+    Exercício OK
+
