@@ -14,3 +14,7 @@ AULA_3: Exercícios - Analisador de texto
 
     Exercício OK
 
+
+AULA_4: Exercícios - Gerador de senhas
+
+    Exercício OK
