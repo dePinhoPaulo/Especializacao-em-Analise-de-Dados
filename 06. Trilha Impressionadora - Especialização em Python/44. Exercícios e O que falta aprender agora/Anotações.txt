@@ -18,3 +18,14 @@ AULA_3: Exercícios - Analisador de texto
 AULA_4: Exercícios - Gerador de senhas
 
     Exercício OK
+
+
+AULA_5: Exercícios - QR Code
+
+    Exercício OK
+
+
+AULA_6: Como vão funcionar os exercícios desse módulo
+
+    Explicação das aulas de exercicios.
+
