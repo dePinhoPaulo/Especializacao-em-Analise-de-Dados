@@ -29,3 +29,16 @@ AULA_6: Como vão funcionar os exercícios desse módulo
 
     Explicação das aulas de exercicios.
 
+
+AULA_7: Exercícios Fundamentos do Python - Parte 2 - Tratamento de Colunas
+
+    Exercício OK
+        Pandas
+        For
+
+
+AULA_8: Exercícios Fundamentos do Python - Parte 3 - Desafio do Vimeo
+
+    Desafio OK
+        pprint
+
