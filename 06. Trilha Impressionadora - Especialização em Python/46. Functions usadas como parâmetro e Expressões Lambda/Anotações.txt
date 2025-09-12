@@ -1,0 +1,39 @@
+AULA_1: Functions em Iterables e a função map
+
+    Basicamente alguns métodos e funções que já existem no Python podem rodar uma function para cada item, da mesma forma que fizemos com list comprehension.
+    Isso pode ajudar a gente a resolver alguns desafios de forma mais simples
+    Uma função que permite que a gente faça isso é a map function
+
+    lista = list(map(função, iterable_original))
+
+
+AULA_2: Aplicando function em iterable no sort
+
+    Até agora no programa, usamos várias vezes o .sort() para ordenar listas
+    Mas o método sort tem um parâmetro que nunca usamos e que agora sabemos usar.
+    
+    produtos.sort(key=str.casefold) -> Com este parametro Key, o Sort ira considerar todos minusculos, logo, a ordenação será do jeito que conhecemos
+        "Ordenação pelo paramentro Key tambem podemos passar nossas funções(desde de que retorne os valores a serem ordenados)"
+
+
+AULA_3: Lambda Expressions
+
+    São funções anônimas (sem nome mesmo) que tem 1 linha de código e são atribuidas a uma variável, como se a variável virasse uma função.
+    Elas normalmente são usadas para fazer uma única ação, mas em Python usamos principalmente dentro de métodos como argumento, para não precisarmos criar uma função só para isso
+    Outra aplicação delas está em criar um "gerador de funções"
+
+    minha_funcao = lambda parametro: expressão
+    vezes_tres = lambda num: num * 3
+
+
+AULA_4: A grande utilidade de Lambda Expressions
+
+    Usar lambda como argumento de alguma outra função, como map e filter
+    com_imposto = list(map(  lambda preco: preco * 1.3  , preco_tecnologia.values()))
+    "Utilizado para resumir uma função mais simple, que retorna só um valor, em uma unica linha"
+
+
+AULA_5: Lambda Expression para criar um Construtor de Funções
+
+    Uma das aplicações de lambda expressions, além da vista na aula passada, é criar um "gerador de funções". 
+    Nesse caso, usaremos a lambda expressions dentro da definição de uma outra função.
