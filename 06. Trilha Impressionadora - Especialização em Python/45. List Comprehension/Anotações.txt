@@ -1,0 +1,50 @@
+AULA_1: O que é List Comprehension
+
+    List Comprehension é uma forma de iterar pelos elementas das listas de maneira "mais direta", com mais "cara de Python"
+    Em resumo: é como se você fizesse um "for" em 1 linha de código
+
+    lista = [expressão for item in iterable]
+
+
+AULA_2: Exemplo de List Comprehension
+
+    Ordenar 2 lista relacionadas com List Comprehension:
+        Fazer uma lista auxiliar, zipando as 2 lista base;
+        ordenar essa lista;
+        Utilizar o List Comprehension para o umpacking das lista;
+    
+
+AULA_3: Exercícios List Comprehension - Exercicios 1
+
+    Exercicio OK
+        Sempre deixar valor numerioco na frente da tupla, pois no max, o elemento de comparação é o primeiro 
+
+
+AULA_4: List Comprehension filtrando com if
+
+    lista = [expressão for item in iterable if condicao]
+
+
+AULA_5: Exercícios List Comprehension - Exercicios 2
+
+    Exercicios OK
+
+
+AULA_6: Tratando casos em List Comprehension
+
+    IF e ELSE dentro do List Comprehension
+        lista = [item if condicao else outro_resultado for item in iterable]
+        "No caso do tratamento do resulta, o if vai antes do for"
+        "Todos serão retornados, uns de um jeito, outros de outro"
+
+
+AULA_7: Exercícios List Comprehension - Exercicios 3
+
+    Exercicios OK
+
+
+AULA_8: List Comprehension não serve só para criar listas
+
+    Exercicios OK
+    "Ao em vez de retornamos uma lista, ja retornamos a soma direto, não utilizamos o [] e sim O SUM()"
+
