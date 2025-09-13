@@ -1,0 +1,30 @@
+AULA_1: Orientações - Assista antes de começar
+
+    Explicações;
+    Biblioteca obrigatorio para area de dados
+
+
+AULA_2: Arrays Numpy vs Listas
+
+    É uma biblioteca fundamental para a computação científica em Python.
+    E ele serve como uma boa base para o Pandas, que é uma das bibliotecas mais populares para análise de dados em Python.
+
+    Tipo de dados: 
+        As listas podem armazenar elementos de tipos diferentes ao mesmo tempo, enquanto os arrays armazenam elementos do mesmo tipo.
+    Operações matemáticas: 
+        Você pode realizar operações matemáticas em todos os elementos de um array de uma vez, o que não é possível com listas.
+    Desempenho: 
+        Arrays são mais eficientes em termos de memória e desempenho do que listas quando se trabalha com grandes quantidades de dados numéricos.
+    Funcionalidades: 
+        NumPy arrays vêm com várias funções integradas para operações matemáticas e científicas, como média, soma, multiplicação de matrizes, etc., que não estão disponíveis com listas.
+
+
+AULA_3: Array Explicado
+
+    Um array é uma estrutura de dados que armazena valores do mesmo tipo. 
+    Em Python, isso é uma grande vantagem porque economiza espaço e permite operações mais eficientes.
+
+    Indexaçãe e Slice:
+        Muito parecido com a lista do python; 
+        array[do elemento x : até o elemento y : pulando de z em z]
+
