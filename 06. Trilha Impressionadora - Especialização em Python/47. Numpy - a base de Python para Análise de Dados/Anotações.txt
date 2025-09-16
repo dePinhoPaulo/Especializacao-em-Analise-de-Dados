@@ -28,3 +28,60 @@ AULA_3: Array Explicado
         Muito parecido com a lista do python; 
         array[do elemento x : até o elemento y : pulando de z em z]
 
+
+AULA_4: Funções Básicas de Array
+
+    Aplicações do dia a dia
+        precos = np.array([20, 25, 30, 35, 40])
+
+        novos_precos = precos * 1.10
+            "Alterar todos elementos da array"
+        
+        novos_precos = np.sum(vendas)
+            "Somar todo array"
+        
+        media_vendas = np.mean(vendas)
+            "Média do array"
+        
+        produto_mais_caro = np.max(precos)
+        produto_mais_barato = np.min(precos)
+            "Valor maximo e minimo do array"
+        
+        vendas_ordenadas = np.sort(vendas)
+            "Ordenar valores do array"
+        
+        total_vendas = np.dot(quantidades, precos)
+            "Recebe dois arrays e retorna a multiplicação item a item e soma tudo"
+
+
+AULA_5: Exercícios Array
+
+    Exercícios OK
+
+
+AULA_6: Aleatórios e Estatística
+
+    rng = np.random.default_rng()
+        "Objeto gerador"
+    numero_aleatorio = rng.random()
+        "Numero Aleatorio (Sempre numeros entre 0 e 1)"
+    print(numero_aleatorio)
+
+    array_aleatorio = rng.random(3)
+        "Array com 3 numeros aleatorios"
+    
+    rng = np.random.default_rng(seed=42)
+        "gerador com seed (fixar a aleatoriedade)"
+    dados_vendas = rng.integers(low=50, high=200, size=30)
+        "Gera um array de numeros inteiros com minimo de 50 e maximo de 200 com 30 elementos"
+    
+    print(np.argmax(dados_vendas))
+        "Posição do elemento maximo"
+    print(np.argmin(dados_vendas))
+        "Posição do elemento minimo"
+
+    print(np.median(dados_vendas))          -> Mediana
+    print(np.percentile(dados_vendas, 50))  -> Percentil
+    print(np.std(dados_vendas))             -> Desvio padrão
+    print(np.var(dados_vendas))             -> Variância
+
