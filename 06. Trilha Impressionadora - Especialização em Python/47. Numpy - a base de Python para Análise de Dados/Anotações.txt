@@ -85,3 +85,32 @@ AULA_6: Aleatórios e Estatística
     print(np.std(dados_vendas))             -> Desvio padrão
     print(np.var(dados_vendas))             -> Variância
 
+
+AULA_7: Where no Numpy
+
+    funcionarios_acima_media = np.where(salarios > media_salarial)
+        "Identificar funcionários com salários acima da média"
+    
+    "O Retorno será as posições dos elementos TRUE"
+
+    print(np.where(salarios > media_salarial, 'acima da média', 'abaixo da média'))
+        "Aqui retornara 'acima da média' para TRUE e 'abaixo da média' para elementos FALSE"
+    
+    salarios_bonus = np.where(salarios < media_salarial, salarios * 1.1, salarios)
+        "Retornara salario com banus para acima da media, salario simple para abaixo"
+        "Funciona muito parceido com o IF DAX"
+    
+    print(np.where((salarios >= 3000) & (salarios <= 4500)))
+        "filtrar os salários entre 3000 e 4500 com where"
+        "no Numpy Utilizamos & para E e | para OU, diferente do Python "Vanila" AND e OR"
+    
+
+AULA_8: Exercícios Numpy - Parte 1
+
+    Exercícios OK
+
+
+AULA_9: Exercícios Numpy - Parte 2
+
+    Exercícios OK
+
