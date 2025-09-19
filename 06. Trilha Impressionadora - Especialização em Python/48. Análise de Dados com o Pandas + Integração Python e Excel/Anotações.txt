@@ -28,4 +28,27 @@ AULA_4: Dataframe do pandas
 
 AULA_5: Tratamento de Dados e Múltiplas Bases
 
+    às vezes precisaremos mudar o encoding. Possiveis valores para testar:
+        encoding='latin1', encoding='ISO-8859-1', encoding='utf-8' ou então encoding='cp1252'
     
+    display para ver todos os dataframes
+        display(vendas_df)
+
+    Reomver colunas:
+        Drop:
+            "Romove tanto Linhas quanto Colunas, o que vai difertenciar é o AXIS"
+            clientes_df.drop(['Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10'], axis=0) ->Remove Linhas
+            clientes_df.drop(['Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10'], axis=1) -> Remove Colunas
+    OU
+        DataFrame Selecionando Colunas:
+            clientes_df = clientes_df[['ÿID Cliente', 'E-mail']]
+
+    Mesclar Tabelas:
+        "Colunas da mesclagem precisam ter o mesmo nome"
+        vendas_df = vendas_df.merge(produtos_df, on='ID Produto')
+
+    Renomear Colunas:
+        "Necessario para o Merge caso esteja diferente"
+        clientes_df = clientes_df.rename(columns={'ÿID Cliente': 'ID Cliente'})
+        "Se atentar ao columns"
+
