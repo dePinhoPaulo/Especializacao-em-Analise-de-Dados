@@ -1,0 +1,31 @@
+AULA_2: O que é e para que serve
+
+    "Análise de Dados (seja para DataScience, seja para trabalhar de forma integrada com arquivos em Excel e Banco de Dados)"
+    "Melhor biblioteca/módulo para trabalhar com quantidades enormes de informações"
+    "Uma mistura de listas e dicionários de forma muito eficiente"
+
+
+AULA_3: Pandas e csv
+
+    "Quase sempre quando formos "ler" um arquivo csv, vamos usar o pandas. É prático e bem eficiente."
+
+    Strutura basica para criar um DataFrame:
+        vendas_df = pd.read_csv('Contoso - Vendas - 2017.csv', sep=';')
+
+
+AULA_4: Dataframe do pandas
+
+    As colunas funcionam "como chaves de dicionário"
+    As linhas funcionam "como listas"
+    
+    Algumas Regras:
+        vendas_df['coluna_x'] -> uma lista com os valores da coluna_x (em formato dataframe, é um dataframe com 1 coluna só)
+        vendas_df[0] -> NÃO FUNCIONA ASSIM PARA DATAFRAMES
+        vendas_df[:3] -> pega até a linha de índice 3 do dataframe
+        vendas_df[['coluna_x', 'coluna_y', 'coluna_z']] -> cria um novo dataframe com as colunas coluna_x, coluna_y e coluna_z
+        vendas_df['coluna_x'][0] -> pega o itemd a 1ª linha da coluna coluna_x
+    
+
+AULA_5: Tratamento de Dados e Múltiplas Bases
+
+    
