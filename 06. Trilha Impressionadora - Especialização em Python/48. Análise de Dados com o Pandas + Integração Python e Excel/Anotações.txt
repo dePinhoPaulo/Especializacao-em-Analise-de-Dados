@@ -52,3 +52,38 @@ AULA_5: Tratamento de Dados e Múltiplas Bases
         clientes_df = clientes_df.rename(columns={'ÿID Cliente': 'ID Cliente'})
         "Se atentar ao columns"
 
+
+AULA_6: Análises e Visualização de Dados no pandas (Parte 1)
+
+    Exercicio OK
+        .value_counts() para contar quantas vezes cada valor do Dataframe aparece
+        .plot() para exibir um gráfico
+
+
+AULA_7: Análises e Visualização de Dados no pandas (Parte 2)
+
+    Exercicio OK
+        .groupby para agrupar o nosso dataframe, de acordo com o que queremos (somando as quantidades de vendas, por exemplo)
+        Ordenar o dataframe em ordem decrescente de Quantidade Vendida
+            .sort_values
+        Pegar o Maior valor diretamente
+            .max() e .idxmax()
+
+
+AULA_8: Filtrando um DataFrame
+
+    "Para filtrarmos, precisamos criar um outro DataFrame com o filtro (Nome coluna, Valor)"
+        loja_europeonline = vendas_df[vendas_df['ID Loja'] == 306]
+    
+    Funcionamento do filtro:
+        loja_306 = vendas_df['ID Loja'] == 306
+        "cria um dataframe onda vai comparando linha por linha e retorna os valores true para o filtro"
+    
+    Multiplos filtros:
+        loja_europeonline = vendas_df[(vendas_df['ID Loja'] == 306) & (vendas_df['Quantidade Devolvida'] == 0)] 
+            "Parenteses necessarios nos multiplos filtros para isolar cada um"
+        
+            loja_306 = vendas_df['ID Loja'] == 306
+            qtd_delvolvida_0 = vendas_df['Quantidade Devolvida'] == 0
+        loja_europeonline = vendas_df[loja_306 & qtd_delvolvida_0]
+
