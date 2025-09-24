@@ -87,3 +87,56 @@ AULA_8: Filtrando um DataFrame
             qtd_delvolvida_0 = vendas_df['Quantidade Devolvida'] == 0
         loja_europeonline = vendas_df[loja_306 & qtd_delvolvida_0]
 
+
+AULA_9: Adicionando e Modificando Colunas DataFrame
+
+    Convertendo string em data:
+        vendas_df['Data da Venda'] = pd.to_datetime(vendas_df['Data da Venda'], format='%d/%m/%Y')
+    Adcionando coluna de ano:
+        vendas_df['Ano da Venda'] = vendas_df['Data da Venda'].dt.year
+    Adcionando coluna de mes:
+        vendas_df['Mes da Venda'] = vendas_df['Data da Venda'].dt.month
+    Adcionando coluna de dia:
+        vendas_df['Dia da Venda'] = vendas_df['Data da Venda'].dt.day
+
+
+AULA_10: Modificando e Consultando Valores em DataFrame
+
+    Consultando apenas primeiros valores de um Datarame:
+        display(novo_produtos_df.head())
+    
+    loc:
+        permite pegar uma linha de acordo com o índice dela. Ele dá erro caso não encontre o índice. 
+        Isso é interessante principalmente quando o índice é uma informação relevante ao invés só do número do índice ou quando queremos pegar alguma linha específica do dataframe.
+        
+        display(novo_produtos_df.loc['Contoso Wireless Laser Mouse E50 Grey'])
+
+    iloc:
+        enxerga o dataframe como linhas e colunas e consegue pegar o valor com um número de linha e um número de coluna. 
+        Repara que ele não analisa o valor do índice da linha e da coluna, apenas a posição importa.
+        
+        display(novo_produtos_df.iloc[1])
+    
+    Alteração de um elemento com Loc:
+        novo_produtos_df.loc['Contoso Wireless Laser Mouse E50 Grey', 'Preco Unitario'] = 23
+        novo_produtos_df.loc[novo_produtos_df['ID Produto'] == 873, ['Preco Unitario']] = 22
+
+
+AULA_11: Exportando para csv
+
+    Exportar Dataframe pa csv:
+        vendas_df.to_csv('Novo Vnedas 2017.csv', sep=';')
+        vendas_df.to_csv(r'C:\Users\Kiko\Documents\Projetos Programação\Especializacao-em-Analise-de-Dados\06. Trilha Impressionadora - Especialização em Python\48. Análise de Dados com o Pandas + Integração Python e Excel\Pandas e csv\Novo Vnedas 2017.csv', sep=';')
+
+    Trnasformar dicionario em Dataframe:
+        vendas_produtos_df = pd.DataFrame.from_dict(vendas_produtos, orient='index') 
+            #from_dict -> Documentação
+            #orient='index' -> Documentação, passando as chaves do dicionario para indice
+    
+    Renomeando colunas (Já vimos anteriomente):
+        vendas_produtos_df = vendas_produtos_df.rename(columns={0: 2019})
+        vendas_produtos_df = vendas_produtos_df.rename(columns={1: 2020})
+    
+    Exportar Dataframe pa csv:
+        vendas_df.to_csv('Novo Vendas Produtos.csv', sep=';', encoding='latin1')
+
