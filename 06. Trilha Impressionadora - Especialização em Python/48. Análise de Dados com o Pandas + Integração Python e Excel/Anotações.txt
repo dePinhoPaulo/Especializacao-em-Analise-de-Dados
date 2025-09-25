@@ -140,3 +140,32 @@ AULA_11: Exportando para csv
     Exportar Dataframe pa csv:
         vendas_df.to_csv('Novo Vendas Produtos.csv', sep=';', encoding='latin1')
 
+
+AULA_12: Lendo um csv diretamente da internet
+
+    Caso 1: csv direto no link
+        url = 'https://drive.google.com/uc?authuser=0&id=1Ru7s-x3YJuStZK1mqr_qNqiHVvdHUN66&export=download'
+        cotaca_df = pd.read_csv(url)
+        display(cotaca_df)
+    
+    Caso 2: csv em uma requisição que precisa ser tratada
+        url  = 'https://portalweb.cooxupe.com.br:9080/portal/precohistoricocafe_2.jsp'
+        conteudo_url = requests.get(url).content
+        arquivo = io.StringIO(conteudo_url.decode('cp1252'))
+        cafe_df = pd.read_csv(arquivo, sep=r'\t', engine='python')
+
+
+AULA_13: Obs: Integração de Python com Excel - Pandas ou openpyxl
+
+    1. Pandas
+        Mais usada no geral
+        Trata o Excel como uma base de dados
+        Faz o que quiser com o arquivo
+        Pode desfazer a estrutura original do arquivo, caso queira editar
+    
+    2. Openpyxl
+        Trata o Excel como uma planilha mesmo que pode ter várias coisas
+        Edita "como se fosse um VBA"
+        Menos eficiente
+        Mantém mais a estrutura original do arquivo, mas cuidado porque não necessariamente tudo, então tem que testar
+
