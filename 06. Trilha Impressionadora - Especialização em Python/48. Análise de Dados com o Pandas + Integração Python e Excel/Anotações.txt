@@ -184,3 +184,18 @@ AULA_15: Exercício Desafio pandas - Mini Projeto Análise de Dados
 
     Explicação dos exercicios do projeto.
 
+
+AULA_16: Exercício Desafio pandas - Importação e Tratamento de Dados
+
+    Exercício OK
+
+
+AULA_17: Exercício Desafio pandas - Exercício 1
+
+    Exercício OK
+
+
+AULA_18: Exercício Desafio pandas - Exercício 2
+    
+    Exercício OK
+
