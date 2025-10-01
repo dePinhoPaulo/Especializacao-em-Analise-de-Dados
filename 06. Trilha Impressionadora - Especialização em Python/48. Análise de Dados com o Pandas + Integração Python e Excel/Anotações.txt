@@ -199,3 +199,26 @@ AULA_18: Exercício Desafio pandas - Exercício 2
     
     Exercício OK
 
+
+AULA_19: Exercício Desafio pandas - Exercício 3
+
+    Exercicio OK
+
+
+AULA_20: Exercício Desafio pandas - Exercício 4
+
+    Exercicio OK
+
+
+AULA_21: Exercício Desafio pandas - Exercício 5
+
+    Exercicio OK
+
+
+AULA_23: Onde pegar exercícios de análise de dados- Kaggle
+
+    Bases de dados para projetos:
+        https://www.kaggle.com/
+    
+    Exercicio OK
+
