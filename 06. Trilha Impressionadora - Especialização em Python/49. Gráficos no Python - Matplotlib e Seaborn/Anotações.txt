@@ -1,0 +1,31 @@
+AULA_1: Orientações - Assista antes de começar
+
+    Explicações do modulo
+
+
+AULA_2: Matplotlib - Anatomia de uma figura
+
+    "Nasceu para substitir Matlab"
+    
+    Documentação: https://matplotlib.org/stable/gallery/showcase/anatomy.html
+
+
+AULA_3: Matplotlib - Primeiros exemplos
+
+    Matplotlib é uma biblioteca de plotagem em Python que produz figuras de qualidade em uma variedade de formatos impressos e ambientes interativos. 
+    `matplotlib.pyplot` é um conjunto de funções, e é geralmente importado sob o alias `plt`.
+
+    Cada função `pyplot` faz alguma alteração em uma figura, como criar uma figura, criar uma área de plotagem em uma figura, 
+    plotar algumas linhas em uma área de plotagem, decorar a plotagem com rótulos, etc.
+
+    `plt.figure()`: Cria uma nova figura.
+    `plt.plot()`: Plota y versus x como linhas e/ou marcadores.
+    `plt.scatter()`: Plota um gráfico de dispersão de y versus x.
+    `plt.bar()`: Plota um gráfico de barras.
+    `plt.xlabel()`: Define o rótulo do eixo x.
+    `plt.ylabel()`: Define o rótulo do eixo y.
+    `plt.title()`: Define um título para os eixos.
+    `plt.grid()`: Configura as linhas da grade.
+    `plt.legend()`: Coloca uma legenda no eixo.
+    `plt.show()`: Exibe uma figura.
+
