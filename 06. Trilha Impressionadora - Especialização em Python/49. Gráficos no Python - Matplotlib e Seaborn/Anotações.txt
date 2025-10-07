@@ -29,3 +29,45 @@ AULA_3: Matplotlib - Primeiros exemplos
     `plt.legend()`: Coloca uma legenda no eixo.
     `plt.show()`: Exibe uma figura.
 
+
+AULA_4: Matplotlib - Paleta de cores - parte 1
+
+    Gráfico Pizza:
+        plt.pie(quantidades, labels=categorias)
+        plt.show()
+    
+    autopct e explode:
+        destaque = [0, 0, 0, 0.1]
+        plt.pie(quantidades, labels=categorias, autopct='%.1f', explode=destaque)
+        "O `autopct` é usado para mostrar os valores percentuais."
+        "O `explode` é usado para destacar fatias da Pizza de acordo com a lista declarada anteriormente."
+
+    Mudar peleta de cores dos graficos:
+        cores = plt.get_cmap('Pastel2').colors 
+        plt.pie(quantidades, labels=categorias, autopct='%.1f', explode=destaque, colors=cores)
+        Documentação: https://matplotlib.org/stable/tutorials/colors/colormaps.html
+
+
+AULA_5: Matplotlib - Paleta de cores - parte 2
+
+    Grafico de barras empilhado:
+        plt.bar(anos, vendas_online, label='Online')
+        plt.bar(anos, vendas_loja, bottom=vendas_online, label='Loja')
+        plt.legend()
+        "É necessario bottom para empilhar os graficos"
+        "label e Legend para adicionar legendas e saber qual informação de cada barra"
+
+    Separa as barra de ano em ano:
+        plt.xticks(ticks=anos)
+    
+    Alterar cores das barras:
+        cores = plt.get_cmap('Pastel2').colors
+        plt.bar(anos, vendas_online, label='Online', color=cores[0])
+        plt.bar(anos, vendas_loja, bottom=vendas_online, label='Loja', color=cores[1])
+
+    Cycler para mudar as cores automatico:
+        from cycler import cycler
+        cores_cycler = cycler('color', plt.get_cmap('Pastel2').colors)
+        plt.rc('axes', prop_cycle=cores_cycler)
+        "A partir destas funções todos graficos serão plotados com o tema escolhido"
+
