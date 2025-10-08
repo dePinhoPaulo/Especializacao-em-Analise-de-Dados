@@ -71,3 +71,32 @@ AULA_5: Matplotlib - Paleta de cores - parte 2
         plt.rc('axes', prop_cycle=cores_cycler)
         "A partir destas funções todos graficos serão plotados com o tema escolhido"
 
+
+AULA_6: Matplotlib - exercícios - gráfico de linhas
+
+    exercício OK
+
+
+AULA_7: Matplotlib - exercícios - gráfico de barras
+
+    exercício OK
+
+    Rotação nos rotulos do grafico:
+        plt.xticks(ano, rotation=45)
+
+AULA_8: Matplotlib - exercícios - gráfico de dispersão
+
+    exercício OK
+
+    Mudar tipo da grade de graficos:
+        plt.grid(True, linestyle='--')
+        "Linestyle serve para todas linhas em geral"
+
+    Tamanho e Cor do ponto no grafico de dispersão:
+        plt.scatter(ano, receita, s=receita, c=receita, cmap='Reds')
+        "Tamanho do Ponto sera de acordo com aquantidade de receita (Parametro S)"
+        "Cor do Ponto sera de acordo com aquantidade de receita (Parametro C e CMAP)"
+        "para pegar do mais escuro para o mais claro na cor (cmap='Red_s')"
+
+    Barra de escla de cor com legenda:
+        plt.colorbar()
