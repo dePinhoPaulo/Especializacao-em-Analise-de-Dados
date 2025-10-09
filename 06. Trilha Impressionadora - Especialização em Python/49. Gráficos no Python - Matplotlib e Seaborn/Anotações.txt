@@ -100,3 +100,23 @@ AULA_8: Matplotlib - exercícios - gráfico de dispersão
 
     Barra de escla de cor com legenda:
         plt.colorbar()
+
+
+AULA_9: Matplotlib - exercícios - gráfico de pizza
+
+    exercício OK
+
+    Adicionar Sombra no grafico:
+        plt.pie(participacao, labels=fabricante, autopct='%.1f', explode=destaque, shadow=True)
+        "Parametro Shadow = True"
+
+
+AULA_10: Matplotlib - Gráfico de linha para apresentação - parte 1
+
+    exercício OK
+
+    Seta e anotação no grafico:
+        plt.annotate('Menor Valor', color='red', xy=(2, 78), xytext=(3, 80), arrowprops=dict(facecolor='Red'))
+
+    For para mudar marcadores dinamicamente com Numpy;
+
