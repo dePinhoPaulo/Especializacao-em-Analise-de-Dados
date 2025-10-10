@@ -120,3 +120,42 @@ AULA_10: Matplotlib - Gráfico de linha para apresentação - parte 1
 
     For para mudar marcadores dinamicamente com Numpy;
 
+
+AULA_11: Matplotlib - Gráfico de linha para apresentação - parte 2
+
+    exercícios OK
+
+    Faixa de destaque:
+        plt.axvspan(6, 11, alpha=0.15, color=cores[1])
+        plt.text(6, 80, 'Recuperação de Crescimento', color='green', fontsize=9, weight='bold')
+
+    Rotulo de valores no grafico:
+        plt.annotate(vendas[posicao], color=cor, xy=(meses[posicao], vendas[posicao]), xytext=(-5, -5), textcoords='offset points')
+        "Adicionar ao for que passar pelos valores"
+
+
+AULA_12: Matplotlib - Gráfico de barras para apresentação - parte 1
+
+    exercício OK
+
+    Destacar barra com valor maximo:
+        for i, barra in enumerate(barras):
+            if i != quantidades.index(max(quantidades)):
+                barras[i].set_color(cores[2])
+                barras[i].set_alpha(0.5)
+
+
+AULA_13: Matplotlib - Gráfico de barras para apresentação - parte 2
+
+    Ordenar 2 listas:
+        print(zip(quantidades, produtos)) #Compacta as duas listas em tupla
+        print(list(zip(quantidades, produtos))) #passa para uma lista
+        print(sorted(list(zip(quantidades, produtos)))) #ordena as tuplas
+    
+    Pegar valores ordenados da lista de tuplas:
+        quantidades_ordenado = [dado[0] for dado in dados_ordenado]
+        produtos_ordenado = [dado[1] for dado in dados_ordenado]
+    
+    Inverter Ordem das barras pelo eixo da figura:
+        plt.gca().invert_yaxis()
+    
