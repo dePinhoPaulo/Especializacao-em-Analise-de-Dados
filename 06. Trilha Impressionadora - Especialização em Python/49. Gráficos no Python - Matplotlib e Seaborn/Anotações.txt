@@ -158,4 +158,19 @@ AULA_13: Matplotlib - Gráfico de barras para apresentação - parte 2
     
     Inverter Ordem das barras pelo eixo da figura:
         plt.gca().invert_yaxis()
-    
+
+
+
+14. Matplotlib - Gráfico de barras empilhadas para apresentação
+
+    exercício OK
+
+    Rotulos da dados centraliados no barras empilhadas:
+        barra_online = plt.bar(anos, vendas_online, label='Online')
+        plt.bar_label(barra_online, labels=vendas_online, label_type='center', fontweight='bold')
+
+
+15. Matplotlib - exercícios - gráfico de barras para apresentação
+
+    Exercícios OK
+
