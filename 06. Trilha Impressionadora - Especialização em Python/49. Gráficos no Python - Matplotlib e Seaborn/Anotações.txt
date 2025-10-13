@@ -160,8 +160,7 @@ AULA_13: Matplotlib - Gráfico de barras para apresentação - parte 2
         plt.gca().invert_yaxis()
 
 
-
-14. Matplotlib - Gráfico de barras empilhadas para apresentação
+AULA_14: Matplotlib - Gráfico de barras empilhadas para apresentação
 
     exercício OK
 
@@ -170,7 +169,45 @@ AULA_13: Matplotlib - Gráfico de barras para apresentação - parte 2
         plt.bar_label(barra_online, labels=vendas_online, label_type='center', fontweight='bold')
 
 
-15. Matplotlib - exercícios - gráfico de barras para apresentação
+AULA_15: Matplotlib - exercícios - gráfico de barras para apresentação
 
     Exercícios OK
+
+
+AULA_16: Matplotlib - exercícios - gráfico de linhas para apresentação
+
+    Exercícios OK
+
+    Marcadores de linhas no primeiro e ultimo elemento:
+        for posicao in (-1, 0):
+            plt.scatter(anos[posicao], refeicoes[posicao], color=cor_anotacoes)
+            plt.annotate(refeicoes[posicao], xy=(anos[posicao], refeicoes[posicao]), xytext=(5, 0), textcoords='offset points', color=cor_anotacoes, fontweight='bold')
+ 
+    Area de destaque:
+        plt.axvspan(2020, 2021, alpha=0.5, color=cores[1], zorder=0)
+    
+    Texto de anotação no grafico:
+        plt.text(2020, 40000, 'Pandemia', fontsize=11, fontweight='bold', color=cor_anotacoes)
+
+    ZORDER:
+        Ordena as camadas da figura (qual grafico vai em baixo, em cima, etc...)
+
+
+AULA_17: Matplotlib - introdução poo
+
+    A API Orientada a Objetos, por outro lado, dá mais controle sobre seus gráficos. 
+    Você pode trabalhar diretamente com instâncias de `Figure` e `Axes`, permitindo que você manipule cada aspecto do seu gráfico. 
+    Isso é especialmente útil para gráficos mais complexos e para a criação de visualizações mais personalizadas.
+
+    "Permite cirar varios graficos em uma figura"
+
+
+AULA_18: Matplotlib - poo gráficos simples
+
+    "Mudança na contrução dos graficos, para ter uma maior controle dos eixos e fazer figuras mais complexas."
+
+    "No novo formato utilizamos o plt.subplots e fazemos como se fosse um Unpacking, apartir didsso o PLT vira AX."    
+        fig, ax = plt.subplots()
+        ax.bar(anos, vendas_online, label='Online')
+        ax.bar(anos, vendas_loja, bottom=vendas_online, label='Loja')
 
