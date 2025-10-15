@@ -211,3 +211,38 @@ AULA_18: Matplotlib - poo gráficos simples
         ax.bar(anos, vendas_online, label='Online')
         ax.bar(anos, vendas_loja, bottom=vendas_online, label='Loja')
 
+
+AULA_19: Matplotlib - poo mais de um eixo y
+
+    Setar cores em variaves:
+        cor_temperatura = 'tab:red'
+        cor_precipitacao = 'tab:blue'
+
+    Adicionar outro grafico na mesma figura, mas com um eixo diferente:
+        ax2 = ax1.twinx()
+
+    Legenda do grafico com posicionamento ajustado:
+        fig.legend(bbox_to_anchor=(0.75, 1), bbox_transform=ax1.transAxes)
+
+
+AULA_20: Matplotlib - poo múltiplos sistemas de eixo
+
+    Painel de graficos:
+        fig, axs = plt.subplots(ncols=2, nrows=2, figsize=(12, 10))
+            axs[0,0]    axs[0,1]
+            axs[1,0]    axs[1,1]
+
+
+AULA_21: Matplotlib - poo mosaico
+
+    Painel de graficos com Mosaico:
+        mosaico = 'AA;BB;CD'
+        fig = plt.figure(figsize=(12,10))
+        axs = fig.subplot_mosaic(mosaico)
+            axs['A']    axs['A']
+            axs['B']    axs['B']
+            axs['C']    axs['D']
+        
+    Espaçamento entre os graficos:
+        espacamento = {'wspace': 0.3, 'hspace': 0.5}
+        axs = fig.subplot_mosaic(mosaico, gridspec_kw=espacamento)
