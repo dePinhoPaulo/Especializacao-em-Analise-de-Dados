@@ -246,3 +246,24 @@ AULA_21: Matplotlib - poo mosaico
     Espaçamento entre os graficos:
         espacamento = {'wspace': 0.3, 'hspace': 0.5}
         axs = fig.subplot_mosaic(mosaico, gridspec_kw=espacamento)
+
+
+AULA_22: Matplotlib - exercícios
+
+    Exercícios OK
+
+    "Utilizando Mosaico"
+
+
+AULA_23: Matplotlib - plt para poo
+
+    Exercícios OK
+
+    "alteração dos graficos de plt para ax (eixo)"
+
+
+AULA_24: Matplotlib - criando nosso mosaico
+
+    Exercícios OK
+
+    "alteração dos graficos de ax para Mosaico"
