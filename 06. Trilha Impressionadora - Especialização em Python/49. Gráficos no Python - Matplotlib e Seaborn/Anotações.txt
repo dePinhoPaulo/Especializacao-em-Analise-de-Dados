@@ -267,3 +267,34 @@ AULA_24: Matplotlib - criando nosso mosaico
     Exercícios OK
 
     "alteração dos graficos de ax para Mosaico"
+
+
+AULA_25: Matplotlib - estilos
+
+    Alterar tema das figuras:
+        Documentação: https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html
+
+        plt.style.use('bmh')
+
+
+AULA_26: Matplotlib - Entendendo a estrutura de um estilo
+
+    Mudar cor de algum elemento manualmente:
+        "utilizar parametro color ou set_color ='C(n°_Cor)'"
+
+        plt.bar_label(barras, labels=quantidades, color='C2')
+        barras[1].set_color('C3')
+
+
+AULA_27: Matplotlib - Personalizando estilos
+
+    Alterar valor e stilo nos elementos padrões:
+        params = {
+            'axes.titlecolor': 'dimgray',
+            'figure.figsize': (12, 10)
+        }
+        "A partir desta alteração na raiz todo elementos serão alterados como padrão pelos novos valores"
+        "Podemos alterar, grid, titulo, figura, etc.."
+
+        Documentação: https://matplotlib.org/stable/api/matplotlib_configuration_api.html#matplotlib.rcParams
+
