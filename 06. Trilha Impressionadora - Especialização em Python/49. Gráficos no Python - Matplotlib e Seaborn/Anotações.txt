@@ -298,3 +298,34 @@ AULA_27: Matplotlib - Personalizando estilos
 
         Documentação: https://matplotlib.org/stable/api/matplotlib_configuration_api.html#matplotlib.rcParams
 
+
+AULA_28: Matplotlib - Criando seu próprio estilo
+
+    Para criar seu próprio estilo: 
+        você precisa criar um arquivo de configuração que define as configurações de estilo que você deseja usar. 
+        Este arquivo deve ser um arquivo `.mplstyle`, que é basicamente um arquivo de texto que contém uma série de configurações no formato `chave: valor`.
+
+        meu_estilo.mplstyle:
+            axes.titlesize : 24
+            axes.labelsize : 20
+            xtick.labelsize : 16
+            ytick.labelsize : 16
+
+    Usar stilos que ja esxitem como base:
+        Diretorio: C:\Users\Kiko\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data\stylelib
+        "A partir dele voce pode editar o seu."
+
+        "Tabem pode auterar o Cycle do estilo padrão e criar sua propria palheta"
+            axes.prop_cycle    : cycler('color', ['ace8f2', 'f2ace8', 'e8f2ac'])
+
+
+AULA_29: Matplotlib - O Matplotlib por baixo do Pandas
+
+    O Pandas é uma biblioteca que permite a manipulação de dados de forma simples e eficiente. 
+    Ela é construída sobre o NumPy e permite a manipulação de dados de forma simples e eficiente. 
+    Quanto a gráficos, o Pandas utiliza o Matplotlib como base para a geração de gráficos.
+
+    "Podemos utilizar todas funcionalidades do matplotlib no pandas para gerar graficos, a sintaxe é praticamente a mesma"
+        df_top_10_ibov.plot(figsize=(10, 8), title='TOP 10 Ações', subplots=True, layout=(5, 2))
+
+
