@@ -329,3 +329,27 @@ AULA_29: Matplotlib - O Matplotlib por baixo do Pandas
         df_top_10_ibov.plot(figsize=(10, 8), title='TOP 10 Ações', subplots=True, layout=(5, 2))
 
 
+AULA_30: Matplotlib - Pandas para Matplotlib
+
+    Mostrar figuras do mesmo tipo com for:
+        for i, banco in enumerate(bancos):
+            axs[i].plot(variacao_diaria.index, variacao_diaria[banco], label=banco, color=f'C{i}')
+            axs[i].legend()
+
+    Deixar somente a data uma figura, quando todas compartilhar do mesmo eixo:
+        fig, axs = plt.subplots(nrows=3, ncols=1, SHAREX=True)
+
+
+AULA_31: Matplotlib - Pandas para Matplotlib - parte 2
+
+    função nativa do python que gera combinções com elementos:
+        from itertools import combinations 
+        pares_bancos = list(combinations(bancos, 2))
+
+    Mostrar figuras do mesmo tipo com for (pares):
+        for i, par in enumerate(pares_bancos):
+            axs[i].scatter(par[0], par[1], data=df_top_10_ibov, color=f'C{i}')
+            axs[i].set_xlabel(par[0])
+            axs[i].set_ylabel(par[1])
+            axs[i].set_title(f'{par[0]} x {par[1]}')
+
