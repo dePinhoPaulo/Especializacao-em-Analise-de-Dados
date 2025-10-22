@@ -353,3 +353,34 @@ AULA_31: Matplotlib - Pandas para Matplotlib - parte 2
             axs[i].set_ylabel(par[1])
             axs[i].set_title(f'{par[0]} x {par[1]}')
 
+
+AULA_32: Matplotlib - Visualizações específicas do Pandas
+
+    O método `corr()` do Pandas calcula a correlação entre as variáveis de um DataFrame.
+        Os valores da correlação variam entre -1 e 1. Quando a correlação é -1, significa que as variáveis possuem uma correlação negativa perfeita. 
+        Quando a correlação é 1, significa que as variáveis possuem uma correlação positiva perfeita. 
+        Quando a correlação é 0, significa que as variáveis não possuem correlação. 
+        Quanto mais próximo de 1 ou -1, mais forte é a correlação. 
+        Quanto mais próximo de 0, mais fraca é a correlação.
+    
+    Aplicar um estilo de gradiente de cores no DataFrame:
+        df_top_10_ibov.corr().style.background_gradient(cmap='coolwarm_r')
+        "O sufixo `_r` indica que o gradiente de cores será aplicado de forma reversa"
+    
+    ajustando o valor minimo e maximo do df, Para escala de cores ficer correta:
+        background_gradient(cmap='coolwarm_r', vmin=-1, vmax=1)
+
+
+AULA_33: Matplotlib - Visualizações específicas do Pandas - parte 2
+    
+    Outra visualização disponível no Pandas é o `scatter_matrix`:
+        O `scatter_matrix` é uma visualização que permite a visualização de gráficos de dispersão entre todas as variáveis de um DataFrame. 
+        Na diagonal principal, são exibidos os histogramas das variáveis. 
+        Um histograma é um gráfico de barras que mostra a frequência de ocorrência de valores em um conjunto de dados, permitindo a visualização da distribuição dos dados.
+    
+    Agupamento utilizado pelo scatter_matrix:
+        df_top_10_ibov['VALE3'].value_counts(bins=10).sort_index()
+
+    Editando quantidade de agupramento do scatter_matrix:
+        scatter_matrix(df_top_10_ibov, figsize=(12,12), hist_kwds={'bins': 5, 'edgecolor': 'black'})
+
