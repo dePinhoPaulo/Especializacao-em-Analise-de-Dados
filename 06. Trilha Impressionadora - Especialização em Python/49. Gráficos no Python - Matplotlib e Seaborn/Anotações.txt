@@ -384,3 +384,23 @@ AULA_33: Matplotlib - Visualizações específicas do Pandas - parte 2
     Editando quantidade de agupramento do scatter_matrix:
         scatter_matrix(df_top_10_ibov, figsize=(12,12), hist_kwds={'bins': 5, 'edgecolor': 'black'})
 
+
+AULA_34: Seaborn - Introdução
+
+    o Seaborn é construído em cima do Matplotlib, 
+    o que significa que ele mantém a flexibilidade e a capacidade de personalização do Matplotlib, 
+    enquanto adiciona uma interface de alto nível que torna a criação de gráficos comuns mais simples e direta.
+
+    o Seaborn tem excelente integração com o Pandas, 
+    o que significa que ele pode trabalhar diretamente com DataFrames do Pandas. 
+    Isso torna o Seaborn uma escolha natural se você já está usando o Pandas para manipular seus dados.
+
+
+AULA_35: Seaborn - temas
+
+    No Seaborn, um tema é a combinação de estilo, contexto e paleta de cores que juntos definem a aparência de um gráfico.
+
+    sns.set_theme(style='dark', context='notebook', palette='colorblind')
+
+    "Paletas de cores do matplotlib valem no Seaborn"
+
