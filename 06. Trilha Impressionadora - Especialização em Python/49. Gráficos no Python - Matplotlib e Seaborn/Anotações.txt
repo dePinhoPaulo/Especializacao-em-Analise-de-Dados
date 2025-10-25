@@ -404,3 +404,41 @@ AULA_35: Seaborn - temas
 
     "Paletas de cores do matplotlib valem no Seaborn"
 
+
+AULA_36: Seaborn - pandas
+
+    Tratamento e analise da base dados:
+        df_churn.info()
+        df_churn.describe()
+
+        Describe só com valores categoricos:
+            df_churn.describe(exclude='number')
+        
+        Contagem valores da coluna
+            df_churn['churn'].value_counts()
+            df_churn['churn'].value_counts(normalize=True) * 100 -> PORCEMTAGEM
+
+        Excluir coluna:
+            df_churn = df_churn.drop(columns='id_cliente', axis=1)
+        
+        Formando DF's COM colunas especificas:
+            colunas_numericas = df_churn.select_dtypes(include='number').columns
+            colunas_categoricas = df_churn.select_dtypes(exclude='number').columns
+
+
+AULA_37: Seaborn - histogramas
+
+    histograma é uma representação gráfica da distribuição de frequências de uma variável. 
+    Ele é um gráfico de barras onde cada barra representa uma classe ou intervalo de classe e a área de cada barra é proporcional à frequência da classe.
+
+    histograma Matplotlib:
+        df_churn[colunas_numericas].hist(layout=(1, 3), figsize=(12,6));
+    
+    histograma Seaborn com Categorização por tipo de contrato:
+        sns.histplot(x='meses_na_empresa', data=df_churn, hue='contrato', multiple='stack')
+    
+    histogramas com Matplotlib e Seaborn:
+        fig, axs = plt.subplots(nrows=1, ncols=3, figsize=(16,4))
+        for i, coluna in enumerate(colunas_numericas):
+            sns.histplot(x=coluna, data=df_churn, hue='contrato', multiple='stack', ax=axs[i])
+
