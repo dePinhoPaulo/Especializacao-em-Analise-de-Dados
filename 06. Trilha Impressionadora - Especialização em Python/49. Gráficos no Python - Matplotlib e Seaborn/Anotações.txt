@@ -442,3 +442,61 @@ AULA_37: Seaborn - histogramas
         for i, coluna in enumerate(colunas_numericas):
             sns.histplot(x=coluna, data=df_churn, hue='contrato', multiple='stack', ax=axs[i])
 
+
+AULA_38: Seaborn - KDE
+
+    kdeplot, que é um gráfico de densidade de kernel. 
+    Ele é uma estimativa da distribuição de probabilidade de uma variável contínua. 
+    Ele é muito útil para visualizar a forma da distribuição de uma variável e comparar a distribuição de duas variáveis.
+    Um gráfico KDE é uma maneira de visualizar a distribuição de um conjunto de dados que fornece uma visão mais suave e menos dependente da escolha dos intervalos do que um histograma.
+
+    kdeplot:
+        sns.kdeplot(x='meses_na_empresa', data=df_churn, hue='contrato', fill=True)
+
+    kdeplot com Matplotlib e Seaborn:
+        fig, axs = plt.subplots(nrows=1, ncols=3, figsize=(16,4))
+        for i, coluna in enumerate(colunas_numericas):
+            sns.kdeplot(x=coluna, data=df_churn, hue='contrato', ax=axs[i])
+    
+    kdeplot edição da legenda:
+        for i, coluna in enumerate(colunas_numericas):
+            sns.kdeplot(x=coluna, data=df_churn, hue='churn', ax=axs[i], fill=True)
+            legenda = axs[i].get_legend()
+            legenda.remove()
+        rotulo = [text.get_text() for text in legenda.get_texts()]
+        fig.legend(handles=legenda.legend_handles, labels=rotulo, loc='upper center', ncols=2, title='Churn', bbox_to_anchor=(0.5, 1.2))
+
+
+AULA_39: Seaborn - FacetGrid
+
+    FacetGrid, que permite criar uma matriz de gráficos com base em características de um conjunto de dados. 
+    Esta matriz é chamada de grid e cada gráfico individual é chamado de "facet".
+    A ideia por trás é permitir visualizar a distribuição ou a relação de uma variável em diferentes subvonjuntos, que podem ser definidos por variáveis categóricas.
+
+    FacetGrid:
+        g = sns.FacetGrid(data=df_churn, col='contrato')
+        g.map_dataframe(sns.histplot, x='meses_na_empresa')
+
+    hue, podemos separar os dados de acordo com a variável churn:
+        g = sns.FacetGrid(data=df_churn, col='contrato', hue='churn')
+        g.map_dataframe(sns.histplot, x='meses_na_empresa')
+    
+    row para separar os dados de acordo com a variável churn:
+        g = sns.FacetGrid(data=df_churn, col='contrato', row='churn')
+        g.map_dataframe(sns.histplot, x='meses_na_empresa')
+
+    hue: faz a uma separação em cores dados
+    row: separa em diferentes grafico todos cenarios
+
+
+AULA_40: Seaborn - PairPlot
+
+    pairplot, que cria um grid com scatterplots de todas as variáveis numéricas de um conjunto de dados. 
+    Além disso, os gráficos na diagonal principal são histogramas ou KDE das variáveis numéricas.
+
+    pairplot:
+        sns.pairplot(data=df_churn, hue='churn')
+
+    pairplot alterando graficos da diagonal:
+        sns.pairplot(data=df_churn, hue='churn', diag_kind='hist')
+
