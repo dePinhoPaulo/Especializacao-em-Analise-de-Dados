@@ -500,3 +500,33 @@ AULA_40: Seaborn - PairPlot
     pairplot alterando graficos da diagonal:
         sns.pairplot(data=df_churn, hue='churn', diag_kind='hist')
 
+
+AULA_41: Seaborn - Boxplot
+
+    boxplot é um gráfico que apresenta informações sobre a distribuição de uma variável numérica. 
+    Ele é composto por um retângulo, que representa o intervalo entre o primeiro e o terceiro quartil da distribuição. 
+    A linha no meio do retângulo representa a mediana. 
+    As linhas que se estendem para fora do retângulo são chamadas de bigodes e representam a variabilidade fora do intervalo entre o primeiro e o terceiro quartil. 
+    Os pontos que se estendem além dos bigodes são considerados outliers.
+
+    boxplot:    
+        fig, axs = plt.subplots(nrows=1, ncols=3, figsize=(16,6), tight_layout=True, sharey=True)
+        for i, coluna in enumerate(colunas_numericas):
+            sns.boxplot(x=coluna, y='churn', data=df_churn, ax=axs[i], hue='churn')
+            axs[i].set_ylabel('')
+
+
+AULA_42: Seaborn - Categóricas - parte 1
+
+    Transformar matriz em vetor:
+        ax=axs.flat[i]
+    
+    Remover legendas:
+        legenda = h.get_legend()
+        legenda.remove()
+        rotulo = [text.get_text() for text in legenda.get_texts()]
+    
+    Rotação do titulo da categoria:
+        h = sns.histplot(x=coluna, data=df_churn, hue='churn', multiple='fill', ax=axs.flat[i], stat='percent', shrink=0.8)
+        h.tick_params(axis='x', labelrotation=45)
+    
