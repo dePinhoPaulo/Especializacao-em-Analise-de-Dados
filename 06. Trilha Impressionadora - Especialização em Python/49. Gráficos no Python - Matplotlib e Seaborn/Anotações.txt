@@ -521,6 +521,9 @@ AULA_42: Seaborn - Categóricas - parte 1
     Transformar matriz em vetor:
         ax=axs.flat[i]
     
+    Deixar a escalar de 0 a 1:
+        multiple='fill'
+
     Remover legendas:
         legenda = h.get_legend()
         legenda.remove()
@@ -529,4 +532,26 @@ AULA_42: Seaborn - Categóricas - parte 1
     Rotação do titulo da categoria:
         h = sns.histplot(x=coluna, data=df_churn, hue='churn', multiple='fill', ax=axs.flat[i], stat='percent', shrink=0.8)
         h.tick_params(axis='x', labelrotation=45)
+
+
+AULA_43: Seaborn - Categóricas - parte 2
+
+    Transformar a escala de 0 a 1 para 0% a 100%:
+        from matplotlib.ticker import PercentFormatter
+        for
+            h.yaxis.set_major_formatter(PercentFormatter(1))
     
+    Adicionar rotulos nas barras e como porcentagem:
+        for
+            for barras in h.containers:
+            h.bar_label(barras, label_type='center', labels=[f'{barra.get_height():.1%}' for barra in barras], color='white', weight='bold')
+        
+    Espaçamento entre todos graficos:
+        plt.subplots_adjust(wspace=0.45, hspace=0.45)
+
+
+AULA_44: Seaborn - Categóricas - parte 3
+
+    Boxplot com categorias:
+        sns.boxplot(x='servico_internet', y='valor_mensal', data=df_churn, hue='churn')
+
