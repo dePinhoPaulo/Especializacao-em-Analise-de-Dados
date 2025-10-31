@@ -555,3 +555,23 @@ AULA_44: Seaborn - Categóricas - parte 3
     Boxplot com categorias:
         sns.boxplot(x='servico_internet', y='valor_mensal', data=df_churn, hue='churn')
 
+
+AULA_45: Seaborn - Correlação - parte 1
+
+    substituindo valores nas colunas:
+        df_churn['churn'] = df_churn['churn'].replace({'Sim': 1, 'Não': 0})
+
+    Separa Sim e Não para 0 e 1:
+        df_dummies = pd.get_dummies(df_churn, dtype=int)
+
+
+AULA_46: Seaborn - Correlação - parte 2
+
+    Grafico de barras na analise de correlação:
+        sns.barplot(x=churn_corr[1:].index, y=churn_corr[1:].values, palette='coolwarm')
+
+    ajustado rotulos:
+        fig, axs = plt.subplots(figsize=(16, 6))
+        b = sns.barplot(x=churn_corr[1:].index, y=churn_corr[1:].values, palette='coolwarm', ax=axs);
+        b.tick_params(axis='x', rotation=91)
+
