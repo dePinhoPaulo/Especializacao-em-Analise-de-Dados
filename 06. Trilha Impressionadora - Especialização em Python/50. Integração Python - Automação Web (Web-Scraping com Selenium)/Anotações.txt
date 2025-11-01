@@ -1,0 +1,32 @@
+AULA_1: Leia antes de começar
+
+    Nesse módulo vamos aprender a criar "automação na internet" para os nossos códigos usando o selenium.
+
+
+AULA_2: Instalação e Configurações Importantes do Selenium (Assista)
+
+    Para fazer scraping use o Chrome!
+
+    Instalação:
+
+        Biblioteca do Selenium:
+            pip install --upgrade selenium
+
+        Webdriver-manager
+            pip install webdriver-manager
+
+        importar o ChromeDriverManager e usar ele no Serviço do Selenium:
+            from selenium import webdriver
+            from selenium.webdriver.chrome.service import Service
+            from webdriver_manager.chrome import ChromeDriverManager
+
+            servico = Service(ChromeDriverManager().install())
+            navegador = webdriver.Chrome(service=servico)
+            #Codigo padrão
+
+
+AULA_3: Diferença do Selenium no Google Colab
+
+    Instruções para quem usa Colab;
+
+
