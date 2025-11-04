@@ -30,3 +30,31 @@ AULA_3: Diferença do Selenium no Google Colab
     Instruções para quem usa Colab;
 
 
+AULA_4: Como acessar uma página com o selenium
+
+    Codigo padrão para usar:
+        from selenium import webdriver
+        from selenium.webdriver.chrome.service import Service
+        from webdriver_manager.chrome import ChromeDriverManager
+        servico = Service(ChromeDriverManager().install())
+        navegador = webdriver.Chrome(service=servico)
+
+    Acessando paginas com Selenium:
+
+        navegador.get(r"https://www.amazon.com.br/")
+
+
+AULA_5: Métodos de Seleção do Selenium
+
+    Selecionando elementos do html:
+        navegadaor.find_element -> 1 item
+        navegadaor.find_elements -> lista
+
+    Enviar dados em compos:
+        .send_keys("")
+
+    Clicar:
+        .click()
+
+    *Documentação Selenium Python
+
