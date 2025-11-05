@@ -58,3 +58,43 @@ AULA_5: Métodos de Seleção do Selenium
 
     *Documentação Selenium Python
 
+
+AULA_6: Seleção por Class Name e XPATH
+
+    Explicação da estrutura de um HTML.
+        <div>, <span>;
+        class, id;
+
+    Selecionar elementos por id:
+        "Geralmente são unicos na pagima"
+
+    Selecionar elementos por XPATH:
+        "Seleciona elemento com Inspecionar"
+        "Botão direito na div do elemento, Copiar XPATH"
+    
+    Ordem de prioridade:
+        -Id;
+        -Class Name;
+        -XPATH
+
+AULA_7: Outras formas de selecionar um elemento no Selenium
+
+    Selecionar pelo Partial Link Text:
+        "Pega por algum fragmento do texto"
+        navegador.find_element(By.PARTIAL_LINK_TEXT, 'WhatsApp').text
+
+    Selecionar pela tag:
+        navegador.find_element(By.TAG_NAME, 'h2').text
+
+
+AULA_8: Selecionando vários elementos de uma vez
+
+    Selecionar vários elementos de uma vez:
+        "Percorrer por um grupo de elementos e clicar"
+        lista_elementos = navegador.find_elements(By.CLASS_NAME, 'nav-link')
+        for elemento in lista_elementos:
+            if 'blog' in elemento.text.lower():
+                elemento.click()
+                break
+        "Sempre utilizar break para finalizar o loop nestes casos"
+
