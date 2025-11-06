@@ -98,3 +98,50 @@ AULA_8: Selecionando vários elementos de uma vez
                 break
         "Sempre utilizar break para finalizar o loop nestes casos"
 
+
+AULA_9: Pegando atributos ou texto de um elemento
+
+    Selecionando atributos de um elemento:
+        navegador.find_element(By.XPATH, '/html/body/footer/div/div[1]/div[2]/div/a[2]').get_attribute('href')
+
+
+AULA_10: Estrutura da Árvore HTML
+
+    Estrutura HTML:
+        <html>
+            <header> </header>
+
+            <body> -> Parent
+                <a> </a> -> Child
+            </body>
+        </html>
+
+
+AULA_11: Pegando Informações de Elementos dentro de Elementos
+
+    *buscar alguma tag/id/class que contenha nos elementos desejados.
+    
+    Percorrer as imagens da pagina:
+        lista_imagens = navegador.find_elements(By.TAG_NAME, 'figure')
+        for elemento in lista_imagens:   #Percorre as imagens da pagina
+            #Imprime os links: 
+                link = elemento.find_element(By.TAG_NAME, 'a').get_attribute('href')
+                print(link)
+    
+    Retorna somente as imagens que tem link:
+        *melhoria do codigo anterior
+        links = elemento.find_elements(By.TAG_NAME, 'a')
+        if links != []:   #pega somente as imagens que tem link
+            link = elemento.find_element(By.TAG_NAME, 'a').get_attribute('href')    #retorna o link
+            print(link)
+
+
+AULA_12: Preenchendo formulários com o Selenium (botões e caixas de seleção)
+
+    Interagir em um PopUp:
+        alerta = navegador.switch_to.alert   #Vai para o popup
+        alerta.accept()   #clica no OK
+
+    Verificar o valor de um CheckBox:
+        navegador.find_element(By.XPATH, '/html/body/form/input[3]').is_selected()   #Retorna valor do checkbox
+
