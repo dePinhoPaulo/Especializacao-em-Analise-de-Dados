@@ -145,3 +145,50 @@ AULA_12: Preenchendo formulários com o Selenium (botões e caixas de seleção)
     Verificar o valor de um CheckBox:
         navegador.find_element(By.XPATH, '/html/body/form/input[3]').is_selected()   #Retorna valor do checkbox
 
+
+AULA_13: Campos de Texto Personalizado e Datas
+
+    Mudar campo de seleção de cor:
+        navegador.find_element(By.XPATH, '/html/body/form/input[4]').send_keys('#aa1d1d')
+        "Codigo da cor em HEX"
+    
+    Retornar valor do campo de seleção:
+        valor_cor = navegador.find_element(By.XPATH, '/html/body/form/input[4]').get_attribute('value')
+        print(valor_cor)
+
+    Inserir campo de texto:
+        navegador.find_element(By.XPATH, '/html/body/form/input[16]').send_keys('Flamengo')
+    
+    Inserindo e pegando data:
+        navegador.find_element(By.XPATH, '/html/body/form/input[6]').send_keys('10/23/2001')
+
+        valor_data = navegador.find_element(By.XPATH, '/html/body/form/input[6]').get_attribute('value')
+        print(valor_data)
+        "Se atentar aos formato das datas"
+
+
+AULA_14: Campos com Várias Informações e de Arquivos
+
+    Inserir data e hora:
+        navegador.find_element(By.XPATH, '/html/body/form/input[7]').send_keys('10/23/2001\t12:30\tAM')
+            "\t é o uma fora de TAB na inserção dos dados"
+
+        from selenium.webdriver.common.keys import Keys
+        navegador.find_element(By.XPATH, '/html/body/form/input[7]').send_keys('10/30/2001', Keys.TAB, '05:00', Keys.TAB, 'PM')
+            "aqui utilizado Keys do selenium para dar TAB"
+    
+
+AULA_15: Exercitando em outros campos 
+
+    Clicando no Radio Button:
+        navegador.find_element(By.XPATH, '/html/body/form/input[13]').click()
+        valor_radio_button = navegador.find_element(By.XPATH, '/html/body/form/input[13]').is_selected()
+        print(valor_radio_button)
+
+    Inserindo data(Semana Ano):
+        navegador.find_element(By.XPATH, '/html/body/form/input[18]').send_keys('50\t2025')
+
+    Inserir texto:
+        navegador.find_element(By.XPATH, '//*[@id="story"]').send_keys('Ola\nMeu nome é Paulo\n24 anos')
+            "Podemos utilizar o \n ou Keys.ENTER para quebrar linhas"
+
