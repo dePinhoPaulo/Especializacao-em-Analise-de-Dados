@@ -192,3 +192,36 @@ AULA_15: Exercitando em outros campos
         navegador.find_element(By.XPATH, '//*[@id="story"]').send_keys('Ola\nMeu nome é Paulo\n24 anos')
             "Podemos utilizar o \n ou Keys.ENTER para quebrar linhas"
 
+
+AULA_16: Campos de Arrastar
+
+    Mover Slider:
+        elemento_slider = navegador.find_element(By.XPATH, '/html/body/form/input[15]')
+        elemento_slider.clear()
+        for i in range(100 - 50):
+            elemento_slider.send_keys(Keys.ARROW_RIGHT)
+        "Utilizar for para apertar seta para direira ou esquedar (Valor 50 pq este é o padrão)"
+
+
+AULA_17: Campos de Lista de Valores
+
+    Selecionar lista suspença:
+        import time
+        navegador.find_element(By.XPATH, '/html/body/form/select[1]').click()   #Abrir lista
+        time.sleep(0.5)   #Esperar meio segundo
+        navegador.find_element(By.XPATH, '/html/body/form/select[1]/option[2]').click()   #clicar na opção
+
+
+AULA_18: Usando o Select e discussão sobre erros no Selenium
+
+    Verificar documentação: https://www.selenium.dev/pt-br/documentation/webdriver/elements/select_lists/
+
+    Selecionar valor em lista suspensa com Select:
+        elemento = navegador.find_element(By.TAG_NAME, 'select')
+        elemento_select = Select(elemento)
+        elemento_select.select_by_visible_text('C')
+
+    Pegando valor em lista suspensa com Select:
+    item = elemento_select.first_selected_option
+    print(item.get_attribute('value'))
+
