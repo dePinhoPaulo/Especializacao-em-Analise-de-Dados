@@ -225,3 +225,19 @@ AULA_18: Usando o Select e discussão sobre erros no Selenium
     item = elemento_select.first_selected_option
     print(item.get_attribute('value'))
 
+
+AULA_19: Exercício - Automatizar Emissão de Nota Fiscal
+
+    Mapeando os passos que serão feitos pela automação;
+    Importando as bibliotecas necessarias;
+    Encontrando elementos por: XPATH, CLASS_NAME, NAME;
+    "Todo contudo aprendido antes"
+
+
+AULA_20: Exercício - Automatizar Emissão de Nota Fiscal - Autorizando Download Automaticamente
+
+    "Continuação do Projeto"
+
+    Ajustes de liberação do download no Google chrome:
+        "Solução muito especifica, sempre vai ser praticamente o mesmo codigo"
+
