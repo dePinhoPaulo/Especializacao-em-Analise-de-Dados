@@ -241,3 +241,25 @@ AULA_20: Exercício - Automatizar Emissão de Nota Fiscal - Autorizando Download
     Ajustes de liberação do download no Google chrome:
         "Solução muito especifica, sempre vai ser praticamente o mesmo codigo"
 
+
+AULA_21: Exercício - Automatizar Emissão de Nota Fiscal - Várias notas ao mesmo tempo
+
+    Utilizando pandas para importar os dados da planilha;
+    Utilizar for para Percorrer todas linhas da planilha;
+    Utilizar Refresh para refcarregar a pagina a cada preenchimento;
+
+
+AULA_22: ActionChains e Dropdowns Especiais
+
+    Biblioteca para simular movimento do mouse no navegador:
+        from selenium.webdriver import ActionChains
+        checar documentação: https://www.selenium.dev/pt-br/documentation/webdriver/actions_api/mouse/
+
+    Separa em passos:
+        menu = navegador.find_element(By.XPATH, '//*[@id="menu-item-dropdown-16313"]')
+        item = navegador.find_element(By.XPATH, '//*[@id="menu-item-17042"]/a')
+        "Menu que sera passado o mouse e item para clicar"
+
+    Colocar o mouse em cima do menu:
+        ActionChains(navegador).move_to_element(menu).perform()
+
