@@ -263,3 +263,66 @@ AULA_22: ActionChains e Dropdowns Especiais
     Colocar o mouse em cima do menu:
         ActionChains(navegador).move_to_element(menu).perform()
 
+
+AULA_23: Alertas no Selenium
+
+    Pop Up é diferente de um Alerta:
+        PopUp faz parte do site;
+        Alerta é do navegador;
+    
+    Medar para alerta simples:
+        alerta = navegador.switch_to.alert
+    
+    Mudar para alerta com a biblioteca:
+        from selenium.webdriver.common.alert import Alert
+        alerta = Alert(navegador)
+    
+    Aceitar/Cancelar alerta:
+        alerta.accept()
+        alerta.dismiss()
+
+    Pegar texto:
+        texto = alerta.text
+        print(texto)
+
+    Enviar texto:
+        alerta.send_keys('Mengo')
+
+
+AULA_24: Trabalhando com Diferentes Abas e Janelas
+
+    window_handles:
+        "A ordem é de acordor com a abertura da aba"
+        "NÃO a posição do navegador"
+    
+    trocar janela:
+        "funciona da mesma forma da troca de aba"
+        "se atentar a ordem de criação da aba desta nova janela "
+    
+    Listar abas ja abertas:
+        lista_abas = navegador.window_handles
+        print(list(lista_abas))
+    
+    mudar para uma aba especifica:
+        aba_sql = navegador.window_handles[4]
+        navegador.switch_to.window(aba_sql)
+    
+    fechar aba:
+        navegador.close()
+    
+    fechar navegadir:
+        navegador.quit()
+
+
+AULA_25: Como esperar uma informação carregar na tela
+
+    Fechar PopUp com tempo fixo;
+        "Fixa uma quantidade de segundos até aparecer o elemento"
+
+    Fechar PopUp com Loop:
+        "Forma Automatizado onde adiciona 1 seg enquanto não aparecer o elemento"
+
+    Fechar PopUp com WebDriverWait;
+        "Biblioteca que faz de forma automatica"
+        "Passamos como parametro (navegador, tempo_maximo_esoera, find_element)"
+
