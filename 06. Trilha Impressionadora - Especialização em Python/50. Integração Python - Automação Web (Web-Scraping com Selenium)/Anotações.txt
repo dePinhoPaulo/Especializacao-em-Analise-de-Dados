@@ -326,3 +326,12 @@ AULA_25: Como esperar uma informação carregar na tela
         "Biblioteca que faz de forma automatica"
         "Passamos como parametro (navegador, tempo_maximo_esoera, find_element)"
 
+
+AULA_26: Exercício - Processo de Consulta em sites
+
+    Exercício Parte 1: OK
+
+
+AULA_27: Exercício - Processo de Consulta em sites - Várias consultas de uma vez
+
+    Exercício Parte 2: OK
