@@ -335,3 +335,59 @@ AULA_26: Exercício - Processo de Consulta em sites
 AULA_27: Exercício - Processo de Consulta em sites - Várias consultas de uma vez
 
     Exercício Parte 2: OK
+
+
+AULA_28: Printscreen com Selenium
+
+    Tirar pint:
+        navegador.save_screenshot('print.png')
+
+    Recortar print:
+
+        Importar print:
+            from PIL import Image
+            imagem = Image.open('print.png')
+        
+        Pegando posica e tamanho do corte:
+            elemento = navegador.find_element(By.ID, 'header')
+            posicao = elemento.location
+            tamanho = elemento.size
+
+        Parametros de corte e salvar:
+            x_ini = posicao['x'] * 1.25 # descontando zoom da tela
+            y_ini = posicao['y'] * 1.25 
+            x_fin = tamanho['width'] * 1.25
+            y_fin = tamanho['height'] * 1.25
+            
+            imagem = imagem.crop((x_ini, y_ini, x_fin, y_fin))
+            imagem.save('print_cortado.png')
+
+
+AULA_29: Gerenciando a tela do Navegador
+
+    Maximizar e Minimizar:
+        navegador.maximize_window()
+        navegador.minimize_window()
+
+    Roda no navegador em segundo plano (alguns sites funcionam diferente no modo headless):
+        options = webdriver.ChromeOptions()
+        options.add_argument('--headless')
+        novo_navegador = webdriver.Chrome(service=servico, options=options)
+
+
+AULA_30: Carregando um navegador com Cookies e Logins
+
+    Abrir perfil especifico no navegador:
+        servico = Service(ChromeDriverManager().install())
+        options = webdriver.ChromeOptions()
+        options.add_argument(r'user-data-dir=C:\Users\Kiko\AppData\Local\Temp\scoped_dir19712_1658152173\Default')   # caminho para achar pasta de seleção do perfil: chrome://version/
+        navegador = webdriver.Chrome(service=servico, options=options)
+
+        "Bom para não ter que ficar re-abrindo WhatsApp Web"
+
+
+AULA_31: Aviso - Atualizações de Sites e dos XPath, Class, ID e outros
+
+    Sites sempre atualizam seus front-ends;
+    Sempre construir um codigo muito organizado para adaptar os novos XPath, Class, ID...
+
