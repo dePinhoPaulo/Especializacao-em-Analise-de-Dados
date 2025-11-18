@@ -391,3 +391,8 @@ AULA_31: Aviso - Atualizações de Sites e dos XPath, Class, ID e outros
     Sites sempre atualizam seus front-ends;
     Sempre construir um codigo muito organizado para adaptar os novos XPath, Class, ID...
 
+
+AULA_32: Desafio - Automatizando Envio de Mensagens do Whatsapp
+
+    Desafio OK
+
