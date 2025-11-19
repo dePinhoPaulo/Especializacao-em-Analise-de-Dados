@@ -1,0 +1,72 @@
+AULA_1: Introdução a Regex
+
+    Utilizamos a biblioteca para manipular string.
+
+    Contar aparições de uma palavar em uma string:
+        palavra = re.compile('comida')
+        resultado = re.findall(palavra, texto)
+        print(len(resultado))
+
+
+AULA_2: Caracteres Especiais no Regex
+
+    re.compile('padrao_regex') -> compilar um padrão regex
+    re.search(padrao_compilado, texto) -> procura uma ocorrência do padrão no texto (re.match só procura na 1ª linha do texto)
+    re.findall(padrao_compilado, texto) -> encontra todas as ocorrencias do padrão em um texto - armazena em uma lista
+    re.finditer(padrao_compilado, texto) -> encontra todas as ocorrencias e armazena em um iterador
+
+    Contar aparições de um caractere em uma string:
+        padrao = re.compile(r"\$")
+        resultado = re.findall(padrao, texto)
+        print(len(resultado))
+
+
+AULA_3: O bom uso de Regex - Encontrando padrões
+
+    Sempre utiliza Raw string:
+        padrao = re.compile(r'\d')
+
+    buscando todos os numeros:
+        padrao = re.compile(r'\d')
+        resultado = re.findall(padrao, texto)
+        print(resultado)
+    
+    buscando qualquer numero de 1 ou mais digitos:
+        padrao = re.compile(r'\d+')
+    
+    buscando qualquer numero de 1 ou mais digitos com virgula no meio:
+        padrao = re.compile(r'\d+,\d+')
+
+
+AULA_4: Como analisar a resposta que o regex vai encontrar
+
+    Buscar todas strings de uma uo mais letras:
+        novo_texto = 'Nome: Paulo Idade: 24 Salario: 50000'
+        padrao = re.compile(r'\D+')
+        resultado = re.findall(padrao, novo_texto)
+        print(resultado)
+
+    Buscar strings que estão antes do dois pontos:
+        padrao = re.compile(r'(\w+):')
+        "parentese faz isolar a busca (como na matematica que reslove primeiro)"
+
+    Buscar Todos os numeros (1 digito ou mais, com nenhuma virgula ou uma, com zero ou mais digitos)
+        padrao = re.compile(r'\d+,?\d*')
+
+
+AULA_5: Outros exemplos para treinar
+
+    Função para retornar 1° item:
+        re.search()
+
+    Extraindo ml do 1° item: 
+        padrao = re.compile(r'\(.+\)') ou padrao = re.compile(r'\(\d+\s\w+\)')
+        resultado = re.search(padrao, texto)
+        print(resultado)
+
+    Extraindo 1° Preço:
+        padrao = re.compile(r'R\$\d+,?\d+')
+        resultado = re.search(padrao, texto)
+        print(resultado)
+        print(resultado.group(0)) # Traz extamente a string requisitada (não em formato de objeto como padrão)
+
