@@ -396,3 +396,31 @@ AULA_32: Desafio - Automatizando Envio de Mensagens do Whatsapp
 
     Desafio OK
 
+
+AULA_33: Executando Scripts em Javascript pelo Selenium (Scroll na tela)
+
+    Executar scroll no navegador:
+        navegador.execute_script(f'window.scroll(0, 1000)')
+        "de 0 a posição 1000 (fixo)"
+    
+    Varios scrolls:
+        for i in range(30):
+            qtd_scroll = i * 1000
+            navegador.execute_script(f'window.scroll(0, {qtd_scroll})')
+        "Como valoe da rolagem é fixo, adicionamo um multiplicador para rolar varias vezes a quantidade do 1000"
+    
+    pegando vairos atributos de uma so vez:
+        for video in lista_video:
+            print(video.get_attribute('href'))
+
+
+AULA_34: Trabalhando com iFrames
+
+    Entrar no iframe:
+        iframe1 = navegador.find_element(By.ID, 'iframeResult')
+            navegador.switch_to.frame(iframe1)
+        "Se tuiver mais, ir entrando um por um"
+    
+    Pega o texto do elemento:
+        texto = navegador.find_element(By.XPATH, '//*[@id="subtopnav"]/a[3]').text
+        print(texto)
