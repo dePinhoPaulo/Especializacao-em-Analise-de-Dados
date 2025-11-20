@@ -70,3 +70,54 @@ AULA_5: Outros exemplos para treinar
         print(resultado)
         print(resultado.group(0)) # Traz extamente a string requisitada (não em formato de objeto como padrão)
 
+
+AULA_6: Sequências de Caracteres
+
+    Busca todo preços, mas com apens 2 digitos após a virgula:
+        padrao = re.compile(r'R\$\d+,?\d{2}')
+        resultado = re.findall(padrao, texto)
+        print(resultado)
+        "Chaves limitam a quantidade de caracteres"
+    
+    Busca todo preços, mas que comecem com digitos de 0 a 5:
+        padrao = re.compile(r'R\$[0-5]+,?\d{2}')
+        resultado = re.findall(padrao, texto)
+        print(resultado)
+        "Colchetes filtra os caracteres, o mesmo vale para letras [a - f]"
+
+
+AULA_7: Diferentes formas de resposta no Regex
+
+    Buscando todas quantidade de itens, sem retornar os parenteses:
+        padrao = re.compile(r'\((.+)\)')
+        resultado = re.findall(padrao, texto)
+        print(resultado)
+
+
+AULA_8: Exercício Desafiador - Extrair links de um texto
+
+    Buscar todos endereços de sites:
+        padrao = re.compile(r'(https?://)?(www\.)?\w+\.(com\.br|com|org|gov\.br)')
+
+        resultado = re.findall(padrao, texto2)
+        resultado2 = re.finditer(padrao, texto2)
+
+        print(resultado)
+        for item in resultado2:
+            print(item)
+        
+        "parenteses tambem serve para isolarmos alguns trechos de string e fazer comparação se tem ou não"
+        "| -> OU"
+
+
+AULA_9: Outros operadores de Regex
+
+    ^ – buscar elementos no início da string;
+        padrao = re.compile(r'^http')
+
+    $ – buscar elementos no final da string;
+        padrao = re.compile(r'.com/?$')
+
+    [^] - diferente de um caractere especificado logo após o ^
+        padrao = re.compile(r'http[a-z:/]+\.[^g].+')
+
