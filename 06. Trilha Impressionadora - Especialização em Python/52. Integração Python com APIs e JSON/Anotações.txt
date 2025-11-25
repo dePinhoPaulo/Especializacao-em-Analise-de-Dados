@@ -1,0 +1,44 @@
+AULA_1: Leia antes de começar
+
+    Nesse módulo vamos aprender a consumir e criar APIs (Application Programming Interface) usando o requests, o flask e outras ferramentas.
+
+
+AULA_2: Python e Integrações de API
+
+    É um conjunto de códigos para usar um serviço/site/aplicativo específico;
+    Cada site/ferramenta tem sua própria API;
+    É importante que você saiba ler as APIs que precisar para saber usar;
+    Um dos padrões mais comuns em API é pegar informações em formato json;
+
+    API Utilizada: https://docs.awesomeapi.com.br/api-de-moedas
+    "Cotação de moedas"
+
+
+AULA_3: API de Cotação de Moeda
+
+    Requisitando API e passando dados para json:
+        cotacoes_libra_30d = requests.get('https://economia.awesomeapi.com.br/json/daily/GBP-BRL/30')
+        cotacoes_libra_dic = cotacoes_libra_30d.json()
+        print(cotacoes_libra_dic[0])
+
+    Extraindo somente Compra por listcomprention:
+        cotacoes_diarias = [float(item['bid']) for item in cotacoes_libra_dic]
+        print(cotacoes_diarias)
+
+
+AULA_4: Mais exercício de API com Cotação de Moeda
+
+    Cotação dia a dia:
+        cotacoes_libra_nov = requests.get('https://economia.awesomeapi.com.br/GBP-BRL/25?start_date=20251101&end_date=20251124')
+        cotacoes_libra_dic = cotacoes_libra_nov.json()
+        cotacoes_diarias = [float(item['bid']) for item in cotacoes_libra_dic]
+        print(cotacoes_diarias)
+        "Sempre verificar documentação da API"
+
+
+AULA_5: API com Login - Envio de SMS com Python e Twilio
+
+    Envio de SMS:
+        Mesmo codigo da documentação do Twilio;
+        Verificar as ID's
+    
