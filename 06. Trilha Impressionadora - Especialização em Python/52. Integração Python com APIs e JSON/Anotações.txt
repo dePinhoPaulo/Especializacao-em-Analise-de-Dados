@@ -42,3 +42,9 @@ AULA_5: API com Login - Envio de SMS com Python e Twilio
         Mesmo codigo da documentação do Twilio;
         Verificar as ID's
     
+
+AULA_6: Rodar códigos com o computador desligado, agendar diariamente, semanalmente, mensalmente
+
+    Subir coigo no Heroku, para rodalo varias vezes ao dia na nuvem;
+    não tem planos gratis;
+
