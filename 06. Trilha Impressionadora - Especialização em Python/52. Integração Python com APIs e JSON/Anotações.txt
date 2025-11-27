@@ -48,3 +48,37 @@ AULA_6: Rodar códigos com o computador desligado, agendar diariamente, semanalm
     Subir coigo no Heroku, para rodalo varias vezes ao dia na nuvem;
     não tem planos gratis;
 
+
+AULA_7: Criação de REST API com Python
+
+    API: é como um mensageiro que recebe uma solicitação de um aplicativo, processa essa solicitação e entrega a resposta de volta;
+    Toda API tem uma documentação;
+    Requisição: Pedir a informação para API, e a resposta sera em JSON;
+    REST: é apenas o padrão de Regras de requisições web, sendo elas, GET, POST, PUT (PATCH), DELETE;
+    CRUD: Ações do banco de dados, CREATE, READ, UPDATE, DELETE;
+
+    Como fazer requisiçõesno seu codigo?
+        import requests
+        requests.get(“api.instagram.com/usuarios/jpdelira”)
+
+        Resposta: JSON com as informações do usuário
+            {
+                “ID254”: 
+                {
+                    “nome”: “Lira”, “idade”: 27, 
+                    “Amigos”: [“ID255”,“ID256”, “ID302”], 
+                    “foto_perfil”: “lirabrabo.png”
+                }
+            }
+        "Na documentação da API tera todas intruções para um requisição, seja GET, POST, PUT ou DELETE"
+    
+    Por que uma API?
+        Segurança;
+        Diz o que pode e não pode ser feito;
+        Facilita para outras aplicações – Aplicativo, Site e Código do Lira;
+    
+    Toda requisição dara como reposta um JSON e um Codigo de Protocolo;
+    
+    Criar uma API nama mais é do que um site, que nada mais é que um Microserviço;
+    Para criar API Flask é o mais recomendado;
+    
