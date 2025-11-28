@@ -82,3 +82,20 @@ AULA_7: Criação de REST API com Python
     Criar uma API nama mais é do que um site, que nada mais é que um Microserviço;
     Para criar API Flask é o mais recomendado;
     
+    Criação da api:
+        from flask import Flask
+
+        app = Flask(__name__) # Cria o site
+
+        @app.route("/") # Decorator -> qual link a função vai rodar
+        def hello_world(): # Função
+            return "<p>Hello, World!</p>"
+
+        @app.route("/polin") # Decorator -> qual link a função vai rodar
+        def hello_world(): # Função
+            return {'Nome': 'Paulo', 'Idade': 23, 'Time': 'Flamengo'} # retorna um JSON -> transformando em REST API
+
+        app.run() # Roda o Site
+        app.run(0.0.0.0) # Roda o Site em um servidor na nuvem -> replit
+    
+    Exercicio de criação de API - OK
