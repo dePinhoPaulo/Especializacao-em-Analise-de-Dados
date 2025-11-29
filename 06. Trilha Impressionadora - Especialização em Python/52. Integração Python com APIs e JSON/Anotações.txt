@@ -99,3 +99,11 @@ AULA_7: Criação de REST API com Python
         app.run(0.0.0.0) # Roda o Site em um servidor na nuvem -> replit
     
     Exercicio de criação de API - OK
+
+
+AULA_8: API de CEP e Busca de Endereços
+
+    Endpoint: link de requisições;
+
+    Exercicios OK
+
