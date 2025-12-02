@@ -107,3 +107,13 @@ AULA_8: API de CEP e Busca de Endereços
 
     Exercicios OK
 
+
+AULA_9: API de Preço de Ações e Informações Econômicas
+
+    APIs de dados do mercado de ações em tempo real e históricos 
+        Opções, forex, criptomoedas e outras classes de ativos
+        Mais de 60 indicadores técnicos e econômicos
+        API de notícias de mercado e análise de sentimento
+
+    https://www.alphavantage.co/
+
