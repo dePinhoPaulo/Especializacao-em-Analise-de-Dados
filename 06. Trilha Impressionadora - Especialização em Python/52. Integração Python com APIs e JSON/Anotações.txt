@@ -117,3 +117,21 @@ AULA_9: API de Preço de Ações e Informações Econômicas
 
     https://www.alphavantage.co/
 
+
+AULA_10: API do IBGE - Query Builder
+
+    API de serviço de dados IBGE
+        Agregados
+        Banco de Dados Geodésicos
+        Calendário
+        CNAE
+        Localidades
+        Malhas Geográficas
+        Metadados
+        Nomes
+        Notícias
+        Países
+        Pesquisas
+        ProGriD
+        Publicações
+
