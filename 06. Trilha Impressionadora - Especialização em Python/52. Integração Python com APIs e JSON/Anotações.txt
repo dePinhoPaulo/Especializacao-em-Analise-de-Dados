@@ -135,3 +135,13 @@ AULA_10: API do IBGE - Query Builder
         ProGriD
         Publicações
 
+
+AULA_11: API do Banco Central - APIs com Paginação
+
+    API do Banco Central que mostra Dinheiro em Circulação
+    
+    https://dadosabertos.bcb.gov.br/dataset?res_format=API
+        Tendo varias opções de Apis no site.
+    
+    Exercicio de requisições paginadas, Extraindo todos os dados.
+
