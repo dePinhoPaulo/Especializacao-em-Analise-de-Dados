@@ -164,5 +164,8 @@ AULA_12: API do Google Sheets - Integrar Python com Google Sheets
             SAMPLE_SPREADSHEET_ID
             SAMPLE_RANGE_NAME
         
+        * Adicionar Usuários de teste
+    Conexão completa, verificar documentação para fazer consultas/alterações nas planilhas.
+    
 
     Documentação para python: https://developers.google.com/workspace/sheets/api/quickstart/python?hl=pt-br
