@@ -145,3 +145,24 @@ AULA_11: API do Banco Central - APIs com Paginação
     
     Exercicio de requisições paginadas, Extraindo todos os dados.
 
+
+AULA_12: API do Google Sheets - Integrar Python com Google Sheets
+
+    Configurações de credenciais:
+        Google Developer Console;
+            Criar projeto;
+                Add Google Drive API
+                Add Google Sheets API
+            Tela de permissão OAuth
+                Externo;
+            Credenciais
+                Criar ID do cliente do OAuth
+                    Baixar Credenciais Json
+    Impotar bibliotecas;
+    Script Padrão;
+        Preencher id planilha e pagina/celulsa:
+            SAMPLE_SPREADSHEET_ID
+            SAMPLE_RANGE_NAME
+        
+
+    Documentação para python: https://developers.google.com/workspace/sheets/api/quickstart/python?hl=pt-br
