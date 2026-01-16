@@ -169,3 +169,42 @@ AULA_12: API do Google Sheets - Integrar Python com Google Sheets
     
 
     Documentação para python: https://developers.google.com/workspace/sheets/api/quickstart/python?hl=pt-br
+
+
+AULA_13: Trade de Criptomoedas com Python - API da Binance
+
+    Documentação: https://python-binance.readthedocs.io/en/latest/overview.html
+
+    Instalar biblioteca:
+        pip install python-binance
+    
+    Importar Biblioteca:
+        from binance.client import Client
+        from secrets import api_secret, api_key
+
+    Criar API na Binance:
+        Gerenciamento API;
+            API Key;
+            Secret API;
+
+    Conexão com a conta:
+        cliente = Client(api_key, api_secret)
+
+    Pegar os dados da sua conta:
+        conta = cliente.get_account()
+        for item in conta:
+            print(item)
+
+    Pegar as transações de uma moeda:
+        transacoes_btc = cliente.get_recent_trades(symbol='BNBBRL')
+        print(transacoes_btc[-1])
+
+    Criar uma ordem:
+        from binance.enums import * # mude para binance_mod caso tenha dado erro no seu uso da bibl
+        order = cliente.create_order(
+            symbol='BNBBRL',
+            side=SIDE_SELL,
+            type=ORDER_TYPE_MARKET,
+            quantity=0.01
+        )
+        print(order)
