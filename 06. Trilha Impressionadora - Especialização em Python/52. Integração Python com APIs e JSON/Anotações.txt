@@ -251,3 +251,10 @@ AULA_14: Firebase e Python - Introdução a REST API do Firebase
         requisicao = requests.delete(f'{link}/Vendas/{id_alon}/.json')
         print(requisicao)
         print(requisicao.text)
+
+
+AULA_15: RapidAPI - Como usar outras APIs de 1 só lugar
+
+    Hub de APIs;
+        https://rapidapi.com/
+    
